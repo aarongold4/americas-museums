@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavBar from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const cities = await getCollection('cities');
+const totalMuseums = (await getCollection('museums')).length;
+---
+
+<BaseLayout
+  title="America's Museums — every museum in the country, ranked and reviewed"
+  description={`A directory and guide to ${totalMuseums.toLocaleString()}+ museums across the United States. Hours, admission, reviews, and tickets — by city and category.`}
+>
+  <NavBar slot="header" />
+
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5 py-16">
+      <div class="text-2xs tracking-wider2 text-ink-muted mb-3">DIRECTORY</div>
+      <h1 class="display text-4xl text-ink mb-4 leading-tight">
+        Every museum in America. Ranked, reviewed, and ready to book.
+      </h1>
+      <p class="text-lg text-ink-muted max-w-prose">
+        Browse {totalMuseums.toLocaleString()}+ museums by city or by category. Independent reviews,
+        current hours, and tickets — no fluff.
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-content mx-auto px-5 py-10">
+    <h2 class="text-xl font-medium text-ink mb-4">Browse by city</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-3">
+      {cities.map((c) => (
+        <li class="card p-3.5 hover:border-surface-line2">
+          <a href={`/best-museums-in-${c.slug}/`} class="block">
+            <div class="text-base font-medium text-brand">{c.data.city}, {c.data.state}</div>
+            <div class="text-xs text-ink-muted mt-0.5">{c.data.museum_slugs.length} museums</div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

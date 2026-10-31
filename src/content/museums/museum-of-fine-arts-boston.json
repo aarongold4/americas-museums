@@ -1,0 +1,44 @@
+{
+  "name": "Museum of Fine Arts, Boston",
+  "city": "Boston",
+  "state": "MA",
+  "address": "465 Huntington Ave, Boston, MA 02115",
+  "lat": 42.3394,
+  "lng": -71.0941,
+  "discipline": "Art",
+  "founded": 1870,
+  "rating": 9.2,
+  "review_count": 31000,
+  "review_label": "Wonderful",
+  "admission_from": 27,
+  "admission_text": "general admission",
+  "tagline": "One of the country's great encyclopedic museums. Strong American and Asian wings.",
+  "description": "500,000 works across all eras and continents. The Art of the Americas wing (Foster + Partners, 2010) is the most comprehensive American art collection outside the Smithsonian; the Asian collection is the largest in the West.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Sun 10 AM – 5 PM (Wed, Fri until 10 PM) · closed Mon–Tue",
+  "visit_time": "3 hours",
+  "best_for": "Encyclopedic art collection",
+  "review_long": "The MFA's permanent collection rivals the Met for American painting and the Asian collection rivals anything in the West (the Egyptian collection is in the same league as well). The 2010 Art of the Americas wing reorganized the American collection chronologically, and the result reads as the museum-as-textbook of US art history.",
+  "badges": [
+    {
+      "label": "Free for under-17s with adult",
+      "tone": "ok"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Americas Wing",
+      "item": "Watson and the Shark, John Singleton Copley"
+    },
+    {
+      "location": "Asian Wing",
+      "item": "Largest Japanese collection outside Japan"
+    }
+  ],
+  "distance_landmark": "Fenway, near Northeastern University",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/museum-of-fine-arts-boston/?partner_id=PLACEHOLDER",
+    "product_name": "Museum of Fine Arts, Boston entry"
+  }
+}

@@ -1,0 +1,48 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  museum: CollectionEntry<'museums'>['data'];
+  url: string;
+}
+
+const { museum: m, url } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': ['Museum', 'LocalBusiness'],
+  name: m.name,
+  description: m.description,
+  url,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: m.address.split(',')[0]?.trim(),
+    addressLocality: m.city,
+    addressRegion: m.state,
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: m.lat,
+    longitude: m.lng,
+  },
+  ...(m.founded && { foundingDate: String(m.founded) }),
+  ...(m.rating && {
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: m.rating,
+      bestRating: 10,
+      reviewCount: m.review_count ?? 0,
+    },
+  }),
+  ...(m.admission_from !== undefined && {
+    priceRange: m.admission_from === 0 ? 'Free' : `From $${m.admission_from}`,
+  }),
+};
+---
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(schema, null, 2)}
+/>

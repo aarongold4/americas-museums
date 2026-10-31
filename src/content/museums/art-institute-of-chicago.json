@@ -1,0 +1,42 @@
+{
+  "name": "Art Institute of Chicago",
+  "short_name": "Art Institute",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "111 S Michigan Ave, Chicago, IL 60603",
+  "lat": 41.8796,
+  "lng": -87.6237,
+  "discipline": "Art",
+  "founded": 1879,
+  "rating": 9.2,
+  "review_count": 86432,
+  "review_label": "Wonderful",
+  "admission_from": 32,
+  "admission_text": "general admission",
+  "hours_summary": "Mon–Sun · 11 AM – 5 PM (Thu until 8 PM)",
+  "hours_today": "11 AM – 5 PM",
+  "visit_time": "3–5 hours",
+  "best_for": "Art lovers",
+  "tagline": "Encyclopedic. Includes Nighthawks, La Grande Jatte. Allow a full day.",
+  "description": "One of the largest encyclopedic art museums in the United States. Holdings include Impressionist masterpieces (Monet, Renoir, Caillebotte), American icons (Hopper's Nighthawks, Wood's American Gothic), and a Modern Wing designed by Renzo Piano.",
+  "review_long": "The Art Institute is one of three or four museums in the country you can fairly call encyclopedic. Its painting wing alone houses the largest Impressionist collection outside Paris — Monet's Haystacks, Renoir's Two Sisters, the Caillebottes — and its modern wing, designed by Renzo Piano in 2009, exhibits Hopper, Pollock, O'Keeffe, and Picasso's The Old Guitarist in rooms that are themselves worth the visit.\n\nPlan a full day. The Thorne Miniature Rooms, often overlooked, are on the lower level and worth an hour on their own.",
+  "badges": [
+    { "label": "Free Thursdays (IL)", "tone": "ok" },
+    { "label": "Skip-the-line", "tone": "neutral" }
+  ],
+  "tips": [
+    { "tag": "FREE", "tone": "ok", "text": "Illinois residents get free admission Thursday evenings 5–8 PM." },
+    { "tag": "TIP",  "tone": "warn", "text": "Skip Saturdays — try Tuesday or Wednesday instead." }
+  ],
+  "highlights": [
+    { "location": "Gallery 262",  "item": "Nighthawks, Edward Hopper, 1942" },
+    { "location": "Gallery 240",  "item": "A Sunday on La Grande Jatte, Georges Seurat" },
+    { "location": "Modern Wing",  "item": "The Old Guitarist, Pablo Picasso" }
+  ],
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/chicago-l178/art-institute-of-chicago/?partner_id=PLACEHOLDER",
+    "product_name": "Skip-the-line entry"
+  },
+  "distance_landmark": "0.2 mi from Millennium Park"
+}

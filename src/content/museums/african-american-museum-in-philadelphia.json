@@ -1,0 +1,26 @@
+{
+  "name": "African American Museum in Philadelphia",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "701 Arch St, Philadelphia, PA 19106",
+  "lat": 39.954,
+  "lng": -75.1503,
+  "discipline": "History",
+  "founded": 1976,
+  "rating": 8.5,
+  "review_count": 1700,
+  "review_label": "Excellent",
+  "admission_from": 14,
+  "admission_text": "general admission",
+  "tagline": "The first major US museum dedicated to African American history. Built for the 1976 Bicentennial.",
+  "description": "Founded for the 1976 Bicentennial as the first US museum funded and built specifically for African American history. Permanent exhibit on Black Philadelphia from the colonial era to the present.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Thu–Sat 10 AM – 5 PM · Sun 12 PM – 5 PM · closed Mon–Wed",
+  "visit_time": "1.5 hours",
+  "distance_landmark": "Old City, near Independence Mall",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/african-american-museum-in-philadelphia/?partner_id=PLACEHOLDER",
+    "product_name": "African American Museum in Philadelphia entry"
+  }
+}

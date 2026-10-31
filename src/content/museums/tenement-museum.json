@@ -1,0 +1,45 @@
+{
+  "name": "Tenement Museum",
+  "city": "New York",
+  "state": "NY",
+  "address": "103 Orchard St, New York, NY 10002",
+  "lat": 40.7188,
+  "lng": -73.9904,
+  "discipline": "History",
+  "founded": 1988,
+  "rating": 9.1,
+  "review_count": 11000,
+  "review_label": "Wonderful",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "A Lower East Side tenement preserved as a time capsule. Tour-only entry.",
+  "description": "Two preserved 19th-century tenement buildings on Orchard Street, where 15,000 immigrants from 20+ countries lived between 1863 and 2011. Tour-only — book in advance and pick a specific apartment story.",
+  "hours_today": "10 AM – 6 PM",
+  "hours_summary": "Daily 10 AM – 6 PM (tours every hour)",
+  "visit_time": "1 hour (per tour)",
+  "best_for": "Immigrant history, guided tours",
+  "review_long": "One of New York's most particular museums: tour-only, with each tour focused on a specific apartment and the family who lived in it. The buildings at 97 and 103 Orchard Street were sealed in the 1930s by their landlord and reopened decades later untouched, which is why the wallpaper, fixtures, and even toys in some rooms are originals.\n\nThe Hard Times tour through 97 Orchard is the most-booked; the Reagan Era tour through 103 Orchard is newer and covers later 20th-century immigration. Tours sell out a week ahead in summer.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Book online a week ahead in summer — walk-ins rarely succeed."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "97 Orchard",
+      "item": "Preserved 1863–1935 tenement apartments"
+    },
+    {
+      "location": "103 Orchard",
+      "item": "Later 20th-century immigrant stories"
+    }
+  ],
+  "distance_landmark": "Lower East Side, 1 block off Delancey",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/tenement-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Tenement Museum entry"
+  }
+}

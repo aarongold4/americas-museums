@@ -1,0 +1,26 @@
+{
+  "name": "National Nordic Museum",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "2655 NW Market St, Seattle, WA 98107",
+  "lat": 47.6691,
+  "lng": -122.3848,
+  "discipline": "Specialized",
+  "founded": 1980,
+  "rating": 8.8,
+  "review_count": 1700,
+  "review_label": "Excellent",
+  "admission_from": 18,
+  "admission_text": "general admission",
+  "tagline": "The only US museum dedicated to Nordic culture. New 2018 Ballard building.",
+  "description": "Federally designated as the National Nordic Museum in 2019. Permanent exhibition traces 12,000 years of Nordic history; rotating shows feature contemporary Scandinavian art and design. The 2018 Mithun building doubled the previous space.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM · closed Mon",
+  "visit_time": "1.5 hours",
+  "distance_landmark": "Ballard",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/seattle/national-nordic-museum/?partner_id=PLACEHOLDER",
+    "product_name": "National Nordic Museum entry"
+  }
+}

@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavBar from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+import MuseumCard from '../components/MuseumCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const cities = await getCollection('cities');
+  return cities.map((city) => ({
+    params: { city: city.slug },
+    props: { city },
+  }));
+}
+
+const { city } = Astro.props;
+const { Content } = await city.render();
+
+// Build a slug → entry map once, then resolve the city's ranking in order
+const allMuseums = await getCollection('museums');
+const bySlug = new Map(
+  allMuseums.map((m) => [m.id.replace(/\.json$/, ''), m])
+);
+
+const validMuseums = city.data.museum_slugs
+  .map((slug) => {
+    const entry = bySlug.get(slug);
+    if (!entry) console.warn(`Missing museum entry referenced from ${city.slug}.mdx: ${slug}`);
+    return entry;
+  })
+  .filter((m): m is NonNullable<typeof m> => Boolean(m));
+
+const pageTitle = `${city.data.title} (${city.data.last_updated.getFullYear()} guide)`;
+const pageDescription = city.data.intro;
+
+// Metric strip for the hero — affiliate count is a useful signal
+const ticketableCount = validMuseums.filter(
+  (m) => m.data.affiliate && m.data.affiliate.network !== 'none'
+).length;
+const freeCount = validMuseums.filter((m) => m.data.admission_from === 0).length;
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <NavBar slot="header" />
+
+  <!-- Hero -->
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5 py-10">
+      <div class="text-2xs tracking-wider2 text-brand font-medium mb-2">
+        {city.data.city.toUpperCase()} · {city.data.state}
+      </div>
+      <h1 class="display text-4xl text-ink mb-3 leading-tight">{city.data.title}</h1>
+      <p class="text-base text-ink-muted max-w-prose mb-4">{city.data.intro}</p>
+      <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-ink-muted">
+        <span>Updated {city.data.last_updated.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
+        <span>·</span>
+        <span>{city.data.read_minutes} min read</span>
+        <span>·</span>
+        <span>{validMuseums.length} museums</span>
+        {ticketableCount > 0 && <><span>·</span><span>{ticketableCount} bookable</span></>}
+        {freeCount > 0 && <><span>·</span><span>{freeCount} free</span></>}
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter strip (booking-style) — placeholder, JS comes later -->
+  <div class="bg-white border-b border-surface-line sticky top-0 z-10">
+    <div class="max-w-content mx-auto px-5 py-2.5 flex items-center gap-1.5 text-xs flex-wrap">
+      <span class="badge badge-warn">{city.data.city} · {validMuseums.length} results</span>
+      <button class="filter-chip">All types ▾</button>
+      <button class="filter-chip">Open today ▾</button>
+      <button class="filter-chip">Sort: top rated ▾</button>
+    </div>
+  </div>
+
+  <!-- Editorial intro -->
+  <section class="max-w-content mx-auto px-5 py-8 prose-editorial">
+    <Content />
+  </section>
+
+  <!-- Results -->
+  <section class="max-w-content mx-auto px-5 pb-12">
+    <h2 class="sr-only">The ranking</h2>
+    <ol class="space-y-2.5" role="list">
+      {validMuseums.map((m, i) => (
+        <li>
+          <MuseumCard museum={m} rank={i + 1} />
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<!-- ItemList schema for the ranking — helps Google show rich list results -->
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: city.data.title,
+    itemListElement: validMuseums.map((m, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${Astro.site}museum/${m.id.replace(/\.json$/, '')}/`,
+      name: m.data.name,
+    })),
+  }, null, 2)}
+/>

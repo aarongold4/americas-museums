@@ -1,0 +1,208 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NavBar from '../../components/NavBar.astro';
+import Footer from '../../components/Footer.astro';
+import TicketBox from '../../components/TicketBox.astro';
+import Schema from '../../components/Schema.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const museums = await getCollection('museums');
+  return museums.map((museum) => ({
+    params: { slug: museum.id.replace(/\.json$/, '') },
+    props: { museum },
+  }));
+}
+
+const { museum } = Astro.props;
+const m = museum.data;
+
+const pageTitle = `${m.name} — tickets, hours & visitor guide`;
+const pageDescription = m.tagline;
+
+const swatchByDiscipline: Record<string, string> = {
+  'Art': '#DBE5F0',
+  'Natural History': '#E0DBC8',
+  'Science': '#D6D9DD',
+  'History': '#E2D6D0',
+  'Children': '#E5D9C1',
+  'Military': '#D7DBD5',
+  'Specialized': '#D8C7D5',
+  'General': '#DDDDDD',
+};
+const photoBg = swatchByDiscipline[m.discipline] ?? '#DDDDDD';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <NavBar
+    slot="header"
+    variant="condensed"
+    backLabel={`${m.city} museums`}
+    backHref={`/best-museums-in-${m.city.toLowerCase()}/`}
+  />
+
+  <!-- Photo strip — uses hero + gallery_images if present, else discipline-colored swatches -->
+  {m.hero_image ? (
+    <div class="grid grid-cols-[2fr_1fr_1fr] gap-1 p-1">
+      <div class="h-[220px] overflow-hidden">
+        <img src={m.hero_image} alt={m.name} class="h-full w-full object-cover" loading="eager" />
+      </div>
+      <div class="grid grid-rows-2 gap-1">
+        {[0, 1].map((i) => (
+          m.gallery_images[i] ? (
+            <img src={m.gallery_images[i]} alt="" class="h-full w-full object-cover" loading="lazy" />
+          ) : (
+            <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: ${0.85 - i * 0.15};`}></div>
+          )
+        ))}
+      </div>
+      <div class="grid grid-rows-2 gap-1">
+        {[2, 3].map((i) => (
+          m.gallery_images[i] ? (
+            <img src={m.gallery_images[i]} alt="" class="h-full w-full object-cover" loading="lazy" />
+          ) : (
+            <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: ${0.65 - (i-2) * 0.10};`}></div>
+          )
+        ))}
+      </div>
+    </div>
+  ) : (
+    <div class="grid grid-cols-[2fr_1fr_1fr] gap-1 p-1">
+      <div class="h-[220px] flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg};`}>FACADE</div>
+      <div class="grid grid-rows-2 gap-1">
+        <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: 0.85;`}>GALLERY</div>
+        <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: 0.7;`}>INTERIOR</div>
+      </div>
+      <div class="grid grid-rows-2 gap-1">
+        <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: 0.65;`}>EXHIBIT</div>
+        <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: 0.55;`}>+ photos</div>
+      </div>
+    </div>
+  )}
+
+  <!-- Title + ticket box -->
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5 py-4 flex flex-wrap gap-5 items-start justify-between">
+      <div class="flex-1 min-w-[280px]">
+        <div class="text-2xs tracking-widish text-ink-muted mb-1">
+          {m.discipline.toUpperCase()} MUSEUM
+        </div>
+        <h1 class="text-2xl font-medium text-ink leading-tight mb-2">{m.name}</h1>
+        {m.rating && (
+          <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+            <span class="rating-pill">{m.rating.toFixed(1)}</span>
+            {m.review_label && <span class="text-sm">{m.review_label}</span>}
+            {m.review_count && (
+              <span class="text-xs text-ink-muted">· {m.review_count.toLocaleString()} reviews</span>
+            )}
+          </div>
+        )}
+        <div class="text-xs text-ink-muted">
+          {m.address}
+          {m.distance_landmark && <> · {m.distance_landmark}</>}
+        </div>
+      </div>
+      <TicketBox museum={m} />
+    </div>
+  </section>
+
+  <!-- Quick facts strip -->
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5">
+      <dl class="grid grid-cols-2 md:grid-cols-4 gap-3 py-3">
+        <div>
+          <dt class="text-2xs text-ink-muted">Hours today</dt>
+          <dd class="text-sm font-medium">{m.hours_today ?? '—'}</dd>
+        </div>
+        <div>
+          <dt class="text-2xs text-ink-muted">Visit time</dt>
+          <dd class="text-sm font-medium">{m.visit_time ?? '—'}</dd>
+        </div>
+        <div>
+          <dt class="text-2xs text-ink-muted">Best for</dt>
+          <dd class="text-sm font-medium">{m.best_for ?? '—'}</dd>
+        </div>
+        <div>
+          <dt class="text-2xs text-ink-muted">Founded</dt>
+          <dd class="text-sm font-medium">{m.founded ?? '—'}</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5 py-4">
+      <h2 class="text-base font-medium mb-2">About this museum</h2>
+      <p class="text-sm text-ink-muted leading-relaxed max-w-prose">
+        {m.description}
+        {m.review_long && (
+          <>{' '}<a href="#review" class="text-action no-underline">Read the full review →</a></>
+        )}
+      </p>
+    </div>
+  </section>
+
+  <!-- Visitor tips -->
+  {m.tips && m.tips.length > 0 && (
+    <section class="bg-white border-b border-surface-line">
+      <div class="max-w-content mx-auto px-5 py-4">
+        <h2 class="text-base font-medium mb-2.5">Visitor tips</h2>
+        <ul class="space-y-2">
+          {m.tips.map((tip) => (
+            <li class="text-sm text-ink leading-snug">
+              <span class={`badge badge-${tip.tone} mr-1.5`}>{tip.tag}</span>
+              {tip.text}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- Highlights -->
+  {m.highlights && m.highlights.length > 0 && (
+    <section class="bg-white border-b border-surface-line">
+      <div class="max-w-content mx-auto px-5 py-4">
+        <h2 class="text-base font-medium mb-2.5">Don't miss</h2>
+        <ul class="divide-y divide-surface-line">
+          {m.highlights.map((h) => (
+            <li class="grid grid-cols-[120px_1fr] gap-4 py-2 text-sm">
+              <span class="text-2xs tracking-widish text-brand pt-0.5">{h.location.toUpperCase()}</span>
+              <span>{h.item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- Long-form review (optional) -->
+  {m.review_long && (
+    <section id="review" class="bg-white border-b border-surface-line">
+      <div class="max-w-content mx-auto px-5 py-5">
+        <h2 class="text-base font-medium mb-2.5">The full review</h2>
+        <div class="text-sm text-ink leading-relaxed max-w-prose space-y-3">
+          {m.review_long.split('\n\n').map((p) => <p>{p}</p>)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Sticky bottom CTA on mobile — shown <= md -->
+  <div class="md:hidden sticky bottom-0 bg-white border-t border-surface-line p-3 flex items-center justify-between gap-3">
+    <div>
+      <div class="text-2xs text-ink-muted">From</div>
+      <div class="text-base font-medium">{m.admission_from === 0 ? 'Free' : `$${m.admission_from}`}</div>
+    </div>
+    {m.affiliate && m.affiliate.network !== 'none' && m.affiliate.deep_link ? (
+      <a href={m.affiliate.deep_link} rel="sponsored noopener" target="_blank" class="btn-action">Get tickets</a>
+    ) : (
+      <a href={`https://www.google.com/search?q=${encodeURIComponent(m.name + ' tickets')}`} class="btn-action" style="background:#003B95">Visit site</a>
+    )}
+  </div>
+
+  <Footer slot="footer" />
+
+  <Schema slot="head" museum={m} url={Astro.url.href} />
+</BaseLayout>

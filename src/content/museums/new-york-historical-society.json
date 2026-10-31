@@ -1,0 +1,50 @@
+{
+  "name": "New-York Historical Society",
+  "city": "New York",
+  "state": "NY",
+  "address": "170 Central Park West, New York, NY 10024",
+  "lat": 40.7795,
+  "lng": -73.974,
+  "discipline": "History",
+  "founded": 1804,
+  "rating": 8.5,
+  "review_count": 6800,
+  "review_label": "Excellent",
+  "admission_from": 22,
+  "admission_text": "general admission",
+  "tagline": "The city's oldest museum. Tiffany lamps, Audubon originals, founding-era documents.",
+  "description": "New York's oldest museum, founded 1804. Holdings include the city's largest Tiffany lamp collection, all 435 original Audubon Birds of America watercolors (rotating), and an exhaustive Civil War archive. Pay-what-you-wish Friday evenings.",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Tue–Thu, Sat 11 AM – 5 PM · Fri 11 AM – 9 PM · Sun 11 AM – 5 PM",
+  "visit_time": "1.5–2 hours",
+  "review_long": "A serious history collection that doesn't get the foot traffic it deserves because it sits across the street from the much louder American Museum of Natural History. The Tiffany lamp collection on the fourth floor is the largest in the country; the Audubon watercolors rotate through the year because of light sensitivity.",
+  "badges": [
+    {
+      "label": "Pay-what-you-wish Fri 6–9 PM",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Combine with the American Museum of Natural History across the street."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Floor 4",
+      "item": "Tiffany Gallery, 100+ original lamps"
+    },
+    {
+      "location": "Rotating",
+      "item": "Audubon's original Birds of America watercolors"
+    }
+  ],
+  "distance_landmark": "Upper West Side, opposite the Natural History Museum",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/new-york-historical-society/?partner_id=PLACEHOLDER",
+    "product_name": "New-York Historical Society entry"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "New England Aquarium",
+  "city": "Boston",
+  "state": "MA",
+  "address": "1 Central Wharf, Boston, MA 02110",
+  "lat": 42.3592,
+  "lng": -71.049,
+  "discipline": "Specialized",
+  "founded": 1969,
+  "rating": 8.8,
+  "review_count": 26000,
+  "review_label": "Excellent",
+  "admission_from": 36,
+  "admission_text": "general admission",
+  "tagline": "Four-story Giant Ocean Tank with a coral reef and 1,000+ animals.",
+  "description": "The four-story Giant Ocean Tank — a 200,000-gallon coral reef cylinder you spiral down around — is the centerpiece. Penguin colony at the base, IMAX theater attached, harbor seal exhibit out front (free to view).",
+  "hours_today": "9 AM – 5 PM",
+  "hours_summary": "Mon–Fri 9 AM – 5 PM · Sat–Sun 9 AM – 6 PM",
+  "visit_time": "2 hours",
+  "best_for": "Families, marine life",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "distance_landmark": "Central Wharf, downtown waterfront",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/new-england-aquarium/?partner_id=PLACEHOLDER",
+    "product_name": "New England Aquarium entry"
+  }
+}

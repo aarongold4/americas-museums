@@ -1,0 +1,51 @@
+{
+  "name": "Whitney Museum of American Art",
+  "city": "New York",
+  "state": "NY",
+  "address": "99 Gansevoort St, New York, NY 10014",
+  "lat": 40.7397,
+  "lng": -74.0089,
+  "discipline": "Art",
+  "founded": 1930,
+  "rating": 8.9,
+  "review_count": 18000,
+  "review_label": "Excellent",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "Renzo Piano building at the foot of the High Line. Strong American collection.",
+  "description": "The country's most important collection of 20th- and 21st-century American art — Hopper, O'Keeffe, Calder, Basquiat — in a Renzo Piano building anchoring the south end of the High Line. Outdoor terraces overlook the Hudson.",
+  "hours_today": "10:30 AM – 6 PM",
+  "hours_summary": "Wed–Mon 10:30 AM – 6 PM (Fri until 10 PM) · closed Tue",
+  "visit_time": "2 hours",
+  "best_for": "20th & 21st-century American art",
+  "review_long": "The Whitney moved from the Upper East Side to the Meatpacking District in 2015, and the new Renzo Piano building has been the right fit for the collection: outdoor terraces on every level, generous gallery heights, an entrance that pours visitors out onto the foot of the High Line. The biennial — every other year — is the closest thing American contemporary art has to a regular cultural event.",
+  "badges": [
+    {
+      "label": "Pay-what-you-wish Fri 5–10 PM",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Combine with a walk on the High Line — the museum sits at its southern end."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Permanent",
+      "item": "Edward Hopper's largest single collection"
+    },
+    {
+      "location": "Permanent",
+      "item": "Calder, O'Keeffe, Hartley, Marsden"
+    }
+  ],
+  "distance_landmark": "Meatpacking District, foot of the High Line",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/whitney-museum-of-american-art/?partner_id=PLACEHOLDER",
+    "product_name": "Whitney Museum of American Art entry"
+  }
+}

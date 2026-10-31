@@ -1,0 +1,49 @@
+{
+  "name": "Huntington Library, Art Museum, and Botanical Gardens",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "1151 Oxford Rd, San Marino, CA 91108",
+  "lat": 34.1297,
+  "lng": -118.1142,
+  "discipline": "Specialized",
+  "founded": 1919,
+  "rating": 9.4,
+  "review_count": 18000,
+  "review_label": "Wonderful",
+  "admission_from": 29,
+  "admission_text": "general admission",
+  "tagline": "120 acres of gardens, a Gainsborough collection, and a Gutenberg Bible.",
+  "description": "Henry Huntington's San Marino estate split into three: a research library (with one of 50 surviving Gutenberg Bibles), an art collection of British and French portraiture (Blue Boy by Gainsborough, Pinkie by Lawrence), and 120 acres of themed gardens.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Mon 10 AM – 5 PM · closed Tue",
+  "visit_time": "3–5 hours",
+  "best_for": "Gardens, rare books, full-day visit",
+  "review_long": "Effectively three museums on one ticket: a rare books library where you can see one of 50 surviving Gutenberg Bibles, an art collection of British grand-manner portraiture (Blue Boy and Pinkie hang facing each other), and 16 themed botanical gardens — including the largest Chinese garden outside China and a desert garden with 5,000 species.\n\nA full day. The tea room books up weeks ahead.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Allow at least 4 hours. The Chinese and Japanese gardens are at opposite ends of the estate."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Library",
+      "item": "Gutenberg Bible (1455), Ellesmere Chaucer manuscript"
+    },
+    {
+      "location": "Huntington Art Gallery",
+      "item": "The Blue Boy, Thomas Gainsborough, 1770"
+    },
+    {
+      "location": "Liu Fang Yuan",
+      "item": "1.5-acre Chinese scholar's garden"
+    }
+  ],
+  "distance_landmark": "San Marino, 30 minutes east of downtown LA",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/los-angeles/huntington-library/?partner_id=PLACEHOLDER",
+    "product_name": "Huntington Library, Art Museum, and Botanical Gardens entry"
+  }
+}

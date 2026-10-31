@@ -1,0 +1,37 @@
+{
+  "name": "Center for Puppetry Arts",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "1404 Spring St NW, Atlanta, GA 30309",
+  "lat": 33.7929,
+  "lng": -84.3917,
+  "discipline": "Specialized",
+  "founded": 1978,
+  "rating": 9.0,
+  "review_count": 3200,
+  "review_label": "Wonderful",
+  "admission_from": 12,
+  "admission_text": "general admission",
+  "tagline": "Jim Henson's archive — Kermit, Big Bird, the Yip Yips. Also a working theater.",
+  "description": "The largest Henson collection anywhere — original Kermit, Big Bird, Bert and Ernie, and the original Labyrinth puppets — donated by Jim Henson and the Henson family. The Global Gallery covers world puppetry traditions. Live shows in the attached theater (separately ticketed).",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Tue–Sun 11 AM – 5 PM · closed Mon",
+  "visit_time": "1 hour (museum) + show",
+  "review_long": "The largest Jim Henson collection in the world, donated personally by Henson and his family. Original Kermit (the one made from his mother's coat), Big Bird, Yip Yips, and the entire cast of the 1986 Labyrinth (with David Bowie's Goblin King at the center). The Global Gallery shows world puppetry traditions; the on-site theater puts on weekly puppet shows.",
+  "highlights": [
+    {
+      "location": "Henson Gallery",
+      "item": "Original Kermit, Big Bird, Bert, Ernie"
+    },
+    {
+      "location": "Henson Gallery",
+      "item": "Labyrinth puppets, including David Bowie's Goblin King"
+    }
+  ],
+  "distance_landmark": "Midtown",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/center-for-puppetry-arts/?partner_id=PLACEHOLDER",
+    "product_name": "Center for Puppetry Arts entry"
+  }
+}

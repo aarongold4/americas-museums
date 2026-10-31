@@ -1,0 +1,33 @@
+{
+  "name": "High Museum of Art",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "1280 Peachtree St NE, Atlanta, GA 30309",
+  "lat": 33.7901,
+  "lng": -84.3858,
+  "discipline": "Art",
+  "founded": 1905,
+  "rating": 8.8,
+  "review_count": 8400,
+  "review_label": "Excellent",
+  "admission_from": 19,
+  "admission_text": "general admission",
+  "tagline": "Richard Meier's white modernist building. Strong American and African collections.",
+  "description": "The leading art museum in the Southeast. Richard Meier's 1983 building (his first museum, before the Getty) was expanded by Renzo Piano in 2005. Strong holdings in American art, decorative arts, folk and self-taught art.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM · closed Mon",
+  "visit_time": "2.5 hours",
+  "best_for": "American and folk art",
+  "highlights": [
+    {
+      "location": "Folk Art Galleries",
+      "item": "Howard Finster, Bill Traylor, Thornton Dial"
+    }
+  ],
+  "distance_landmark": "Midtown, in the Woodruff Arts Center",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/high-museum-of-art/?partner_id=PLACEHOLDER",
+    "product_name": "High Museum of Art entry"
+  }
+}

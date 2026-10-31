@@ -1,0 +1,45 @@
+{
+  "name": "Frick Collection",
+  "city": "New York",
+  "state": "NY",
+  "address": "1 E 70th St, New York, NY 10021",
+  "lat": 40.771,
+  "lng": -73.9672,
+  "discipline": "Art",
+  "founded": 1935,
+  "rating": 9.3,
+  "review_count": 9500,
+  "review_label": "Wonderful",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "Vermeer, Rembrandt, Bellini in Henry Clay Frick's Gilded Age mansion.",
+  "description": "Industrialist Henry Clay Frick's 1914 mansion preserved as a museum, holding Old Masters chosen by Frick himself: three Vermeers, multiple Rembrandts, Bellini's St. Francis, the largest Boucher cycle outside France. Reopened in 2025 after a major renovation.",
+  "hours_today": "10 AM – 6 PM",
+  "hours_summary": "Wed–Sat 10 AM – 6 PM · Sun 11 AM – 5 PM · closed Mon–Tue",
+  "visit_time": "1.5 hours",
+  "best_for": "Old Masters, intimate setting",
+  "review_long": "A small museum of the highest possible quality: Frick bought paintings the way he bought coke ovens, and what he assembled before his death in 1919 includes three Vermeers (one of just 34 known), a Bellini St. Francis ranked among the greatest paintings of the Italian Renaissance, and a complete Fragonard cycle. The 2025 renovation added the second floor — formerly the family's private rooms — to public viewing for the first time.\n\nNo strollers, no children under 10. The Frick is genuinely quiet, even on weekends.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Reserve in advance — same-day walk-ins are often turned away."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "West Gallery",
+      "item": "Three Vermeers and Bellini's St. Francis in the Desert"
+    },
+    {
+      "location": "Fragonard Room",
+      "item": "The Progress of Love panels, complete cycle"
+    }
+  ],
+  "distance_landmark": "Upper East Side, 70th and Fifth",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/frick-collection/?partner_id=PLACEHOLDER",
+    "product_name": "Frick Collection entry"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Weitzman National Museum of American Jewish History",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "101 S Independence Mall E, Philadelphia, PA 19106",
+  "lat": 39.9494,
+  "lng": -75.1499,
+  "discipline": "History",
+  "founded": 1976,
+  "rating": 8.6,
+  "review_count": 2100,
+  "review_label": "Excellent",
+  "admission_from": 15,
+  "admission_text": "general admission",
+  "tagline": "Three centuries of Jewish American history, on Independence Mall.",
+  "description": "The only museum dedicated to the Jewish American experience, in a James Polshek building on Independence Mall. Permanent collection includes Irving Berlin's piano and a section of the original Lower East Side Eldridge Street Synagogue.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Sun 10 AM – 5 PM · closed Mon–Tue",
+  "visit_time": "1.5 hours",
+  "distance_landmark": "Independence Mall, opposite the Liberty Bell",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/weitzman-national-museum-of-american-jewish-history/?partner_id=PLACEHOLDER",
+    "product_name": "Weitzman National Museum of American Jewish History entry"
+  }
+}

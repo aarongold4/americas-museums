@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.production
+.DS_Store
+data/02_enriched/
+data/03_built/
+*.log
+.vscode/
+.idea/

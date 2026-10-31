@@ -1,0 +1,38 @@
+{
+  "name": "United States Holocaust Memorial Museum",
+  "city": "Washington",
+  "state": "DC",
+  "address": "100 Raoul Wallenberg Pl SW, Washington, DC 20024",
+  "lat": 38.887,
+  "lng": -77.0327,
+  "discipline": "History",
+  "founded": 1993,
+  "rating": 9.5,
+  "review_count": 32000,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "Permanent exhibition tells the history of the Holocaust over three floors.",
+  "description": "The country's official Holocaust memorial museum. The Permanent Exhibition is a single self-guided sequence over three descending floors, recommended for visitors 11 and older. Always free; timed passes recommended in peak season.",
+  "hours_today": "10 AM – 5:20 PM",
+  "hours_summary": "Daily 10 AM – 5:20 PM",
+  "visit_time": "2.5–3 hours",
+  "review_long": "The Permanent Exhibition is structured as a single descending journey over three floors and takes 2–3 hours. Children under 11 should visit Daniel's Story instead, on the first floor. The museum is intense and intentionally so; allow recovery time afterward.",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Reserve free timed passes online in spring/summer. The lobby is open without one."
+    }
+  ],
+  "distance_landmark": "Just south of the Mall, near the Tidal Basin",
+  "affiliate": {
+    "network": "none"
+  }
+}

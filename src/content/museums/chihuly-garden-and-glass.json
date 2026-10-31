@@ -1,0 +1,49 @@
+{
+  "name": "Chihuly Garden and Glass",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "305 Harrison St, Seattle, WA 98109",
+  "lat": 47.6202,
+  "lng": -122.3499,
+  "discipline": "Art",
+  "founded": 2012,
+  "rating": 9.3,
+  "review_count": 32000,
+  "review_label": "Wonderful",
+  "admission_from": 39,
+  "admission_text": "general admission",
+  "tagline": "Dale Chihuly's glass at the foot of the Space Needle. Stunning at sunset.",
+  "description": "A purpose-built museum for Dale Chihuly's blown-glass work, immediately next to the Space Needle. Eight gallery rooms plus a 100-foot Glasshouse and an outdoor garden where glass forms grow out of plant beds. Best near sunset for the lighting transition.",
+  "hours_today": "10 AM – 8 PM",
+  "hours_summary": "Daily 10 AM – 8 PM",
+  "visit_time": "1.5 hours",
+  "best_for": "Glass art, photography",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Combo ticket with the Space Needle saves ~$10."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Last entry an hour before close — go near sunset for the light change."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Glasshouse",
+      "item": "100-foot suspended glass sculpture"
+    },
+    {
+      "location": "Garden",
+      "item": "Outdoor glass forms among living plants"
+    }
+  ],
+  "distance_landmark": "Seattle Center, next to the Space Needle",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/seattle/chihuly-garden-and-glass/?partner_id=PLACEHOLDER",
+    "product_name": "Chihuly Garden and Glass entry"
+  }
+}

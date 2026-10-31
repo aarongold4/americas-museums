@@ -1,0 +1,27 @@
+{
+  "name": "MIT Museum",
+  "city": "Boston",
+  "state": "MA",
+  "address": "314 Main St, Cambridge, MA 02141",
+  "lat": 42.3622,
+  "lng": -71.0879,
+  "discipline": "Science",
+  "founded": 1971,
+  "rating": 8.7,
+  "review_count": 2300,
+  "review_label": "Excellent",
+  "admission_from": 18,
+  "admission_text": "general admission",
+  "tagline": "MIT's research and engineering museum, reopened 2022 in Kendall Square.",
+  "description": "MIT's official museum, reopened 2022 in a new Kendall Square location. Permanent exhibits include MIT's history with AI, robotics, and the early Web; rotating shows often feature live MIT research.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM · closed Mon",
+  "visit_time": "1.5 hours",
+  "best_for": "Engineering, AI history",
+  "distance_landmark": "Kendall Square, Cambridge",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/mit-museum/?partner_id=PLACEHOLDER",
+    "product_name": "MIT Museum entry"
+  }
+}

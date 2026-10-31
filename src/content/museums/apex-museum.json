@@ -1,0 +1,26 @@
+{
+  "name": "APEX Museum",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "135 Auburn Ave NE, Atlanta, GA 30303",
+  "lat": 33.7544,
+  "lng": -84.3801,
+  "discipline": "History",
+  "founded": 1978,
+  "rating": 8.5,
+  "review_count": 850,
+  "review_label": "Excellent",
+  "admission_from": 8,
+  "admission_text": "general admission",
+  "tagline": "African American Panoramic Experience. On Auburn Avenue, the historic Sweet Auburn district.",
+  "description": "A small but focused museum on Auburn Avenue — the Sweet Auburn district that was the center of Black Atlanta in the segregation era. Permanent exhibits cover African American achievement from antiquity to civil rights.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sat 10 AM – 5 PM · closed Sun–Mon",
+  "visit_time": "1 hour",
+  "distance_landmark": "Sweet Auburn, near the MLK National Historic Site",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/apex-museum/?partner_id=PLACEHOLDER",
+    "product_name": "APEX Museum entry"
+  }
+}

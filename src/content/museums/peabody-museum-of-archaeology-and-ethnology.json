@@ -1,0 +1,26 @@
+{
+  "name": "Peabody Museum of Archaeology and Ethnology",
+  "city": "Boston",
+  "state": "MA",
+  "address": "11 Divinity Ave, Cambridge, MA 02138",
+  "lat": 42.3779,
+  "lng": -71.1148,
+  "discipline": "Specialized",
+  "founded": 1866,
+  "rating": 8.5,
+  "review_count": 1600,
+  "review_label": "Excellent",
+  "admission_from": 15,
+  "admission_text": "general admission",
+  "tagline": "Harvard's anthropology museum. Maya, Indigenous American, Pacific collections.",
+  "description": "One of the oldest anthropology museums in the Americas. Strong Mesoamerican (Aztec, Maya) collection, a Pacific Hall, and Indigenous American galleries. Combined ticket with the adjacent Harvard Museum of Natural History.",
+  "hours_today": "9 AM – 5 PM",
+  "hours_summary": "Daily 9 AM – 5 PM",
+  "visit_time": "1.5 hours",
+  "distance_landmark": "Harvard Yard, Cambridge",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/peabody-museum-of-archaeology-and-ethnology/?partner_id=PLACEHOLDER",
+    "product_name": "Peabody Museum of Archaeology and Ethnology entry"
+  }
+}

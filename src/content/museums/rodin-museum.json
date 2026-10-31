@@ -1,0 +1,36 @@
+{
+  "name": "Rodin Museum",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "2151 Benjamin Franklin Pkwy, Philadelphia, PA 19130",
+  "lat": 39.9633,
+  "lng": -75.175,
+  "discipline": "Art",
+  "founded": 1929,
+  "rating": 8.9,
+  "review_count": 3500,
+  "review_label": "Excellent",
+  "admission_from": 12,
+  "admission_text": "general admission",
+  "tagline": "The largest collection of Auguste Rodin sculpture outside Paris.",
+  "description": "A small purpose-built 1929 museum on the Parkway with the largest Rodin collection outside the Musée Rodin in Paris. Garden contains a cast of The Thinker; main hall has a cast of The Burghers of Calais.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Mon 10 AM – 5 PM · closed Tue",
+  "visit_time": "45 minutes",
+  "highlights": [
+    {
+      "location": "Garden",
+      "item": "An original cast of The Thinker"
+    },
+    {
+      "location": "Hall",
+      "item": "Burghers of Calais, six full-size figures"
+    }
+  ],
+  "distance_landmark": "On the Parkway, between Logan Square and the Art Museum",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/rodin-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Rodin Museum entry"
+  }
+}

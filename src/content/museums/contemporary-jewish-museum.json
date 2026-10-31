@@ -1,0 +1,26 @@
+{
+  "name": "Contemporary Jewish Museum",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "736 Mission St, San Francisco, CA 94103",
+  "lat": 37.7857,
+  "lng": -122.404,
+  "discipline": "Art",
+  "founded": 1984,
+  "rating": 8.4,
+  "review_count": 1900,
+  "review_label": "Excellent",
+  "admission_from": 16,
+  "admission_text": "general admission",
+  "tagline": "Daniel Libeskind addition grafted onto a brick power substation.",
+  "description": "A non-collecting museum focused on rotating exhibitions of contemporary Jewish art and culture. The Daniel Libeskind addition — a tilted blue cube — is grafted onto an 1881 brick power substation. Often included on city museum passes.",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Thu–Tue 11 AM – 5 PM · closed Wed",
+  "visit_time": "1 hour",
+  "distance_landmark": "Yerba Buena, SoMa",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/san-francisco/contemporary-jewish-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Contemporary Jewish Museum entry"
+  }
+}

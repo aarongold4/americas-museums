@@ -1,0 +1,33 @@
+{
+  "name": "Children's Museum of Atlanta",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "275 Centennial Olympic Park Dr NW, Atlanta, GA 30313",
+  "lat": 33.7635,
+  "lng": -84.394,
+  "discipline": "Children",
+  "founded": 2003,
+  "rating": 8.6,
+  "review_count": 4200,
+  "review_label": "Excellent",
+  "admission_from": 17,
+  "admission_text": "general admission",
+  "tagline": "Hands-on exhibits for children under 8, on Centennial Olympic Park.",
+  "description": "Hands-on play-and-learn galleries for ages 0–8. Adjacent to Centennial Olympic Park, the Aquarium, and World of Coca-Cola — easy to combine.",
+  "hours_today": "10 AM – 4 PM",
+  "hours_summary": "Wed–Sun 10 AM – 4 PM · closed Mon–Tue",
+  "visit_time": "2.5 hours",
+  "best_for": "Children under 8",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "distance_landmark": "Centennial Olympic Park, downtown",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/childrens-museum-of-atlanta/?partner_id=PLACEHOLDER",
+    "product_name": "Children's Museum of Atlanta entry"
+  }
+}

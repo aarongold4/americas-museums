@@ -1,0 +1,34 @@
+{
+  "name": "Chicago History Museum",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "1601 N Clark St, Chicago, IL 60614",
+  "lat": 41.9120,
+  "lng": -87.6314,
+  "discipline": "History",
+  "founded": 1856,
+  "rating": 8.6,
+  "review_count": 9240,
+  "review_label": "Excellent",
+  "admission_from": 19,
+  "admission_text": "general admission",
+  "hours_summary": "Mon–Sun · 9:30 AM – 4:30 PM",
+  "hours_today": "9:30 AM – 4:30 PM",
+  "visit_time": "2 hours",
+  "best_for": "City history",
+  "tagline": "Lincoln's deathbed, an L car you can climb into, and the city's only Great Chicago Fire diorama.",
+  "description": "Chicago's oldest cultural institution, founded just 19 years after the city itself. Permanent exhibits on the Great Chicago Fire of 1871, the World's Columbian Exposition, and the city's role in American politics. Includes the bed Lincoln died in.",
+  "badges": [
+    { "label": "Free Tuesdays (IL)", "tone": "ok" }
+  ],
+  "tips": [
+    { "tag": "FREE", "tone": "ok", "text": "Free for Illinois residents every Tuesday." }
+  ],
+  "highlights": [
+    { "location": "Crossroads",     "item": "Bed Lincoln died in (Petersen House)" },
+    { "location": "Lower Level",    "item": "L Car #1, the first elevated train car" },
+    { "location": "Great Hall",     "item": "Great Chicago Fire diorama" }
+  ],
+  "affiliate": { "network": "none" },
+  "distance_landmark": "Edge of Lincoln Park, 2 mi north of the Loop"
+}

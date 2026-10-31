@@ -1,0 +1,51 @@
+{
+  "name": "The Met Cloisters",
+  "city": "New York",
+  "state": "NY",
+  "address": "99 Margaret Corbin Dr, New York, NY 10040",
+  "lat": 40.8649,
+  "lng": -73.9319,
+  "discipline": "Art",
+  "founded": 1938,
+  "rating": 9.2,
+  "review_count": 14000,
+  "review_label": "Wonderful",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "Medieval Europe at the northern tip of Manhattan. Same ticket as the Met.",
+  "description": "The Met's medieval branch, built from fragments of five French abbeys reassembled in Fort Tryon Park. Houses the Unicorn Tapestries and Romanesque cloisters in a setting more contemplative than anything else in Manhattan.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Thu–Tue 10 AM – 5 PM · closed Wed",
+  "visit_time": "2 hours",
+  "best_for": "Medieval art, quiet escape",
+  "review_long": "The Cloisters were built in the 1930s using stone from five medieval French abbeys, shipped to New York and reassembled on the high ground of Fort Tryon Park. The building feels older than anything actually in Manhattan should — the cloisters around the herb garden, the Romanesque chapel, the Unicorn Tapestries hanging in their own purpose-lit gallery.\n\nIncluded on the Met's three-day ticket. Easiest from the A train to 190th.",
+  "badges": [
+    {
+      "label": "Same ticket as the Met (3 days)",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Take the A train to 190th and walk through Fort Tryon Park."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Unicorn Gallery",
+      "item": "The Hunt of the Unicorn tapestries, c. 1500"
+    },
+    {
+      "location": "Cuxa Cloister",
+      "item": "12th-century Romanesque arcade, herb garden in spring"
+    }
+  ],
+  "distance_landmark": "Fort Tryon Park, far Upper Manhattan",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/met-cloisters/?partner_id=PLACEHOLDER",
+    "product_name": "The Met Cloisters entry"
+  }
+}

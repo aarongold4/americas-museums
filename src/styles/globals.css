@@ -1,0 +1,69 @@
+@import '@fontsource-variable/dm-sans';
+@import '@fontsource/instrument-serif/400.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply font-sans bg-surface-page text-ink;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+  ::selection {
+    background: #003B95;
+    color: #fff;
+  }
+  /* Editorial display headings (city hubs only) */
+  .display {
+    @apply font-display tracking-tightish;
+    font-feature-settings: 'liga', 'dlig';
+  }
+}
+
+@layer components {
+  /* Editorial prose used in city hubs — overrides Tailwind Typography defaults
+     to match the site's sans/Instrument Serif system rather than swapping
+     in random serif body fonts. */
+  .prose-editorial {
+    @apply prose prose-sm max-w-prose
+           prose-p:text-ink prose-p:leading-relaxed
+           prose-headings:font-display prose-headings:font-normal
+           prose-strong:text-ink prose-strong:font-medium
+           prose-a:text-action prose-a:no-underline hover:prose-a:underline;
+    font-family: '"DM Sans Variable"', 'DM Sans', system-ui, sans-serif;
+  }
+
+  .badge {
+    @apply inline-flex items-center text-2xs font-medium px-2 py-0.5 rounded;
+  }
+  .badge-ok      { @apply bg-ok-bg text-ok-fg; }
+  .badge-warn    { @apply bg-warn-bg text-warn-fg; }
+  .badge-info    { @apply bg-info-bg text-info-fg; }
+  .badge-neutral { @apply bg-neutral-bg text-neutral-fg; }
+
+  .btn-action {
+    @apply bg-action text-white font-medium text-sm px-4 py-2.5 rounded-md
+           transition-colors hover:bg-action-hover focus:outline-none
+           focus:ring-2 focus:ring-action focus:ring-offset-2;
+  }
+
+  .rating-pill {
+    @apply inline-flex items-center bg-brand text-white text-xs font-medium
+           px-1.5 py-0.5 rounded;
+  }
+
+  .card {
+    @apply bg-surface-card border border-surface-line rounded-md;
+  }
+
+  .filter-chip {
+    @apply inline-flex items-center text-xs text-ink-muted px-2 py-1
+           hover:text-ink cursor-pointer;
+  }
+}

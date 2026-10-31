@@ -1,0 +1,31 @@
+{
+  "name": "Hammer Museum",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "10899 Wilshire Blvd, Los Angeles, CA 90024",
+  "lat": 34.0589,
+  "lng": -118.4438,
+  "discipline": "Art",
+  "founded": 1990,
+  "rating": 8.6,
+  "review_count": 4900,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "UCLA's contemporary art museum. Always free, low crowds.",
+  "description": "UCLA-operated contemporary art museum with strong rotating shows and a permanent print collection. Always free since 2014, never overcrowded, with one of the better courtyards in the city.",
+  "hours_today": "11 AM – 6 PM",
+  "hours_summary": "Tue–Sun 11 AM – 6 PM · closed Mon",
+  "visit_time": "1–1.5 hours",
+  "best_for": "Contemporary art, free entry",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "Westwood, on the UCLA campus edge",
+  "affiliate": {
+    "network": "none"
+  }
+}

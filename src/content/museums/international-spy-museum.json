@@ -1,0 +1,34 @@
+{
+  "name": "International Spy Museum",
+  "city": "Washington",
+  "state": "DC",
+  "address": "700 L'Enfant Plaza SW, Washington, DC 20024",
+  "lat": 38.8842,
+  "lng": -77.0259,
+  "discipline": "Specialized",
+  "founded": 2002,
+  "rating": 8.7,
+  "review_count": 24000,
+  "review_label": "Excellent",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "The largest collection of international espionage artifacts on public display.",
+  "description": "A privately-run museum (and one of the few paid museums in DC) covering the history of intelligence work. Visitors are issued a cover identity at the start and tested throughout. Rebuilt in 2019 in a larger L'Enfant Plaza building.",
+  "hours_today": "10 AM – 6 PM",
+  "hours_summary": "Daily 10 AM – 6 PM",
+  "visit_time": "2–3 hours",
+  "best_for": "Families, espionage history",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "It's not a Smithsonian — admission is $30, unlike the Mall museums."
+    }
+  ],
+  "distance_landmark": "L'Enfant Plaza",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/washington/international-spy-museum/?partner_id=PLACEHOLDER",
+    "product_name": "International Spy Museum entry"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Smart Museum of Art",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "5550 S Greenwood Ave, Chicago, IL 60637",
+  "lat": 41.7920,
+  "lng": -87.6011,
+  "discipline": "Art",
+  "founded": 1974,
+  "rating": 8.4,
+  "review_count": 1240,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "hours_summary": "Tue–Sun · 10 AM – 5 PM (closed Mon)",
+  "hours_today": "10 AM – 5 PM",
+  "visit_time": "1 hour",
+  "best_for": "Free entry, students",
+  "tagline": "The University of Chicago's free art museum. Strong East Asian collection, excellent rotating shows.",
+  "description": "The free-admission art museum of the University of Chicago. About 15,000 works spanning 5,000 years, with particular strength in East Asian art, modern European prints, and contemporary photography. Often empty on weekday afternoons.",
+  "badges": [
+    { "label": "Always free", "tone": "ok" },
+    { "label": "Hyde Park", "tone": "info" }
+  ],
+  "tips": [
+    { "tag": "FREE", "tone": "ok", "text": "Free admission, no reservation needed." }
+  ],
+  "highlights": [
+    { "location": "Asian gallery",  "item": "Tang dynasty ceramics and Edo-period scrolls" }
+  ],
+  "affiliate": { "network": "none" },
+  "distance_landmark": "Hyde Park, on the U of C campus"
+}

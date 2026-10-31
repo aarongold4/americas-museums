@@ -1,0 +1,32 @@
+{
+  "name": "Asian Art Museum of San Francisco",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "200 Larkin St, San Francisco, CA 94102",
+  "lat": 37.78,
+  "lng": -122.4159,
+  "discipline": "Art",
+  "founded": 1966,
+  "rating": 8.8,
+  "review_count": 9100,
+  "review_label": "Excellent",
+  "admission_from": 20,
+  "admission_text": "general admission",
+  "tagline": "One of the largest Asian art collections in the world. In SF's old Main Library.",
+  "description": "More than 18,000 works from 6,000 years across the Asian continent. The 2003 Gae Aulenti renovation transformed San Francisco's old main library into the museum's home. Free first Sundays.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Thu–Mon 10 AM – 5 PM (Thu until 9 PM) · closed Tue–Wed",
+  "visit_time": "2 hours",
+  "badges": [
+    {
+      "label": "Free first Sundays",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "Civic Center, opposite City Hall",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/san-francisco/asian-art-museum-of-san-francisco/?partner_id=PLACEHOLDER",
+    "product_name": "Asian Art Museum of San Francisco entry"
+  }
+}

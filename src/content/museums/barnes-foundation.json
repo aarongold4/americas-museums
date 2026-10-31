@@ -1,0 +1,45 @@
+{
+  "name": "Barnes Foundation",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "2025 Benjamin Franklin Pkwy, Philadelphia, PA 19130",
+  "lat": 39.9655,
+  "lng": -75.1727,
+  "discipline": "Art",
+  "founded": 1922,
+  "rating": 9.3,
+  "review_count": 12000,
+  "review_label": "Wonderful",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "The largest single Renoir collection in the world. Hung exactly as Albert Barnes arranged it.",
+  "description": "Albert C. Barnes's idiosyncratic 1920s collection — the world's largest Renoir holding, plus dozens of Cézannes, Matisses, Picassos — hung in his original 'ensembles' alongside ironwork and ceramics. The 2012 move from Merion to the Parkway preserved every wall arrangement.",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Wed–Mon 11 AM – 5 PM · closed Tue",
+  "visit_time": "2.5 hours",
+  "best_for": "Impressionism, idiosyncratic display",
+  "review_long": "Barnes was a chemist who got rich off an antiseptic in the 1900s and spent the next 40 years assembling the most idiosyncratic art collection in America: 181 Renoirs (the largest single collection anywhere), 69 Cézannes, 59 Matisses, 46 Picassos, plus medieval ironwork, African masks, and Pennsylvania Dutch furniture, all hung in 'ensembles' that he arranged personally and forbade anyone from rearranging in his will.\n\nThe 2012 building on the Parkway preserves every ensemble exactly as Barnes left them in his Merion mansion.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Reserve in advance — entry is timed and Saturdays sell out."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Main Room",
+      "item": "Cézanne's The Card Players"
+    },
+    {
+      "location": "Throughout",
+      "item": "181 Renoirs in the original Barnes ensembles"
+    }
+  ],
+  "distance_landmark": "On the Parkway, between Logan Square and the Art Museum",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/barnes-foundation/?partner_id=PLACEHOLDER",
+    "product_name": "Barnes Foundation entry"
+  }
+}

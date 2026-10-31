@@ -1,0 +1,13 @@
+# Cloudflare Pages redirects config
+# Reference: https://developers.cloudflare.com/pages/configuration/redirects/
+#
+# americasbestmuseums.com → americasmuseums.com (path-preserving 301)
+# is configured at the Cloudflare zone level, NOT here. This file only
+# handles redirects within americasmuseums.com itself.
+
+# Common alternate slugs people might paste
+/chicago                 /best-museums-in-chicago/         301
+/best-museums/chicago    /best-museums-in-chicago/         301
+/museums/chicago         /best-museums-in-chicago/         301
+
+# Trailing-slash normalization is handled by Astro's directory build mode.

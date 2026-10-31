@@ -1,0 +1,62 @@
+{
+  "name": "Getty Center",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "1200 Getty Center Dr, Los Angeles, CA 90049",
+  "lat": 34.078,
+  "lng": -118.4741,
+  "discipline": "Art",
+  "founded": 1997,
+  "rating": 9.4,
+  "review_count": 60000,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "Richard Meier's hilltop campus. European paintings, plus the views.",
+  "description": "J. Paul Getty's 110-acre hilltop museum, designed by Richard Meier and reached by a tram from the parking lot. Strong European paintings (Van Gogh's Irises, Cézanne, Rembrandt), but the campus and gardens compete with the collection for attention.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5:30 PM · closed Mon",
+  "visit_time": "3–4 hours",
+  "best_for": "Art, architecture, free entry",
+  "review_long": "The Getty Center is two things at once: a serious museum of pre-20th-century European art (Van Gogh's Irises, Rembrandt, Cézanne, Manet, illuminated manuscripts) and Richard Meier's most extensive American work, a 110-acre hilltop in travertine and aluminum. The tram from the parking lot to the museum is part of the architectural sequence.\n\nFree admission (parking is the only paid element), open until late on Saturdays, with arguably the best museum café terrace in the country.",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    },
+    {
+      "label": "Skip-the-tram via shuttle",
+      "tone": "neutral"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Admission is free, but parking is $25 (cheaper after 3 PM)."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The Central Garden by Robert Irwin changes seasonally — worth its own loop."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "North Pavilion",
+      "item": "Irises, Vincent van Gogh, 1889"
+    },
+    {
+      "location": "South Pavilion",
+      "item": "Rembrandt's Old Man in Military Costume"
+    },
+    {
+      "location": "Central Garden",
+      "item": "Robert Irwin's living-art installation"
+    }
+  ],
+  "distance_landmark": "Brentwood, just off the 405",
+  "affiliate": {
+    "network": "none"
+  }
+}

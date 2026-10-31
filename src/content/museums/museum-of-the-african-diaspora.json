@@ -1,0 +1,26 @@
+{
+  "name": "Museum of the African Diaspora",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "685 Mission St, San Francisco, CA 94105",
+  "lat": 37.7866,
+  "lng": -122.4007,
+  "discipline": "Art",
+  "founded": 2005,
+  "rating": 8.5,
+  "review_count": 1300,
+  "review_label": "Excellent",
+  "admission_from": 12,
+  "admission_text": "general admission",
+  "tagline": "A non-collecting institution focused on contemporary art of the African diaspora.",
+  "description": "Three floors of rotating exhibitions in the lobby of the St. Regis hotel. Programming centers contemporary artists, music, and film of the African diaspora.",
+  "hours_today": "11 AM – 6 PM",
+  "hours_summary": "Wed–Sat 11 AM – 6 PM · Sun 12 PM – 5 PM · closed Mon–Tue",
+  "visit_time": "1 hour",
+  "distance_landmark": "Yerba Buena, SoMa",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/san-francisco/museum-of-the-african-diaspora/?partner_id=PLACEHOLDER",
+    "product_name": "Museum of the African Diaspora entry"
+  }
+}

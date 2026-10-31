@@ -1,0 +1,60 @@
+{
+  "name": "Metropolitan Museum of Art",
+  "city": "New York",
+  "state": "NY",
+  "address": "1000 5th Ave, New York, NY 10028",
+  "lat": 40.7794,
+  "lng": -73.9632,
+  "discipline": "Art",
+  "founded": 1870,
+  "rating": 9.4,
+  "review_count": 87000,
+  "review_label": "Wonderful",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "The largest art museum in the Western Hemisphere. Plan a full day.",
+  "description": "The Met spans 5,000 years of art across two million objects, from Egyptian tombs and Greek statuary to Vermeer, Van Gogh, and the American Wing. Pay-what-you-wish for NY/NJ/CT residents.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Sun–Tue, Thu 10 AM – 5 PM · Fri–Sat 10 AM – 9 PM · closed Wed",
+  "visit_time": "3–5 hours",
+  "best_for": "Art lovers, all-day visits",
+  "review_long": "Two million objects, 5,000 years of human creativity, all under one roof. The Met's collection is broader than any single museum visit can cover — Egyptian temples reassembled stone by stone, the only Vermeer paintings on permanent display in the Western Hemisphere, the entire American Wing — so most visitors do well to pick three departments and accept that they won't see the rest.\n\nNY/NJ/CT residents pay what they wish; everyone else pays the full $30. The Met Cloisters in Fort Tryon Park is included on the same ticket if used within three days.",
+  "badges": [
+    {
+      "label": "Pay-what-you-wish (NY/NJ/CT)",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Enter from the 81st St side to skip the Fifth Avenue queue."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The Roof Garden is open seasonally — check on the way in."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "American Wing",
+      "item": "Washington Crossing the Delaware, Emanuel Leutze"
+    },
+    {
+      "location": "Egyptian Wing",
+      "item": "Temple of Dendur, intact Roman-era temple"
+    },
+    {
+      "location": "European Paintings",
+      "item": "Vermeer, Caravaggio, Velázquez"
+    }
+  ],
+  "distance_landmark": "On 5th Ave between 80th and 84th Streets",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/metropolitan-museum-of-art/?partner_id=PLACEHOLDER",
+    "product_name": "Metropolitan Museum of Art entry"
+  }
+}

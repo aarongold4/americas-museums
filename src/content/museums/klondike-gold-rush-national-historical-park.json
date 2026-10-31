@@ -1,0 +1,30 @@
+{
+  "name": "Klondike Gold Rush National Historical Park",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "319 2nd Ave S, Seattle, WA 98104",
+  "lat": 47.6004,
+  "lng": -122.3329,
+  "discipline": "History",
+  "founded": 1976,
+  "rating": 8.7,
+  "review_count": 1900,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "A National Park Service museum about the 1897 Klondike rush. Free.",
+  "description": "One of the smallest National Park sites: a single museum in Pioneer Square commemorating Seattle's role as the outfitting hub for the 1897 Klondike Gold Rush. Free, run by the NPS.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "1 hour",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "Pioneer Square",
+  "affiliate": {
+    "network": "none"
+  }
+}

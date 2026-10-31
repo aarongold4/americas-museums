@@ -1,0 +1,33 @@
+{
+  "name": "Burke Museum of Natural History and Culture",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "4300 15th Ave NE, Seattle, WA 98105",
+  "lat": 47.6603,
+  "lng": -122.312,
+  "discipline": "Natural History",
+  "founded": 1885,
+  "rating": 8.7,
+  "review_count": 4400,
+  "review_label": "Excellent",
+  "admission_from": 22,
+  "admission_text": "general admission",
+  "tagline": "Washington's official natural history museum. New 2019 building lets you watch fossil prep.",
+  "description": "Washington's state-mandated natural history and culture museum, on the UW campus. The 2019 Olson Kundig building is unusual in that the working laboratories and collections are visible from the public galleries. Strong Pacific Northwest and Pacific Rim Indigenous collections.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM · closed Mon",
+  "visit_time": "2 hours",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Free first Thursdays. The fossil prep lab is open to the gallery floor."
+    }
+  ],
+  "distance_landmark": "University of Washington campus",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/seattle/burke-museum-of-natural-history-and-culture/?partner_id=PLACEHOLDER",
+    "product_name": "Burke Museum of Natural History and Culture entry"
+  }
+}

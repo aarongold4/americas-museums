@@ -1,0 +1,30 @@
+{
+  "name": "Frye Art Museum",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "704 Terry Ave, Seattle, WA 98104",
+  "lat": 47.6068,
+  "lng": -122.3252,
+  "discipline": "Art",
+  "founded": 1952,
+  "rating": 8.5,
+  "review_count": 1300,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "Free art museum. Strong 19th-century German painting, contemporary rotations.",
+  "description": "A free art museum dedicated to the legacy of meatpacking magnate Charles Frye, whose 19th-century European collection is the historical core. Contemporary rotating exhibits round out the program. Always free, always has been.",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Tue–Sun 11 AM – 5 PM · closed Mon",
+  "visit_time": "1 hour",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "First Hill",
+  "affiliate": {
+    "network": "none"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "National Center for Civil and Human Rights",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "100 Ivan Allen Jr Blvd, Atlanta, GA 30313",
+  "lat": 33.7634,
+  "lng": -84.3927,
+  "discipline": "History",
+  "founded": 2014,
+  "rating": 9.2,
+  "review_count": 5400,
+  "review_label": "Wonderful",
+  "admission_from": 21,
+  "admission_text": "general admission",
+  "tagline": "The American civil rights movement and its global descendants. Sit-in simulator.",
+  "description": "Three floors covering the American civil rights movement, the Martin Luther King Jr. archive, and global human rights work. The lunch-counter sit-in simulator (haptic feedback for the slurs and threats hurled at participants in 1960) is the centerpiece.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM · closed Mon",
+  "visit_time": "2 hours",
+  "review_long": "The Rolls Down Like Water gallery on the second floor walks through the American civil rights movement chronologically. The lunch-counter simulator — wear headphones, sit at the counter, hold the chair to feel the real haptic feedback of the slurs and threats — is the most demanding two minutes you can spend in any Atlanta museum.\n\nThe MLK Archive on the third floor includes original handwritten drafts of his speeches.",
+  "highlights": [
+    {
+      "location": "Floor 2",
+      "item": "Lunch counter simulator, 1960 sit-in"
+    },
+    {
+      "location": "Floor 3",
+      "item": "Original Martin Luther King Jr. handwritten drafts"
+    }
+  ],
+  "distance_landmark": "Pemberton Place, opposite the Georgia Aquarium",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/national-center-for-civil-and-human-rights/?partner_id=PLACEHOLDER",
+    "product_name": "National Center for Civil and Human Rights entry"
+  }
+}

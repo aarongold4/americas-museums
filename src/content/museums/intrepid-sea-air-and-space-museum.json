@@ -1,0 +1,55 @@
+{
+  "name": "Intrepid Sea, Air & Space Museum",
+  "city": "New York",
+  "state": "NY",
+  "address": "Pier 86, W 46th St, New York, NY 10036",
+  "lat": 40.7644,
+  "lng": -74.0007,
+  "discipline": "Military",
+  "founded": 1982,
+  "rating": 8.7,
+  "review_count": 28000,
+  "review_label": "Excellent",
+  "admission_from": 36,
+  "admission_text": "general admission",
+  "tagline": "Aircraft carrier, Concorde, space shuttle, submarine — all docked in Manhattan.",
+  "description": "The retired carrier USS Intrepid hosts a Concorde, the space shuttle Enterprise, the Cold War submarine Growler, and 28+ aircraft on its flight deck. One of the most physical museums in the city.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "2.5 hours",
+  "best_for": "Aircraft carriers, families",
+  "review_long": "The Intrepid is the carrier; the Concorde, the space shuttle Enterprise, and the Growler submarine are all part of the same combined ticket. Allow extra time for the Concorde tour, which is worth the upcharge for anyone who has any interest in supersonic civil aviation.\n\nFamily traffic is heavy on weekends — weekdays are quieter and let you actually walk the flight deck without queueing.",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Pay the extra few dollars for the Concorde tour. Flight deck tickets don't include it."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Flight Deck",
+      "item": "F-14 Tomcat, A-12 Blackbird, plus 28 other aircraft"
+    },
+    {
+      "location": "Pier 86",
+      "item": "Space Shuttle Enterprise pavilion"
+    },
+    {
+      "location": "Pier 86",
+      "item": "USS Growler, a guided-missile submarine you can walk through"
+    }
+  ],
+  "distance_landmark": "Pier 86, Hell's Kitchen waterfront",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/intrepid-sea-air-and-space-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Intrepid Sea, Air & Space Museum entry"
+  }
+}

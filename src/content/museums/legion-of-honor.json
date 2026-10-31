@@ -1,0 +1,40 @@
+{
+  "name": "Legion of Honor",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "100 34th Ave, San Francisco, CA 94121",
+  "lat": 37.7841,
+  "lng": -122.5008,
+  "discipline": "Art",
+  "founded": 1924,
+  "rating": 9.0,
+  "review_count": 9200,
+  "review_label": "Wonderful",
+  "admission_from": 20,
+  "admission_text": "general admission",
+  "tagline": "A neoclassical replica of the Paris Légion d'honneur, perched over the Pacific.",
+  "description": "3/4-scale replica of the Hôtel de Salm in Paris, built in 1924 on a clifftop in Lincoln Park overlooking the Pacific. European art (Rembrandt, El Greco, Monet) plus the largest collection of Auguste Rodin sculpture outside Europe.",
+  "hours_today": "9:30 AM – 5:15 PM",
+  "hours_summary": "Tue–Sun 9:30 AM – 5:15 PM · closed Mon",
+  "visit_time": "2 hours",
+  "best_for": "European art, Rodin, ocean views",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Combine with Lands End and the Sutro Bath ruins — they're a short walk away."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Court of Honor",
+      "item": "An original cast of Rodin's The Thinker"
+    }
+  ],
+  "distance_landmark": "Lincoln Park, Outer Richmond",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/san-francisco/legion-of-honor/?partner_id=PLACEHOLDER",
+    "product_name": "Legion of Honor entry"
+  }
+}

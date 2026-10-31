@@ -1,0 +1,32 @@
+{
+  "name": "National Hellenic Museum",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "333 S Halsted St, Chicago, IL 60661",
+  "lat": 41.8772,
+  "lng": -87.6470,
+  "discipline": "Specialized",
+  "founded": 1983,
+  "rating": 8.3,
+  "review_count": 720,
+  "review_label": "Excellent",
+  "admission_from": 12,
+  "admission_text": "general admission",
+  "hours_summary": "Wed–Sun · 11 AM – 4 PM (closed Mon–Tue)",
+  "hours_today": "11 AM – 4 PM",
+  "visit_time": "1 hour",
+  "best_for": "Greek-American history",
+  "tagline": "A small museum in Greektown chronicling the Greek-American experience. Worth pairing with dinner nearby.",
+  "description": "Located in the heart of Greektown on the West Loop. Permanent exhibits on the immigrant experience, ancient Greek artifacts on rotating loan, and an oral history archive of Greek-American voices. Best paired with dinner at Greek Islands or The Parthenon.",
+  "badges": [
+    { "label": "Greektown", "tone": "info" }
+  ],
+  "tips": [
+    { "tag": "TIP", "tone": "warn", "text": "Combine with dinner — the museum is on the same block as Greektown's best tavernas." }
+  ],
+  "highlights": [
+    { "location": "Permanent",  "item": "The Greek Immigrant Experience exhibit" }
+  ],
+  "affiliate": { "network": "none" },
+  "distance_landmark": "Greektown, West Loop"
+}

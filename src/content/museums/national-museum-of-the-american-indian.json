@@ -1,0 +1,37 @@
+{
+  "name": "National Museum of the American Indian",
+  "city": "Washington",
+  "state": "DC",
+  "address": "4th St & Independence Ave SW, Washington, DC 20560",
+  "lat": 38.8884,
+  "lng": -77.0163,
+  "discipline": "History",
+  "founded": 2004,
+  "rating": 8.5,
+  "review_count": 12000,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "Smithsonian's Indigenous history museum. The Mitsitam Café is the city's best museum food.",
+  "description": "The Smithsonian's museum of Native American history and culture, in a Douglas Cardinal building shaped like a wind-eroded mesa. Permanent exhibitions cover Indigenous nations across the Americas. Mitsitam Café serves regional Indigenous foods and is widely considered the best museum café in DC.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Daily 10 AM – 5:30 PM",
+  "visit_time": "2 hours",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The Mitsitam Café is the best museum food in Washington — go for lunch."
+    }
+  ],
+  "distance_landmark": "On the National Mall, near the Capitol",
+  "affiliate": {
+    "network": "none"
+  }
+}

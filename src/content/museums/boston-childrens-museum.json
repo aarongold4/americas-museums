@@ -1,0 +1,39 @@
+{
+  "name": "Boston Children's Museum",
+  "city": "Boston",
+  "state": "MA",
+  "address": "308 Congress St, Boston, MA 02210",
+  "lat": 42.3525,
+  "lng": -71.0494,
+  "discipline": "Children",
+  "founded": 1913,
+  "rating": 8.7,
+  "review_count": 7400,
+  "review_label": "Excellent",
+  "admission_from": 22,
+  "admission_text": "general admission",
+  "tagline": "The country's second-oldest children's museum. Best for under-10s.",
+  "description": "Founded 1913, second-oldest children's museum in the US. Hands-on exhibits across science, art, and culture; the Japanese House — a real two-story Kyoto townhouse reassembled inside the building — is the unusual highlight.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Sun 10 AM – 5 PM · closed Mon–Tue",
+  "visit_time": "2.5 hours",
+  "best_for": "Children under 10",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Floor 2",
+      "item": "Kyo-no-Machiya, a real Kyoto silk merchant's house"
+    }
+  ],
+  "distance_landmark": "Seaport waterfront",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/boston-childrens-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Boston Children's Museum entry"
+  }
+}

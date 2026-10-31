@@ -1,0 +1,39 @@
+{
+  "name": "Natural History Museum of Los Angeles County",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "900 Exposition Blvd, Los Angeles, CA 90007",
+  "lat": 34.0173,
+  "lng": -118.287,
+  "discipline": "Natural History",
+  "founded": 1913,
+  "rating": 8.7,
+  "review_count": 19000,
+  "review_label": "Excellent",
+  "admission_from": 18,
+  "admission_text": "general admission",
+  "tagline": "Three T. rex skeletons in a row, a Hall of Gems, a butterfly pavilion seasonally.",
+  "description": "LA's main natural history museum in Exposition Park, with an unusual row of three T. rex skeletons (juvenile, sub-adult, adult), a strong Hall of Gems and Minerals, and the seasonal Butterfly Pavilion in spring.",
+  "hours_today": "9:30 AM – 5 PM",
+  "hours_summary": "Daily 9:30 AM – 5 PM",
+  "visit_time": "2.5 hours",
+  "best_for": "Families, dinosaurs, gem hall",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Dinosaur Hall",
+      "item": "T. rex growth series — three skeletons by age"
+    }
+  ],
+  "distance_landmark": "Exposition Park, next to USC and the LA Coliseum",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/los-angeles/natural-history-museum-of-la-county/?partner_id=PLACEHOLDER",
+    "product_name": "Natural History Museum of Los Angeles County entry"
+  }
+}

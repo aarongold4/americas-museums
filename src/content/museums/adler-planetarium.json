@@ -1,0 +1,38 @@
+{
+  "name": "Adler Planetarium",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "1300 S DuSable Lake Shore Dr, Chicago, IL 60605",
+  "lat": 41.8663,
+  "lng": -87.6068,
+  "discipline": "Science",
+  "founded": 1930,
+  "rating": 8.7,
+  "review_count": 21430,
+  "review_label": "Excellent",
+  "admission_from": 19,
+  "admission_text": "general admission",
+  "hours_summary": "Wed–Mon · 9 AM – 4 PM (closed Tue)",
+  "hours_today": "9 AM – 4 PM",
+  "visit_time": "2–3 hours",
+  "best_for": "Stargazers, families",
+  "tagline": "Three theaters under one roof, including an actual astrophysics-grade dome. Skyline view alone is worth it.",
+  "description": "America's first planetarium, opened in 1930 on a peninsula extending into Lake Michigan. Three full-dome theaters plus rotating exhibits on cosmology, telescopes, and space exploration. The view back at the skyline is one of the best in the city.",
+  "badges": [
+    { "label": "Free for IL residents (select days)", "tone": "ok" }
+  ],
+  "tips": [
+    { "tag": "TIP", "tone": "warn", "text": "The skyline shot from the south terrace is best near sunset." },
+    { "tag": "TIP", "tone": "warn", "text": "Combo tickets with Field Museum or Shedd save ~25%." }
+  ],
+  "highlights": [
+    { "location": "Grainger Sky Theater", "item": "20-projector dome — most advanced in the country" },
+    { "location": "Doane Observatory",    "item": "Public telescope nights, weather permitting" }
+  ],
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/chicago-l178/adler-planetarium/?partner_id=PLACEHOLDER",
+    "product_name": "Adler Planetarium entry"
+  },
+  "distance_landmark": "Northern tip of Museum Campus"
+}

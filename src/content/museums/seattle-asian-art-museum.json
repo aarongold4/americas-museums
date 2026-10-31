@@ -1,0 +1,33 @@
+{
+  "name": "Seattle Asian Art Museum",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "1400 E Prospect St, Seattle, WA 98112",
+  "lat": 47.6307,
+  "lng": -122.3146,
+  "discipline": "Art",
+  "founded": 1933,
+  "rating": 8.6,
+  "review_count": 2200,
+  "review_label": "Excellent",
+  "admission_from": 18,
+  "admission_text": "general admission",
+  "tagline": "The Seattle Art Museum's Asian collection, in a 1933 Art Deco building in Volunteer Park.",
+  "description": "The original 1933 home of the Seattle Art Museum, redesigned to house the institution's deep Asian art collection. Renovated 2020. Walking distance to the Volunteer Park Conservatory.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Sun 10 AM – 5 PM · closed Mon–Tue",
+  "visit_time": "1.5 hours",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "SAM ticket includes admission here within 7 days."
+    }
+  ],
+  "distance_landmark": "Volunteer Park, Capitol Hill",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/seattle/seattle-asian-art-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Seattle Asian Art Museum entry"
+  }
+}

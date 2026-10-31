@@ -1,0 +1,33 @@
+{
+  "name": "Please Touch Museum",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "4231 Avenue of the Republic, Philadelphia, PA 19131",
+  "lat": 39.9772,
+  "lng": -75.2063,
+  "discipline": "Children",
+  "founded": 1976,
+  "rating": 8.7,
+  "review_count": 7100,
+  "review_label": "Excellent",
+  "admission_from": 24,
+  "admission_text": "general admission",
+  "tagline": "Philadelphia's children's museum, in the 1876 Centennial Memorial Hall.",
+  "description": "In Memorial Hall, the only major surviving building from the 1876 Centennial Exhibition. Hands-on exhibits across science, art, and storytelling for children under 8. The 1908 Dentzel carousel is original to the building.",
+  "hours_today": "9 AM – 5 PM",
+  "hours_summary": "Daily 9 AM – 5 PM",
+  "visit_time": "2.5 hours",
+  "best_for": "Children under 8",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "distance_landmark": "Fairmount Park, west side",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/please-touch-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Please Touch Museum entry"
+  }
+}

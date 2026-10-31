@@ -1,0 +1,41 @@
+{
+  "name": "Field Museum",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "1400 S DuSable Lake Shore Dr, Chicago, IL 60605",
+  "lat": 41.8663,
+  "lng": -87.6170,
+  "discipline": "Natural History",
+  "founded": 1893,
+  "rating": 9.0,
+  "review_count": 52107,
+  "review_label": "Wonderful",
+  "admission_from": 28,
+  "admission_text": "general admission",
+  "hours_summary": "Mon–Sun · 9 AM – 5 PM",
+  "hours_today": "9 AM – 5 PM",
+  "visit_time": "3–4 hours",
+  "best_for": "Families",
+  "tagline": "Sue the T. rex, Maximo titanosaur, 30M specimens. Best for families.",
+  "description": "Founded for the 1893 World's Columbian Exposition. Spans 4.6 billion years of natural history with 30 million specimens, including Sue (the largest and most complete Tyrannosaurus rex ever found) and Maximo, a 122-foot titanosaur.",
+  "review_long": "The Field is the country's most generous natural history museum: 30 million specimens, an enormous main hall presided over by Sue and Maximo, and a permanent Inside Ancient Egypt exhibit that includes 23 mummies and a faithful replica of a Saqqara mastaba you can walk through.\n\nGo on a weekday morning if you can. The main hall before 11 AM is one of the great free pleasures of the city, even before you've paid for entry.",
+  "badges": [
+    { "label": "Family favorite", "tone": "warn" },
+    { "label": "Discount Tuesdays (IL)", "tone": "ok" }
+  ],
+  "tips": [
+    { "tag": "TIP", "tone": "warn", "text": "Buy the All-Access pass — Sue's gallery and 3D theater alone are worth it." },
+    { "tag": "FREE", "tone": "ok", "text": "Illinois residents get discounted admission on selected weekdays." }
+  ],
+  "highlights": [
+    { "location": "Stanley Field Hall", "item": "Maximo the titanosaur, 122 ft long" },
+    { "location": "Griffin Halls",     "item": "Sue, the most complete T. rex ever found" },
+    { "location": "Lower Level",        "item": "Inside Ancient Egypt — 23 mummies and a real mastaba" }
+  ],
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/chicago-l178/field-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Field Museum entry"
+  },
+  "distance_landmark": "On Museum Campus, 1.2 mi south of the Loop"
+}

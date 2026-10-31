@@ -1,0 +1,38 @@
+{
+  "name": "Exploratorium",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "Pier 15, San Francisco, CA 94111",
+  "lat": 37.8011,
+  "lng": -122.3987,
+  "discipline": "Science",
+  "founded": 1969,
+  "rating": 9.2,
+  "review_count": 22000,
+  "review_label": "Wonderful",
+  "admission_from": 35,
+  "admission_text": "general admission",
+  "tagline": "The original hands-on science museum. Frank Oppenheimer's 1969 founding template.",
+  "description": "The original hands-on science museum, founded by physicist Frank Oppenheimer in 1969. The pier-side location since 2013 is the third home; outdoor exhibits along the Embarcadero are free to anyone walking by. After Dark Thursdays are 18+ and ticketed separately.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM · closed Mon (After Dark Thu 18+)",
+  "visit_time": "3 hours",
+  "best_for": "Families, hands-on science",
+  "review_long": "Frank Oppenheimer's 1969 Exploratorium was the template that every children's science museum since has copied. Six galleries, more than 600 exhibits, all of them are designed to be touched and operated. The outdoor portion along the Embarcadero — the Wave Organ, the bay bridge sound mirrors — is free to anyone walking by.",
+  "badges": [
+    {
+      "label": "After Dark Thu (18+)",
+      "tone": "info"
+    },
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "distance_landmark": "Embarcadero, Pier 15",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/san-francisco/exploratorium/?partner_id=PLACEHOLDER",
+    "product_name": "Exploratorium entry"
+  }
+}

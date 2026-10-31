@@ -1,0 +1,49 @@
+{
+  "name": "National Air and Space Museum",
+  "city": "Washington",
+  "state": "DC",
+  "address": "Independence Ave SW, Washington, DC 20560",
+  "lat": 38.8882,
+  "lng": -77.0199,
+  "discipline": "Science",
+  "founded": 1976,
+  "rating": 9.0,
+  "review_count": 80000,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "The Wright Flyer, Spirit of St. Louis, Apollo 11 capsule. Always free.",
+  "description": "The Smithsonian's flagship aviation museum on the Mall. Houses the original Wright Flyer, the Spirit of St. Louis, the Apollo 11 command module Columbia, and Glamorous Glennis (the X-1 that broke the sound barrier). The Udvar-Hazy Center near Dulles Airport holds the larger aircraft including a Concorde and the shuttle Discovery.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Daily 10 AM – 5:30 PM",
+  "visit_time": "2.5–3 hours",
+  "best_for": "Aviation, space, families",
+  "review_long": "Major renovation that began in 2018 has reopened in phases; check which galleries are open before visiting. The Wright Flyer, Spirit of St. Louis, and Apollo 11 capsule are the consistent headliners. For the larger aircraft — Concorde, B-29 Enola Gay, Space Shuttle Discovery — visit the companion Udvar-Hazy Center near Dulles, also free.",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    },
+    {
+      "label": "Timed entry passes",
+      "tone": "info"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free entry, but timed passes are required — reserve online ahead of time."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Milestones of Flight",
+      "item": "Wright Flyer, Spirit of St. Louis, X-1, Apollo 11 capsule"
+    }
+  ],
+  "distance_landmark": "On the National Mall",
+  "affiliate": {
+    "network": "none"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Museum of Modern Art",
+  "city": "New York",
+  "state": "NY",
+  "address": "11 W 53rd St, New York, NY 10019",
+  "lat": 40.7614,
+  "lng": -73.9776,
+  "discipline": "Art",
+  "founded": 1929,
+  "rating": 9.2,
+  "review_count": 65000,
+  "review_label": "Wonderful",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "Van Gogh's Starry Night, Picasso's Demoiselles, Dalí's Persistence of Memory.",
+  "description": "Founded in 1929 as the first museum dedicated to modernism. Collection includes the most-photographed painting in the building (Starry Night), the most-debated (Les Demoiselles d'Avignon), and the entire arc of 20th-century art on six floors.",
+  "hours_today": "10:30 AM – 5:30 PM",
+  "hours_summary": "Daily 10:30 AM – 5:30 PM (Sat until 7 PM)",
+  "visit_time": "2–3 hours",
+  "best_for": "Modern and contemporary art",
+  "review_long": "MoMA's permanent collection on the fifth floor is one of the densest concentrations of canonical modern paintings anywhere — Starry Night, The Persistence of Memory, Demoiselles d'Avignon, Number 31 by Pollock, all within a few rooms of each other. The temporary exhibitions on the lower floors are worth as much time as the permanent collection.\n\nFridays after 4 PM are free for everyone but extremely crowded; weekday mornings are the best time to see the masterpieces without a phone in front of every one of them.",
+  "badges": [
+    {
+      "label": "Free Fri 4–8 PM",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Free Fridays are packed — go a weekday morning if you can."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Floor 5",
+      "item": "The Starry Night, Vincent van Gogh"
+    },
+    {
+      "location": "Floor 5",
+      "item": "Les Demoiselles d'Avignon, Pablo Picasso"
+    }
+  ],
+  "distance_landmark": "Midtown, between 5th and 6th Ave",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/museum-of-modern-art/?partner_id=PLACEHOLDER",
+    "product_name": "Museum of Modern Art entry"
+  }
+}

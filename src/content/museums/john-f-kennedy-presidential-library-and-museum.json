@@ -1,0 +1,26 @@
+{
+  "name": "John F. Kennedy Presidential Library and Museum",
+  "city": "Boston",
+  "state": "MA",
+  "address": "Columbia Point, Boston, MA 02125",
+  "lat": 42.3168,
+  "lng": -71.0345,
+  "discipline": "History",
+  "founded": 1979,
+  "rating": 8.9,
+  "review_count": 7200,
+  "review_label": "Excellent",
+  "admission_from": 18,
+  "admission_text": "general admission",
+  "tagline": "JFK's archive in an I. M. Pei building on Columbia Point.",
+  "description": "The official archive of the Kennedy presidency, in an I. M. Pei building on a peninsula south of downtown. Permanent exhibits cover the 1960 campaign, the Cuban Missile Crisis, and the assassination. The harbor view from the pavilion is part of the architectural design.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "2 hours",
+  "distance_landmark": "Columbia Point, near UMass Boston",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/john-f-kennedy-presidential-library-and-museum/?partner_id=PLACEHOLDER",
+    "product_name": "John F. Kennedy Presidential Library and Museum entry"
+  }
+}

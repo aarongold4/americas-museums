@@ -1,0 +1,54 @@
+{
+  "name": "Getty Villa",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "17985 Pacific Coast Hwy, Pacific Palisades, CA 90272",
+  "lat": 34.0461,
+  "lng": -118.565,
+  "discipline": "Art",
+  "founded": 1974,
+  "rating": 9.2,
+  "review_count": 14000,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "Roman villa replica on the Pacific Coast. Antiquities only.",
+  "description": "The Getty's antiquities collection, housed in a recreation of the 1st-century Villa dei Papiri at Herculaneum, perched above the Pacific. Free, but timed reservations and parking required.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Mon 10 AM – 5 PM · closed Tue",
+  "visit_time": "2 hours",
+  "best_for": "Greek and Roman antiquities",
+  "review_long": "A faithful reconstruction of the Villa dei Papiri buried by Vesuvius in 79 AD, scaled to fit a Pacific Palisades hillside. The collection inside is Greek, Roman, and Etruscan only — about 44,000 objects, of which a few hundred are on view at any time. The setting genuinely earns the comparison to the Mediterranean.",
+  "badges": [
+    {
+      "label": "Always free (timed entry)",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Entry is free but reservations and $25 parking are mandatory."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The outer peristyle and herb gardens are as worth a visit as the galleries."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Outer Peristyle",
+      "item": "Reconstructed Roman colonnaded garden"
+    },
+    {
+      "location": "Galleries",
+      "item": "Lansdowne Heracles, 2nd-century AD"
+    }
+  ],
+  "distance_landmark": "Pacific Coast Highway, 30 minutes north of Santa Monica",
+  "affiliate": {
+    "network": "none"
+  }
+}

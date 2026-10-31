@@ -1,0 +1,39 @@
+{
+  "name": "Museum of Science Boston",
+  "city": "Boston",
+  "state": "MA",
+  "address": "1 Science Park, Boston, MA 02114",
+  "lat": 42.3679,
+  "lng": -71.0708,
+  "discipline": "Science",
+  "founded": 1830,
+  "rating": 8.8,
+  "review_count": 21000,
+  "review_label": "Excellent",
+  "admission_from": 31,
+  "admission_text": "general admission",
+  "tagline": "One of America's oldest science museums. Lightning shows, IMAX, planetarium.",
+  "description": "Founded 1830 as the Boston Society of Natural History. Now a sprawling science museum on a peninsula in the Charles River, with a Theater of Electricity (regular live lightning demonstrations on a 6-million-volt Van de Graaff generator), an Omni IMAX dome, and the Charles Hayden Planetarium.",
+  "hours_today": "9 AM – 5 PM",
+  "hours_summary": "Sat–Thu 9 AM – 5 PM · Fri 9 AM – 9 PM",
+  "visit_time": "3 hours",
+  "best_for": "Families",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Theater of Electricity",
+      "item": "World's largest air-insulated Van de Graaff generator"
+    }
+  ],
+  "distance_landmark": "On the Charles River, between Boston and Cambridge",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/museum-of-science-boston/?partner_id=PLACEHOLDER",
+    "product_name": "Museum of Science Boston entry"
+  }
+}

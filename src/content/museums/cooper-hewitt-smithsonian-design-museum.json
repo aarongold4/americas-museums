@@ -1,0 +1,40 @@
+{
+  "name": "Cooper Hewitt, Smithsonian Design Museum",
+  "city": "New York",
+  "state": "NY",
+  "address": "2 E 91st St, New York, NY 10128",
+  "lat": 40.7847,
+  "lng": -73.9576,
+  "discipline": "Specialized",
+  "founded": 1897,
+  "rating": 8.6,
+  "review_count": 5400,
+  "review_label": "Excellent",
+  "admission_from": 22,
+  "admission_text": "general admission",
+  "tagline": "The Smithsonian's design museum, in Andrew Carnegie's Fifth Avenue mansion.",
+  "description": "The only museum in the US devoted entirely to historical and contemporary design, housed in Andrew Carnegie's 1902 mansion. Visitors get an interactive 'Pen' on entry to save objects to a personal digital scrapbook.",
+  "hours_today": "10 AM – 6 PM",
+  "hours_summary": "Daily 10 AM – 6 PM",
+  "visit_time": "1.5 hours",
+  "best_for": "Design, decorative arts",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The Pen interaction is the museum's best feature — make sure to scan things you like."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Mansion",
+      "item": "Carnegie's preserved 1902 library and dining room"
+    }
+  ],
+  "distance_landmark": "Upper East Side, in the Carnegie Mansion at 91st",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/cooper-hewitt-smithsonian-design-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Cooper Hewitt, Smithsonian Design Museum entry"
+  }
+}

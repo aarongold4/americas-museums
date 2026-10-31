@@ -1,0 +1,33 @@
+{
+  "name": "Wing Luke Museum",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "719 S King St, Seattle, WA 98104",
+  "lat": 47.598,
+  "lng": -122.3242,
+  "discipline": "History",
+  "founded": 1967,
+  "rating": 8.9,
+  "review_count": 2400,
+  "review_label": "Excellent",
+  "admission_from": 19,
+  "admission_text": "general admission",
+  "tagline": "Asian Pacific American experience. Smithsonian Affiliate, in the Chinatown-International District.",
+  "description": "A Smithsonian Affiliate in a restored 1910 hotel that once housed Asian immigrant labor. Permanent and rotating exhibits on Asian Pacific American history; the historic preserved hotel rooms upstairs are part of the visit.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Sun 10 AM – 5 PM · closed Mon–Tue",
+  "visit_time": "1.5 hours",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The historic rooms upstairs are tour-only — book at the front desk on arrival."
+    }
+  ],
+  "distance_landmark": "Chinatown-International District",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/seattle/wing-luke-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Wing Luke Museum entry"
+  }
+}

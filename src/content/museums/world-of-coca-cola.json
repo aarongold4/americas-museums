@@ -1,0 +1,50 @@
+{
+  "name": "World of Coca-Cola",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "121 Baker St NW, Atlanta, GA 30313",
+  "lat": 33.7626,
+  "lng": -84.3927,
+  "discipline": "Specialized",
+  "founded": 1990,
+  "rating": 8.8,
+  "review_count": 30000,
+  "review_label": "Excellent",
+  "admission_from": 19,
+  "admission_text": "general admission",
+  "tagline": "The Coca-Cola Company's official brand museum. Tasting room with 100+ flavors.",
+  "description": "A corporate museum, but a comprehensive one — the actual handwritten Coca-Cola formula vault, century-old advertising archives, a 4D theater, and a tasting room with 100+ Coca-Cola products from 60 countries (including Beverly, the famous bitter Italian one).",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "1.5 hours",
+  "best_for": "Families, brand history",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Combo with the Georgia Aquarium across the plaza."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Vault",
+      "item": "The (replica) handwritten Coca-Cola formula"
+    },
+    {
+      "location": "Tasting Room",
+      "item": "100+ Coca-Cola flavors from 60 countries"
+    }
+  ],
+  "distance_landmark": "Pemberton Place, downtown",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/world-of-coca-cola/?partner_id=PLACEHOLDER",
+    "product_name": "World of Coca-Cola entry"
+  }
+}

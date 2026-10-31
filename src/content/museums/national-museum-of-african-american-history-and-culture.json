@@ -1,0 +1,49 @@
+{
+  "name": "National Museum of African American History and Culture",
+  "city": "Washington",
+  "state": "DC",
+  "address": "1400 Constitution Ave NW, Washington, DC 20560",
+  "lat": 38.8911,
+  "lng": -77.0327,
+  "discipline": "History",
+  "founded": 2016,
+  "rating": 9.4,
+  "review_count": 40000,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "The Smithsonian's African American history museum. Plan a full visit.",
+  "description": "The newest Smithsonian on the Mall (opened 2016), in a David Adjaye corona-shaped building. The lower-level history galleries are the headline; the cultural galleries upstairs cover music, sports, and art. Plan to enter at the bottom and work up.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Daily 10 AM – 5:30 PM",
+  "visit_time": "3–4 hours",
+  "best_for": "History, all-day visit",
+  "review_long": "The architecture is intentional: visitors descend three levels into the History Galleries and then ascend back to the cultural galleries above. The history portion — slavery, Reconstruction, Jim Crow, civil rights — takes most visitors 2–3 hours by itself.\n\nTimed entry passes are still required and the most popular times release at 8:15 AM thirty days ahead. Same-day passes appear at 8:15 AM the day-of and disappear within minutes.",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    },
+    {
+      "label": "Timed entry required",
+      "tone": "info"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Timed passes book a month out. Same-day passes drop at 8:15 AM."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Concourse 3",
+      "item": "Slavery and Freedom Gallery"
+    }
+  ],
+  "distance_landmark": "On the National Mall, near the Washington Monument",
+  "affiliate": {
+    "network": "none"
+  }
+}

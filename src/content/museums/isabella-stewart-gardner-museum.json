@@ -1,0 +1,45 @@
+{
+  "name": "Isabella Stewart Gardner Museum",
+  "city": "Boston",
+  "state": "MA",
+  "address": "25 Evans Way, Boston, MA 02115",
+  "lat": 42.3389,
+  "lng": -71.0993,
+  "discipline": "Art",
+  "founded": 1903,
+  "rating": 9.4,
+  "review_count": 14000,
+  "review_label": "Wonderful",
+  "admission_from": 22,
+  "admission_text": "general admission",
+  "tagline": "A Venetian palazzo built in Boston. Empty frames where the Vermeer once hung.",
+  "description": "Isabella Stewart Gardner's 1903 palazzo, designed to display her collection in the same arrangement she lived with. The 1990 robbery — still unsolved, $500M in art — left empty frames hanging where the Vermeer and Rembrandts were cut out.",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Wed–Mon 11 AM – 5 PM · closed Tue",
+  "visit_time": "1.5 hours",
+  "best_for": "Atmosphere, art history",
+  "review_long": "By Gardner's will, the collection is displayed exactly as she arranged it in 1903 — no labels on most works, no rearrangement, no replacement of the 13 paintings stolen in the 1990 robbery (still unsolved, the largest art theft in history). The empty frames where Vermeer's The Concert and three Rembrandts once hung are still there. The interior courtyard with its four-season floral installation is the architectural highlight.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Free admission for life if your first name is Isabella."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Courtyard",
+      "item": "Roman mosaic surrounded by seasonal flowers"
+    },
+    {
+      "location": "Dutch Room",
+      "item": "Empty frames marking the 1990 art heist"
+    }
+  ],
+  "distance_landmark": "Fenway, next to the MFA",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/isabella-stewart-gardner-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Isabella Stewart Gardner Museum entry"
+  }
+}

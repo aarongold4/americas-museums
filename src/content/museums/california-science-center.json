@@ -1,0 +1,42 @@
+{
+  "name": "California Science Center",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "700 Exposition Park Dr, Los Angeles, CA 90037",
+  "lat": 34.0156,
+  "lng": -118.2864,
+  "discipline": "Science",
+  "founded": 1951,
+  "rating": 9.0,
+  "review_count": 22000,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "Permanent home of the Space Shuttle Endeavour. Always free.",
+  "description": "One of the few free major science museums. Permanent exhibits include the Space Shuttle Endeavour (one of three retired orbiters on public view), an ecosystems wing with a kelp forest tank, and a hands-on World of Life gallery.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "2 hours",
+  "best_for": "Families, free entry, space shuttle",
+  "review_long": "Free admission was the founding policy and remains so. The Endeavour is the headline — the orbiter is being prepared for vertical display in the new Samuel Oschin Air and Space Center, expected to open with the shuttle mounted on real boosters as if ready for launch (a unique configuration).\n\nIMAX is a paid add-on and worth it for the space documentaries.",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    },
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Endeavour Pavilion",
+      "item": "Space Shuttle Endeavour, OV-105"
+    }
+  ],
+  "distance_landmark": "Exposition Park, next to the Natural History Museum",
+  "affiliate": {
+    "network": "none"
+  }
+}

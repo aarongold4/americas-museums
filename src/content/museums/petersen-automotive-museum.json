@@ -1,0 +1,44 @@
+{
+  "name": "Petersen Automotive Museum",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "6060 Wilshire Blvd, Los Angeles, CA 90036",
+  "lat": 34.0625,
+  "lng": -118.3614,
+  "discipline": "Specialized",
+  "founded": 1994,
+  "rating": 8.8,
+  "review_count": 12500,
+  "review_label": "Excellent",
+  "admission_from": 21,
+  "admission_text": "general admission",
+  "tagline": "Four floors of cars, a Hollywood vehicles wing, and a vault tour.",
+  "description": "One of the world's largest automotive museums, in a Kohn Pedersen Fox-redesigned building on Museum Row. The Vault tour ($30 surcharge) accesses the lower-level collection of 250 cars not on the main floors.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "2 hours",
+  "best_for": "Cars, families, design",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The Vault tour is the highlight if you care about cars at all — book on arrival."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Hollywood Gallery",
+      "item": "Bumblebee Camaro, the De Lorean from Back to the Future"
+    },
+    {
+      "location": "The Vault",
+      "item": "Steve McQueen's Jaguar XKSS, Patton's staff car"
+    }
+  ],
+  "distance_landmark": "Mid-Wilshire, across from LACMA",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/los-angeles/petersen-automotive-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Petersen Automotive Museum entry"
+  }
+}

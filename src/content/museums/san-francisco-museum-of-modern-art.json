@@ -1,0 +1,33 @@
+{
+  "name": "San Francisco Museum of Modern Art",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "151 3rd St, San Francisco, CA 94103",
+  "lat": 37.7857,
+  "lng": -122.4011,
+  "discipline": "Art",
+  "founded": 1935,
+  "rating": 8.8,
+  "review_count": 20000,
+  "review_label": "Excellent",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "The first West Coast museum dedicated to 20th-century art. Doubled in size in 2016.",
+  "description": "Founded 1935 — the first West Coast museum exclusively for modern art. The 2016 Snøhetta expansion doubled the gallery space and added one of the largest contemporary collections on the West Coast. The Pritzker Center for Photography is the largest dedicated photography space in any US art museum.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Fri–Tue 10 AM – 5 PM · closed Wed–Thu",
+  "visit_time": "2.5 hours",
+  "best_for": "Modern and contemporary",
+  "badges": [
+    {
+      "label": "Free for under-18s",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "Yerba Buena, SoMa",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/san-francisco/san-francisco-museum-of-modern-art/?partner_id=PLACEHOLDER",
+    "product_name": "San Francisco Museum of Modern Art entry"
+  }
+}

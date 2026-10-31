@@ -1,0 +1,26 @@
+{
+  "name": "Museum of Design Atlanta",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "1315 Peachtree St NE, Atlanta, GA 30309",
+  "lat": 33.7903,
+  "lng": -84.3857,
+  "discipline": "Specialized",
+  "founded": 1989,
+  "rating": 8.4,
+  "review_count": 720,
+  "review_label": "Excellent",
+  "admission_from": 13,
+  "admission_text": "general admission",
+  "tagline": "The only US museum dedicated entirely to design. Across the street from the High.",
+  "description": "A non-collecting museum focused on rotating exhibitions of contemporary design — graphic, industrial, fashion, architectural. Across the street from the High Museum, often combinable on a museum pass.",
+  "hours_today": "11 AM – 6 PM",
+  "hours_summary": "Tue–Sun 11 AM – 6 PM · closed Mon",
+  "visit_time": "45 minutes",
+  "distance_landmark": "Midtown, opposite the High Museum",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/museum-of-design-atlanta/?partner_id=PLACEHOLDER",
+    "product_name": "Museum of Design Atlanta entry"
+  }
+}

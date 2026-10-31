@@ -1,0 +1,40 @@
+{
+  "name": "National Museum of American History",
+  "city": "Washington",
+  "state": "DC",
+  "address": "1300 Constitution Ave NW, Washington, DC 20560",
+  "lat": 38.8911,
+  "lng": -77.03,
+  "discipline": "History",
+  "founded": 1964,
+  "rating": 8.7,
+  "review_count": 38000,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "The Star-Spangled Banner, the Greensboro lunch counter, Dorothy's ruby slippers.",
+  "description": "Smithsonian's American history museum. Star-Spangled Banner in its low-light chamber, the Greensboro lunch counter from the 1960 sit-in, Dorothy's ruby slippers from The Wizard of Oz, and Julia Child's preserved kitchen.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Daily 10 AM – 5:30 PM",
+  "visit_time": "2–3 hours",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Floor 2",
+      "item": "Star-Spangled Banner — the actual flag from Fort McHenry"
+    },
+    {
+      "location": "Floor 1",
+      "item": "Greensboro lunch counter, 1960 sit-in site"
+    }
+  ],
+  "distance_landmark": "On the National Mall",
+  "affiliate": {
+    "network": "none"
+  }
+}

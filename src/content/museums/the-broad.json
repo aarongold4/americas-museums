@@ -1,0 +1,58 @@
+{
+  "name": "The Broad",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "221 S Grand Ave, Los Angeles, CA 90012",
+  "lat": 34.054,
+  "lng": -118.2503,
+  "discipline": "Art",
+  "founded": 2015,
+  "rating": 9.0,
+  "review_count": 33000,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "Free contemporary art museum downtown. Yayoi Kusama Infinity Mirrored Room.",
+  "description": "Eli and Edythe Broad's 2,000-piece contemporary collection in a Diller Scofidio + Renfro building downtown. Always free; advance reservations for the Yayoi Kusama Infinity Mirrored Room are released two weeks ahead.",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Tue–Fri 11 AM – 5 PM · Sat 10 AM – 6 PM · Sun 10 AM – 6 PM · closed Mon",
+  "visit_time": "1.5–2 hours",
+  "best_for": "Contemporary art, Instagrammable",
+  "review_long": "The Broad opened in 2015 with one of the world's largest collections of post-1980 contemporary art — Koons, Basquiat, Kruger, Murakami, Sherman — all on permanent rotating display. Always free. The Yayoi Kusama Infinity Mirrored Room (one of two on permanent view in the country) requires a separate timed reservation released two weeks in advance and books out within minutes.",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    },
+    {
+      "label": "Advance reservation",
+      "tone": "info"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Reserve free entry online — walk-up lines are long."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Kusama Infinity Room reservations open 2 weeks ahead and disappear in minutes."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Floor 3",
+      "item": "Yayoi Kusama, Infinity Mirrored Room"
+    },
+    {
+      "location": "Floor 1",
+      "item": "Jeff Koons' Tulips and Balloon Dog"
+    }
+  ],
+  "distance_landmark": "Bunker Hill, next to Walt Disney Concert Hall",
+  "affiliate": {
+    "network": "none"
+  }
+}

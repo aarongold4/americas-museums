@@ -1,0 +1,32 @@
+{
+  "name": "National Constitution Center",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "525 Arch St, Philadelphia, PA 19106",
+  "lat": 39.9518,
+  "lng": -75.1494,
+  "discipline": "History",
+  "founded": 2003,
+  "rating": 9.0,
+  "review_count": 7800,
+  "review_label": "Wonderful",
+  "admission_from": 16,
+  "admission_text": "general admission",
+  "tagline": "The only museum dedicated to the U.S. Constitution.",
+  "description": "Across the lawn from Independence Hall. Permanent exhibit traces the Constitution's history; the Signers' Hall has 42 life-size bronze statues of the framers, walkable. Hosts the 'We the People' theatrical experience.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Sun 10 AM – 5 PM · closed Mon–Tue",
+  "visit_time": "2 hours",
+  "highlights": [
+    {
+      "location": "Signers' Hall",
+      "item": "42 life-size bronze statues of the Constitutional framers"
+    }
+  ],
+  "distance_landmark": "Independence Mall, opposite Independence Hall",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/national-constitution-center/?partner_id=PLACEHOLDER",
+    "product_name": "National Constitution Center entry"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Atlanta Contemporary",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "535 Means St NW, Atlanta, GA 30318",
+  "lat": 33.7755,
+  "lng": -84.4111,
+  "discipline": "Art",
+  "founded": 1973,
+  "rating": 8.4,
+  "review_count": 920,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "Free, non-collecting contemporary art. Strong Atlanta-artist focus.",
+  "description": "A non-collecting contemporary art museum focused on living artists, with strong representation of Atlanta and Southeast US artists. Always free.",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Wed–Sun 11 AM – 5 PM · closed Mon–Tue",
+  "visit_time": "45 minutes",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "West Midtown",
+  "affiliate": {
+    "network": "none"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Atlanta History Center",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "130 W Paces Ferry Rd NW, Atlanta, GA 30305",
+  "lat": 33.843,
+  "lng": -84.3879,
+  "discipline": "History",
+  "founded": 1926,
+  "rating": 9.0,
+  "review_count": 5400,
+  "review_label": "Wonderful",
+  "admission_from": 24,
+  "admission_text": "general admission",
+  "tagline": "The Battle of Atlanta cyclorama (1886), one of only two surviving in the US.",
+  "description": "33 acres in Buckhead. The 1886 Battle of Atlanta Cyclorama (a 49-foot-tall, 358-foot-around painted-in-the-round Civil War scene) is the headline; also includes a 1928 Tudor Revival mansion (the Swan House) and an 1840s plantation house.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Mon–Sat 10 AM – 5:30 PM · Sun 12 PM – 5:30 PM",
+  "visit_time": "3 hours",
+  "best_for": "Civil War, Atlanta history",
+  "review_long": "The Cyclorama is the reason most visitors come: an 1886 hand-painted depiction of the 1864 Battle of Atlanta, 49 feet tall and 358 feet around, viewed from a center platform that rotates. One of only two surviving cycloramas of its type in the US (the other is at Gettysburg). The Swan House gardens and the cyclorama building are themselves architectural pieces.",
+  "highlights": [
+    {
+      "location": "Cyclorama Building",
+      "item": "Battle of Atlanta cyclorama, 1886, fully restored"
+    },
+    {
+      "location": "Swan House",
+      "item": "1928 Tudor mansion, used as the Capitol in The Hunger Games"
+    }
+  ],
+  "distance_landmark": "Buckhead",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/atlanta-history-center/?partner_id=PLACEHOLDER",
+    "product_name": "Atlanta History Center entry"
+  }
+}

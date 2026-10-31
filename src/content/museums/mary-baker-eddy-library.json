@@ -1,0 +1,33 @@
+{
+  "name": "Mary Baker Eddy Library",
+  "city": "Boston",
+  "state": "MA",
+  "address": "200 Massachusetts Ave, Boston, MA 02115",
+  "lat": 42.3461,
+  "lng": -71.0857,
+  "discipline": "Specialized",
+  "founded": 2002,
+  "rating": 9.0,
+  "review_count": 2400,
+  "review_label": "Wonderful",
+  "admission_from": 6,
+  "admission_text": "general admission",
+  "tagline": "The Mapparium — a stained-glass globe you walk inside.",
+  "description": "The library is the headquarters of the Christian Science Monitor and the Mary Baker Eddy archive, but the reason to visit is the Mapparium: a 30-foot-diameter stained-glass globe of the world (1935) you walk through on a bridge through its center. The acoustics make whispers travel across the inside.",
+  "hours_today": "10 AM – 4 PM",
+  "hours_summary": "Tue–Sat 10 AM – 4 PM · closed Sun–Mon",
+  "visit_time": "45 minutes",
+  "review_long": "Most visitors come specifically for the Mapparium and stay for the rest. Built in 1935, the globe shows national borders as they were at that exact moment — Persia, the British Raj, the USSR — preserved unchanged. The acoustic effect on the bridge through the middle is genuinely strange: speak normally and you'll hear yourself echo back amplified, while a whisper from across the globe arrives clearly.",
+  "highlights": [
+    {
+      "location": "Mapparium",
+      "item": "30-foot stained-glass globe, 1935 borders preserved"
+    }
+  ],
+  "distance_landmark": "Christian Science Plaza, near Symphony Hall",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/mary-baker-eddy-library/?partner_id=PLACEHOLDER",
+    "product_name": "Mary Baker Eddy Library entry"
+  }
+}

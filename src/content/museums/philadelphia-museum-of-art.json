@@ -1,0 +1,49 @@
+{
+  "name": "Philadelphia Museum of Art",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "2600 Benjamin Franklin Pkwy, Philadelphia, PA 19130",
+  "lat": 39.9656,
+  "lng": -75.181,
+  "discipline": "Art",
+  "founded": 1876,
+  "rating": 9.1,
+  "review_count": 28000,
+  "review_label": "Wonderful",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "The Rocky steps. Also one of the great American art museums.",
+  "description": "The third-largest art museum in the country by gallery space, in a 1928 Greek revival building topped by the steps Sylvester Stallone made famous. Strong Impressionism, Asian, and American collections; 2021 Frank Gehry renovation reopened the lower-level Forum.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Mon 10 AM – 5 PM · closed Tue",
+  "visit_time": "3 hours",
+  "best_for": "European and American art, the steps",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Free admission Friday after 5 PM. Pay-what-you-wish first Sunday of the month."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Combine with the Rodin Museum and the Barnes — all on the parkway."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Steps",
+      "item": "The Rocky Steps and the Rocky statue at the bottom"
+    },
+    {
+      "location": "American Wing",
+      "item": "Thomas Eakins, including The Gross Clinic"
+    }
+  ],
+  "distance_landmark": "Top of the Benjamin Franklin Parkway",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/philadelphia-museum-of-art/?partner_id=PLACEHOLDER",
+    "product_name": "Philadelphia Museum of Art entry"
+  }
+}

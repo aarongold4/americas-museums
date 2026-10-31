@@ -1,0 +1,96 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  museum: CollectionEntry<'museums'>;
+  rank?: number;
+}
+
+const { museum } = Astro.props;
+const m = museum.data;
+const slug = museum.id.replace(/\.json$/, '');
+const href = `/museum/${slug}/`;
+
+// Pick a placeholder swatch by discipline for the photo block until real images
+const swatchByDiscipline: Record<string, string> = {
+  'Art': '#DBE5F0',
+  'Natural History': '#E0DBC8',
+  'Science': '#D6D9DD',
+  'History': '#E2D6D0',
+  'Children': '#E5D9C1',
+  'Military': '#D7DBD5',
+  'Specialized': '#D8C7D5',
+  'General': '#DDDDDD',
+};
+const photoBg = swatchByDiscipline[m.discipline] ?? '#DDDDDD';
+
+const hasAffiliate = m.affiliate && m.affiliate.network !== 'none' && m.affiliate.deep_link;
+const priceLabel = m.admission_from === 0 ? 'Free' : `$${m.admission_from}`;
+---
+
+<article class="card overflow-hidden grid grid-cols-[140px_1fr_180px] hover:border-surface-line2 transition-colors">
+  <a href={href} class="block bg-cover bg-center" style={`background-color: ${photoBg};`} aria-label={`View ${m.name}`}>
+    {m.hero_image ? (
+      <img
+        src={m.hero_image}
+        alt={m.name}
+        class="h-full w-full object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+    ) : (
+      <div class="h-full w-full flex items-center justify-center text-2xs tracking-wider2 text-ink-muted">
+        PHOTO
+      </div>
+    )}
+  </a>
+
+  <div class="p-3.5 min-w-0">
+    <a href={href} class="block">
+      <h3 class="text-base font-medium text-brand mb-0.5 truncate">{m.name}</h3>
+    </a>
+    <div class="text-xs text-ink-muted mb-2">
+      {m.discipline} · {m.distance_landmark ?? `${m.city}, ${m.state}`}
+    </div>
+    <p class="text-xs text-ink leading-relaxed mb-2 line-clamp-2">{m.tagline}</p>
+    {m.badges && m.badges.length > 0 && (
+      <div class="flex flex-wrap gap-1.5">
+        {m.badges.map(b => (
+          <span class={`badge badge-${b.tone}`}>{b.label}</span>
+        ))}
+      </div>
+    )}
+  </div>
+
+  <div class="p-3.5 border-l border-surface-line2 flex flex-col justify-between text-right">
+    <div>
+      {m.rating && (
+        <div class="flex items-center gap-1.5 justify-end mb-1">
+          <span class="rating-pill">{m.rating.toFixed(1)}</span>
+          {m.review_label && <span class="text-xs">{m.review_label}</span>}
+        </div>
+      )}
+      {m.review_count && (
+        <div class="text-2xs text-ink-muted">
+          {m.review_count.toLocaleString()} reviews
+        </div>
+      )}
+      <div class="text-xl font-medium text-ink mt-2">{priceLabel}</div>
+      <div class="text-2xs text-ink-muted">{m.admission_text}</div>
+    </div>
+    {hasAffiliate ? (
+      <a
+        href={m.affiliate!.deep_link}
+        rel="sponsored noopener"
+        target="_blank"
+        class="btn-action mt-2 block text-center"
+      >
+        Get tickets
+      </a>
+    ) : (
+      <a href={href} class="btn-action mt-2 block text-center" style="background:#003B95">
+        View details
+      </a>
+    )}
+  </div>
+</article>

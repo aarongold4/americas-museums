@@ -1,0 +1,38 @@
+{
+  "name": "Phillips Collection",
+  "city": "Washington",
+  "state": "DC",
+  "address": "1600 21st St NW, Washington, DC 20009",
+  "lat": 38.9112,
+  "lng": -77.0467,
+  "discipline": "Art",
+  "founded": 1921,
+  "rating": 9.0,
+  "review_count": 5800,
+  "review_label": "Wonderful",
+  "admission_from": 16,
+  "admission_text": "general admission",
+  "tagline": "America's first museum of modern art. Renoir's Luncheon of the Boating Party.",
+  "description": "Founded in 1921 as the country's first museum of modern art. Renoir's Luncheon of the Boating Party is the headline; Rothko, Klee, and a Bonnard collection round out the holdings. Housed in Duncan Phillips's former Dupont Circle home.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM · closed Mon",
+  "visit_time": "1.5 hours",
+  "best_for": "Modernism, intimate setting",
+  "review_long": "The country's oldest museum of modern art, opened 1921 — older than MoMA. Renoir's Luncheon of the Boating Party hangs in its own room. The Rothko Room, four large canvases in a 12-by-12-foot space, is the only permanent Rothko-only installation in any museum.",
+  "highlights": [
+    {
+      "location": "Main Gallery",
+      "item": "Luncheon of the Boating Party, Pierre-Auguste Renoir"
+    },
+    {
+      "location": "Rothko Room",
+      "item": "Four Rothko canvases in a single small room"
+    }
+  ],
+  "distance_landmark": "Dupont Circle",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/washington/phillips-collection/?partner_id=PLACEHOLDER",
+    "product_name": "Phillips Collection entry"
+  }
+}

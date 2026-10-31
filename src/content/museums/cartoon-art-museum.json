@@ -1,0 +1,30 @@
+{
+  "name": "Cartoon Art Museum",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "781 Beach St, San Francisco, CA 94109",
+  "lat": 37.8068,
+  "lng": -122.4226,
+  "discipline": "Specialized",
+  "founded": 1987,
+  "rating": 8.6,
+  "review_count": 1200,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "suggested $5",
+  "tagline": "A small, suggested-donation museum focused on comics and animation.",
+  "description": "The country's only museum dedicated entirely to cartoon art. Rotating exhibitions of original comic strip art, animation cels, graphic novels, and editorial cartoons. Suggested donation.",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Tue–Sun 11 AM – 5 PM · closed Mon",
+  "visit_time": "45 minutes",
+  "badges": [
+    {
+      "label": "Suggested $5",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "Fisherman's Wharf, near Ghirardelli Square",
+  "affiliate": {
+    "network": "none"
+  }
+}

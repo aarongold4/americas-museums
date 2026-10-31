@@ -1,0 +1,39 @@
+{
+  "name": "Fernbank Museum",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "767 Clifton Rd NE, Atlanta, GA 30307",
+  "lat": 33.7728,
+  "lng": -84.3265,
+  "discipline": "Natural History",
+  "founded": 1992,
+  "rating": 8.8,
+  "review_count": 5800,
+  "review_label": "Excellent",
+  "admission_from": 27,
+  "admission_text": "general admission",
+  "tagline": "Argentinosaurus and Giganotosaurus mounts in the Atrium. Plus 75 acres of forest.",
+  "description": "Atlanta's natural history museum. Headline: full-size casts of Argentinosaurus (123 feet long) and the predator Giganotosaurus in the Great Hall. The museum is on a 75-acre old-growth forest preserve with hiking trails included on the ticket.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "2.5 hours",
+  "best_for": "Families, dinosaurs",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Great Hall",
+      "item": "Argentinosaurus, 123 ft, full skeletal cast"
+    }
+  ],
+  "distance_landmark": "Druid Hills, near Emory University",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/fernbank-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Fernbank Museum entry"
+  }
+}

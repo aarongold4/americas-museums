@@ -1,0 +1,30 @@
+{
+  "name": "Hirshhorn Museum and Sculpture Garden",
+  "city": "Washington",
+  "state": "DC",
+  "address": "Independence Ave SW & 7th St SW, Washington, DC 20560",
+  "lat": 38.8884,
+  "lng": -77.0226,
+  "discipline": "Art",
+  "founded": 1974,
+  "rating": 8.6,
+  "review_count": 7200,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "Round modernist drum on the Mall. Contemporary art and a sunken sculpture garden.",
+  "description": "The Smithsonian's modern and contemporary art museum, in a Gordon Bunshaft cylinder on the south side of the Mall. The sunken sculpture garden across Jefferson Drive is being renovated by Hiroshi Sugimoto.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Daily 10 AM – 5:30 PM",
+  "visit_time": "1.5 hours",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "On the National Mall, south side",
+  "affiliate": {
+    "network": "none"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "National Museum of Natural History",
+  "city": "Washington",
+  "state": "DC",
+  "address": "10th St & Constitution Ave NW, Washington, DC 20560",
+  "lat": 38.8913,
+  "lng": -77.026,
+  "discipline": "Natural History",
+  "founded": 1910,
+  "rating": 8.9,
+  "review_count": 65000,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "The Hope Diamond, a T. rex eating a Triceratops, the dome rotunda elephant.",
+  "description": "The Smithsonian's most-visited museum. Hope Diamond in the gem hall, the Tyrannosaurus rex 'Wankel Rex' in the David H. Koch Hall of Fossils, a 13-foot African elephant in the rotunda, and a Sant Ocean Hall.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Daily 10 AM – 5:30 PM",
+  "visit_time": "2–3 hours",
+  "best_for": "Families, gems, fossils",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    },
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Hall of Geology",
+      "item": "Hope Diamond, 45.52 carats"
+    },
+    {
+      "location": "Hall of Fossils",
+      "item": "T. rex devouring a Triceratops, mounted as a single tableau"
+    }
+  ],
+  "distance_landmark": "On the National Mall, opposite the Capitol",
+  "affiliate": {
+    "network": "none"
+  }
+}

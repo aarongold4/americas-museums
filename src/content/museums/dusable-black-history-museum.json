@@ -1,0 +1,33 @@
+{
+  "name": "DuSable Black History Museum",
+  "short_name": "DuSable Museum",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "740 E 56th Pl, Chicago, IL 60637",
+  "lat": 41.7910,
+  "lng": -87.6076,
+  "discipline": "History",
+  "founded": 1961,
+  "rating": 8.7,
+  "review_count": 2840,
+  "review_label": "Excellent",
+  "admission_from": 15,
+  "admission_text": "general admission",
+  "hours_summary": "Tue–Sat · 10 AM – 5 PM, Sun 12–5 PM",
+  "hours_today": "10 AM – 5 PM",
+  "visit_time": "1.5–2 hours",
+  "best_for": "African-American history",
+  "tagline": "The first independent institution dedicated to African-American history. Founded in 1961 in Margaret Burroughs's living room.",
+  "description": "The oldest independent museum of African-American history in the United States, founded by artist Margaret Burroughs in 1961 and now housed in a former Chicago Park District administration building. Permanent exhibits on slavery, the Great Migration, and the civil rights movement; strong rotating program.",
+  "badges": [
+    { "label": "Free Sundays (IL)", "tone": "ok" }
+  ],
+  "tips": [
+    { "tag": "FREE", "tone": "ok", "text": "Free for Illinois residents on Sundays." }
+  ],
+  "highlights": [
+    { "location": "Permanent",  "item": "Harold Washington Wing — first Black mayor of Chicago" }
+  ],
+  "affiliate": { "network": "none" },
+  "distance_landmark": "Washington Park, just south of the Museum of Science and Industry"
+}

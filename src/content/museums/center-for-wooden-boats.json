@@ -1,0 +1,37 @@
+{
+  "name": "Center for Wooden Boats",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "1010 Valley St, Seattle, WA 98109",
+  "lat": 47.628,
+  "lng": -122.337,
+  "discipline": "Specialized",
+  "founded": 1976,
+  "rating": 9.0,
+  "review_count": 1100,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "free; rentals priced",
+  "tagline": "A working museum on Lake Union. Free admission, sailboats and rowboats for rent.",
+  "description": "A free working museum on Lake Union's south end. The collection is more than 100 historic small boats, and most of them can be rented. Free Sunday public sail rides on heritage sailboats from the museum's own dock.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Mon 10 AM – 5 PM · closed Tue",
+  "visit_time": "1 hour",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free Sunday public sail rides — first-come, first-served at the dock."
+    }
+  ],
+  "distance_landmark": "South Lake Union",
+  "affiliate": {
+    "network": "none"
+  }
+}

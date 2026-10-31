@@ -1,0 +1,35 @@
+{
+  "name": "Mütter Museum",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "19 S 22nd St, Philadelphia, PA 19103",
+  "lat": 39.953,
+  "lng": -75.1764,
+  "discipline": "Specialized",
+  "founded": 1858,
+  "rating": 9.2,
+  "review_count": 12000,
+  "review_label": "Wonderful",
+  "admission_from": 20,
+  "admission_text": "general admission",
+  "tagline": "Anatomical specimens and medical history. Not for everyone.",
+  "description": "The College of Physicians' museum of medical specimens, since 1858. Holds the Hyrtl Skull Collection, slides of Einstein's brain, the Soap Lady (a saponified corpse), and conjoined-twin skeletons. Photography prohibited inside.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "1.5 hours",
+  "best_for": "Medical curiosities, dark tourism",
+  "review_long": "Founded 1858 as a teaching collection for the College of Physicians and now one of the country's strangest museums. Specimens include the Hyrtl Skull Collection (139 craniums for racial anatomy comparisons, an artifact of 19th-century pseudoscience), the Soap Lady (a body that saponified in the soil), tissue samples from Einstein's brain, and a wall of inhaled foreign objects extracted from Philadelphia patients between 1900 and 1930. Photography is prohibited inside.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Not for the squeamish. Photography is prohibited inside."
+    }
+  ],
+  "distance_landmark": "Center City, near Logan Square",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/mutter-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Mütter Museum entry"
+  }
+}

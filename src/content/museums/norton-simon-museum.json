@@ -1,0 +1,45 @@
+{
+  "name": "Norton Simon Museum",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "411 W Colorado Blvd, Pasadena, CA 91105",
+  "lat": 34.1456,
+  "lng": -118.1605,
+  "discipline": "Art",
+  "founded": 1969,
+  "rating": 9.1,
+  "review_count": 7800,
+  "review_label": "Wonderful",
+  "admission_from": 20,
+  "admission_text": "general admission",
+  "tagline": "Pasadena's quietly world-class painting collection. Often empty.",
+  "description": "A small museum holding one of the country's best privately-assembled European painting collections — Degas bronzes, Goya, Rembrandt, Picasso — alongside a deep South and Southeast Asian sculpture wing. Often near-empty even on weekends.",
+  "hours_today": "12 PM – 5 PM",
+  "hours_summary": "Mon, Thu, Sat–Sun 12 PM – 5 PM · Fri 12 PM – 7 PM · closed Tue–Wed",
+  "visit_time": "2 hours",
+  "best_for": "European paintings, Asian sculpture",
+  "review_long": "The Norton Simon's collection is depth over breadth: the largest single collection of Degas bronzes in the world, a Rembrandt self-portrait, Picasso's Woman with a Book, plus several Zurbaráns and Goyas. The Asian collection in the lower level is comparable to the LACMA's. Pasadena traffic is the only thing keeping the museum from being on every LA must-do list.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The garden is a Galen Cranz design — worth circling on the way out."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Galleries",
+      "item": "Largest collection of Degas bronzes in the world"
+    },
+    {
+      "location": "Asian Wing",
+      "item": "10th-century Buddhist sculpture from Cambodia"
+    }
+  ],
+  "distance_landmark": "Pasadena, near the Rose Bowl",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/los-angeles/norton-simon-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Norton Simon Museum entry"
+  }
+}

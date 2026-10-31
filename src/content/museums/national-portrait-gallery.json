@@ -1,0 +1,40 @@
+{
+  "name": "National Portrait Gallery",
+  "city": "Washington",
+  "state": "DC",
+  "address": "8th and F Streets NW, Washington, DC 20001",
+  "lat": 38.8978,
+  "lng": -77.0231,
+  "discipline": "Art",
+  "founded": 1968,
+  "rating": 8.9,
+  "review_count": 12000,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "The Obama portraits, the presidential portrait series, the Hall of Presidents.",
+  "description": "Shares the Old Patent Office Building with the American Art Museum. America's Presidents Gallery includes every U.S. president; the Obama official portraits by Kehinde Wiley and Amy Sherald are displayed nearby.",
+  "hours_today": "11:30 AM – 7 PM",
+  "hours_summary": "Daily 11:30 AM – 7 PM",
+  "visit_time": "1.5–2 hours",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "America's Presidents",
+      "item": "All U.S. presidential portraits"
+    },
+    {
+      "location": "20th Century",
+      "item": "Obama official portraits, Wiley and Sherald"
+    }
+  ],
+  "distance_landmark": "Penn Quarter / Chinatown",
+  "affiliate": {
+    "network": "none"
+  }
+}

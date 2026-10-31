@@ -1,0 +1,31 @@
+{
+  "name": "Harvard Art Museums",
+  "city": "Boston",
+  "state": "MA",
+  "address": "32 Quincy St, Cambridge, MA 02138",
+  "lat": 42.3742,
+  "lng": -71.1144,
+  "discipline": "Art",
+  "founded": 1895,
+  "rating": 8.9,
+  "review_count": 8500,
+  "review_label": "Excellent",
+  "admission_from": 20,
+  "admission_text": "general admission",
+  "tagline": "Three Harvard collections in one Renzo Piano building. Free for everyone since 2022.",
+  "description": "Three formerly-separate Harvard collections (Fogg, Busch-Reisinger, Sackler) consolidated in a 2014 Renzo Piano building. Strong in German Expressionism (Busch-Reisinger), Asian and Mediterranean antiquity (Sackler), and pre-1900 European/American (Fogg). Free since 2022.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "2 hours",
+  "best_for": "Concentrated collections, less-trafficked",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "Harvard Square, Cambridge",
+  "affiliate": {
+    "network": "none"
+  }
+}

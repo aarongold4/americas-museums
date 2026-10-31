@@ -1,0 +1,47 @@
+{
+  "name": "Solomon R. Guggenheim Museum",
+  "city": "New York",
+  "state": "NY",
+  "address": "1071 5th Ave, New York, NY 10128",
+  "lat": 40.783,
+  "lng": -73.959,
+  "discipline": "Art",
+  "founded": 1939,
+  "rating": 8.8,
+  "review_count": 32000,
+  "review_label": "Excellent",
+  "admission_from": 25,
+  "admission_text": "general admission",
+  "tagline": "Frank Lloyd Wright's spiral. Walk to the top, descend through the galleries.",
+  "description": "Wright's only major NYC building and one of the great works of American architecture. The collection inside — Kandinsky, Picasso, Mondrian — is strong, but the building is the headline.",
+  "hours_today": "11 AM – 6 PM",
+  "hours_summary": "Daily 11 AM – 6 PM (Sat until 8 PM)",
+  "visit_time": "1.5–2 hours",
+  "best_for": "Architecture, modern art",
+  "review_long": "The strategy is to take the elevator to the top of Wright's spiral and descend at your own pace, which is how the building is designed to be used. The continuous ramp is a mile long if walked corner to corner.\n\nKandinsky and other early-20th-century European painters dominate the permanent collection; the museum's strength in non-objective art is unmatched in New York.",
+  "badges": [
+    {
+      "label": "Pay-what-you-wish Sat 6–8 PM",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Take the elevator to the top, walk down. The architect intended it."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Rotunda",
+      "item": "Frank Lloyd Wright's spiral interior, completed 1959"
+    }
+  ],
+  "distance_landmark": "Upper East Side, opposite Central Park",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/solomon-r-guggenheim-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Solomon R. Guggenheim Museum entry"
+  }
+}

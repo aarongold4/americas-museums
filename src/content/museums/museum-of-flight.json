@@ -1,0 +1,44 @@
+{
+  "name": "Museum of Flight",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "9404 E Marginal Way S, Seattle, WA 98108",
+  "lat": 47.518,
+  "lng": -122.2972,
+  "discipline": "Science",
+  "founded": 1965,
+  "rating": 9.2,
+  "review_count": 18000,
+  "review_label": "Wonderful",
+  "admission_from": 28,
+  "admission_text": "general admission",
+  "tagline": "The largest private air-and-space museum in the world. Concorde and Air Force One.",
+  "description": "At Boeing Field, with 175+ aircraft and spacecraft. Headlines: a Concorde, a Boeing 747 prototype, the original Air Force One that flew Eisenhower, Kennedy, Johnson, and Nixon, an SR-71 Blackbird, and a full-scale F-14 Tomcat. The Boeing-Bertelsen Gallery covers WWI through Korea.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "3 hours",
+  "best_for": "Aviation, families",
+  "review_long": "The largest privately-funded air-and-space museum in the world, sitting on Boeing Field where the company assembled airplanes from 1916 onward. Aircraft you can actually walk through include the Concorde (one of three on US display), the original VC-137B Air Force One that carried Kennedy to Dallas, and the very first 747. The outdoor pavilion has the SR-71, the only B-52 at any museum, and a Soviet MiG-21.",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Outdoor",
+      "item": "Concorde G-BOAG, Air Force One VC-137B"
+    },
+    {
+      "location": "Pavilion",
+      "item": "SR-71 Blackbird, the fastest jet ever"
+    }
+  ],
+  "distance_landmark": "Boeing Field, 15 minutes south of downtown",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/seattle/museum-of-flight/?partner_id=PLACEHOLDER",
+    "product_name": "Museum of Flight entry"
+  }
+}

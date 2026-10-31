@@ -1,0 +1,51 @@
+{
+  "name": "Brooklyn Museum",
+  "city": "New York",
+  "state": "NY",
+  "address": "200 Eastern Pkwy, Brooklyn, NY 11238",
+  "lat": 40.6712,
+  "lng": -73.9636,
+  "discipline": "Art",
+  "founded": 1895,
+  "rating": 8.7,
+  "review_count": 16000,
+  "review_label": "Excellent",
+  "admission_from": 20,
+  "admission_text": "general admission",
+  "tagline": "Strong Egyptian, feminist, and American collections in a McKim Mead & White building.",
+  "description": "The Brooklyn Museum's Egyptian collection is among the country's most important, the feminist art galleries house Judy Chicago's Dinner Party, and the American period rooms cover three centuries. Far less crowded than its Manhattan counterparts.",
+  "hours_today": "11 AM – 6 PM",
+  "hours_summary": "Wed, Fri–Sun 11 AM – 6 PM · Thu 11 AM – 10 PM · closed Mon–Tue",
+  "visit_time": "2–3 hours",
+  "best_for": "Egyptian, American, less crowded",
+  "review_long": "The Brooklyn Museum often gets called the city's most underrated, partly because it sits across the Brooklyn Bridge from the better-known Manhattan institutions. The Egyptian galleries on the third floor rival the Met's; the Elizabeth A. Sackler Center for Feminist Art on the fourth holds Judy Chicago's Dinner Party as its centerpiece. First Saturdays — free programming until 11 PM — are the city's best free museum night.",
+  "badges": [
+    {
+      "label": "First Saturdays free + late",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Combine with Prospect Park or the Botanic Garden across the street."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Floor 3",
+      "item": "Egyptian collection, including the Mummy Chamber"
+    },
+    {
+      "location": "Floor 4",
+      "item": "The Dinner Party, Judy Chicago"
+    }
+  ],
+  "distance_landmark": "Prospect Park / Eastern Parkway, Brooklyn",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/brooklyn-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Brooklyn Museum entry"
+  }
+}

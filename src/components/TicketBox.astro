@@ -1,0 +1,47 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  museum: CollectionEntry<'museums'>['data'];
+}
+
+const { museum: m } = Astro.props;
+const hasAffiliate = m.affiliate && m.affiliate.network !== 'none' && m.affiliate.deep_link;
+const priceLabel = m.admission_from === 0 ? 'Free' : `$${m.admission_from}`;
+---
+
+<aside
+  class="bg-surface-page border border-surface-line rounded-md p-3.5 min-w-[200px]"
+  aria-label="Tickets and admission"
+>
+  <div class="text-2xs text-ink-muted mb-0.5">FROM</div>
+  <div class="text-2xl font-medium text-ink mb-0.5 leading-none">{priceLabel}</div>
+  <div class="text-2xs text-ink-muted mb-3">
+    {m.admission_text}
+    {hasAffiliate && ' · skip the line'}
+  </div>
+
+  {hasAffiliate ? (
+    <>
+      <a
+        href={m.affiliate!.deep_link}
+        rel="sponsored noopener"
+        target="_blank"
+        class="btn-action w-full block text-center"
+      >
+        Get tickets
+      </a>
+      <div class="text-center text-2xs text-ink-muted mt-1.5">
+        Free cancellation · instant confirmation
+      </div>
+    </>
+  ) : (
+    <a
+      href={`https://www.google.com/search?q=${encodeURIComponent(m.name + ' tickets')}`}
+      class="btn-action w-full block text-center"
+      style="background: #003B95"
+    >
+      Visit official site
+    </a>
+  )}
+</aside>

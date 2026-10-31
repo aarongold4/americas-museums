@@ -1,0 +1,27 @@
+{
+  "name": "Walt Disney Family Museum",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "104 Montgomery St, San Francisco, CA 94129",
+  "lat": 37.799,
+  "lng": -122.4566,
+  "discipline": "Specialized",
+  "founded": 2009,
+  "rating": 9.1,
+  "review_count": 4500,
+  "review_label": "Wonderful",
+  "admission_from": 25,
+  "admission_text": "general admission",
+  "tagline": "The full personal and professional life of Walt Disney, in the Presidio.",
+  "description": "Founded by Walt's daughter Diane, in a converted Presidio barracks. Tells Walt Disney's life chronologically through original animation cels, his own model trains, and a 12-foot-tall model of Disneyland built to original specs.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Wed–Sun 10 AM – 5:30 PM · closed Mon–Tue",
+  "visit_time": "2 hours",
+  "best_for": "Disney history, animation",
+  "distance_landmark": "Presidio, near the Main Post",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/san-francisco/walt-disney-family-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Walt Disney Family Museum entry"
+  }
+}

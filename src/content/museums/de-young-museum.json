@@ -1,0 +1,45 @@
+{
+  "name": "de Young Museum",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "50 Hagiwara Tea Garden Dr, San Francisco, CA 94118",
+  "lat": 37.7714,
+  "lng": -122.4685,
+  "discipline": "Art",
+  "founded": 1895,
+  "rating": 8.9,
+  "review_count": 18000,
+  "review_label": "Excellent",
+  "admission_from": 20,
+  "admission_text": "general admission",
+  "tagline": "Herzog & de Meuron building in Golden Gate Park. American and Oceanic art.",
+  "description": "One of the Fine Arts Museums of San Francisco. The 2005 Herzog & de Meuron building is wrapped in copper that's now oxidized green; the 144-foot observation tower at the top is free to enter. Strong American and Oceanic collections.",
+  "hours_today": "9:30 AM – 5:15 PM",
+  "hours_summary": "Tue–Sun 9:30 AM – 5:15 PM · closed Mon",
+  "visit_time": "2 hours",
+  "best_for": "American art, observation tower",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The 9th-floor observation tower is free, even without a ticket."
+    },
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free first Tuesdays for Bay Area residents."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Hamon Tower",
+      "item": "144-foot observation tower, free entry, 360° park views"
+    }
+  ],
+  "distance_landmark": "Golden Gate Park, near the Japanese Tea Garden",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/san-francisco/de-young-museum/?partner_id=PLACEHOLDER",
+    "product_name": "de Young Museum entry"
+  }
+}

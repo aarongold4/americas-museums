@@ -1,0 +1,37 @@
+{
+  "name": "Cable Car Museum",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "1201 Mason St, San Francisco, CA 94108",
+  "lat": 37.7949,
+  "lng": -122.4117,
+  "discipline": "History",
+  "founded": 1974,
+  "rating": 9.0,
+  "review_count": 4000,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "The actual working power station that pulls every cable car in the city.",
+  "description": "A free museum inside the 1907 Washington-Mason powerhouse — the still-operating heart of the cable car system. From the gallery floor you can watch the four motors that pull all of the city's cable lines.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "45 minutes",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free museum, plus an active power plant — the wheels are turning while you watch."
+    }
+  ],
+  "distance_landmark": "Nob Hill, on the Powell-Mason cable line",
+  "affiliate": {
+    "network": "none"
+  }
+}

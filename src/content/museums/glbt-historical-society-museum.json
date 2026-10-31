@@ -1,0 +1,24 @@
+{
+  "name": "GLBT Historical Society Museum",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "4127 18th St, San Francisco, CA 94114",
+  "lat": 37.761,
+  "lng": -122.4316,
+  "discipline": "History",
+  "founded": 2011,
+  "rating": 8.7,
+  "review_count": 760,
+  "review_label": "Excellent",
+  "admission_from": 5,
+  "admission_text": "general admission",
+  "tagline": "The country's first LGBTQ history museum, in the heart of the Castro.",
+  "description": "A small, focused history museum in the Castro. Permanent and rotating exhibits on LGBTQ history in San Francisco, from gay-rights pioneer Harvey Milk to the AIDS crisis archives. $5 suggested admission.",
+  "hours_today": "11 AM – 5 PM",
+  "hours_summary": "Thu–Sun 11 AM – 5 PM · closed Mon–Wed",
+  "visit_time": "1 hour",
+  "distance_landmark": "The Castro, on 18th Street",
+  "affiliate": {
+    "network": "none"
+  }
+}

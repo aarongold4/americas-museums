@@ -1,0 +1,33 @@
+{
+  "name": "Pacific Science Center",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "200 2nd Ave N, Seattle, WA 98109",
+  "lat": 47.6202,
+  "lng": -122.3514,
+  "discipline": "Science",
+  "founded": 1962,
+  "rating": 8.5,
+  "review_count": 11000,
+  "review_label": "Excellent",
+  "admission_from": 30,
+  "admission_text": "general admission",
+  "tagline": "A 1962 World's Fair leftover. Tropical butterfly house, planetarium, IMAX.",
+  "description": "One of the few 1962 World's Fair buildings still in use. Houses a butterfly tropical house (500+ live butterflies), the Willard Smith Planetarium, an IMAX theater, and Sound Garden — a working tide-and-wind organ outdoors.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Wed–Sun 10 AM – 5 PM · closed Mon–Tue",
+  "visit_time": "2.5 hours",
+  "best_for": "Families, hands-on",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "distance_landmark": "Seattle Center",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/seattle/pacific-science-center/?partner_id=PLACEHOLDER",
+    "product_name": "Pacific Science Center entry"
+  }
+}

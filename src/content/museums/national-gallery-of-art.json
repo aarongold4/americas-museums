@@ -1,0 +1,49 @@
+{
+  "name": "National Gallery of Art",
+  "city": "Washington",
+  "state": "DC",
+  "address": "Constitution Ave NW, Washington, DC 20565",
+  "lat": 38.8913,
+  "lng": -77.02,
+  "discipline": "Art",
+  "founded": 1937,
+  "rating": 9.4,
+  "review_count": 47000,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "The only Leonardo painting in the Americas, a free Calder mobile, a sculpture garden.",
+  "description": "One of the world's great encyclopedic art museums and entirely free. The West Building (John Russell Pope, 1941) holds the European and American old masters; the East Building (I. M. Pei, 1978) holds modern and contemporary. A separate sculpture garden across 7th Street.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Mon–Sat 10 AM – 5 PM · Sun 11 AM – 6 PM",
+  "visit_time": "3–4 hours",
+  "best_for": "European and American painting",
+  "review_long": "The West Building's painting galleries are arranged chronologically by national school — Italian, Flemish, Dutch, French, Spanish — and include Ginevra de' Benci, the only Leonardo da Vinci painting on permanent display in the Americas. The East Building has a permanent Calder mobile in the atrium and rotating modern exhibitions.\n\nFree, including the major special exhibitions. The sculpture garden adds a whole half-day in good weather.",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Always free. So is the sculpture garden across 7th Street."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "West Building, Gallery 6",
+      "item": "Ginevra de' Benci, Leonardo da Vinci"
+    },
+    {
+      "location": "East Building Atrium",
+      "item": "Untitled (Calder), suspended mobile"
+    }
+  ],
+  "distance_landmark": "On the National Mall, between 4th and 7th",
+  "affiliate": {
+    "network": "none"
+  }
+}

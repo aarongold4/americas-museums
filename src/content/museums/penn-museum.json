@@ -1,0 +1,32 @@
+{
+  "name": "Penn Museum",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "3260 South St, Philadelphia, PA 19104",
+  "lat": 39.9494,
+  "lng": -75.1916,
+  "discipline": "Specialized",
+  "founded": 1887,
+  "rating": 8.8,
+  "review_count": 5800,
+  "review_label": "Excellent",
+  "admission_from": 18,
+  "admission_text": "general admission",
+  "tagline": "The University of Pennsylvania's archaeology and anthropology museum.",
+  "description": "One of the largest archaeology museums in the country. Strong Egyptian (a 13-ton sphinx of Ramses II), Mesopotamian (Ur royal tombs), and Mayan collections. The Egyptian Galleries reopened in 2024 after a major renovation.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM · closed Mon",
+  "visit_time": "2 hours",
+  "highlights": [
+    {
+      "location": "Egypt",
+      "item": "Sphinx of Ramses II, 13 tons of red granite"
+    }
+  ],
+  "distance_landmark": "University City, on the Penn campus",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/penn-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Penn Museum entry"
+  }
+}

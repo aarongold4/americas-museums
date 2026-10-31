@@ -1,0 +1,33 @@
+{
+  "name": "Institute of Contemporary Art Boston",
+  "city": "Boston",
+  "state": "MA",
+  "address": "25 Harbor Shore Dr, Boston, MA 02210",
+  "lat": 42.3536,
+  "lng": -71.0466,
+  "discipline": "Art",
+  "founded": 1936,
+  "rating": 8.5,
+  "review_count": 5400,
+  "review_label": "Excellent",
+  "admission_from": 20,
+  "admission_text": "general admission",
+  "tagline": "Diller Scofidio + Renfro cantilever over Boston Harbor. Strong rotating shows.",
+  "description": "Boston's contemporary art museum, in a 2006 Diller Scofidio + Renfro building cantilevered over the harbor. The Watershed satellite gallery in East Boston (free, open seasonally) is part of the same institution.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM (Thu, Fri until 9 PM) · closed Mon",
+  "visit_time": "1.5 hours",
+  "best_for": "Contemporary art, harbor views",
+  "badges": [
+    {
+      "label": "Free Thu 5–9 PM",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "Seaport District, on the harbor",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/boston/institute-of-contemporary-art-boston/?partner_id=PLACEHOLDER",
+    "product_name": "Institute of Contemporary Art Boston entry"
+  }
+}

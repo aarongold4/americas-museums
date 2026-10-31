@@ -1,0 +1,26 @@
+{
+  "name": "Michael C. Carlos Museum",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "571 S Kilgo Cir NE, Atlanta, GA 30322",
+  "lat": 33.7913,
+  "lng": -84.326,
+  "discipline": "Art",
+  "founded": 1876,
+  "rating": 8.7,
+  "review_count": 1100,
+  "review_label": "Excellent",
+  "admission_from": 8,
+  "admission_text": "general admission",
+  "tagline": "Emory's antiquities museum. Strong Egyptian, Greek, Roman collections.",
+  "description": "Emory's encyclopedic antiquities museum, in a 1916 Henry Hornbostel building expanded by Michael Graves in 1993. One of the largest ancient art collections in the Southeast — 17,000+ objects spanning Africa, Asia, and the ancient Mediterranean.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Tue–Sun 10 AM – 5 PM · closed Mon",
+  "visit_time": "1.5 hours",
+  "distance_landmark": "Emory University campus",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/michael-c-carlos-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Michael C. Carlos Museum entry"
+  }
+}

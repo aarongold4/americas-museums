@@ -1,0 +1,35 @@
+{
+  "name": "National Museum of Mexican Art",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "1852 W 19th St, Chicago, IL 60608",
+  "lat": 41.8557,
+  "lng": -87.6726,
+  "discipline": "Art",
+  "founded": 1982,
+  "rating": 9.1,
+  "review_count": 4830,
+  "review_label": "Wonderful",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "hours_summary": "Tue–Sun · 10 AM – 5 PM (closed Mon)",
+  "hours_today": "10 AM – 5 PM",
+  "visit_time": "1.5 hours",
+  "best_for": "Mexican art, free entry",
+  "tagline": "The largest Latino cultural institution in the US, in the heart of Pilsen. Free admission, always.",
+  "description": "Largest Latino cultural institution in the United States, with a permanent collection of more than 18,000 works tracing 3,000 years of Mexican, Mexican-American, and Chicano art. Located in the Pilsen neighborhood — the museum is reason enough to visit, and Pilsen itself rewards a longer walk.",
+  "badges": [
+    { "label": "Always free", "tone": "ok" },
+    { "label": "Pilsen", "tone": "info" }
+  ],
+  "tips": [
+    { "tag": "FREE", "tone": "ok", "text": "Admission has been free since the museum opened in 1987." },
+    { "tag": "TIP",  "tone": "warn", "text": "Stay for lunch in Pilsen — Carnitas Uruapan is two blocks away." }
+  ],
+  "highlights": [
+    { "location": "Permanent",   "item": "Day of the Dead exhibit (open Oct–Dec)" },
+    { "location": "Main gallery", "item": "Rotating exhibitions of contemporary Chicano art" }
+  ],
+  "affiliate": { "network": "none" },
+  "distance_landmark": "Pilsen, 2.5 mi southwest of the Loop"
+}

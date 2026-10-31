@@ -1,0 +1,59 @@
+{
+  "name": "American Museum of Natural History",
+  "city": "New York",
+  "state": "NY",
+  "address": "200 Central Park West, New York, NY 10024",
+  "lat": 40.7813,
+  "lng": -73.974,
+  "discipline": "Natural History",
+  "founded": 1869,
+  "rating": 9.1,
+  "review_count": 72000,
+  "review_label": "Wonderful",
+  "admission_from": 28,
+  "admission_text": "general admission",
+  "tagline": "The dinosaur halls, the blue whale, the Hayden Planetarium — all under one roof.",
+  "description": "One of the largest natural history museums in the world. The fourth-floor dinosaur halls are the headline attraction; the Hayden Planetarium and the 94-foot fiberglass blue whale in the Hall of Ocean Life are close behind.",
+  "hours_today": "10 AM – 5:30 PM",
+  "hours_summary": "Daily 10 AM – 5:30 PM",
+  "visit_time": "3–4 hours",
+  "best_for": "Families, dinosaurs",
+  "review_long": "The fourth floor is what most visitors come for: the world's largest collection of mounted dinosaur skeletons arranged by evolutionary cladistics rather than period, so you walk through the actual branches of the dinosaur family tree. The Hall of Ocean Life with its life-size blue whale model overhead is the second draw, and the Hayden Planetarium next door rounds out a half-day visit.\n\nThe new Richard Gilder Center, opened in 2023, added 230,000 square feet including the Insectarium and Butterfly Vivarium. Worth folding into the trip.",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    },
+    {
+      "label": "NY residents pay-what-you-wish",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The Gilder Center entrance on Columbus Ave has shorter lines."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Floor 4",
+      "item": "T. rex, Apatosaurus, and the dinosaur cladogram"
+    },
+    {
+      "location": "Hall of Ocean Life",
+      "item": "94-foot blue whale model"
+    },
+    {
+      "location": "Gilder Center",
+      "item": "Insectarium and Butterfly Vivarium"
+    }
+  ],
+  "distance_landmark": "Upper West Side, on Central Park West at 79th",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/new-york/american-museum-of-natural-history/?partner_id=PLACEHOLDER",
+    "product_name": "American Museum of Natural History entry"
+  }
+}

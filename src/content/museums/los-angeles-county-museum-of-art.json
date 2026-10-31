@@ -1,0 +1,51 @@
+{
+  "name": "Los Angeles County Museum of Art",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "5905 Wilshire Blvd, Los Angeles, CA 90036",
+  "lat": 34.0639,
+  "lng": -118.3592,
+  "discipline": "Art",
+  "founded": 1965,
+  "rating": 8.7,
+  "review_count": 35000,
+  "review_label": "Excellent",
+  "admission_from": 25,
+  "admission_text": "general admission",
+  "tagline": "The largest art museum in the western US. Currently mid-rebuild.",
+  "description": "LACMA's encyclopedic collection spans Mesoamerican, Korean, Islamic, and modern Western art. The campus is mid-redesign by Peter Zumthor — several buildings are closed during construction; check before visiting. Urban Light by Chris Burden out front is the most-photographed sculpture in LA.",
+  "hours_today": "11 AM – 6 PM",
+  "hours_summary": "Mon, Tue, Thu 11 AM – 6 PM · Fri 11 AM – 8 PM · Sat–Sun 10 AM – 7 PM · closed Wed",
+  "visit_time": "2–3 hours",
+  "best_for": "Encyclopedic art, public sculpture",
+  "review_long": "LACMA is in the middle of a major Peter Zumthor redesign that closed several of its buildings; check the website before going. What's open is still substantial — the Resnick Pavilion, the Broad Contemporary Art Museum building, plus the Japanese Pavilion. The forecourt with Chris Burden's Urban Light and Michael Heizer's Levitated Mass are open and free.",
+  "badges": [
+    {
+      "label": "LA County residents free after 3 PM",
+      "tone": "ok"
+    }
+  ],
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Construction is ongoing through 2026 — confirm what's open before visiting."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Forecourt",
+      "item": "Urban Light, 202 restored cast-iron streetlamps"
+    },
+    {
+      "location": "BCAM",
+      "item": "Levitated Mass, a 340-ton boulder over a walkway"
+    }
+  ],
+  "distance_landmark": "Mid-Wilshire, on Museum Row",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/los-angeles/los-angeles-county-museum-of-art/?partner_id=PLACEHOLDER",
+    "product_name": "Los Angeles County Museum of Art entry"
+  }
+}

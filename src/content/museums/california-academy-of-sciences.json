@@ -1,0 +1,48 @@
+{
+  "name": "California Academy of Sciences",
+  "city": "San Francisco",
+  "state": "CA",
+  "address": "55 Music Concourse Dr, San Francisco, CA 94118",
+  "lat": 37.7699,
+  "lng": -122.4661,
+  "discipline": "Natural History",
+  "founded": 1853,
+  "rating": 9.1,
+  "review_count": 27000,
+  "review_label": "Wonderful",
+  "admission_from": 45,
+  "admission_text": "general admission",
+  "tagline": "Aquarium, planetarium, natural history museum, and rainforest under one living roof.",
+  "description": "A natural history museum, a Steinhart Aquarium, the Morrison Planetarium, and a four-story enclosed rainforest, all under a 2.5-acre living roof designed by Renzo Piano. NightLife events on Thursdays are 21+ only and drink-friendly.",
+  "hours_today": "9:30 AM – 5 PM",
+  "hours_summary": "Mon–Sat 9:30 AM – 5 PM · Sun 11 AM – 5 PM",
+  "visit_time": "3 hours",
+  "best_for": "Families, four-museums-in-one",
+  "review_long": "Four major institutions under one roof: a natural history museum, an aquarium with the largest coral reef on display in any US museum, a planetarium dome, and a four-story enclosed Costa Rican rainforest with a glass canopy walk and a basement-level Amazon flooded forest. The roof itself, planted with native California species, is open to visitors.\n\nNightLife on Thursdays (21+, ticketed separately) turns the whole museum into an after-hours venue with cocktails.",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    },
+    {
+      "label": "NightLife Thu 21+",
+      "tone": "info"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Rainforest",
+      "item": "4-story enclosed rainforest with glass canopy walk"
+    },
+    {
+      "location": "Aquarium",
+      "item": "Philippine Coral Reef, largest in any US museum"
+    }
+  ],
+  "distance_landmark": "Golden Gate Park, opposite the de Young",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/san-francisco/california-academy-of-sciences/?partner_id=PLACEHOLDER",
+    "product_name": "California Academy of Sciences entry"
+  }
+}

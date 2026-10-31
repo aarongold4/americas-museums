@@ -1,0 +1,44 @@
+{
+  "name": "La Brea Tar Pits and Museum",
+  "city": "Los Angeles",
+  "state": "CA",
+  "address": "5801 Wilshire Blvd, Los Angeles, CA 90036",
+  "lat": 34.0633,
+  "lng": -118.3553,
+  "discipline": "Natural History",
+  "founded": 1977,
+  "rating": 8.5,
+  "review_count": 16000,
+  "review_label": "Excellent",
+  "admission_from": 18,
+  "admission_text": "general admission",
+  "tagline": "Active Ice Age fossil excavation in the middle of Wilshire Blvd.",
+  "description": "Active asphalt seeps that have been trapping animals for 50,000 years, in the middle of Hancock Park. Most-visited collection: thousands of dire wolf skulls. Excavations continue daily and visitors can watch.",
+  "hours_today": "9:30 AM – 5 PM",
+  "hours_summary": "Daily 9:30 AM – 5 PM",
+  "visit_time": "1.5–2 hours",
+  "best_for": "Families, fossils, Ice Age",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The outdoor pits and Pit 91 viewing platform are free; only the museum costs money."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Fossil Lab",
+      "item": "Live preparation of fossils excavated this season"
+    },
+    {
+      "location": "Wall of Skulls",
+      "item": "404 dire wolf skulls in one display"
+    }
+  ],
+  "distance_landmark": "Hancock Park, on Museum Row",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/los-angeles/la-brea-tar-pits-and-museum/?partner_id=PLACEHOLDER",
+    "product_name": "La Brea Tar Pits and Museum entry"
+  }
+}

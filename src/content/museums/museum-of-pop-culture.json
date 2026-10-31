@@ -1,0 +1,38 @@
+{
+  "name": "Museum of Pop Culture",
+  "city": "Seattle",
+  "state": "WA",
+  "address": "325 5th Ave N, Seattle, WA 98109",
+  "lat": 47.6215,
+  "lng": -122.3481,
+  "discipline": "Specialized",
+  "founded": 2000,
+  "rating": 8.6,
+  "review_count": 19000,
+  "review_label": "Excellent",
+  "admission_from": 35,
+  "admission_text": "general admission",
+  "tagline": "MoPOP. Frank Gehry's crumpled blob at Seattle Center, with Hendrix and Nirvana inside.",
+  "description": "Founded by Paul Allen, in a 2000 Frank Gehry building wrapped in ribbons of stainless steel and aluminum. Permanent galleries on Jimi Hendrix, Nirvana, and Pacific Northwest grunge; rotating sci-fi and horror-film exhibits; an acoustically isolated Sound Lab where you can play instruments.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "2.5 hours",
+  "best_for": "Music, sci-fi, families",
+  "review_long": "Frank Gehry's first major Seattle building, modeled on the smashed body of an electric guitar. Inside, the Nirvana and Jimi Hendrix galleries are anchored by the actual instruments — Hendrix's white Stratocaster from Woodstock, the broken neck of Cobain's smashed Fender. The Sky Church atrium hosts free music in the evenings.",
+  "highlights": [
+    {
+      "location": "Hendrix Gallery",
+      "item": "The white Stratocaster played at Woodstock"
+    },
+    {
+      "location": "Nirvana Gallery",
+      "item": "Cobain's smashed Fender Mustang"
+    }
+  ],
+  "distance_landmark": "Seattle Center, at the foot of the Space Needle",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/seattle/museum-of-pop-culture/?partner_id=PLACEHOLDER",
+    "product_name": "Museum of Pop Culture entry"
+  }
+}

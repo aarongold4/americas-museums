@@ -1,0 +1,26 @@
+{
+  "name": "Independence Seaport Museum",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "211 S Christopher Columbus Blvd, Philadelphia, PA 19106",
+  "lat": 39.9474,
+  "lng": -75.141,
+  "discipline": "History",
+  "founded": 1961,
+  "rating": 8.5,
+  "review_count": 2400,
+  "review_label": "Excellent",
+  "admission_from": 20,
+  "admission_text": "general admission",
+  "tagline": "The cruiser Olympia (1892) and submarine Becuna (WWII), with the Seaport Museum.",
+  "description": "At Penn's Landing on the Delaware. Combined ticket includes the museum, the cruiser USS Olympia (Admiral Dewey's flagship at Manila Bay, 1898), and the WWII submarine USS Becuna. Olympia is the oldest steel American warship still afloat.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "2 hours",
+  "distance_landmark": "Penn's Landing, downtown waterfront",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/independence-seaport-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Independence Seaport Museum entry"
+  }
+}

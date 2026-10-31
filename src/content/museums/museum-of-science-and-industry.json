@@ -1,0 +1,42 @@
+{
+  "name": "Museum of Science and Industry",
+  "short_name": "MSI Chicago",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "5700 S DuSable Lake Shore Dr, Chicago, IL 60637",
+  "lat": 41.7906,
+  "lng": -87.5831,
+  "discipline": "Science",
+  "founded": 1933,
+  "rating": 8.8,
+  "review_count": 38209,
+  "review_label": "Excellent",
+  "admission_from": 25.95,
+  "admission_text": "general admission",
+  "hours_summary": "Mon–Sun · 9:30 AM – 4 PM",
+  "hours_today": "9:30 AM – 4 PM",
+  "visit_time": "3–5 hours",
+  "best_for": "Families, hands-on",
+  "tagline": "Captured U-boat, working coal mine, hands-on for kids. The most physical museum in the city.",
+  "description": "Largest science museum in the Western Hemisphere. Houses U-505 (the only captured German submarine on US soil), a working coal mine, the Apollo 8 command module, and the famous transparent anatomical figures.",
+  "review_long": "MSI is built into the only surviving major building from the 1893 World's Columbian Exposition, and it remains the most physically engaging science museum in the country. U-505 — the only German submarine the US Navy ever captured — sits in a purpose-built underground hall. The working coal mine takes you down a real elevator shaft.\n\nGo with kids if you have them. Go without kids and you'll still spend four hours.",
+  "badges": [
+    { "label": "Family favorite", "tone": "warn" },
+    { "label": "Free for IL kids 3–11", "tone": "ok" }
+  ],
+  "tips": [
+    { "tag": "TIP", "tone": "warn", "text": "U-505 sub tour is timed and books out by noon — reserve at entry." },
+    { "tag": "TIP", "tone": "warn", "text": "Park in the underground garage; surface lots fill on weekends." }
+  ],
+  "highlights": [
+    { "location": "U-505 Hall",     "item": "Captured German submarine, full hull" },
+    { "location": "Coal Mine",      "item": "Working hoist and underground tour" },
+    { "location": "Henry Crown",    "item": "Apollo 8 command module" }
+  ],
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/chicago-l178/museum-of-science-and-industry/?partner_id=PLACEHOLDER",
+    "product_name": "MSI general entry"
+  },
+  "distance_landmark": "Hyde Park, 7.5 mi south of downtown"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Franklin Institute",
+  "city": "Philadelphia",
+  "state": "PA",
+  "address": "222 N 20th St, Philadelphia, PA 19103",
+  "lat": 39.9582,
+  "lng": -75.1729,
+  "discipline": "Science",
+  "founded": 1824,
+  "rating": 8.9,
+  "review_count": 21000,
+  "review_label": "Excellent",
+  "admission_from": 25,
+  "admission_text": "general admission",
+  "tagline": "The Giant Heart you walk through. Old-school hands-on science.",
+  "description": "One of the oldest science museums in the country. The walk-through Giant Heart — a two-story anatomical model with sound effects — has been a fixture since 1954. Plus a planetarium, an IMAX, and a permanent Franklin biographical wing.",
+  "hours_today": "9:30 AM – 5 PM",
+  "hours_summary": "Daily 9:30 AM – 5 PM",
+  "visit_time": "3 hours",
+  "best_for": "Families",
+  "badges": [
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Giant Heart",
+      "item": "Two-story heart model, walk-through since 1954"
+    }
+  ],
+  "distance_landmark": "Logan Square, on the Parkway",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/philadelphia/franklin-institute/?partner_id=PLACEHOLDER",
+    "product_name": "Franklin Institute entry"
+  }
+}

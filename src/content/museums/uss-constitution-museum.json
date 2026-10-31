@@ -1,0 +1,30 @@
+{
+  "name": "USS Constitution Museum",
+  "city": "Boston",
+  "state": "MA",
+  "address": "Building 22, Charlestown Navy Yard, Boston, MA 02129",
+  "lat": 42.3724,
+  "lng": -71.0556,
+  "discipline": "Military",
+  "founded": 1972,
+  "rating": 8.8,
+  "review_count": 4900,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "suggested donation",
+  "tagline": "The world's oldest commissioned warship still afloat. Free, with the ship next door.",
+  "description": "The companion museum to USS Constitution (Old Ironsides), the 1797 frigate that earned its nickname when British cannonballs bounced off its hull during the War of 1812. Both museum and ship are free with suggested donation; the ship is across the street.",
+  "hours_today": "10 AM – 5 PM",
+  "hours_summary": "Daily 10 AM – 5 PM",
+  "visit_time": "1.5 hours",
+  "badges": [
+    {
+      "label": "Suggested donation",
+      "tone": "ok"
+    }
+  ],
+  "distance_landmark": "Charlestown Navy Yard, across the river from downtown",
+  "affiliate": {
+    "network": "none"
+  }
+}

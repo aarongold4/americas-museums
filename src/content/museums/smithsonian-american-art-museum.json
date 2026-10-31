@@ -1,0 +1,36 @@
+{
+  "name": "Smithsonian American Art Museum",
+  "city": "Washington",
+  "state": "DC",
+  "address": "8th and G Streets NW, Washington, DC 20004",
+  "lat": 38.8975,
+  "lng": -77.0228,
+  "discipline": "Art",
+  "founded": 1829,
+  "rating": 8.8,
+  "review_count": 9100,
+  "review_label": "Excellent",
+  "admission_from": 0,
+  "admission_text": "always free",
+  "tagline": "American art from colonial to contemporary, in the Old Patent Office.",
+  "description": "The Smithsonian's American-art-only collection, sharing the Old Patent Office Building (1836) with the National Portrait Gallery. Strong holdings in 19th-century American landscape, folk art, and Modernism. The Robert and Arlene Kogod Courtyard (Norman Foster) connects the two museums.",
+  "hours_today": "11:30 AM – 7 PM",
+  "hours_summary": "Daily 11:30 AM – 7 PM",
+  "visit_time": "2 hours",
+  "badges": [
+    {
+      "label": "Always free",
+      "tone": "ok"
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Folk Art Gallery",
+      "item": "James Hampton's Throne of the Third Heaven"
+    }
+  ],
+  "distance_landmark": "Penn Quarter / Chinatown",
+  "affiliate": {
+    "network": "none"
+  }
+}

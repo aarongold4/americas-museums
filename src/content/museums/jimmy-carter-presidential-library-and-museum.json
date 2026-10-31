@@ -1,0 +1,26 @@
+{
+  "name": "Jimmy Carter Presidential Library and Museum",
+  "city": "Atlanta",
+  "state": "GA",
+  "address": "441 John Lewis Freedom Pkwy NE, Atlanta, GA 30307",
+  "lat": 33.7676,
+  "lng": -84.3536,
+  "discipline": "History",
+  "founded": 1986,
+  "rating": 8.7,
+  "review_count": 3400,
+  "review_label": "Excellent",
+  "admission_from": 12,
+  "admission_text": "general admission",
+  "tagline": "The 39th president's archive, on a hilltop east of downtown.",
+  "description": "Permanent exhibit covers the 1976 campaign, Camp David Accords, and the Iran hostage crisis. Includes a full-scale Oval Office replica. The 35-acre Carter Center campus around it includes formal gardens.",
+  "hours_today": "9 AM – 4:45 PM",
+  "hours_summary": "Mon–Sat 9 AM – 4:45 PM · Sun 12 PM – 4:45 PM",
+  "visit_time": "1.5 hours",
+  "distance_landmark": "Poncey-Highland, on the Carter Center campus",
+  "affiliate": {
+    "network": "getyourguide",
+    "deep_link": "https://www.getyourguide.com/atlanta/jimmy-carter-presidential-library-and-museum/?partner_id=PLACEHOLDER",
+    "product_name": "Jimmy Carter Presidential Library and Museum entry"
+  }
+}

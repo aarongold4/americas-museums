@@ -1,0 +1,38 @@
+{
+  "name": "Museum of Contemporary Art Chicago",
+  "short_name": "MCA Chicago",
+  "city": "Chicago",
+  "state": "IL",
+  "address": "220 E Chicago Ave, Chicago, IL 60611",
+  "lat": 41.8967,
+  "lng": -87.6217,
+  "discipline": "Art",
+  "founded": 1967,
+  "rating": 8.5,
+  "review_count": 14820,
+  "review_label": "Excellent",
+  "admission_from": 22,
+  "admission_text": "general admission",
+  "hours_summary": "Wed–Sun · 10 AM – 5 PM (closed Mon–Tue)",
+  "hours_today": "10 AM – 5 PM",
+  "visit_time": "1.5–2 hours",
+  "best_for": "Contemporary art",
+  "tagline": "Strong rotating exhibition program; the building itself is a Josef Paul Kleihues block of basalt and aluminum.",
+  "description": "One of the largest contemporary art museums in the country, with a rotating program of major exhibitions and a permanent collection focused on post-1945 art. Strong holdings in conceptual art, photography, and Surrealism.",
+  "badges": [
+    { "label": "Free for under-19s", "tone": "ok" }
+  ],
+  "tips": [
+    { "tag": "TIP", "tone": "warn", "text": "Tuesday is closed — don't rely on it as a rainy-day backup." }
+  ],
+  "highlights": [
+    { "location": "Permanent",     "item": "Marisol's Mi Mama y Yo" },
+    { "location": "Permanent",     "item": "Felix Gonzalez-Torres pieces (often rotating)" }
+  ],
+  "affiliate": {
+    "network": "tiqets",
+    "deep_link": "https://www.tiqets.com/en/chicago-attractions-c66421/museum-of-contemporary-art-chicago-p991234/?partner=PLACEHOLDER",
+    "product_name": "MCA general entry"
+  },
+  "distance_landmark": "Streeterville, 1 block off Michigan Ave"
+}

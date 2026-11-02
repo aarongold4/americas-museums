@@ -41,5 +41,12 @@
   "distance_landmark": "On the National Mall, opposite the Capitol",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/National_Museum_of_Natural_History_-_2026_%2855255088887%29.jpg/1280px-National_Museum_of_Natural_History_-_2026_%2855255088887%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Hall_of_Mammals_at_the_Smithsonian_National_Museum_of_Natural_History.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Natural_History%2C_Washington%2C_D.C._%282013%29_-_16.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Natural_History%2C_Washington.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / National Museum of Natural History"
 }

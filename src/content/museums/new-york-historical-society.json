@@ -46,5 +46,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/new-york/new-york-historical-society/?partner_id=PLACEHOLDER",
     "product_name": "New-York Historical Society entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/New_York_Historical_Society_%2848269593386%29.jpg/1280px-New_York_Historical_Society_%2848269593386%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/337_NEW-YORK_HISTORICAL_SOCIETY%2C_SECOND_AVENUE_AND_EAST_11TH_STREET.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/New_York_Historical_Society_%2848269593386%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Patricia_D._Klingenstein_Library_at_the_New-York_Historical_Society.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / New York Historical"
 }

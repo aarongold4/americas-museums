@@ -22,5 +22,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/atlanta/michael-c-carlos-museum/?partner_id=PLACEHOLDER",
     "product_name": "Michael C. Carlos Museum entry"
-  }
+  },
+  "hero_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_C._Carlos_Museum%2C_Atlanta_%2810453374255%29.jpg?width=1000",
+  "gallery_images": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Hanif_Kureishi.jpg?width=1000",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_C._Carlos_Museum.JPG?width=1000",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on_Benouville_-_Two_Men_Ascending_a_Stair_-_WGA01888.jpg?width=1000"
+  ],
+  "photo_credit": "via Wikimedia Commons / Michael C. Carlos Museum"
 }

@@ -21,22 +21,52 @@
   "description": "Largest science museum in the Western Hemisphere. Houses U-505 (the only captured German submarine on US soil), a working coal mine, the Apollo 8 command module, and the famous transparent anatomical figures.",
   "review_long": "MSI is built into the only surviving major building from the 1893 World's Columbian Exposition, and it remains the most physically engaging science museum in the country. U-505 — the only German submarine the US Navy ever captured — sits in a purpose-built underground hall. The working coal mine takes you down a real elevator shaft.\n\nGo with kids if you have them. Go without kids and you'll still spend four hours.",
   "badges": [
-    { "label": "Family favorite", "tone": "warn" },
-    { "label": "Free for IL kids 3–11", "tone": "ok" }
+    {
+      "label": "Family favorite",
+      "tone": "warn"
+    },
+    {
+      "label": "Free for IL kids 3–11",
+      "tone": "ok"
+    }
   ],
   "tips": [
-    { "tag": "TIP", "tone": "warn", "text": "U-505 sub tour is timed and books out by noon — reserve at entry." },
-    { "tag": "TIP", "tone": "warn", "text": "Park in the underground garage; surface lots fill on weekends." }
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "U-505 sub tour is timed and books out by noon — reserve at entry."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Park in the underground garage; surface lots fill on weekends."
+    }
   ],
   "highlights": [
-    { "location": "U-505 Hall",     "item": "Captured German submarine, full hull" },
-    { "location": "Coal Mine",      "item": "Working hoist and underground tour" },
-    { "location": "Henry Crown",    "item": "Apollo 8 command module" }
+    {
+      "location": "U-505 Hall",
+      "item": "Captured German submarine, full hull"
+    },
+    {
+      "location": "Coal Mine",
+      "item": "Working hoist and underground tour"
+    },
+    {
+      "location": "Henry Crown",
+      "item": "Apollo 8 command module"
+    }
   ],
   "affiliate": {
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/chicago-l178/museum-of-science-and-industry/?partner_id=PLACEHOLDER",
     "product_name": "MSI general entry"
   },
-  "distance_landmark": "Hyde Park, 7.5 mi south of downtown"
+  "distance_landmark": "Hyde Park, 7.5 mi south of downtown",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Museum_of_Science_and_Industry_%28Chicago%29.jpg/1280px-Museum_of_Science_and_Industry_%28Chicago%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/20200811_Museum_of_Science_and_Industry_and_Jackson_Park_%281%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Chicago_Museum_of_Science_and_Industry.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Idea_Factory%2C_Museum_of_Science_and_Industry%2C_Jackson_Park%2C_Lake_Shore_Drive_and_57th_Street%2C_Hyde_Park%2C_Chicago%2C_IL_%2854213025568%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Museum of Science and Industry (Chicago)"
 }

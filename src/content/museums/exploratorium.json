@@ -34,5 +34,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/san-francisco/exploratorium/?partner_id=PLACEHOLDER",
     "product_name": "Exploratorium entry"
-  }
+  },
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Main_Entrance_to_the_Exploratorium_at_Pier_15.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Exploratorium_teachers.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Fog_Bridge_at_the_Exploratorium.jpeg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Frank_Oppenheimer_with_Exploratorium_Exhibit.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Exploratorium"
 }

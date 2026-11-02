@@ -1,0 +1,607 @@
+{
+  "boston-childrens-museum": {
+    "name": "Boston Children's Museum",
+    "article": "Boston Children's Museum",
+    "current": "https://upload.wikimedia.org/wikipedia/en/a/a6/BCM_logo_FINAL_Horiz.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "options": [
+      {
+        "title": "File:Boston Children's Museum (54960643491).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Boston_Children%27s_Museum_%2854960643491%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Boston_Children%27s_Museum_%2854960643491%29.jpg?width=400"
+      },
+      {
+        "title": "File:Boston Childrens Museum P1000509.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Boston_Childrens_Museum_P1000509.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Boston_Childrens_Museum_P1000509.JPG?width=400"
+      },
+      {
+        "title": "File:Hood Milk Bottle (54960892944).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Hood_Milk_Bottle_%2854960892944%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Hood_Milk_Bottle_%2854960892944%29.jpg?width=400"
+      },
+      {
+        "title": "File:NB Climb.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/NB_Climb.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/NB_Climb.JPG?width=400"
+      }
+    ]
+  },
+  "art-institute-of-chicago": {
+    "name": "Art Institute of Chicago",
+    "current": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Art_Institute_of_Chicago_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "options": [
+      {
+        "title": "File:Alapini vina @ Art Institute of Chicago - detail of black schist of God Vishnu with His Consorts Lakshmi and Sarasvati - Bangladesh or Eastern India, Pala period, 10th-12th century.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Alapini_vina_%40_Art_Institute_of_Chicago_-_detail_of_black_schist_of_God_Vishnu_with_His_Consorts_Lakshmi_and_Sarasvati_-_Bangladesh_or_Eastern_India%2C_Pala_period%2C_10th-12th_century.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Alapini_vina_%40_Art_Institute_of_Chicago_-_detail_of_black_schist_of_God_Vishnu_with_His_Consorts_Lakshmi_and_Sarasvati_-_Bangladesh_or_Eastern_India%2C_Pala_period%2C_10th-12th_century.jpg?width=400"
+      },
+      {
+        "title": "File:Amedeo Modigliani - Jacques and Berthe Lipchitz - Google Art Project.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Amedeo_Modigliani_-_Jacques_and_Berthe_Lipchitz_-_Google_Art_Project.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Amedeo_Modigliani_-_Jacques_and_Berthe_Lipchitz_-_Google_Art_Project.jpg?width=400"
+      },
+      {
+        "title": "File:Ancient Greek Amphora of the Tarquinia Painter Herakles killing the Nemean Lion.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Ancient_Greek_Amphora_of_the_Tarquinia_Painter_Herakles_killing_the_Nemean_Lion.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Ancient_Greek_Amphora_of_the_Tarquinia_Painter_Herakles_killing_the_Nemean_Lion.jpg?width=400"
+      },
+      {
+        "title": "File:Art Institute, Chicago circa 1907 postcard (front).tiff",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute%2C_Chicago_circa_1907_postcard_%28front%29.tiff?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute%2C_Chicago_circa_1907_postcard_%28front%29.tiff?width=400"
+      },
+      {
+        "title": "File:Art Institute Modern Wing Night.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute_Modern_Wing_Night.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute_Modern_Wing_Night.jpg?width=400"
+      },
+      {
+        "title": "File:Bernat Martorell - Saint George Killing the Dragon - Google Art Project.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Bernat_Martorell_-_Saint_George_Killing_the_Dragon_-_Google_Art_Project.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Bernat_Martorell_-_Saint_George_Killing_the_Dragon_-_Google_Art_Project.jpg?width=400"
+      },
+      {
+        "title": "File:Casket, early 18th century, attributed to Andre-Charles Boulle, oak carcass veneered with tortoiseshell, gilt copper, pewter, ebony - Art Institute of Chicago - DSC09745.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Casket%2C_early_18th_century%2C_attributed_to_Andre-Charles_Boulle%2C_oak_carcass_veneered_with_tortoiseshell%2C_gilt_copper%2C_pewter%2C_ebony_-_Art_Institute_of_Chicago_-_DSC09745.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Casket%2C_early_18th_century%2C_attributed_to_Andre-Charles_Boulle%2C_oak_carcass_veneered_with_tortoiseshell%2C_gilt_copper%2C_pewter%2C_ebony_-_Art_Institute_of_Chicago_-_DSC09745.JPG?width=400"
+      },
+      {
+        "title": "File:Dante Gabriel Rossetti - Beata Beatrix - 1925.722 - Art Institute of Chicago.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Dante_Gabriel_Rossetti_-_Beata_Beatrix_-_1925.722_-_Art_Institute_of_Chicago.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Dante_Gabriel_Rossetti_-_Beata_Beatrix_-_1925.722_-_Art_Institute_of_Chicago.jpg?width=400"
+      }
+    ],
+    "article": "Art Institute of Chicago"
+  },
+  "field-museum": {
+    "name": "Field Museum",
+    "article": "Field Museum of Natural History",
+    "current": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Field_Museum_of_Natural_History_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "options": [
+      {
+        "title": "File:Annual report of the Director to the Board of Trustees for the year ... (1894) (17811373403).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Annual_report_of_the_Director_to_the_Board_of_Trustees_for_the_year_..._%281894%29_%2817811373403%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Annual_report_of_the_Director_to_the_Board_of_Trustees_for_the_year_..._%281894%29_%2817811373403%29.jpg?width=400"
+      },
+      {
+        "title": "File:Annual report of the Director to the Board of Trustees for the year .. (1906) (17809550884).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Annual_report_of_the_Director_to_the_Board_of_Trustees_for_the_year_.._%281906%29_%2817809550884%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Annual_report_of_the_Director_to_the_Board_of_Trustees_for_the_year_.._%281906%29_%2817809550884%29.jpg?width=400"
+      },
+      {
+        "title": "File:Maori Meeting House, Ruatepupuke II - Field Museum of Natural History - by Joy of Museums - 1.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Maori_Meeting_House%2C_Ruatepupuke_II_-_Field_Museum_of_Natural_History_-_by_Joy_of_Museums_-_1.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Maori_Meeting_House%2C_Ruatepupuke_II_-_Field_Museum_of_Natural_History_-_by_Joy_of_Museums_-_1.jpg?width=400"
+      },
+      {
+        "title": "File:Museo Field, Chicago, Illinois, Estados Unidos, 2012-10-20, DD 08.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Museo_Field%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_08.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Museo_Field%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_08.jpg?width=400"
+      },
+      {
+        "title": "File:Stanley Field Hall 2020.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Stanley_Field_Hall_2020.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Stanley_Field_Hall_2020.jpg?width=400"
+      },
+      {
+        "title": "File:Acheloma-Field Museum.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Acheloma-Field_Museum.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Acheloma-Field_Museum.jpg?width=400"
+      },
+      {
+        "title": "File:Anchiceratops Field Museum.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Anchiceratops_Field_Museum.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Anchiceratops_Field_Museum.jpg?width=400"
+      },
+      {
+        "title": "File:Aulacephalodon FMNH.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Aulacephalodon_FMNH.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Aulacephalodon_FMNH.jpg?width=400"
+      }
+    ]
+  },
+  "hammer-museum": {
+    "name": "Hammer Museum",
+    "article": "Hammer Museum",
+    "current": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Wdmk_HammerBox_Black.jpg/1280px-Wdmk_HammerBox_Black.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "options": [
+      {
+        "title": "File:Pablo Picasso, 1904, Le repas frugal (The Frugal Repast), etching, Hammer Museum, University of California.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Pablo_Picasso%2C_1904%2C_Le_repas_frugal_%28The_Frugal_Repast%29%2C_etching%2C_Hammer_Museum%2C_University_of_California.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Pablo_Picasso%2C_1904%2C_Le_repas_frugal_%28The_Frugal_Repast%29%2C_etching%2C_Hammer_Museum%2C_University_of_California.jpg?width=400"
+      },
+      {
+        "title": "File:Royce Hall post rain.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Royce_Hall_post_rain.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Royce_Hall_post_rain.jpg?width=400"
+      },
+      {
+        "title": "File:Wild Belle @ Hammer Museum 07 18 2019 (48501390132).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Wild_Belle_%40_Hammer_Museum_07_18_2019_%2848501390132%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Wild_Belle_%40_Hammer_Museum_07_18_2019_%2848501390132%29.jpg?width=400"
+      },
+      {
+        "title": "File:Hammer Museum Westwood June 2012.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Hammer_Museum_Westwood_June_2012.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Hammer_Museum_Westwood_June_2012.jpg?width=400"
+      },
+      {
+        "title": "File:Hospital at Saint Remy.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Hospital_at_Saint_Remy.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Hospital_at_Saint_Remy.jpg?width=400"
+      },
+      {
+        "title": "File:Wdmk HammerBox Black.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Wdmk_HammerBox_Black.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Wdmk_HammerBox_Black.jpg?width=400"
+      }
+    ]
+  },
+  "natural-history-museum-of-la-county": {
+    "name": "Natural History Museum of Los Angeles County",
+    "article": "Natural History Museum of Los Angeles County",
+    "current": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Natural_History_Museum_of_Los_Angeles_County_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "options": [
+      {
+        "title": "File:Los Angeles County Museum of Natural History - Hall of African Mammals.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Museum_of_Natural_History_-_Hall_of_African_Mammals.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Museum_of_Natural_History_-_Hall_of_African_Mammals.JPG?width=400"
+      },
+      {
+        "title": "File:Natural History Museum of Los Angeles Rotunda.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Natural_History_Museum_of_Los_Angeles_Rotunda.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Natural_History_Museum_of_Los_Angeles_Rotunda.JPG?width=400"
+      },
+      {
+        "title": "File:Dinosaur statues outside NHMLAC.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Dinosaur_statues_outside_NHMLAC.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Dinosaur_statues_outside_NHMLAC.jpg?width=400"
+      },
+      {
+        "title": "File:NaturalHistoryMuseumOfLosAngelesCounty.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/NaturalHistoryMuseumOfLosAngelesCounty.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/NaturalHistoryMuseumOfLosAngelesCounty.jpg?width=400"
+      },
+      {
+        "title": "File:Triceratops mount.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Triceratops_mount.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Triceratops_mount.jpg?width=400"
+      },
+      {
+        "title": "File:Antonio Coronel.png",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Antonio_Coronel.png?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Antonio_Coronel.png?width=400"
+      },
+      {
+        "title": "File:LACMNH, 1956.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/LACMNH%2C_1956.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/LACMNH%2C_1956.jpg?width=400"
+      }
+    ]
+  },
+  "cooper-hewitt-smithsonian-design-museum": {
+    "name": "Cooper Hewitt, Smithsonian Design Museum",
+    "article": "Cooper Hewitt, Smithsonian Design Museum",
+    "current": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cooper_Hewitt%2C_Smithsonian_Design_Museum_logo.svg/1280px-Cooper_Hewitt%2C_Smithsonian_Design_Museum_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "options": [
+      {
+        "title": "File:Cooper-Hewitt Museum \"Ornament in the 20th Century\" Exhibition Poster.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Cooper-Hewitt_Museum_%22Ornament_in_the_20th_Century%22_Exhibition_Poster.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Cooper-Hewitt_Museum_%22Ornament_in_the_20th_Century%22_Exhibition_Poster.jpg?width=400"
+      },
+      {
+        "title": "File:\"Treasures from the Cooper Union\" Exhibit.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/%22Treasures_from_the_Cooper_Union%22_Exhibit.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/%22Treasures_from_the_Cooper_Union%22_Exhibit.jpg?width=400"
+      },
+      {
+        "title": "File:The Carnegie Mansion, New Home of the Cooper-Hewitt.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/The_Carnegie_Mansion%2C_New_Home_of_the_Cooper-Hewitt.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/The_Carnegie_Mansion%2C_New_Home_of_the_Cooper-Hewitt.jpg?width=400"
+      },
+      {
+        "title": "File:Cooper Hewitt (48059131921).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Cooper_Hewitt_%2848059131921%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Cooper_Hewitt_%2848059131921%29.jpg?width=400"
+      },
+      {
+        "title": "File:Cropped Museum of the Romanian Peasant 6.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Cropped_Museum_of_the_Romanian_Peasant_6.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Cropped_Museum_of_the_Romanian_Peasant_6.jpg?width=400"
+      },
+      {
+        "title": "File:Lincoln Chair at the Cooper Union Museum.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_Chair_at_the_Cooper_Union_Museum.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_Chair_at_the_Cooper_Union_Museum.jpg?width=400"
+      }
+    ]
+  },
+  "glbt-historical-society-museum": {
+    "name": "GLBT Historical Society Museum",
+    "article": "GLBT Historical Society",
+    "current": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/GLBT_Historical_Society_Logo_2017.svg/1280px-GLBT_Historical_Society_Logo_2017.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "options": [
+      {
+        "title": "File:Visitors Viewing a Photography Exhibition at The GLBT History Museum (San Francisco)..jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Visitors_Viewing_a_Photography_Exhibition_at_The_GLBT_History_Museum_%28San_Francisco%29..jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Visitors_Viewing_a_Photography_Exhibition_at_The_GLBT_History_Museum_%28San_Francisco%29..jpg?width=400"
+      },
+      {
+        "title": "File:Christopher Street Liberation Day Gay-In offset flyer, 1970.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Christopher_Street_Liberation_Day_Gay-In_offset_flyer%2C_1970.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Christopher_Street_Liberation_Day_Gay-In_offset_flyer%2C_1970.jpg?width=400"
+      },
+      {
+        "title": "File:GLBTHistoryMuseum.FrontWindows12 10.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.FrontWindows12_10.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.FrontWindows12_10.jpg?width=400"
+      },
+      {
+        "title": "File:GLBTHistoryMuseum.WeddingPantsuits12 10.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.WeddingPantsuits12_10.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.WeddingPantsuits12_10.jpg?width=400"
+      },
+      {
+        "title": "File:MissionSt.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/MissionSt.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/MissionSt.jpg?width=400"
+      },
+      {
+        "title": "File:PassionateA.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/PassionateA.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/PassionateA.JPG?width=400"
+      }
+    ]
+  },
+  "legion-of-honor": {
+    "name": "Legion of Honor",
+    "article": "Legion of Honor (museum)",
+    "current": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Famsf-logo-2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "options": [
+      {
+        "title": "File:Alma de Bretteville Spreckels in Queen Marie of Roumania's audience chair (1924) (cropped).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Alma_de_Bretteville_Spreckels_in_Queen_Marie_of_Roumania%27s_audience_chair_%281924%29_%28cropped%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Alma_de_Bretteville_Spreckels_in_Queen_Marie_of_Roumania%27s_audience_chair_%281924%29_%28cropped%29.jpg?width=400"
+      },
+      {
+        "title": "File:Anna Hyatt Huntington--El Cid Campeador--1927--Legion of Honor--San Francisco--photo by Steven Saylor (cropped).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Anna_Hyatt_Huntington--El_Cid_Campeador--1927--Legion_of_Honor--San_Francisco--photo_by_Steven_Saylor_%28cropped%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Anna_Hyatt_Huntington--El_Cid_Campeador--1927--Legion_of_Honor--San_Francisco--photo_by_Steven_Saylor_%28cropped%29.jpg?width=400"
+      },
+      {
+        "title": "File:Breton Bathers by Paul Gauguin, zincograph, California Palace of the Legion of Honor.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Breton_Bathers_by_Paul_Gauguin%2C_zincograph%2C_California_Palace_of_the_Legion_of_Honor.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Breton_Bathers_by_Paul_Gauguin%2C_zincograph%2C_California_Palace_of_the_Legion_of_Honor.JPG?width=400"
+      },
+      {
+        "title": "File:Cabinet on stand by Pierre Gole, Paris, c. 1665, ebony, kingwood, etc, tortoiseshell, with Vases, Arita, Japan, late 1600s, porcelain - California Palace of the Legion of Honor - San Francisco, CA - DSC02734.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Cabinet_on_stand_by_Pierre_Gole%2C_Paris%2C_c._1665%2C_ebony%2C_kingwood%2C_etc%2C_tortoiseshell%2C_with_Vases%2C_Arita%2C_Japan%2C_late_1600s%2C_porcelain_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC02734.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Cabinet_on_stand_by_Pierre_Gole%2C_Paris%2C_c._1665%2C_ebony%2C_kingwood%2C_etc%2C_tortoiseshell%2C_with_Vases%2C_Arita%2C_Japan%2C_late_1600s%2C_porcelain_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC02734.jpg?width=400"
+      },
+      {
+        "title": "File:Charger depicting Psyche's Father Consulting the Oracle, after Agostino Veneziano, Italy, Faenze, c. 1550-1570, maiolica - California Palace of the Legion of Honor - San Francisco, CA - DSC03027.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Charger_depicting_Psyche%27s_Father_Consulting_the_Oracle%2C_after_Agostino_Veneziano%2C_Italy%2C_Faenze%2C_c._1550-1570%2C_maiolica_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC03027.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Charger_depicting_Psyche%27s_Father_Consulting_the_Oracle%2C_after_Agostino_Veneziano%2C_Italy%2C_Faenze%2C_c._1550-1570%2C_maiolica_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC03027.jpg?width=400"
+      },
+      {
+        "title": "File:Flask, Eastern Mediterranean, 1st century AD, free-blown glass - California Palace of the Legion of Honor - San Francisco, CA - DSC03064.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Flask%2C_Eastern_Mediterranean%2C_1st_century_AD%2C_free-blown_glass_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC03064.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Flask%2C_Eastern_Mediterranean%2C_1st_century_AD%2C_free-blown_glass_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC03064.jpg?width=400"
+      },
+      {
+        "title": "File:Grand Canal, Venice, 1908 by Claude Monet - California Palace of the Legion of Honor.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Grand_Canal%2C_Venice%2C_1908_by_Claude_Monet_-_California_Palace_of_the_Legion_of_Honor.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Grand_Canal%2C_Venice%2C_1908_by_Claude_Monet_-_California_Palace_of_the_Legion_of_Honor.jpg?width=400"
+      },
+      {
+        "title": "File:The-tribute-money-c 1610-15--peter-paul-rubens--Legion of Honor--San Francisco.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/The-tribute-money-c_1610-15--peter-paul-rubens--Legion_of_Honor--San_Francisco.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/The-tribute-money-c_1610-15--peter-paul-rubens--Legion_of_Honor--San_Francisco.jpg?width=400"
+      }
+    ]
+  },
+  "de-young-museum": {
+    "name": "de Young Museum",
+    "current": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Famsf-logo-2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "options": [
+      {
+        "title": "File:Frederic Edwin Church - Rainy Season in the Tropics - Google Art Project.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Frederic_Edwin_Church_-_Rainy_Season_in_the_Tropics_-_Google_Art_Project.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Frederic_Edwin_Church_-_Rainy_Season_in_the_Tropics_-_Google_Art_Project.jpg?width=400"
+      },
+      {
+        "title": "File:President Laughing at Remarks By Queen Elizabeth Ii at a Dinner Honoring Her at M.H. De Young Memorial Museum in San Francisco California with George Shultz and Helena Shultz - DPLA - e4a38ca93b2212631332c85f5599ac14.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/President_Laughing_at_Remarks_By_Queen_Elizabeth_Ii_at_a_Dinner_Honoring_Her_at_M.H._De_Young_Memorial_Museum_in_San_Francisco_California_with_George_Shultz_and_Helena_Shultz_-_DPLA_-_e4a38ca93b2212631332c85f5599ac14.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/President_Laughing_at_Remarks_By_Queen_Elizabeth_Ii_at_a_Dinner_Honoring_Her_at_M.H._De_Young_Memorial_Museum_in_San_Francisco_California_with_George_Shultz_and_Helena_Shultz_-_DPLA_-_e4a38ca93b2212631332c85f5599ac14.jpg?width=400"
+      },
+      {
+        "title": "File:George Henry Durrie - Winter in the Country - Google Art Project.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/George_Henry_Durrie_-_Winter_in_the_Country_-_Google_Art_Project.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/George_Henry_Durrie_-_Winter_in_the_Country_-_Google_Art_Project.jpg?width=400"
+      },
+      {
+        "title": "File:Three Gems, James Turrell Skyspace, interior.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Three_Gems%2C_James_Turrell_Skyspace%2C_interior.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Three_Gems%2C_James_Turrell_Skyspace%2C_interior.jpg?width=400"
+      },
+      {
+        "title": "File:William Hahn - Sacramento Railroad Station - Google Art Project.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/William_Hahn_-_Sacramento_Railroad_Station_-_Google_Art_Project.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/William_Hahn_-_Sacramento_Railroad_Station_-_Google_Art_Project.jpg?width=400"
+      },
+      {
+        "title": "File:Cover Pot for the Teotihuacan show 2017.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Cover_Pot_for_the_Teotihuacan_show_2017.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Cover_Pot_for_the_Teotihuacan_show_2017.jpg?width=400"
+      },
+      {
+        "title": "File:De Young Museum pano.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/De_Young_Museum_pano.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/De_Young_Museum_pano.jpg?width=400"
+      },
+      {
+        "title": "File:M. H. de Young Memorial Museum.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/M._H._de_Young_Memorial_Museum.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/M._H._de_Young_Memorial_Museum.jpg?width=400"
+      }
+    ],
+    "article": "De Young Museum"
+  },
+  "museum-of-flight": {
+    "name": "Museum of Flight",
+    "article": "Museum of Flight",
+    "current": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Museum_of_Flight_logo.svg/1280px-Museum_of_Flight_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "options": [
+      {
+        "title": "File:Boeing Building No. 105.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Boeing_Building_No._105.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Boeing_Building_No._105.jpg?width=400"
+      },
+      {
+        "title": "File:Concorde G-BOAG tail at the Museum of Flight, Seattle.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Concorde_G-BOAG_tail_at_the_Museum_of_Flight%2C_Seattle.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Concorde_G-BOAG_tail_at_the_Museum_of_Flight%2C_Seattle.jpg?width=400"
+      },
+      {
+        "title": "File:Gossamer Albatross II at the Museum of Flight.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Gossamer_Albatross_II_at_the_Museum_of_Flight.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Gossamer_Albatross_II_at_the_Museum_of_Flight.JPG?width=400"
+      },
+      {
+        "title": "File:Museum of Flight Airpark & Aviation HS-01.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Flight_Airpark_%26_Aviation_HS-01.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Flight_Airpark_%26_Aviation_HS-01.jpg?width=400"
+      },
+      {
+        "title": "File:BoeingModel80A-1.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/BoeingModel80A-1.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/BoeingModel80A-1.jpg?width=400"
+      },
+      {
+        "title": "File:Boeing 747, Museum of Flight.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Boeing_747%2C_Museum_of_Flight.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Boeing_747%2C_Museum_of_Flight.jpg?width=400"
+      },
+      {
+        "title": "File:Museum of Flight, Seattle.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Flight%2C_Seattle.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Flight%2C_Seattle.jpg?width=400"
+      }
+    ]
+  },
+  "museum-of-pop-culture": {
+    "name": "Museum of Pop Culture",
+    "article": "Museum of Pop Culture",
+    "current": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Museum_of_Pop_Culture_Logo.png/1280px-Museum_of_Pop_Culture_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "options": [
+      {
+        "title": "File:Night Exterior EMP.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Night_Exterior_EMP.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Night_Exterior_EMP.jpg?width=400"
+      },
+      {
+        "title": "File:Aerial view of EMPSFM.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_EMPSFM.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_EMPSFM.jpg?width=400"
+      },
+      {
+        "title": "File:ExperienceMusicProject.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/ExperienceMusicProject.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/ExperienceMusicProject.jpg?width=400"
+      },
+      {
+        "title": "File:Guggenheim bilbao.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Guggenheim_bilbao.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Guggenheim_bilbao.JPG?width=400"
+      },
+      {
+        "title": "File:Guitar Art at the EMP.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Guitar_Art_at_the_EMP.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Guitar_Art_at_the_EMP.jpg?width=400"
+      },
+      {
+        "title": "File:EMPPano11.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/EMPPano11.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/EMPPano11.jpg?width=400"
+      },
+      {
+        "title": "File:Monorail in EMP.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Monorail_in_EMP.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Monorail_in_EMP.jpg?width=400"
+      },
+      {
+        "title": "File:Sf-userbox.png",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Sf-userbox.png?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Sf-userbox.png?width=400"
+      }
+    ]
+  },
+  "international-spy-museum": {
+    "name": "International Spy Museum",
+    "article": "International Spy Museum",
+    "current": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/International_Spy_Museum_Logo.svg/1280px-International_Spy_Museum_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "options": [
+      {
+        "title": "File:Spy museum night.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Spy_museum_night.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Spy_museum_night.jpg?width=400"
+      },
+      {
+        "title": "File:2019 International Spy Museum 03.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/2019_International_Spy_Museum_03.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/2019_International_Spy_Museum_03.jpg?width=400"
+      }
+    ]
+  },
+  "national-portrait-gallery": {
+    "name": "National Portrait Gallery",
+    "article": "National Portrait Gallery (United States)",
+    "current": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/National_Portrait_Gallery_%28United_States%29_logo.svg/1280px-National_Portrait_Gallery_%28United_States%29_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "options": [
+      {
+        "title": "File:Gibbs-Coolidge Collection - 1817 to 1821 - by Gilbert Stuart - National Gallery of Art, Washington DC.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Gibbs-Coolidge_Collection_-_1817_to_1821_-_by_Gilbert_Stuart_-_National_Gallery_of_Art%2C_Washington_DC.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Gibbs-Coolidge_Collection_-_1817_to_1821_-_by_Gilbert_Stuart_-_National_Gallery_of_Art%2C_Washington_DC.jpg?width=400"
+      },
+      {
+        "title": "File:Joseph Siffrein Duplessis - Benjamin Franklin - Google Art Project.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg?width=400"
+      },
+      {
+        "title": "File:Frederick Douglass ambrotype (1856).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Frederick_Douglass_ambrotype_%281856%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Frederick_Douglass_ambrotype_%281856%29.jpg?width=400"
+      },
+      {
+        "title": "File:Lincoln O-118 by Garnder, 1865.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_O-118_by_Garnder%2C_1865.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_O-118_by_Garnder%2C_1865.jpg?width=400"
+      },
+      {
+        "title": "File:Motto frederick douglass 2.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Motto_frederick_douglass_2.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Motto_frederick_douglass_2.jpg?width=400"
+      },
+      {
+        "title": "File:AWMellon.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/AWMellon.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/AWMellon.jpg?width=400"
+      }
+    ]
+  },
+  "united-states-holocaust-memorial-museum": {
+    "name": "United States Holocaust Memorial Museum",
+    "article": "United States Holocaust Memorial Museum",
+    "current": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/United_States_Holocaust_Memorial_Museum_logo.svg/1280px-United_States_Holocaust_Memorial_Museum_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "options": [
+      {
+        "title": "File:Identity Documents for Jewish Refugees - US Holocaust Memorial Museum - Washington - DC - USA (40809593073).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Identity_Documents_for_Jewish_Refugees_-_US_Holocaust_Memorial_Museum_-_Washington_-_DC_-_USA_%2840809593073%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Identity_Documents_for_Jewish_Refugees_-_US_Holocaust_Memorial_Museum_-_Washington_-_DC_-_USA_%2840809593073%29.jpg?width=400"
+      },
+      {
+        "title": "File:Arbeit Macht Frei at Holocaust Memorial Museum.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Arbeit_Macht_Frei_at_Holocaust_Memorial_Museum.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Arbeit_Macht_Frei_at_Holocaust_Memorial_Museum.jpg?width=400"
+      },
+      {
+        "title": "File:HallOfRemembrance.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/HallOfRemembrance.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/HallOfRemembrance.jpg?width=400"
+      },
+      {
+        "title": "File:Replica of Auschwitz Entrance.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Replica_of_Auschwitz_Entrance.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Replica_of_Auschwitz_Entrance.jpg?width=400"
+      },
+      {
+        "title": "File:Special exposition, Holocaust Museum, D.C. IMG 4789.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Special_exposition%2C_Holocaust_Museum%2C_D.C._IMG_4789.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Special_exposition%2C_Holocaust_Museum%2C_D.C._IMG_4789.JPG?width=400"
+      },
+      {
+        "title": "File:The United States Holocaust Memorial Museum (USHMM) (53831937253).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/The_United_States_Holocaust_Memorial_Museum_%28USHMM%29_%2853831937253%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/The_United_States_Holocaust_Memorial_Museum_%28USHMM%29_%2853831937253%29.jpg?width=400"
+      },
+      {
+        "title": "File:United States Holocaust Memorial Museum Bridges.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_Bridges.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_Bridges.jpg?width=400"
+      },
+      {
+        "title": "File:United States Holocaust Memorial Museum interior.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_interior.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_interior.JPG?width=400"
+      }
+    ]
+  },
+  "national-museum-of-african-american-history-and-culture": {
+    "name": "National Museum of African American History and Culture",
+    "article": "National Museum of African American History and Culture",
+    "current": "https://upload.wikimedia.org/wikipedia/commons/a/af/National_Museum_of_African_American_History_and_Culture_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "options": [
+      {
+        "title": "File:Swing Low Welded bronze National Museum of African American History and Culture, Smithsonian Institution, Washington, DC.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Swing_Low_Welded_bronze_National_Museum_of_African_American_History_and_Culture%2C_Smithsonian_Institution%2C_Washington%2C_DC.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Swing_Low_Welded_bronze_National_Museum_of_African_American_History_and_Culture%2C_Smithsonian_Institution%2C_Washington%2C_DC.jpg?width=400"
+      },
+      {
+        "title": "File:Benjamin Banneker statue at the National Museum of African American History and Culture.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Benjamin_Banneker_statue_at_the_National_Museum_of_African_American_History_and_Culture.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Benjamin_Banneker_statue_at_the_National_Museum_of_African_American_History_and_Culture.jpg?width=400"
+      },
+      {
+        "title": "File:Construction - National Museum of African American History and Culture - Washington DC.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Construction_-_National_Museum_of_African_American_History_and_Culture_-_Washington_DC.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Construction_-_National_Museum_of_African_American_History_and_Culture_-_Washington_DC.jpg?width=400"
+      },
+      {
+        "title": "File:Construction of the National Museum of African American History and Culture.JPG",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Construction_of_the_National_Museum_of_African_American_History_and_Culture.JPG?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Construction_of_the_National_Museum_of_African_American_History_and_Culture.JPG?width=400"
+      },
+      {
+        "title": "File:Interior of the National Museum of African American History and Culture (NMAAHC) looking south.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Interior_of_the_National_Museum_of_African_American_History_and_Culture_%28NMAAHC%29_looking_south.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Interior_of_the_National_Museum_of_African_American_History_and_Culture_%28NMAAHC%29_looking_south.jpg?width=400"
+      },
+      {
+        "title": "File:Men’s restroom and smoking lounge in a Southern Railway Company car at the National Museum of African American History and Culture.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/Men%E2%80%99s_restroom_and_smoking_lounge_in_a_Southern_Railway_Company_car_at_the_National_Museum_of_African_American_History_and_Culture.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/Men%E2%80%99s_restroom_and_smoking_lounge_in_a_Southern_Railway_Company_car_at_the_National_Museum_of_African_American_History_and_Culture.jpg?width=400"
+      },
+      {
+        "title": "File:National Museum of African American History and Culture in February 2020.jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_in_February_2020.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_in_February_2020.jpg?width=400"
+      },
+      {
+        "title": "File:National Museum of African American History and Culture (97874).jpg",
+        "url_full": "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_%2897874%29.jpg?width=1000",
+        "url_thumb": "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_%2897874%29.jpg?width=400"
+      }
+    ]
+  }
+}

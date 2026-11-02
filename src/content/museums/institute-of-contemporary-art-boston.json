@@ -29,5 +29,7 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/institute-of-contemporary-art-boston/?partner_id=PLACEHOLDER",
     "product_name": "Institute of Contemporary Art Boston entry"
-  }
+  },
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Institute_of_Contemporary_Art%2C_Boston.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "photo_credit": "via Wikimedia Commons / Institute of Contemporary Art, Boston"
 }

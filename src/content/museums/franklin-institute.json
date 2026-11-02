@@ -35,5 +35,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/franklin-institute/?partner_id=PLACEHOLDER",
     "product_name": "Franklin Institute entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Franklin_Institute_%2853574514629%29.jpg/1280px-Franklin_Institute_%2853574514629%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Foucault_pendulum_in_the_Franklin_Institute.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Franklin_1-2%C2%A2_Scott_803_FDC_at_Franklin_Institute_May_19%2C_1938.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Franklin_Institute_%2853574514629%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Franklin Institute"
 }

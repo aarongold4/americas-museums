@@ -45,5 +45,11 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/seattle/chihuly-garden-and-glass/?partner_id=PLACEHOLDER",
     "product_name": "Chihuly Garden and Glass entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Chihuly_Garden_and_Glass_2014_09.JPG/1280px-Chihuly_Garden_and_Glass_2014_09.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Chihuly_Garden_and_Glass_2014_09.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Swan_of_Glass.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Chihuly Garden and Glass"
 }

@@ -33,5 +33,11 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/atlanta/center-for-puppetry-arts/?partner_id=PLACEHOLDER",
     "product_name": "Center for Puppetry Arts entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Center_for_Puppetry_Arts.jpg/1280px-Center_for_Puppetry_Arts.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Center_for_Puppetry_Arts.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Midtown_Atlanta_location_map.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Center for Puppetry Arts"
 }

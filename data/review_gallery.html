@@ -1,0 +1,1617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Museum Photo Review — Americas Museums</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0; padding: 0; background: #f5f5f0; color: #222;
+  }
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: #fff; border-bottom: 1px solid #ddd;
+    padding: 16px 24px; display: flex; align-items: center; gap: 24px;
+  }
+  header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+  header .stats { font-size: 13px; color: #666; }
+  header .ok { color: #0a7; font-weight: 600; }
+  header .missing { color: #c33; font-weight: 600; }
+  header button {
+    margin-left: auto; padding: 8px 14px; font-size: 14px;
+    background: #003B95; color: #fff; border: none; border-radius: 4px; cursor: pointer;
+  }
+  main {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 16px; padding: 24px;
+  }
+  .card {
+    background: #fff; border: 1px solid #ddd; border-radius: 6px;
+    overflow: hidden; display: flex; flex-direction: column;
+  }
+  .card--missing { border-color: #c33; background: #fff5f5; }
+  .hero { aspect-ratio: 16/10; background: #eee; overflow: hidden; }
+  .hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .no-photo {
+    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+    color: #c33; font-size: 14px; font-weight: 600; background: #fff5f5;
+  }
+  .meta { padding: 12px 14px; }
+  .meta h2 { margin: 0 0 4px; font-size: 15px; font-weight: 600; }
+  .loc { font-size: 12px; color: #666; margin-bottom: 6px; }
+  .src { font-size: 12px; margin-bottom: 4px; }
+  .src a { color: #003B95; }
+  .slug { font-size: 11px; color: #888; margin-bottom: 8px; }
+  .slug code { background: #eee; padding: 1px 4px; border-radius: 2px; }
+  .warn { color: #c33; }
+  .gallery {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin-bottom: 8px;
+  }
+  .gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 2px; }
+  .flag { margin-top: 6px; font-size: 13px; }
+  .flag label { cursor: pointer; user-select: none; }
+  .flagged { outline: 3px solid #c33; }
+  #flagged-list {
+    position: fixed; bottom: 20px; right: 20px; z-index: 20;
+    background: #fff; border: 2px solid #c33; border-radius: 6px;
+    padding: 12px 16px; max-width: 320px; font-size: 13px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15); display: none;
+  }
+  #flagged-list.active { display: block; }
+  #flagged-list h3 { margin: 0 0 8px; font-size: 14px; }
+  #flagged-list textarea {
+    width: 100%; min-height: 80px; font-family: monospace; font-size: 12px;
+    border: 1px solid #ddd; border-radius: 3px; padding: 6px;
+  }
+  #flagged-list button {
+    margin-top: 6px; padding: 4px 10px; font-size: 12px;
+    background: #003B95; color: #fff; border: none; border-radius: 3px; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Americas Museums — Photo Review</h1>
+  <div class="stats">
+    <span class="ok">105/107 with photos</span>
+     · <span class="missing">2 missing</span>
+  </div>
+  <button onclick="toggleFlagged()">Show flagged list</button>
+</header>
+<main>
+
+<div class="card card--missing" id="apex-museum">
+  <div class="hero"><div class="no-photo">No photo found</div></div>
+  <div class="meta">
+    <h2>APEX Museum</h2>
+    <div class="loc">Atlanta, GA · History</div>
+    <div class="src"><span class="warn">No Wikipedia article</span></div>
+    <div class="slug">slug: <code>apex-museum</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="apex-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card card--missing" id="cartoon-art-museum">
+  <div class="hero"><div class="no-photo">No photo found</div></div>
+  <div class="meta">
+    <h2>Cartoon Art Museum</h2>
+    <div class="loc">San Francisco, CA · Specialized</div>
+    <div class="src"><span class="warn">No Wikipedia article</span></div>
+    <div class="slug">slug: <code>cartoon-art-museum</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="cartoon-art-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="atlanta-contemporary">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/A2ATL20250614-0721_%28cropped%29.jpg/1280px-A2ATL20250614-0721_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Atlanta Contemporary" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Atlanta Contemporary</h2>
+    <div class="loc">Atlanta, GA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Atlanta" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>atlanta-contemporary</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/2013.01.26.113234_Aquarium_Atlanta_Georgia.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/2013.01.26.113234_Aquarium_Atlanta_Georgia.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Atlanta%2C_Georgia_Skyline.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Atlanta%2C_Georgia_Skyline.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Atlanta-metroclean.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Atlanta-metroclean.png?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="atlanta-contemporary" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="atlanta-history-center">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Atlanta_History_Center%2C_2026.jpg/1280px-Atlanta_History_Center%2C_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Atlanta History Center" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Atlanta History Center</h2>
+    <div class="loc">Atlanta, GA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Atlanta_History_Center" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>atlanta-history-center</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Atlanta_History_Center%2C_2026.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Atlanta_History_Center%2C_2026.jpg?width=800" alt="alt 1" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="atlanta-history-center" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="center-for-puppetry-arts">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Center_for_Puppetry_Arts.jpg/1280px-Center_for_Puppetry_Arts.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Center for Puppetry Arts" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Center for Puppetry Arts</h2>
+    <div class="loc">Atlanta, GA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Center_for_Puppetry_Arts" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>center-for-puppetry-arts</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Center_for_Puppetry_Arts.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Center_for_Puppetry_Arts.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Midtown_Atlanta_location_map.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Midtown_Atlanta_location_map.JPG?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="center-for-puppetry-arts" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="childrens-museum-of-atlanta">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Children%27s_Museum_of_Atlanta%2C_Georgia.jpg/1280px-Children%27s_Museum_of_Atlanta%2C_Georgia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Children's Museum of Atlanta" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Children's Museum of Atlanta</h2>
+    <div class="loc">Atlanta, GA · Children</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Children's_Museum_of_Atlanta" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>childrens-museum-of-atlanta</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Children%27s_Museum_of_Atlanta%2C_Georgia.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Children%27s_Museum_of_Atlanta%2C_Georgia.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Downtown_Atlanta.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Downtown_Atlanta.jpg?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="childrens-museum-of-atlanta" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="fernbank-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/%E4%BA%9A%E7%89%B9%E5%85%B0%E5%A4%A7%E8%B4%B9%E5%B0%94%E7%8F%AD%E5%85%8B%E6%96%AF%E5%8D%9A%E7%89%A9%E9%A6%86.jpg/1280px-%E4%BA%9A%E7%89%B9%E5%85%B0%E5%A4%A7%E8%B4%B9%E5%B0%94%E7%8F%AD%E5%85%8B%E6%96%AF%E5%8D%9A%E7%89%A9%E9%A6%86.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Fernbank Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Fernbank Museum</h2>
+    <div class="loc">Atlanta, GA · Natural History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Fernbank_Museum_of_Natural_History" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>fernbank-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Fernbank_interior.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Fernbank_interior.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/%E4%BA%9A%E7%89%B9%E5%85%B0%E5%A4%A7%E8%B4%B9%E5%B0%94%E7%8F%AD%E5%85%8B%E6%96%AF%E5%8D%9A%E7%89%A9%E9%A6%86.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/%E4%BA%9A%E7%89%B9%E5%85%B0%E5%A4%A7%E8%B4%B9%E5%B0%94%E7%8F%AD%E5%85%8B%E6%96%AF%E5%8D%9A%E7%89%A9%E9%A6%86.jpg?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="fernbank-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="high-museum-of-art">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/High_Museum_in_Atlanta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="High Museum of Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>High Museum of Art</h2>
+    <div class="loc">Atlanta, GA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/High_Museum_of_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>high-museum-of-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Annie_Leibovitz_High_Museum_of_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Annie_Leibovitz_High_Museum_of_Art.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Autumn_on_the_Seine%2C_Argenteuil_by_Claude_Monet%2C_High_Museum_of_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Autumn_on_the_Seine%2C_Argenteuil_by_Claude_Monet%2C_High_Museum_of_Art.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/High_Museum_Modern_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/High_Museum_Modern_Art.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="high-museum-of-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="jimmy-carter-presidential-library-and-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Jimmy_Carter_Presidential_Library_and_Museum.jpg/1280px-Jimmy_Carter_Presidential_Library_and_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Jimmy Carter Presidential Library and Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Jimmy Carter Presidential Library and Museum</h2>
+    <div class="loc">Atlanta, GA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Jimmy_Carter_Library_and_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>jimmy-carter-presidential-library-and-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Jimmy_Carter_Presidential_Library_and_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Jimmy_Carter_Presidential_Library_and_Museum.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Jimmy_Carter_Library.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Jimmy_Carter_Library.png?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="jimmy-carter-presidential-library-and-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="michael-c-carlos-museum">
+  <div class="hero"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Michael_C._Carlos_Museum%2C_Atlanta_%2810453374255%29.jpg?width=1000" alt="Michael C. Carlos Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Michael C. Carlos Museum</h2>
+    <div class="loc">Atlanta, GA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Michael_C._Carlos_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>michael-c-carlos-museum</code></div>
+    <div class="gallery"><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Hanif_Kureishi.jpg?width=1000" target="_blank"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hanif_Kureishi.jpg?width=1000" alt="alt 1" loading="lazy" /></a><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Michael_C._Carlos_Museum.JPG?width=1000" target="_blank"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Michael_C._Carlos_Museum.JPG?width=1000" alt="alt 2" loading="lazy" /></a><a href="https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on_Benouville_-_Two_Men_Ascending_a_Stair_-_WGA01888.jpg?width=1000" target="_blank"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on_Benouville_-_Two_Men_Ascending_a_Stair_-_WGA01888.jpg?width=1000" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="michael-c-carlos-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-design-atlanta">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Museum_oF_Design_Atlanta.jpg/1280px-Museum_oF_Design_Atlanta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Museum of Design Atlanta" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of Design Atlanta</h2>
+    <div class="loc">Atlanta, GA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Museum_of_Design_Atlanta" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-design-atlanta</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Museum_oF_Design_Atlanta.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_oF_Design_Atlanta.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Midtown_Atlanta_location_map.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Midtown_Atlanta_location_map.JPG?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-design-atlanta" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-center-for-civil-and-human-rights">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/National_Center_for_Civil_and_Human_Rights_01.jpg/1280px-National_Center_for_Civil_and_Human_Rights_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Center for Civil and Human Rights" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Center for Civil and Human Rights</h2>
+    <div class="loc">Atlanta, GA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Center_for_Civil_and_Human_Rights" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-center-for-civil-and-human-rights</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Center_for_Civil_and_Human_Rights_-_Main_hall.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Center_for_Civil_and_Human_Rights_-_Main_hall.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Center_for_Civil_and_Human_Rights_01.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Center_for_Civil_and_Human_Rights_01.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Exhibit_at_Center_for_Civil_and_Human_Rights_-_Atlanta_-_Georgia_-_USA_-_01_%2834268877316%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Exhibit_at_Center_for_Civil_and_Human_Rights_-_Atlanta_-_Georgia_-_USA_-_01_%2834268877316%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-center-for-civil-and-human-rights" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="world-of-coca-cola">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/World_of_Coca_Cola_2015-04-09.jpg/1280px-World_of_Coca_Cola_2015-04-09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="World of Coca-Cola" loading="lazy" /></div>
+  <div class="meta">
+    <h2>World of Coca-Cola</h2>
+    <div class="loc">Atlanta, GA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/World_of_Coca-Cola" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>world-of-coca-cola</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/2013.01.26.113703_World_of_Coca_Cola_Atlanta_Georgia.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/2013.01.26.113703_World_of_Coca_Cola_Atlanta_Georgia.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/World-of-Coca-Cola-Atlanta.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/World-of-Coca-Cola-Atlanta.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/World_of_Coca-Cola_06.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/World_of_Coca-Cola_06.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="world-of-coca-cola" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="boston-childrens-museum">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/en/a/a6/BCM_logo_FINAL_Horiz.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Boston Children's Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Boston Children's Museum</h2>
+    <div class="loc">Boston, MA · Children</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Boston_Children's_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>boston-childrens-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Boston_Children%27s_Museum_%2854960643491%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Boston_Children%27s_Museum_%2854960643491%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Boston_Childrens_Museum_P1000509.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Boston_Childrens_Museum_P1000509.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Hood_Milk_Bottle_%2854960892944%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hood_Milk_Bottle_%2854960892944%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="boston-childrens-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="harvard-art-museums">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Fogg_Art_Museum_-_Harvard_Art_Museums_%2854941056523%29.jpg/1280px-Fogg_Art_Museum_-_Harvard_Art_Museums_%2854941056523%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Harvard Art Museums" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Harvard Art Museums</h2>
+    <div class="loc">Boston, MA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Harvard_Art_Museums" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>harvard-art-museums</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Fogg_Art_Museum_-_Harvard_Art_Museums_%2854941056523%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Fogg_Art_Museum_-_Harvard_Art_Museums_%2854941056523%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Harvard_Art_Museums_Tang_Dynasty_Kneeling_Attendant_Bodhisattva_%E5%93%88%E4%BD%9B%E7%BE%8E%E6%9C%AF%E9%A6%86_%E8%8E%AB%E9%AB%98%E7%AA%9F%E5%94%90%E4%BB%A3%E4%BE%9B%E5%85%BB%E8%8F%A9%E8%90%A8%E5%83%8F.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Harvard_Art_Museums_Tang_Dynasty_Kneeling_Attendant_Bodhisattva_%E5%93%88%E4%BD%9B%E7%BE%8E%E6%9C%AF%E9%A6%86_%E8%8E%AB%E9%AB%98%E7%AA%9F%E5%94%90%E4%BB%A3%E4%BE%9B%E5%85%BB%E8%8F%A9%E8%90%A8%E5%83%8F.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Harvard_Art_Museums_atrium.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Harvard_Art_Museums_atrium.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="harvard-art-museums" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="institute-of-contemporary-art-boston">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Institute_of_Contemporary_Art%2C_Boston.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Institute of Contemporary Art Boston" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Institute of Contemporary Art Boston</h2>
+    <div class="loc">Boston, MA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Institute_of_Contemporary_Art,_Boston" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>institute-of-contemporary-art-boston</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="institute-of-contemporary-art-boston" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="isabella-stewart-gardner-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/IsabellaStewartGardenerMuseumMainLobby.jpg/1280px-IsabellaStewartGardenerMuseumMainLobby.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Isabella Stewart Gardner Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Isabella Stewart Gardner Museum</h2>
+    <div class="loc">Boston, MA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>isabella-stewart-gardner-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Anders_Zorn_-_Isabella_Stewart_Gardner_in_Venice_-_P17e10_-_Isabella_Stewart_Gardner_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Anders_Zorn_-_Isabella_Stewart_Gardner_in_Venice_-_P17e10_-_Isabella_Stewart_Gardner_Museum.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Isabella_Stewart_Gardner_Museum_original_building_%22Fenway_Court%22.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Isabella_Stewart_Gardner_Museum_original_building_%22Fenway_Court%22.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/2012_GardnerMuseum_Boston_USA_1.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/2012_GardnerMuseum_Boston_USA_1.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="isabella-stewart-gardner-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="john-f-kennedy-presidential-library-and-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/JFK_library_Stitch_Crop.jpg/1280px-JFK_library_Stitch_Crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="John F. Kennedy Presidential Library and Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>John F. Kennedy Presidential Library and Museum</h2>
+    <div class="loc">Boston, MA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/John_F._Kennedy_Presidential_Library_and_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>john-f-kennedy-presidential-library-and-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/John_F_Kennedy_sailboat_Victura_at_Kennedy_LibraryIMG_20160510_141846009_HDRc.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/John_F_Kennedy_sailboat_Victura_at_Kennedy_LibraryIMG_20160510_141846009_HDRc.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/President_Kennedy%27s_golf_balls_on_display_at_the_JFK_Museum_in_Boston%2C_MA.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/President_Kennedy%27s_golf_balls_on_display_at_the_JFK_Museum_in_Boston%2C_MA.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/JFK_Library_Boston_09222016.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/JFK_Library_Boston_09222016.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="john-f-kennedy-presidential-library-and-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="mit-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/%28USA-Massachusetts%29_MIT_Museum_Entrance_2024-06-11.jpg/1280px-%28USA-Massachusetts%29_MIT_Museum_Entrance_2024-06-11.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="MIT Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>MIT Museum</h2>
+    <div class="loc">Boston, MA · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/MIT_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>mit-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/%28USA-Massachusetts%29_MIT_Museum_Entrance_2024-06-11.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/%28USA-Massachusetts%29_MIT_Museum_Entrance_2024-06-11.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Comically_large_slide_rule%2C_MIT_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Comically_large_slide_rule%2C_MIT_Museum.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/MIT_Museum_Building_%28MIT_Building_N51%29%2C_275_Massachusetts_Avenue%2C_Cambridge%2C_Massachusetts.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/MIT_Museum_Building_%28MIT_Building_N51%29%2C_275_Massachusetts_Avenue%2C_Cambridge%2C_Massachusetts.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="mit-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="mary-baker-eddy-library">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Exterior_of_The_Mary_Baker_Eddy_Library.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Mary Baker Eddy Library" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Mary Baker Eddy Library</h2>
+    <div class="loc">Boston, MA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Mary_Baker_Eddy_Library" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>mary-baker-eddy-library</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Exterior_of_The_Mary_Baker_Eddy_Library.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Exterior_of_The_Mary_Baker_Eddy_Library.jpg?width=800" alt="alt 1" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="mary-baker-eddy-library" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-fine-arts-boston">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg/1280px-Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Museum of Fine Arts, Boston" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of Fine Arts, Boston</h2>
+    <div class="loc">Boston, MA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Museum_of_Fine_Arts,_Boston" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-fine-arts-boston</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Japanese_gate_and_garden_at_Boston_Museum_of_Fine_Arts_-_August_15%2C_2015.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Japanese_gate_and_garden_at_Boston_Museum_of_Fine_Arts_-_August_15%2C_2015.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts%2C_Boston%2C_Mass_%28NYPL_b12647398-74302%29.tiff?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts%2C_Boston%2C_Mass_%28NYPL_b12647398-74302%29.tiff?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-fine-arts-boston" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-science-boston">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/ISH_WC_Boston4.jpg/1280px-ISH_WC_Boston4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Museum of Science Boston" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of Science Boston</h2>
+    <div class="loc">Boston, MA · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Boston" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-science-boston</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts_Boston%2C_Huntington_Ave_entrance_at_night.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts_Boston%2C_Huntington_Ave_entrance_at_night.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Armenian-Americans-Boston-1908.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Armenian-Americans-Boston-1908.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Boston%2C_1775bsmall1.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Boston%2C_1775bsmall1.png?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-science-boston" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="new-england-aquarium">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/New_England_Aquarium_%2854960820818%29.jpg/1280px-New_England_Aquarium_%2854960820818%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="New England Aquarium" loading="lazy" /></div>
+  <div class="meta">
+    <h2>New England Aquarium</h2>
+    <div class="loc">Boston, MA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/New_England_Aquarium" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>new-england-aquarium</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Green_Moray_Eel_at_the_New_England_Aquarium.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Green_Moray_Eel_at_the_New_England_Aquarium.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/New_England_Aquarium%2C_by_Edmund_L._Mitchell%2C_1966%2C_from_the_Digital_Commonwealth_-_commonwealth_td96nr385.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/New_England_Aquarium%2C_by_Edmund_L._Mitchell%2C_1966%2C_from_the_Digital_Commonwealth_-_commonwealth_td96nr385.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/New_England_Aquarium_%2854960820818%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/New_England_Aquarium_%2854960820818%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="new-england-aquarium" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="peabody-museum-of-archaeology-and-ethnology">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Peabody_Museum%2C_Harvard_University_-_exterior_2.JPG/1280px-Peabody_Museum%2C_Harvard_University_-_exterior_2.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Peabody Museum of Archaeology and Ethnology" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Peabody Museum of Archaeology and Ethnology</h2>
+    <div class="loc">Boston, MA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Peabody_Museum_of_Archaeology_and_Ethnology" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>peabody-museum-of-archaeology-and-ethnology</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Paho%2C_Hopi%2C_for_Mamzrauti_dance%2C_collected_before_1892_-_Native_American_collection_-_Peabody_Museum%2C_Harvard_University_-_DSC05530.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Paho%2C_Hopi%2C_for_Mamzrauti_dance%2C_collected_before_1892_-_Native_American_collection_-_Peabody_Museum%2C_Harvard_University_-_DSC05530.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Peabody_Museum%2C_Harvard_University_-_exterior_2.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Peabody_Museum%2C_Harvard_University_-_exterior_2.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Plaque_depicting_chief_flanked_by_two_warriors%2C_Benin%2C_AD_1550-1650_-_African_collection_-_Peabody_Museum%2C_Harvard_University_-_DSC05790.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Plaque_depicting_chief_flanked_by_two_warriors%2C_Benin%2C_AD_1550-1650_-_African_collection_-_Peabody_Museum%2C_Harvard_University_-_DSC05790.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="peabody-museum-of-archaeology-and-ethnology" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="uss-constitution-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/USS_Constitution_Museum.jpg/1280px-USS_Constitution_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="USS Constitution Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>USS Constitution Museum</h2>
+    <div class="loc">Boston, MA · Military</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/USS_Constitution_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>uss-constitution-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/USS_Constitution_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/USS_Constitution_Museum.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/ConstitutionMuseum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/ConstitutionMuseum.jpg?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="uss-constitution-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="adler-planetarium">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Adler_Planetarium_E.jpg/1280px-Adler_Planetarium_E.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Adler Planetarium" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Adler Planetarium</h2>
+    <div class="loc">Chicago, IL · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Adler_Planetarium" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>adler-planetarium</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Adler_Planetarium_E.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Adler_Planetarium_E.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Adler_Planetarium_original_building_meets_new_building_Chicago_2015-105.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Adler_Planetarium_original_building_meets_new_building_Chicago_2015-105.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Adler_planetarium_landmark_Chicago_2015-104.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Adler_planetarium_landmark_Chicago_2015-104.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="adler-planetarium" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="art-institute-of-chicago">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Art_Institute_of_Chicago_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Art Institute of Chicago" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Art Institute of Chicago</h2>
+    <div class="loc">Chicago, IL · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Art_Institute_of_Chicago" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>art-institute-of-chicago</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Alapini_vina_%40_Art_Institute_of_Chicago_-_detail_of_black_schist_of_God_Vishnu_with_His_Consorts_Lakshmi_and_Sarasvati_-_Bangladesh_or_Eastern_India%2C_Pala_period%2C_10th-12th_century.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Alapini_vina_%40_Art_Institute_of_Chicago_-_detail_of_black_schist_of_God_Vishnu_with_His_Consorts_Lakshmi_and_Sarasvati_-_Bangladesh_or_Eastern_India%2C_Pala_period%2C_10th-12th_century.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute%2C_Chicago_circa_1907_postcard_%28front%29.tiff?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute%2C_Chicago_circa_1907_postcard_%28front%29.tiff?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute_of_Chicago_%2851575570710%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute_of_Chicago_%2851575570710%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="art-institute-of-chicago" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="chicago-history-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Chicago_History.JPG/1280px-Chicago_History.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Chicago History Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Chicago History Museum</h2>
+    <div class="loc">Chicago, IL · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Chicago_History_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>chicago-history-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Chicago_History_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Chicago_History_Museum.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/To_the_Homeless_of_the_Chicago_Fire%2C_Chicago_History_Museum.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/To_the_Homeless_of_the_Chicago_Fire%2C_Chicago_History_Museum.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Chicago_History.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Chicago_History.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="chicago-history-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="driehaus-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/The_Richard_H._Driehaus_Museum%2C_exterior_entrance%2C_2013.jpg/1280px-The_Richard_H._Driehaus_Museum%2C_exterior_entrance%2C_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Driehaus Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Driehaus Museum</h2>
+    <div class="loc">Chicago, IL · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Driehaus_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>driehaus-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Richard_H_Driehaus_museum_2.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Richard_H_Driehaus_museum_2.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Richard_H_Driehaus_museum_3.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Richard_H_Driehaus_museum_3.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Richard_H_Driehaus_museum_4.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Richard_H_Driehaus_museum_4.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="driehaus-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="dusable-black-history-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/The_DuSable_Museum.jpg/1280px-The_DuSable_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="DuSable Black History Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>DuSable Black History Museum</h2>
+    <div class="loc">Chicago, IL · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/DuSable_Black_History_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>dusable-black-history-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/20070325_DuSable_Museum_Harold_Washington_Wing.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/20070325_DuSable_Museum_Harold_Washington_Wing.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/The_DuSable_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_DuSable_Museum.jpg?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="dusable-black-history-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="field-museum">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Field_Museum_of_Natural_History_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Field Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Field Museum</h2>
+    <div class="loc">Chicago, IL · Natural History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Field_Museum_of_Natural_History" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>field-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Acheloma-Field_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Acheloma-Field_Museum.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Anchiceratops_Field_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Anchiceratops_Field_Museum.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cacops-Field_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cacops-Field_Museum.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="field-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-contemporary-art-chicago">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/MCA_Chicago_060930.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Museum of Contemporary Art Chicago" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of Contemporary Art Chicago</h2>
+    <div class="loc">Chicago, IL · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Museum_of_Contemporary_Art_Chicago" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-contemporary-art-chicago</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Contemporary_Art%2C_Chicago.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Contemporary_Art%2C_Chicago.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Stairwell_at_The_Museum_of_Contemporary_Art_in_Chicago.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Stairwell_at_The_Museum_of_Contemporary_Art_in_Chicago.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/MCA_Chicago_060930.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/MCA_Chicago_060930.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-contemporary-art-chicago" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-science-and-industry">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Museum_of_Science_and_Industry_%28Chicago%29.jpg/1280px-Museum_of_Science_and_Industry_%28Chicago%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Museum of Science and Industry" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of Science and Industry</h2>
+    <div class="loc">Chicago, IL · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Museum_of_Science_and_Industry_(Chicago)" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-science-and-industry</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/20200811_Museum_of_Science_and_Industry_and_Jackson_Park_%281%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/20200811_Museum_of_Science_and_Industry_and_Jackson_Park_%281%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Chicago_Museum_of_Science_and_Industry.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Chicago_Museum_of_Science_and_Industry.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Idea_Factory%2C_Museum_of_Science_and_Industry%2C_Jackson_Park%2C_Lake_Shore_Drive_and_57th_Street%2C_Hyde_Park%2C_Chicago%2C_IL_%2854213025568%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Idea_Factory%2C_Museum_of_Science_and_Industry%2C_Jackson_Park%2C_Lake_Shore_Drive_and_57th_Street%2C_Hyde_Park%2C_Chicago%2C_IL_%2854213025568%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-science-and-industry" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-hellenic-museum">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/The_finished_National_Hellenic_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="National Hellenic Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Hellenic Museum</h2>
+    <div class="loc">Chicago, IL · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Hellenic_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-hellenic-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/The_finished_National_Hellenic_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_finished_National_Hellenic_Museum.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/NHMJanuaryConstruction.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/NHMJanuaryConstruction.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/NHM_Antiquities_Group.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/NHM_Antiquities_Group.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-hellenic-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-museum-of-mexican-art">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/National_Museum_of_Mexican_Art_entrance.jpg/1280px-National_Museum_of_Mexican_Art_entrance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Museum of Mexican Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Museum of Mexican Art</h2>
+    <div class="loc">Chicago, IL · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Museum_of_Mexican_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-museum-of-mexican-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Jill_Biden_visit_to_National_Museum_of_Mexican_Art_FBiVYKSX0BAJtIv.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Jill_Biden_visit_to_National_Museum_of_Mexican_Art_FBiVYKSX0BAJtIv.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Mexican_Art_entrance.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Mexican_Art_entrance.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Mexican_Art_ofrenda.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Mexican_Art_ofrenda.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-museum-of-mexican-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="smart-museum-of-art">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/University_of_Chicago_July_2013_48_%28Smart_Museum%29.jpg/1280px-University_of_Chicago_July_2013_48_%28Smart_Museum%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Smart Museum of Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Smart Museum of Art</h2>
+    <div class="loc">Chicago, IL · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Smart_Museum_of_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>smart-museum-of-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cecco_Bravo_Angelica_y_Ruggiero_1660_David_and_Alfred_Smart_Museum_of_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cecco_Bravo_Angelica_y_Ruggiero_1660_David_and_Alfred_Smart_Museum_of_Art.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Jean_Metzinger%2C_1915%2C_Soldat_jouant_aux_%C3%A9checs_%28Soldier_at_a_Game_of_Chess%29%2C_oil_on_canvas%2C_81.3_x_61_cm%2C_Smart_Museum_of_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Jean_Metzinger%2C_1915%2C_Soldat_jouant_aux_%C3%A9checs_%28Soldier_at_a_Game_of_Chess%29%2C_oil_on_canvas%2C_81.3_x_61_cm%2C_Smart_Museum_of_Art.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/University_of_Chicago_July_2013_48_%28Smart_Museum%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/University_of_Chicago_July_2013_48_%28Smart_Museum%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="smart-museum-of-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="california-science-center">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/California_Science_Center.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="California Science Center" loading="lazy" /></div>
+  <div class="meta">
+    <h2>California Science Center</h2>
+    <div class="loc">Los Angeles, CA · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/California_Science_Center" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>california-science-center</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/CSM-11_California_Science_Center_2019.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/CSM-11_California_Science_Center_2019.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center_January_2013_001.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center_January_2013_001.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="california-science-center" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="getty-center">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Aerial_Getty_Museum.jpg/1280px-Aerial_Getty_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Getty Center" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Getty Center</h2>
+    <div class="loc">Los Angeles, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Getty_Center" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>getty-center</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/2003-12-15_Getty_Center_panorama.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/2003-12-15_Getty_Center_panorama.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Center.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Center.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Center_Tram_Station_Los_Angeles.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Center_Tram_Station_Los_Angeles.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="getty-center" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="getty-villa">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/060807-002-GettyVilla001.jpg/1280px-060807-002-GettyVilla001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Getty Villa" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Getty Villa</h2>
+    <div class="loc">Los Angeles, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Getty_Villa" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>getty-villa</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Villa_-_Collection_%285304880133%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Villa_-_Collection_%285304880133%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Villa_Inner_Peristyle.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Villa_Inner_Peristyle.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Villa_SW01.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Getty_Villa_SW01.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="getty-villa" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="hammer-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Wdmk_HammerBox_Black.jpg/1280px-Wdmk_HammerBox_Black.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Hammer Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Hammer Museum</h2>
+    <div class="loc">Los Angeles, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Hammer_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>hammer-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Hammer_Museum_Westwood_June_2012.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hammer_Museum_Westwood_June_2012.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Pablo_Picasso%2C_1904%2C_Le_repas_frugal_%28The_Frugal_Repast%29%2C_etching%2C_Hammer_Museum%2C_University_of_California.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Pablo_Picasso%2C_1904%2C_Le_repas_frugal_%28The_Frugal_Repast%29%2C_etching%2C_Hammer_Museum%2C_University_of_California.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Wild_Belle_%40_Hammer_Museum_07_18_2019_%2848501390132%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Wild_Belle_%40_Hammer_Museum_07_18_2019_%2848501390132%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="hammer-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="huntington-library">
+  <div class="hero"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_18_-_Echinocactus_grusonii.jpg?width=1000" alt="Huntington Library, Art Museum, and Botanical Gardens" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Huntington Library, Art Museum, and Botanical Gardens</h2>
+    <div class="loc">Los Angeles, CA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/via_Wikipedia_/_Wikimedia_Commons" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>huntington-library</code></div>
+    <div class="gallery"><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_12_-_Mammillaria_humboldtii.jpg?width=800" target="_blank"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_12_-_Mammillaria_humboldtii.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_19_-_Echinocactus_grusonii.jpg?width=800" target="_blank"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_19_-_Echinocactus_grusonii.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://commons.wikimedia.org/wiki/Special:FilePath/Lightmatter_huntington_library.jpg?width=800" target="_blank"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lightmatter_huntington_library.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="huntington-library" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="la-brea-tar-pits-and-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/La_Brea_Tar_Pits_logo.svg/1280px-La_Brea_Tar_Pits_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="La Brea Tar Pits and Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>La Brea Tar Pits and Museum</h2>
+    <div class="loc">Los Angeles, CA · Natural History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/La_Brea_Tar_Pits" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>la-brea-tar-pits-and-museum</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="la-brea-tar-pits-and-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="los-angeles-county-museum-of-art">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Patch_of_the_Los_Angeles_County_Sheriff%27s_Department.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Los Angeles County Museum of Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Los Angeles County Museum of Art</h2>
+    <div class="loc">Los Angeles, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Los_Angeles_County_Sheriff's_Department" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>los-angeles-county-museum-of-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Badge_of_the_Sheriff_of_Los_Angeles_County.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Badge_of_the_Sheriff_of_Los_Angeles_County.png?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Sheriff%27s_Department_Distinguished_Service_Award.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Sheriff%27s_Department_Distinguished_Service_Award.png?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Patch_of_the_Los_Angeles_County_Sheriff%27s_Department.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Patch_of_the_Los_Angeles_County_Sheriff%27s_Department.png?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="los-angeles-county-museum-of-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-contemporary-art-los-angeles">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/MidnightMission.jpg/1280px-MidnightMission.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Museum of Contemporary Art Los Angeles" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of Contemporary Art Los Angeles</h2>
+    <div class="loc">Los Angeles, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Skid_Row,_Los_Angeles" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-contemporary-art-los-angeles</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_Skid_Row.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_Skid_Row.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Steam_locomotive_in_front_of_the_Los_Angeles_and_Independence_Rail_Road_Terminal_at_Fifth_Street_and_San_Pedro_Street%2C_Los_Angeles%2C_1875_%28CHS-14279%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Steam_locomotive_in_front_of_the_Los_Angeles_and_Independence_Rail_Road_Terminal_at_Fifth_Street_and_San_Pedro_Street%2C_Los_Angeles%2C_1875_%28CHS-14279%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cafe_Waba%2C_S_San_Pedro_St._and_E_6th_St._downtown_LA%2C_USA_-_panoramio.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cafe_Waba%2C_S_San_Pedro_St._and_E_6th_St._downtown_LA%2C_USA_-_panoramio.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-contemporary-art-los-angeles" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="natural-history-museum-of-la-county">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Natural_History_Museum_of_Los_Angeles_County_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Natural History Museum of Los Angeles County" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Natural History Museum of Los Angeles County</h2>
+    <div class="loc">Los Angeles, CA · Natural History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Natural_History_Museum_of_Los_Angeles_County" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>natural-history-museum-of-la-county</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Museum_of_Natural_History_-_Hall_of_African_Mammals.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Museum_of_Natural_History_-_Hall_of_African_Mammals.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Natural_History_Museum_of_Los_Angeles_Rotunda.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Natural_History_Museum_of_Los_Angeles_Rotunda.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Antonio_Coronel.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Antonio_Coronel.png?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="natural-history-museum-of-la-county" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="norton-simon-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Norton_Simon_Museum_Pasadena_CA_%2851081778692%29.jpg/1280px-Norton_Simon_Museum_Pasadena_CA_%2851081778692%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Norton Simon Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Norton Simon Museum</h2>
+    <div class="loc">Los Angeles, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Norton_Simon_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>norton-simon-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/%27Aldrovani_Dog%27_by_Guercino%2C_Norton_Simon_Museum.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/%27Aldrovani_Dog%27_by_Guercino%2C_Norton_Simon_Museum.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/%27Digambara_Yaksha_Sarvahna%27_from_Karnataka%2C_India%2C_c._900%2C_Norton_Simon_Museum.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/%27Digambara_Yaksha_Sarvahna%27_from_Karnataka%2C_India%2C_c._900%2C_Norton_Simon_Museum.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/%27Digambara_Yakshi_Kushmandini%27_from_Karnataka%2C_India%2C_c._900%2C_Norton_Simon_Museum.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/%27Digambara_Yakshi_Kushmandini%27_from_Karnataka%2C_India%2C_c._900%2C_Norton_Simon_Museum.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="norton-simon-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="petersen-automotive-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Petersen_Automotive_Museum.jpg/1280px-Petersen_Automotive_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Petersen Automotive Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Petersen Automotive Museum</h2>
+    <div class="loc">Los Angeles, CA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Petersen_Automotive_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>petersen-automotive-museum</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="petersen-automotive-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="the-broad">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg/1280px-Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="The Broad" loading="lazy" /></div>
+  <div class="meta">
+    <h2>The Broad</h2>
+    <div class="loc">Los Angeles, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/The_Broad" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>the-broad</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="the-broad" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="american-museum-of-natural-history">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/USA-NYC-American_Museum_of_Natural_History.JPG/1280px-USA-NYC-American_Museum_of_Natural_History.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="American Museum of Natural History" loading="lazy" /></div>
+  <div class="meta">
+    <h2>American Museum of Natural History</h2>
+    <div class="loc">New York, NY · Natural History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/American_Museum_of_Natural_History" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>american-museum-of-natural-history</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Alaska_Moose_at_the_American_Museum_of_Natural_History.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Alaska_Moose_at_the_American_Museum_of_Natural_History.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/American_Museum_of_Natural_History%2C_New_York_City.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/American_Museum_of_Natural_History%2C_New_York_City.png?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/American_Museum_of_Natural_History_in_Manhattan%2C_New_York_City%2C_United_States_of_America_%289860903214%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/American_Museum_of_Natural_History_in_Manhattan%2C_New_York_City%2C_United_States_of_America_%289860903214%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="american-museum-of-natural-history" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="brooklyn-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Brooklyn_Museum_-_Entrance_%2852302265063%29.jpg/1280px-Brooklyn_Museum_-_Entrance_%2852302265063%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Brooklyn Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Brooklyn Museum</h2>
+    <div class="loc">New York, NY · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Brooklyn_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>brooklyn-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/A_Morning_Snow-Hudson_River_at_the_Brooklyn_Museum_%2880534%29a.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/A_Morning_Snow-Hudson_River_at_the_Brooklyn_Museum_%2880534%29a.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Brooklyn-Museum_81.168.1_Equestrian-Figure_Gold-Weight_cropped.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Brooklyn-Museum_81.168.1_Equestrian-Figure_Gold-Weight_cropped.png?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Brooklyn_Museum_-_A_Ride_for_Liberty_--_The_Fugitive_Slaves_-_Eastman_Johnson_-_overall.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Brooklyn_Museum_-_A_Ride_for_Liberty_--_The_Fugitive_Slaves_-_Eastman_Johnson_-_overall.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="brooklyn-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="cooper-hewitt-smithsonian-design-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cooper_Hewitt%2C_Smithsonian_Design_Museum_logo.svg/1280px-Cooper_Hewitt%2C_Smithsonian_Design_Museum_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Cooper Hewitt, Smithsonian Design Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Cooper Hewitt, Smithsonian Design Museum</h2>
+    <div class="loc">New York, NY · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Cooper_Hewitt,_Smithsonian_Design_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>cooper-hewitt-smithsonian-design-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cooper-Hewitt_Museum_%22Ornament_in_the_20th_Century%22_Exhibition_Poster.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cooper-Hewitt_Museum_%22Ornament_in_the_20th_Century%22_Exhibition_Poster.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cooper_Hewitt_%2848059131921%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cooper_Hewitt_%2848059131921%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_Chair_at_the_Cooper_Union_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_Chair_at_the_Cooper_Union_Museum.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="cooper-hewitt-smithsonian-design-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="frick-collection">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Frick_Collection_New_York_cour.jpg/1280px-Frick_Collection_New_York_cour.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Frick Collection" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Frick Collection</h2>
+    <div class="loc">New York, NY · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Frick_Collection" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>frick-collection</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Frick_Collection_New_York_cour.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Frick_Collection_New_York_cour.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Frick_Collection_New_York_entr%C3%A9e.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Frick_Collection_New_York_entr%C3%A9e.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Frick_collection.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Frick_collection.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="frick-collection" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="intrepid-sea-air-and-space-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Intrepid_Museum_%2849052290092%29.jpg/1280px-Intrepid_Museum_%2849052290092%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Intrepid Sea, Air & Space Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Intrepid Sea, Air & Space Museum</h2>
+    <div class="loc">New York, NY · Military</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Intrepid_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>intrepid-sea-air-and-space-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Space_Shuttle_Enterprise_delivered_to_the_Intrepid_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Space_Shuttle_Enterprise_delivered_to_the_Intrepid_Museum.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Intrepid_Museum_%2849052290092%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Intrepid_Museum_%2849052290092%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Intrepid_museum_aerial.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Intrepid_museum_aerial.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="intrepid-sea-air-and-space-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="metropolitan-museum-of-art">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/1280px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Metropolitan Museum of Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Metropolitan Museum of Art</h2>
+    <div class="loc">New York, NY · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>metropolitan-museum-of-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/4_Jean_Le_Noir._Miniature_from_Psalter_of_Bonne_of_Luxemburg_1348-49_Metropolitan_Museum%2C_N-Y.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/4_Jean_Le_Noir._Miniature_from_Psalter_of_Bonne_of_Luxemburg_1348-49_Metropolitan_Museum%2C_N-Y.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Amedeo_Modigliani%2C_1919%2C_Jeanne_H%C3%A9buterne%2C_oil_on_canvas%2C_91.4_x_73_cm%2C_Metropolitan_Museum_of_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Amedeo_Modigliani%2C_1919%2C_Jeanne_H%C3%A9buterne%2C_oil_on_canvas%2C_91.4_x_73_cm%2C_Metropolitan_Museum_of_Art.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Arthur_Dove%2C_Cow%2C_1914%2C_pastel_on_canvas%2C_45.1_x_54.6_cm%2C_Metropolitan_Museum_of_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Arthur_Dove%2C_Cow%2C_1914%2C_pastel_on_canvas%2C_45.1_x_54.6_cm%2C_Metropolitan_Museum_of_Art.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="metropolitan-museum-of-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-modern-art">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/MoMa_NY_USA_1.jpg/1280px-MoMa_NY_USA_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Museum of Modern Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of Modern Art</h2>
+    <div class="loc">New York, NY · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Museum_of_Modern_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-modern-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Henri_Matisse%2C_1909%2C_La_danse_%28I%29%2C_Museum_of_Modern_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Henri_Matisse%2C_1909%2C_La_danse_%28I%29%2C_Museum_of_Modern_Art.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Modern_Art_%28MoMA%29_%2851395759113%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Modern_Art_%28MoMA%29_%2851395759113%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/USA-Museum_of_Modern_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/USA-Museum_of_Modern_Art.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-modern-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="new-york-historical-society">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/New_York_Historical_Society_%2848269593386%29.jpg/1280px-New_York_Historical_Society_%2848269593386%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="New-York Historical Society" loading="lazy" /></div>
+  <div class="meta">
+    <h2>New-York Historical Society</h2>
+    <div class="loc">New York, NY · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/New_York_Historical" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>new-york-historical-society</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/337_NEW-YORK_HISTORICAL_SOCIETY%2C_SECOND_AVENUE_AND_EAST_11TH_STREET.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/337_NEW-YORK_HISTORICAL_SOCIETY%2C_SECOND_AVENUE_AND_EAST_11TH_STREET.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/New_York_Historical_Society_%2848269593386%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/New_York_Historical_Society_%2848269593386%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Patricia_D._Klingenstein_Library_at_the_New-York_Historical_Society.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Patricia_D._Klingenstein_Library_at_the_New-York_Historical_Society.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="new-york-historical-society" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="solomon-r-guggenheim-museum">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/S._R._Guggenheim_portrait_by_Pirie_MacDonald.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Solomon R. Guggenheim Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Solomon R. Guggenheim Museum</h2>
+    <div class="loc">New York, NY · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Solomon_R._Guggenheim" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>solomon-r-guggenheim-museum</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="solomon-r-guggenheim-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="tenement-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/97_Orchard_Street_Front.jpg/1280px-97_Orchard_Street_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Tenement Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Tenement Museum</h2>
+    <div class="loc">New York, NY · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Lower_East_Side_Tenement_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>tenement-museum</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="tenement-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="met-cloisters">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/The_Met_Cloisters.jpg/1280px-The_Met_Cloisters.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="The Met Cloisters" loading="lazy" /></div>
+  <div class="meta">
+    <h2>The Met Cloisters</h2>
+    <div class="loc">New York, NY · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/The_Cloisters" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>met-cloisters</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Bonnefont_Cloisters.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Bonnefont_Cloisters.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cloisters-724.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cloisters-724.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cloisters_Chapel_%283220524245%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cloisters_Chapel_%283220524245%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="met-cloisters" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="whitney-museum-of-american-art">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Whitney_Museum_of_American_Art_%2849051573133%29.jpg/1280px-Whitney_Museum_of_American_Art_%2849051573133%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Whitney Museum of American Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Whitney Museum of American Art</h2>
+    <div class="loc">New York, NY · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Whitney_Museum_of_American_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>whitney-museum-of-american-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Whitney_Museum_of_American_Art.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Whitney_Museum_of_American_Art.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Whitney_Museum_of_American_Art_%2849051573133%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Whitney_Museum_of_American_Art_%2849051573133%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Decolonize_this_place_040519_whitney_museum_full_image.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Decolonize_this_place_040519_whitney_museum_full_image.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="whitney-museum-of-american-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="african-american-museum-in-philadelphia">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/African_American_Museum_in_Philadelphia_%28AAMP%29_%2853572937450%29.jpg/1280px-African_American_Museum_in_Philadelphia_%28AAMP%29_%2853572937450%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="African American Museum in Philadelphia" loading="lazy" /></div>
+  <div class="meta">
+    <h2>African American Museum in Philadelphia</h2>
+    <div class="loc">Philadelphia, PA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/African_American_Museum_in_Philadelphia" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>african-american-museum-in-philadelphia</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/African_American_Museum_in_Philadelphia_%28AAMP%29_%2853572937450%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/African_American_Museum_in_Philadelphia_%28AAMP%29_%2853572937450%29.jpg?width=800" alt="alt 1" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="african-american-museum-in-philadelphia" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="barnes-foundation">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Barnes_Foundation_%2853574516274%29.jpg/1280px-Barnes_Foundation_%2853574516274%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Barnes Foundation" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Barnes Foundation</h2>
+    <div class="loc">Philadelphia, PA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Barnes_Foundation" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>barnes-foundation</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Barnes-foundation.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Barnes-foundation.png?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Barnes_Foundation_%2853574516274%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Barnes_Foundation_%2853574516274%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Georges_Seurat_-_Models_%28Poseuses%29_-_BF811_-_Barnes_Foundation.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Georges_Seurat_-_Models_%28Poseuses%29_-_BF811_-_Barnes_Foundation.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="barnes-foundation" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="eastern-state-penitentiary">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Eastern_State_Penitentiary%2C_Philadelphia%2C_Pennsylvania_LCCN2011632222.tif/lossy-page1-1280px-Eastern_State_Penitentiary%2C_Philadelphia%2C_Pennsylvania_LCCN2011632222.tif.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Eastern State Penitentiary" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Eastern State Penitentiary</h2>
+    <div class="loc">Philadelphia, PA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Eastern_State_Penitentiary" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>eastern-state-penitentiary</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Eastern_State_Penitentiary%2C_Philadelphia%2C_PA_barber_shop.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Eastern_State_Penitentiary%2C_Philadelphia%2C_PA_barber_shop.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Eastern_State_Penitentiary%2C_Philadelphia%2C_Pennsylvania_LCCN2011632222.tif?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Eastern_State_Penitentiary%2C_Philadelphia%2C_Pennsylvania_LCCN2011632222.tif?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Eastern_State_Penitentiary%2C_Two_Story_Hall.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Eastern_State_Penitentiary%2C_Two_Story_Hall.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="eastern-state-penitentiary" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="franklin-institute">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Franklin_Institute_%2853574514629%29.jpg/1280px-Franklin_Institute_%2853574514629%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Franklin Institute" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Franklin Institute</h2>
+    <div class="loc">Philadelphia, PA · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Franklin_Institute" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>franklin-institute</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Foucault_pendulum_in_the_Franklin_Institute.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Foucault_pendulum_in_the_Franklin_Institute.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Franklin_1-2%C2%A2_Scott_803_FDC_at_Franklin_Institute_May_19%2C_1938.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Franklin_1-2%C2%A2_Scott_803_FDC_at_Franklin_Institute_May_19%2C_1938.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Franklin_Institute_%2853574514629%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Franklin_Institute_%2853574514629%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="franklin-institute" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="independence-seaport-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Seaport_museum_penns_landing.jpg/1280px-Seaport_museum_penns_landing.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Independence Seaport Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Independence Seaport Museum</h2>
+    <div class="loc">Philadelphia, PA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Independence_Seaport_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>independence-seaport-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Independence_Seaport_Museum_117.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Independence_Seaport_Museum_117.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Seaport_museum_penns_landing.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Seaport_museum_penns_landing.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/USS_Olympia_side.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/USS_Olympia_side.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="independence-seaport-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="mutter-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/The_Mutter_Museum_%2853586792843%29.jpg/1280px-The_Mutter_Museum_%2853586792843%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Mütter Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Mütter Museum</h2>
+    <div class="loc">Philadelphia, PA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Mütter_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>mutter-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/The_Mutter_Museum_%2853586792843%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_Mutter_Museum_%2853586792843%29.jpg?width=800" alt="alt 1" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="mutter-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-constitution-center">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/National_Constitution_Center_-_2_%2853586570586%29.jpg/1280px-National_Constitution_Center_-_2_%2853586570586%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Constitution Center" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Constitution Center</h2>
+    <div class="loc">Philadelphia, PA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Constitution_Center" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-constitution-center</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Constitution_Center-exterior.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Constitution_Center-exterior.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Constitution_Center_-_2_%2853586570586%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Constitution_Center_-_2_%2853586570586%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Statues_of_Constitution_signers_at_the_National_Constitution_Center.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Statues_of_Constitution_signers_at_the_National_Constitution_Center.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-constitution-center" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="penn-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Penn_Museum_-_UPenn_%2853590175396%29.jpg/1280px-Penn_Museum_-_UPenn_%2853590175396%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Penn Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Penn Museum</h2>
+    <div class="loc">Philadelphia, PA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Penn_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>penn-museum</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="penn-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="philadelphia-museum-of-art">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/PhiladelphiaMuseumOfArt2017.jpg/1280px-PhiladelphiaMuseumOfArt2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Philadelphia Museum of Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Philadelphia Museum of Art</h2>
+    <div class="loc">Philadelphia, PA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Philadelphia_Museum_of_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>philadelphia-museum-of-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/0_Prom%C3%A9th%C3%A9e_supplici%C3%A9_-_Rubens_-_Snyders_-_Philadelphia_Museum_of_Art_%28W1950-3-1%29_-_%281%29.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/0_Prom%C3%A9th%C3%A9e_supplici%C3%A9_-_Rubens_-_Snyders_-_Philadelphia_Museum_of_Art_%28W1950-3-1%29_-_%281%29.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/A594%2C_Philadelphia%2C_Pennsylvania%2C_United_States%2C_Museum_of_Art%2C_Western_Civilization_pediment_at_night%2C_2017.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/A594%2C_Philadelphia%2C_Pennsylvania%2C_United_States%2C_Museum_of_Art%2C_Western_Civilization_pediment_at_night%2C_2017.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Albert_Gleizes%2C_l%27Homme_au_Balcon%2C_1912%2C_oil_on_canvas%2C_195.6_x_114.9_cm%2C_Philadelphia_Museum_of_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Albert_Gleizes%2C_l%27Homme_au_Balcon%2C_1912%2C_oil_on_canvas%2C_195.6_x_114.9_cm%2C_Philadelphia_Museum_of_Art.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="philadelphia-museum-of-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="please-touch-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/MemorialHallPhila03.jpg/1280px-MemorialHallPhila03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Please Touch Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Please Touch Museum</h2>
+    <div class="loc">Philadelphia, PA · Children</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Please_Touch_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>please-touch-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cat_fish_Carousel_Philly.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cat_fish_Carousel_Philly.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/MemorialHallPhila03.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/MemorialHallPhila03.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Street_map_of_Philadelphia_and_surrounding_area.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Street_map_of_Philadelphia_and_surrounding_area.png?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="please-touch-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="rodin-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Rodin_Museum_-_Philadelphia_%2853574398988%29.jpg/1280px-Rodin_Museum_-_Philadelphia_%2853574398988%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Rodin Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Rodin Museum</h2>
+    <div class="loc">Philadelphia, PA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Rodin_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>rodin-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Rodin_Museum_-_Philadelphia_%2853574398988%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Rodin_Museum_-_Philadelphia_%2853574398988%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Bacchus_in_the_Vat.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Bacchus_in_the_Vat.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Colossal_Head_of_Balzac.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Colossal_Head_of_Balzac.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="rodin-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="weitzman-national-museum-of-american-jewish-history">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/National_Museum_of_American_Jewish_History.jpg/1280px-National_Museum_of_American_Jewish_History.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Weitzman National Museum of American Jewish History" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Weitzman National Museum of American Jewish History</h2>
+    <div class="loc">Philadelphia, PA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Weitzman_National_Museum_of_American_Jewish_History" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>weitzman-national-museum-of-american-jewish-history</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Hanukkah_lamp_from_Lodz%2C_Poland%2C_prior_to_1881%2C_silver%2C_National_Museum_of_American_Jewish_History.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hanukkah_lamp_from_Lodz%2C_Poland%2C_prior_to_1881%2C_silver%2C_National_Museum_of_American_Jewish_History.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Hanukkah_menorah%2C_Russia%2C_1890%2C_brass%2C_National_Museum_of_American_Jewish_History.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hanukkah_menorah%2C_Russia%2C_1890%2C_brass%2C_National_Museum_of_American_Jewish_History.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Kiddush_cup_from_Russia%2C_engraved_sterling_silver%2C_National_Museum_of_American_Jewish_History.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Kiddush_cup_from_Russia%2C_engraved_sterling_silver%2C_National_Museum_of_American_Jewish_History.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="weitzman-national-museum-of-american-jewish-history" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="asian-art-museum-of-san-francisco">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Zeppelin-ride-020100925-195_%285029394846%29.jpg/1280px-Zeppelin-ride-020100925-195_%285029394846%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Asian Art Museum of San Francisco" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Asian Art Museum of San Francisco</h2>
+    <div class="loc">San Francisco, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/San_Francisco" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>asian-art-museum-of-san-francisco</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/2019_San_Francisco_Carnaval_Grand_Parade_431_%2849490263633%29_%28cropped%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/2019_San_Francisco_Carnaval_Grand_Parade_431_%2849490263633%29_%28cropped%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/A_view_of_Yerba_Buena_%28San_Francisco%29._On_July_9%2C_1846%2C_Capt._Montgomery_of_the_Sloop_of_War_Portsmouth%2C_raised_the_American_Flag_in_the_plaza_and_seized_the_region_of_the_United_States_LCCN2004666425.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/A_view_of_Yerba_Buena_%28San_Francisco%29._On_July_9%2C_1846%2C_Capt._Montgomery_of_the_Sloop_of_War_Portsmouth%2C_raised_the_American_Flag_in_the_plaza_and_seized_the_region_of_the_United_States_LCCN2004666425.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_San_Francisco%2C_30_Jun_2018_%28cropped%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_San_Francisco%2C_30_Jun_2018_%28cropped%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="asian-art-museum-of-san-francisco" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="cable-car-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Exterior_of_the_Ferries_and_Cliff_House_Railway_Co._Building_Constructed_in_1887.jpg/1280px-Exterior_of_the_Ferries_and_Cliff_House_Railway_Co._Building_Constructed_in_1887.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Cable Car Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Cable Car Museum</h2>
+    <div class="loc">San Francisco, CA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/San_Francisco_Cable_Car_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>cable-car-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Sutter_Street_Dummy_No._46_and_Trailer_No._54_-_San_Francisco_Cable_Car_Museum_-_San_Francisco%2C_CA_-_DSC04013.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Sutter_Street_Dummy_No._46_and_Trailer_No._54_-_San_Francisco_Cable_Car_Museum_-_San_Francisco%2C_CA_-_DSC04013.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cable_Car_Power_House_MC.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cable_Car_Power_House_MC.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cable_car_21_in_the_carbarn%2C_June_2017.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cable_car_21_in_the_carbarn%2C_June_2017.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="cable-car-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="california-academy-of-sciences">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/California-06239_-_California_Academy_of_Sciences_%2820449900470%29.jpg/1280px-California-06239_-_California_Academy_of_Sciences_%2820449900470%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="California Academy of Sciences" loading="lazy" /></div>
+  <div class="meta">
+    <h2>California Academy of Sciences</h2>
+    <div class="loc">San Francisco, CA · Natural History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/California_Academy_of_Sciences" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>california-academy-of-sciences</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/California-06239_-_California_Academy_of_Sciences_%2820449900470%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/California-06239_-_California_Academy_of_Sciences_%2820449900470%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/California_Academy_of_Sciences%2C_San_Francisco_%282013%29_-_22.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/California_Academy_of_Sciences%2C_San_Francisco_%282013%29_-_22.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/California_Academy_of_Sciences%2C_San_Francisco_%282013%29_-_32.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/California_Academy_of_Sciences%2C_San_Francisco_%282013%29_-_32.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="california-academy-of-sciences" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="contemporary-jewish-museum">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Contemporary_Jewish_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Contemporary Jewish Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Contemporary Jewish Museum</h2>
+    <div class="loc">San Francisco, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Contemporary_Jewish_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>contemporary-jewish-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Architectural_detail_from_the_Contemporary_Jewish_Museum_in_San_Francisco%2C_California_LCCN2013630086.tif?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Architectural_detail_from_the_Contemporary_Jewish_Museum_in_San_Francisco%2C_California_LCCN2013630086.tif?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Contemporary_Jewish_Museum%2C_San_Francisco%2C_California_LCCN2013630117.tif?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Contemporary_Jewish_Museum%2C_San_Francisco%2C_California_LCCN2013630117.tif?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Contemporary_Jewish_Museum%2C_San_Francisco_%2816870725773%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Contemporary_Jewish_Museum%2C_San_Francisco_%2816870725773%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="contemporary-jewish-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="exploratorium">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Main_Entrance_to_the_Exploratorium_at_Pier_15.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Exploratorium" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Exploratorium</h2>
+    <div class="loc">San Francisco, CA · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Exploratorium" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>exploratorium</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Exploratorium_teachers.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Exploratorium_teachers.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Fog_Bridge_at_the_Exploratorium.jpeg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Fog_Bridge_at_the_Exploratorium.jpeg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Frank_Oppenheimer_with_Exploratorium_Exhibit.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Frank_Oppenheimer_with_Exploratorium_Exhibit.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="exploratorium" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="glbt-historical-society-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/GLBT_Historical_Society_Logo_2017.svg/1280px-GLBT_Historical_Society_Logo_2017.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="GLBT Historical Society Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>GLBT Historical Society Museum</h2>
+    <div class="loc">San Francisco, CA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/GLBT_Historical_Society" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>glbt-historical-society-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Visitors_Viewing_a_Photography_Exhibition_at_The_GLBT_History_Museum_%28San_Francisco%29..jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Visitors_Viewing_a_Photography_Exhibition_at_The_GLBT_History_Museum_%28San_Francisco%29..jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Christopher_Street_Liberation_Day_Gay-In_offset_flyer%2C_1970.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Christopher_Street_Liberation_Day_Gay-In_offset_flyer%2C_1970.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.FrontWindows12_10.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.FrontWindows12_10.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="glbt-historical-society-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="legion-of-honor">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Famsf-logo-2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="Legion of Honor" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Legion of Honor</h2>
+    <div class="loc">San Francisco, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Legion_of_Honor_(museum)" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>legion-of-honor</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Anna_Hyatt_Huntington--El_Cid_Campeador--1927--Legion_of_Honor--San_Francisco--photo_by_Steven_Saylor_%28cropped%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Anna_Hyatt_Huntington--El_Cid_Campeador--1927--Legion_of_Honor--San_Francisco--photo_by_Steven_Saylor_%28cropped%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Breton_Bathers_by_Paul_Gauguin%2C_zincograph%2C_California_Palace_of_the_Legion_of_Honor.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Breton_Bathers_by_Paul_Gauguin%2C_zincograph%2C_California_Palace_of_the_Legion_of_Honor.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Bretteville_Spreckels_Gallery%2C_Legion_of_Honor.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Bretteville_Spreckels_Gallery%2C_Legion_of_Honor.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="legion-of-honor" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-the-african-diaspora">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/MoAD_Members_Outside.jpg/1280px-MoAD_Members_Outside.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Museum of the African Diaspora" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of the African Diaspora</h2>
+    <div class="loc">San Francisco, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Museum_of_the_African_Diaspora" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-the-african-diaspora</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/MoAD_Members_Outside.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/MoAD_Members_Outside.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/SF_From_Marin_Highlands3.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/SF_From_Marin_Highlands3.jpg?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-the-african-diaspora" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="san-francisco-museum-of-modern-art">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2017_SFMOMA_from_Yerba_Buena_Gardens.jpg/1280px-2017_SFMOMA_from_Yerba_Buena_Gardens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="San Francisco Museum of Modern Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>San Francisco Museum of Modern Art</h2>
+    <div class="loc">San Francisco, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/San_Francisco_Museum_of_Modern_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>san-francisco-museum-of-modern-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/L%C3%A1szl%C3%B3_Moholy-Nagy%2C_A_IX%2C_1923_%28san_francisco_museum_of_modern_art%29_%28cropped%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/L%C3%A1szl%C3%B3_Moholy-Nagy%2C_A_IX%2C_1923_%28san_francisco_museum_of_modern_art%29_%28cropped%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/San_Francisco_Museum_of_Modern_Art%2C_Yerba_Buena_Gardens%2C_San_Francisco%2C_California%2C_U.S.A.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/San_Francisco_Museum_of_Modern_Art%2C_Yerba_Buena_Gardens%2C_San_Francisco%2C_California%2C_U.S.A.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/San_Francisco_Museum_of_Modern_Art%2C_interior_staircase.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/San_Francisco_Museum_of_Modern_Art%2C_interior_staircase.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="san-francisco-museum-of-modern-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="walt-disney-family-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Walt_Disney_Family_Museum_by_Joy_of_Museums.jpg/1280px-Walt_Disney_Family_Museum_by_Joy_of_Museums.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Walt Disney Family Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Walt Disney Family Museum</h2>
+    <div class="loc">San Francisco, CA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Walt_Disney_Family_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>walt-disney-family-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Walt_Disney_Family_Museum_by_Joy_of_Museums.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Walt_Disney_Family_Museum_by_Joy_of_Museums.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Disney_Display_Case.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Disney_Display_Case.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/SF_From_Marin_Highlands3.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/SF_From_Marin_Highlands3.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="walt-disney-family-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="de-young-museum">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Famsf-logo-2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="de Young Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>de Young Museum</h2>
+    <div class="loc">San Francisco, CA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/De_Young_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>de-young-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/De_Young_Museum_pano.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/De_Young_Museum_pano.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/M._H._de_Young_Memorial_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/M._H._de_Young_Memorial_Museum.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Pre-2005_De_Young_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Pre-2005_De_Young_Museum.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="de-young-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="burke-museum-of-natural-history-and-culture">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Burke_Museum_of_Natural_History_and_Culture_in_Seattle%2C_Washington.jpg/1280px-Burke_Museum_of_Natural_History_and_Culture_in_Seattle%2C_Washington.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Burke Museum of Natural History and Culture" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Burke Museum of Natural History and Culture</h2>
+    <div class="loc">Seattle, WA · Natural History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Burke_Museum_of_Natural_History_and_Culture" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>burke-museum-of-natural-history-and-culture</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Burke_Museum_of_Natural_History_and_Culture_in_Seattle%2C_Washington.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Burke_Museum_of_Natural_History_and_Culture_in_Seattle%2C_Washington.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Baird%27s_beaked_whale_skeleton_Burke_Museum_Seattle.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Baird%27s_beaked_whale_skeleton_Burke_Museum_Seattle.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Burke_Museum_Main_Entrance_-_21_January_2020.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Burke_Museum_Main_Entrance_-_21_January_2020.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="burke-museum-of-natural-history-and-culture" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="center-for-wooden-boats">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Seattle_-_Center_for_Wooden_Boats_06.jpg/1280px-Seattle_-_Center_for_Wooden_Boats_06.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Center for Wooden Boats" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Center for Wooden Boats</h2>
+    <div class="loc">Seattle, WA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Center_for_Wooden_Boats" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>center-for-wooden-boats</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_-_Center_for_Wooden_Boats_06.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_-_Center_for_Wooden_Boats_06.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Museum_btn.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_btn.png?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="center-for-wooden-boats" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="chihuly-garden-and-glass">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Chihuly_Garden_and_Glass_2014_09.JPG/1280px-Chihuly_Garden_and_Glass_2014_09.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Chihuly Garden and Glass" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Chihuly Garden and Glass</h2>
+    <div class="loc">Seattle, WA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Chihuly_Garden_and_Glass" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>chihuly-garden-and-glass</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Chihuly_Garden_and_Glass_2014_09.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Chihuly_Garden_and_Glass_2014_09.JPG?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Swan_of_Glass.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Swan_of_Glass.jpg?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="chihuly-garden-and-glass" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="frye-art-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Frye_Museum_winter.jpg/1280px-Frye_Museum_winter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Frye Art Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Frye Art Museum</h2>
+    <div class="loc">Seattle, WA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Frye_Art_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>frye-art-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Frye_Museum_winter.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Frye_Museum_winter.jpg?width=800" alt="alt 1" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="frye-art-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="klondike-gold-rush-national-historical-park">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_29.jpg/1280px-Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Klondike Gold Rush National Historical Park" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Klondike Gold Rush National Historical Park</h2>
+    <div class="loc">Seattle, WA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Klondike_Gold_Rush_National_Historical_Park" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>klondike-gold-rush-national-historical-park</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/J%2C_Bernard_Moore_House_1897_Restored_by_the_National_Park_Service_Klondike_Gold_Rush_National_Historical_Park.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/J%2C_Bernard_Moore_House_1897_Restored_by_the_National_Park_Service_Klondike_Gold_Rush_National_Historical_Park.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Cartel_de_bienvenida_a_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_23.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cartel_de_bienvenida_a_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_23.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="klondike-gold-rush-national-historical-park" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-flight">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Museum_of_Flight_logo.svg/1280px-Museum_of_Flight_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Museum of Flight" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of Flight</h2>
+    <div class="loc">Seattle, WA · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Museum_of_Flight" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-flight</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Boeing_747%2C_Museum_of_Flight.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Boeing_747%2C_Museum_of_Flight.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Concorde_G-BOAG_tail_at_the_Museum_of_Flight%2C_Seattle.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Concorde_G-BOAG_tail_at_the_Museum_of_Flight%2C_Seattle.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Gossamer_Albatross_II_at_the_Museum_of_Flight.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Gossamer_Albatross_II_at_the_Museum_of_Flight.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-flight" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="museum-of-pop-culture">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Museum_of_Pop_Culture_Logo.png/1280px-Museum_of_Pop_Culture_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Museum of Pop Culture" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Museum of Pop Culture</h2>
+    <div class="loc">Seattle, WA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Museum_of_Pop_Culture" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>museum-of-pop-culture</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_EMPSFM.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_EMPSFM.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/EMPPano11.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/EMPPano11.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/ExperienceMusicProject.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/ExperienceMusicProject.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="museum-of-pop-culture" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-nordic-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Nordic_Museum_Seattle.jpg/1280px-Nordic_Museum_Seattle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Nordic Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Nordic Museum</h2>
+    <div class="loc">Seattle, WA · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Nordic_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-nordic-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Nordic_Heritage_Museum_Entrance.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Nordic_Heritage_Museum_Entrance.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Nordic_Museum_Seattle.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Nordic_Museum_Seattle.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Ballard_Nordic_Heritage_Museum_2.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Ballard_Nordic_Heritage_Museum_2.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-nordic-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="pacific-science-center">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Pacific_Science_Center_01.jpg/1280px-Pacific_Science_Center_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Pacific Science Center" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Pacific Science Center</h2>
+    <div class="loc">Seattle, WA · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Pacific_Science_Center" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>pacific-science-center</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Ford_E-Series_of_the_Pacific_Science_Center_in_Seattle%2C_WA.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Ford_E-Series_of_the_Pacific_Science_Center_in_Seattle%2C_WA.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Pacific_Science_Center_01.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Pacific_Science_Center_01.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Wws-robertson-hall.jpeg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Wws-robertson-hall.jpeg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="pacific-science-center" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="seattle-art-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Seattle_Art_Museum_03.jpg/1280px-Seattle_Art_Museum_03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Seattle Art Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Seattle Art Museum</h2>
+    <div class="loc">Seattle, WA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Seattle_Art_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>seattle-art-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Art_Museum_03.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Art_Museum_03.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Downtown_Seattle%2C_Washington%2C_USGS_National_Map%2C_2025.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Downtown_Seattle%2C_Washington%2C_USGS_National_Map%2C_2025.png?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Olympic_Sculpture_Park.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Olympic_Sculpture_Park.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="seattle-art-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="seattle-asian-art-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Seattle_Asian_Art_Museum.jpg/1280px-Seattle_Asian_Art_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Seattle Asian Art Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Seattle Asian Art Museum</h2>
+    <div class="loc">Seattle, WA · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Seattle_Asian_Art_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>seattle-asian-art-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Asian_Art_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Asian_Art_Museum.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Dragones_Seattle_01.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Dragones_Seattle_01.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Mahavira_Seattle_01.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Mahavira_Seattle_01.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="seattle-asian-art-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="wing-luke-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Seattle_-_East_Kong_Yick_Building_01.jpg/1280px-Seattle_-_East_Kong_Yick_Building_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Wing Luke Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Wing Luke Museum</h2>
+    <div class="loc">Seattle, WA · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Wing_Luke_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>wing-luke-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Wing_Luke_Museum_03.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Wing_Luke_Museum_03.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_-_East_Kong_Yick_Building_01.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Seattle_-_East_Kong_Yick_Building_01.jpg?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="wing-luke-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="hirshhorn-museum-and-sculpture-garden">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hirshhorn_Museum_DC_2007.jpg/1280px-Hirshhorn_Museum_DC_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Hirshhorn Museum and Sculpture Garden" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Hirshhorn Museum and Sculpture Garden</h2>
+    <div class="loc">Washington, DC · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Hirshhorn_Museum_and_Sculpture_Garden" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>hirshhorn-museum-and-sculpture-garden</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Hirshhorn_Museum_Sculpture_Garden_2007.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hirshhorn_Museum_Sculpture_Garden_2007.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Hirshhorn_Museum_and_Sculpture_Garden_-_exterior.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hirshhorn_Museum_and_Sculpture_Garden_-_exterior.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/The_Burghers_of_Calais_-_Hirshhorn_Sculpture_Garden.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_Burghers_of_Calais_-_Hirshhorn_Sculpture_Garden.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="hirshhorn-museum-and-sculpture-garden" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="international-spy-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/International_Spy_Museum_Logo.svg/1280px-International_Spy_Museum_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="International Spy Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>International Spy Museum</h2>
+    <div class="loc">Washington, DC · Specialized</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/International_Spy_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>international-spy-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/2019_International_Spy_Museum_03.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/2019_International_Spy_Museum_03.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Spy_museum_night.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Spy_museum_night.jpg?width=800" alt="alt 2" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="international-spy-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-air-and-space-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/National_Air_and_Space_Museum_%2855256212753%29.jpg/1280px-National_Air_and_Space_Museum_%2855256212753%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Air and Space Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Air and Space Museum</h2>
+    <div class="loc">Washington, DC · Science</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Air_and_Space_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-air-and-space-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/1959_Chevrolet_Corvette_at_the_National_Air_and_Space_Museum%2C_1_February_2024.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/1959_Chevrolet_Corvette_at_the_National_Air_and_Space_Museum%2C_1_February_2024.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Air_and_Space_Museum_%2855256212753%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Air_and_Space_Museum_%2855256212753%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Air_and_Space_Museum_Entrance.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Air_and_Space_Museum_Entrance.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-air-and-space-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-gallery-of-art">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/National_Gallery_of_Art_-_2026_%2855255088792%29.jpg/1280px-National_Gallery_of_Art_-_2026_%2855255088792%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Gallery of Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Gallery of Art</h2>
+    <div class="loc">Washington, DC · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Gallery_of_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-gallery-of-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/0_Agrippine_et_Germanicus_-_Washington_National_Gallery_of_Art_Museum_%282%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/0_Agrippine_et_Germanicus_-_Washington_National_Gallery_of_Art_Museum_%282%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Albert_Gleizes%2C_1912-13%2C_Les_Joueurs_de_football_%28Football_Players%29%2C_oil_on_canvas%2C_225.4_x_183_cm%2C_National_Gallery_of_Art.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Albert_Gleizes%2C_1912-13%2C_Les_Joueurs_de_football_%28Football_Players%29%2C_oil_on_canvas%2C_225.4_x_183_cm%2C_National_Gallery_of_Art.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/East_Building_of_the_National_Gallery_of_Art%2C_atrium.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/East_Building_of_the_National_Gallery_of_Art%2C_atrium.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-gallery-of-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-museum-of-african-american-history-and-culture">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/National_Museum_of_African_American_History_and_Culture_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="National Museum of African American History and Culture" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Museum of African American History and Culture</h2>
+    <div class="loc">Washington, DC · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Museum_of_African_American_History_and_Culture" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-museum-of-african-american-history-and-culture</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-museum-of-african-american-history-and-culture" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-museum-of-american-history">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Aerial_view_of_National_Museum_of_American_History.jpg/1280px-Aerial_view_of_National_Museum_of_American_History.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Museum of American History" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Museum of American History</h2>
+    <div class="loc">Washington, DC · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Museum_of_American_History" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-museum-of-american-history</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_National_Museum_of_American_History.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_National_Museum_of_American_History.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_American_History_-_2026_%2855256384290%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_American_History_-_2026_%2855256384290%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Nat._Museum_of_American_History%2C_Washington%2C_D.C._IMG_4758.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Nat._Museum_of_American_History%2C_Washington%2C_D.C._IMG_4758.JPG?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-museum-of-american-history" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-museum-of-natural-history">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/National_Museum_of_Natural_History_-_2026_%2855255088887%29.jpg/1280px-National_Museum_of_Natural_History_-_2026_%2855255088887%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Museum of Natural History" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Museum of Natural History</h2>
+    <div class="loc">Washington, DC · Natural History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Museum_of_Natural_History" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-museum-of-natural-history</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Hall_of_Mammals_at_the_Smithsonian_National_Museum_of_Natural_History.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hall_of_Mammals_at_the_Smithsonian_National_Museum_of_Natural_History.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Natural_History%2C_Washington%2C_D.C._%282013%29_-_16.JPG?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Natural_History%2C_Washington%2C_D.C._%282013%29_-_16.JPG?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Natural_History%2C_Washington.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Natural_History%2C_Washington.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-museum-of-natural-history" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-museum-of-the-american-indian">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/National_Museum_of_the_American_Indian%2C_Washington%2C_D.C_LCCN2011630892.jpg/1280px-National_Museum_of_the_American_Indian%2C_Washington%2C_D.C_LCCN2011630892.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Museum of the American Indian" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Museum of the American Indian</h2>
+    <div class="loc">Washington, DC · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Museum_of_the_American_Indian" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-museum-of-the-american-indian</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-museum-of-the-american-indian" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="national-portrait-gallery">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/National_Portrait_Gallery_%28United_States%29_logo.svg/1280px-National_Portrait_Gallery_%28United_States%29_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="National Portrait Gallery" loading="lazy" /></div>
+  <div class="meta">
+    <h2>National Portrait Gallery</h2>
+    <div class="loc">Washington, DC · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/National_Portrait_Gallery_(United_States)" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>national-portrait-gallery</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Gibbs-Coolidge_Collection_-_1817_to_1821_-_by_Gilbert_Stuart_-_National_Gallery_of_Art%2C_Washington_DC.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Gibbs-Coolidge_Collection_-_1817_to_1821_-_by_Gilbert_Stuart_-_National_Gallery_of_Art%2C_Washington_DC.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/AWMellon.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/AWMellon.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Frederick_Douglass_ambrotype_%281856%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Frederick_Douglass_ambrotype_%281856%29.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="national-portrait-gallery" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="phillips-collection">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/The_Phillips_Collection.JPG/1280px-The_Phillips_Collection.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Phillips Collection" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Phillips Collection</h2>
+    <div class="loc">Washington, DC · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/The_Phillips_Collection" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>phillips-collection</code></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="phillips-collection" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="smithsonian-american-art-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Modern_and_Contemporary_Art_at_the_Smithsonian_American_Art_Museum.jpg/1280px-Modern_and_Contemporary_Art_at_the_Smithsonian_American_Art_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Smithsonian American Art Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Smithsonian American Art Museum</h2>
+    <div class="loc">Washington, DC · Art</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Smithsonian_American_Art_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>smithsonian-american-art-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Modern_and_Contemporary_Art_at_the_Smithsonian_American_Art_Museum.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Modern_and_Contemporary_Art_at_the_Smithsonian_American_Art_Museum.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Luce_Foundation_Center_for_American_Art_13.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Luce_Foundation_Center_for_American_Art_13.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Old_Patent_Office%2C_Washington%2C_D.C._2011.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Old_Patent_Office%2C_Washington%2C_D.C._2011.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="smithsonian-american-art-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="united-states-holocaust-memorial-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/United_States_Holocaust_Memorial_Museum_logo.svg/1280px-United_States_Holocaust_Memorial_Museum_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="United States Holocaust Memorial Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>United States Holocaust Memorial Museum</h2>
+    <div class="loc">Washington, DC · History</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/United_States_Holocaust_Memorial_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>united-states-holocaust-memorial-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/The_United_States_Holocaust_Memorial_Museum_%28USHMM%29_%2853831937253%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_United_States_Holocaust_Memorial_Museum_%28USHMM%29_%2853831937253%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum.jpeg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum.jpeg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_Bridges.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_Bridges.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="united-states-holocaust-memorial-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<div id="flagged-list">
+  <h3>Flagged slugs</h3>
+  <textarea readonly id="flagged-text" placeholder="No photos flagged yet"></textarea>
+  <button onclick="copyFlagged()">Copy to clipboard</button>
+</div>
+
+<script>
+  const flagged = new Set();
+  document.querySelectorAll('.flag input').forEach(cb => {
+    cb.addEventListener('change', e => {
+      const slug = e.target.dataset.slug;
+      const card = document.getElementById(slug);
+      if (e.target.checked) {
+        flagged.add(slug);
+        card.classList.add('flagged');
+      } else {
+        flagged.delete(slug);
+        card.classList.remove('flagged');
+      }
+      document.getElementById('flagged-text').value = [...flagged].join('\n');
+    });
+  });
+  function toggleFlagged() {
+    document.getElementById('flagged-list').classList.toggle('active');
+  }
+  function copyFlagged() {
+    const t = document.getElementById('flagged-text');
+    t.select();
+    document.execCommand('copy');
+  }
+</script>
+</body>
+</html>

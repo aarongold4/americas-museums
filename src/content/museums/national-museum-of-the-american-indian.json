@@ -33,5 +33,7 @@
   "distance_landmark": "On the National Mall, near the Capitol",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/National_Museum_of_the_American_Indian%2C_Washington%2C_D.C_LCCN2011630892.jpg/1280px-National_Museum_of_the_American_Indian%2C_Washington%2C_D.C_LCCN2011630892.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "photo_credit": "via Wikimedia Commons / National Museum of the American Indian"
 }

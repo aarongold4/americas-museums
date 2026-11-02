@@ -32,5 +32,12 @@
   "distance_landmark": "Penn Quarter / Chinatown",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Modern_and_Contemporary_Art_at_the_Smithsonian_American_Art_Museum.jpg/1280px-Modern_and_Contemporary_Art_at_the_Smithsonian_American_Art_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Modern_and_Contemporary_Art_at_the_Smithsonian_American_Art_Museum.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Luce_Foundation_Center_for_American_Art_13.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Old_Patent_Office%2C_Washington%2C_D.C._2011.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Smithsonian American Art Museum"
 }

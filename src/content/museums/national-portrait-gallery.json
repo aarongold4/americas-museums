@@ -36,5 +36,12 @@
   "distance_landmark": "Penn Quarter / Chinatown",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/National_Portrait_Gallery_%28United_States%29_logo.svg/1280px-National_Portrait_Gallery_%28United_States%29_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Gibbs-Coolidge_Collection_-_1817_to_1821_-_by_Gilbert_Stuart_-_National_Gallery_of_Art%2C_Washington_DC.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/AWMellon.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Frederick_Douglass_ambrotype_%281856%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / National Portrait Gallery (United States)"
 }

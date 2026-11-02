@@ -26,5 +26,11 @@
   "distance_landmark": "Charlestown Navy Yard, across the river from downtown",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/USS_Constitution_Museum.jpg/1280px-USS_Constitution_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/USS_Constitution_Museum.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/ConstitutionMuseum.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / USS Constitution Museum"
 }

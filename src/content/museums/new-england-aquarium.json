@@ -29,5 +29,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/new-england-aquarium/?partner_id=PLACEHOLDER",
     "product_name": "New England Aquarium entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/New_England_Aquarium_%2854960820818%29.jpg/1280px-New_England_Aquarium_%2854960820818%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Green_Moray_Eel_at_the_New_England_Aquarium.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/New_England_Aquarium%2C_by_Edmund_L._Mitchell%2C_1966%2C_from_the_Digital_Commonwealth_-_commonwealth_td96nr385.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/New_England_Aquarium_%2854960820818%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / New England Aquarium"
 }

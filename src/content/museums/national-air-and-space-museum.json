@@ -45,5 +45,12 @@
   "distance_landmark": "On the National Mall",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/National_Air_and_Space_Museum_%2855256212753%29.jpg/1280px-National_Air_and_Space_Museum_%2855256212753%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/1959_Chevrolet_Corvette_at_the_National_Air_and_Space_Museum%2C_1_February_2024.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Air_and_Space_Museum_%2855256212753%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Air_and_Space_Museum_Entrance.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / National Air and Space Museum"
 }

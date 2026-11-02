@@ -51,5 +51,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/new-york/intrepid-sea-air-and-space-museum/?partner_id=PLACEHOLDER",
     "product_name": "Intrepid Sea, Air & Space Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Intrepid_Museum_%2849052290092%29.jpg/1280px-Intrepid_Museum_%2849052290092%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Space_Shuttle_Enterprise_delivered_to_the_Intrepid_Museum.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Intrepid_Museum_%2849052290092%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Intrepid_museum_aerial.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Intrepid Museum"
 }

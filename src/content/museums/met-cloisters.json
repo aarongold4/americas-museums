@@ -47,5 +47,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/new-york/met-cloisters/?partner_id=PLACEHOLDER",
     "product_name": "The Met Cloisters entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/The_Met_Cloisters.jpg/1280px-The_Met_Cloisters.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Bonnefont_Cloisters.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Cloisters-724.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Cloisters_Chapel_%283220524245%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / The Cloisters"
 }

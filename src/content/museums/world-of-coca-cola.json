@@ -46,5 +46,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/atlanta/world-of-coca-cola/?partner_id=PLACEHOLDER",
     "product_name": "World of Coca-Cola entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/World_of_Coca_Cola_2015-04-09.jpg/1280px-World_of_Coca_Cola_2015-04-09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/2013.01.26.113703_World_of_Coca_Cola_Atlanta_Georgia.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/World-of-Coca-Cola-Atlanta.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/World_of_Coca-Cola_06.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / World of Coca-Cola"
 }

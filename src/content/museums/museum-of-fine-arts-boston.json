@@ -40,5 +40,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/museum-of-fine-arts-boston/?partner_id=PLACEHOLDER",
     "product_name": "Museum of Fine Arts, Boston entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg/1280px-Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Japanese_gate_and_garden_at_Boston_Museum_of_Fine_Arts_-_August_15%2C_2015.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts%2C_Boston%2C_Mass_%28NYPL_b12647398-74302%29.tiff?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Museum of Fine Arts, Boston"
 }

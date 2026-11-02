@@ -35,5 +35,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/los-angeles/natural-history-museum-of-la-county/?partner_id=PLACEHOLDER",
     "product_name": "Natural History Museum of Los Angeles County entry"
-  }
+  },
+  "hero_image": "https://en.wikipedia.org/wiki/Special:FilePath/NaturalHistoryMuseumOfLosAngelesCounty.jpg?width=1000",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Museum_of_Natural_History_-_Hall_of_African_Mammals.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Natural_History_Museum_of_Los_Angeles_Rotunda.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Antonio_Coronel.png?width=800"
+  ],
+  "photo_credit": "via Wikipedia / NaturalHistoryMuseumOfLosAngelesCounty.jpg"
 }

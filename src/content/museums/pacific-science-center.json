@@ -29,5 +29,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/seattle/pacific-science-center/?partner_id=PLACEHOLDER",
     "product_name": "Pacific Science Center entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Pacific_Science_Center_01.jpg/1280px-Pacific_Science_Center_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Ford_E-Series_of_the_Pacific_Science_Center_in_Seattle%2C_WA.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Pacific_Science_Center_01.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Wws-robertson-hall.jpeg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Pacific Science Center"
 }

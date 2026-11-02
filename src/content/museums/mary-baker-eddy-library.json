@@ -29,5 +29,10 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/mary-baker-eddy-library/?partner_id=PLACEHOLDER",
     "product_name": "Mary Baker Eddy Library entry"
-  }
+  },
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Exterior_of_The_Mary_Baker_Eddy_Library.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Exterior_of_The_Mary_Baker_Eddy_Library.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Mary Baker Eddy Library"
 }

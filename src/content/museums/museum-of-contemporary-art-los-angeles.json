@@ -27,5 +27,12 @@
   "distance_landmark": "Bunker Hill, opposite The Broad",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/MidnightMission.jpg/1280px-MidnightMission.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_Skid_Row.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Steam_locomotive_in_front_of_the_Los_Angeles_and_Independence_Rail_Road_Terminal_at_Fifth_Street_and_San_Pedro_Street%2C_Los_Angeles%2C_1875_%28CHS-14279%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Cafe_Waba%2C_S_San_Pedro_St._and_E_6th_St._downtown_LA%2C_USA_-_panoramio.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Skid Row, Los Angeles"
 }

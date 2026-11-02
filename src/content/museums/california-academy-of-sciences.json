@@ -44,5 +44,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/san-francisco/california-academy-of-sciences/?partner_id=PLACEHOLDER",
     "product_name": "California Academy of Sciences entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/California-06239_-_California_Academy_of_Sciences_%2820449900470%29.jpg/1280px-California-06239_-_California_Academy_of_Sciences_%2820449900470%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/California-06239_-_California_Academy_of_Sciences_%2820449900470%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/California_Academy_of_Sciences%2C_San_Francisco_%282013%29_-_22.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/California_Academy_of_Sciences%2C_San_Francisco_%282013%29_-_32.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / California Academy of Sciences"
 }

@@ -28,5 +28,7 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/penn-museum/?partner_id=PLACEHOLDER",
     "product_name": "Penn Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Penn_Museum_-_UPenn_%2853590175396%29.jpg/1280px-Penn_Museum_-_UPenn_%2853590175396%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "photo_credit": "via Wikimedia Commons / Penn Museum"
 }

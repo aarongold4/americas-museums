@@ -40,5 +40,7 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/los-angeles/petersen-automotive-museum/?partner_id=PLACEHOLDER",
     "product_name": "Petersen Automotive Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Petersen_Automotive_Museum.jpg/1280px-Petersen_Automotive_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "photo_credit": "via Wikimedia Commons / Petersen Automotive Museum"
 }

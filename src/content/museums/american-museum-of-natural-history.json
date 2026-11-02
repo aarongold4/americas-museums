@@ -55,5 +55,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/new-york/american-museum-of-natural-history/?partner_id=PLACEHOLDER",
     "product_name": "American Museum of Natural History entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/USA-NYC-American_Museum_of_Natural_History.JPG/1280px-USA-NYC-American_Museum_of_Natural_History.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Alaska_Moose_at_the_American_Museum_of_Natural_History.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/American_Museum_of_Natural_History%2C_New_York_City.png?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/American_Museum_of_Natural_History_in_Manhattan%2C_New_York_City%2C_United_States_of_America_%289860903214%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / American Museum of Natural History"
 }

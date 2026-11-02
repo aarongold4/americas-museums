@@ -31,5 +31,10 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/mutter-museum/?partner_id=PLACEHOLDER",
     "product_name": "Mütter Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/The_Mutter_Museum_%2853586792843%29.jpg/1280px-The_Mutter_Museum_%2853586792843%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/The_Mutter_Museum_%2853586792843%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Mütter Museum"
 }

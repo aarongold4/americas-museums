@@ -54,5 +54,7 @@
   "distance_landmark": "Bunker Hill, next to Walt Disney Concert Hall",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg/1280px-Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "photo_credit": "via Wikimedia Commons / The Broad"
 }

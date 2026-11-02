@@ -40,5 +40,7 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/los-angeles/la-brea-tar-pits-and-museum/?partner_id=PLACEHOLDER",
     "product_name": "La Brea Tar Pits and Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/La_Brea_Tar_Pits_logo.svg/1280px-La_Brea_Tar_Pits_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "photo_credit": "via Wikimedia Commons / La Brea Tar Pits"
 }

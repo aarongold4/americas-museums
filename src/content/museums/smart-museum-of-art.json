@@ -3,7 +3,7 @@
   "city": "Chicago",
   "state": "IL",
   "address": "5550 S Greenwood Ave, Chicago, IL 60637",
-  "lat": 41.7920,
+  "lat": 41.792,
   "lng": -87.6011,
   "discipline": "Art",
   "founded": 1974,
@@ -19,15 +19,37 @@
   "tagline": "The University of Chicago's free art museum. Strong East Asian collection, excellent rotating shows.",
   "description": "The free-admission art museum of the University of Chicago. About 15,000 works spanning 5,000 years, with particular strength in East Asian art, modern European prints, and contemporary photography. Often empty on weekday afternoons.",
   "badges": [
-    { "label": "Always free", "tone": "ok" },
-    { "label": "Hyde Park", "tone": "info" }
+    {
+      "label": "Always free",
+      "tone": "ok"
+    },
+    {
+      "label": "Hyde Park",
+      "tone": "info"
+    }
   ],
   "tips": [
-    { "tag": "FREE", "tone": "ok", "text": "Free admission, no reservation needed." }
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free admission, no reservation needed."
+    }
   ],
   "highlights": [
-    { "location": "Asian gallery",  "item": "Tang dynasty ceramics and Edo-period scrolls" }
+    {
+      "location": "Asian gallery",
+      "item": "Tang dynasty ceramics and Edo-period scrolls"
+    }
   ],
-  "affiliate": { "network": "none" },
-  "distance_landmark": "Hyde Park, on the U of C campus"
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "Hyde Park, on the U of C campus",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/University_of_Chicago_July_2013_48_%28Smart_Museum%29.jpg/1280px-University_of_Chicago_July_2013_48_%28Smart_Museum%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Cecco_Bravo_Angelica_y_Ruggiero_1660_David_and_Alfred_Smart_Museum_of_Art.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Jean_Metzinger%2C_1915%2C_Soldat_jouant_aux_%C3%A9checs_%28Soldier_at_a_Game_of_Chess%29%2C_oil_on_canvas%2C_81.3_x_61_cm%2C_Smart_Museum_of_Art.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/University_of_Chicago_July_2013_48_%28Smart_Museum%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Smart Museum of Art"
 }

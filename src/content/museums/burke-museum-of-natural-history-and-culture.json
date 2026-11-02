@@ -29,5 +29,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/seattle/burke-museum-of-natural-history-and-culture/?partner_id=PLACEHOLDER",
     "product_name": "Burke Museum of Natural History and Culture entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Burke_Museum_of_Natural_History_and_Culture_in_Seattle%2C_Washington.jpg/1280px-Burke_Museum_of_Natural_History_and_Culture_in_Seattle%2C_Washington.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Burke_Museum_of_Natural_History_and_Culture_in_Seattle%2C_Washington.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Baird%27s_beaked_whale_skeleton_Burke_Museum_Seattle.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Burke_Museum_Main_Entrance_-_21_January_2020.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Burke Museum of Natural History and Culture"
 }

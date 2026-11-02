@@ -41,5 +41,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/barnes-foundation/?partner_id=PLACEHOLDER",
     "product_name": "Barnes Foundation entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Barnes_Foundation_%2853574516274%29.jpg/1280px-Barnes_Foundation_%2853574516274%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Barnes-foundation.png?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Barnes_Foundation_%2853574516274%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Georges_Seurat_-_Models_%28Poseuses%29_-_BF811_-_Barnes_Foundation.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Barnes Foundation"
 }

@@ -43,5 +43,7 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/new-york/solomon-r-guggenheim-museum/?partner_id=PLACEHOLDER",
     "product_name": "Solomon R. Guggenheim Museum entry"
-  }
+  },
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/S._R._Guggenheim_portrait_by_Pirie_MacDonald.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "photo_credit": "via Wikimedia Commons / Solomon R. Guggenheim"
 }

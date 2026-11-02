@@ -40,5 +40,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/seattle/museum-of-flight/?partner_id=PLACEHOLDER",
     "product_name": "Museum of Flight entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Museum_of_Flight_logo.svg/1280px-Museum_of_Flight_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Boeing_747%2C_Museum_of_Flight.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Concorde_G-BOAG_tail_at_the_Museum_of_Flight%2C_Seattle.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Gossamer_Albatross_II_at_the_Museum_of_Flight.JPG?width=800"
+  ],
+  "photo_credit": "via Wikimedia Commons / Museum of Flight"
 }

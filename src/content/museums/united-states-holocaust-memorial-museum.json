@@ -34,5 +34,12 @@
   "distance_landmark": "Just south of the Mall, near the Tidal Basin",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/United_States_Holocaust_Memorial_Museum_logo.svg/1280px-United_States_Holocaust_Memorial_Museum_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/The_United_States_Holocaust_Memorial_Museum_%28USHMM%29_%2853831937253%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum.jpeg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_Bridges.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / United States Holocaust Memorial Museum"
 }

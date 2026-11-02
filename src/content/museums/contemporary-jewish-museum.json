@@ -22,5 +22,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/san-francisco/contemporary-jewish-museum/?partner_id=PLACEHOLDER",
     "product_name": "Contemporary Jewish Museum entry"
-  }
+  },
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Contemporary_Jewish_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Architectural_detail_from_the_Contemporary_Jewish_Museum_in_San_Francisco%2C_California_LCCN2013630086.tif?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Contemporary_Jewish_Museum%2C_San_Francisco%2C_California_LCCN2013630117.tif?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Contemporary_Jewish_Museum%2C_San_Francisco_%2816870725773%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Contemporary Jewish Museum"
 }

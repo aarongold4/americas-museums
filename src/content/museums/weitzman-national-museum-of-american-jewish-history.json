@@ -22,5 +22,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/weitzman-national-museum-of-american-jewish-history/?partner_id=PLACEHOLDER",
     "product_name": "Weitzman National Museum of American Jewish History entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/National_Museum_of_American_Jewish_History.jpg/1280px-National_Museum_of_American_Jewish_History.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Hanukkah_lamp_from_Lodz%2C_Poland%2C_prior_to_1881%2C_silver%2C_National_Museum_of_American_Jewish_History.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Hanukkah_menorah%2C_Russia%2C_1890%2C_brass%2C_National_Museum_of_American_Jewish_History.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Kiddush_cup_from_Russia%2C_engraved_sterling_silver%2C_National_Museum_of_American_Jewish_History.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Weitzman National Museum of American Jewish History"
 }

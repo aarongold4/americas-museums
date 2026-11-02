@@ -20,16 +20,33 @@
   "description": "Housed in the 1883 Samuel Mayo Nickerson House. The interior survived intact and was meticulously restored by the Driehaus Foundation, with collections of Tiffany glass, Herter Brothers furniture, and original woodwork. Among the best-preserved Gilded Age interiors in America.",
   "badges": [],
   "tips": [
-    { "tag": "TIP", "tone": "warn", "text": "Book the curator's tour — the unguided self-walk misses half of what's worth seeing." }
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Book the curator's tour — the unguided self-walk misses half of what's worth seeing."
+    }
   ],
   "highlights": [
-    { "location": "Main hall",        "item": "Original Tiffany Studios glass dome" },
-    { "location": "Library",          "item": "Herter Brothers built-in cabinetry" }
+    {
+      "location": "Main hall",
+      "item": "Original Tiffany Studios glass dome"
+    },
+    {
+      "location": "Library",
+      "item": "Herter Brothers built-in cabinetry"
+    }
   ],
   "affiliate": {
     "network": "tiqets",
     "deep_link": "https://www.tiqets.com/en/chicago-attractions-c66421/driehaus-museum-p999991/?partner=PLACEHOLDER",
     "product_name": "Driehaus Museum entry"
   },
-  "distance_landmark": "River North, 3 blocks off Michigan Ave"
+  "distance_landmark": "River North, 3 blocks off Michigan Ave",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/The_Richard_H._Driehaus_Museum%2C_exterior_entrance%2C_2013.jpg/1280px-The_Richard_H._Driehaus_Museum%2C_exterior_entrance%2C_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Richard_H_Driehaus_museum_2.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Richard_H_Driehaus_museum_3.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Richard_H_Driehaus_museum_4.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Driehaus Museum"
 }

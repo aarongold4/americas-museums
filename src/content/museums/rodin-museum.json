@@ -32,5 +32,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/rodin-museum/?partner_id=PLACEHOLDER",
     "product_name": "Rodin Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Rodin_Museum_-_Philadelphia_%2853574398988%29.jpg/1280px-Rodin_Museum_-_Philadelphia_%2853574398988%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Rodin_Museum_-_Philadelphia_%2853574398988%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Bacchus_in_the_Vat.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Colossal_Head_of_Balzac.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Rodin Museum"
 }

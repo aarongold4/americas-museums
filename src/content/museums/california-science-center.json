@@ -38,5 +38,12 @@
   "distance_landmark": "Exposition Park, next to the Natural History Museum",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/California_Science_Center.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/CSM-11_California_Science_Center_2019.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center_January_2013_001.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / California Science Center"
 }

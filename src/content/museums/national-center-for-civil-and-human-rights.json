@@ -33,5 +33,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/atlanta/national-center-for-civil-and-human-rights/?partner_id=PLACEHOLDER",
     "product_name": "National Center for Civil and Human Rights entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/National_Center_for_Civil_and_Human_Rights_01.jpg/1280px-National_Center_for_Civil_and_Human_Rights_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Center_for_Civil_and_Human_Rights_-_Main_hall.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Center_for_Civil_and_Human_Rights_01.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Exhibit_at_Center_for_Civil_and_Human_Rights_-_Atlanta_-_Georgia_-_USA_-_01_%2834268877316%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / National Center for Civil and Human Rights"
 }

@@ -23,5 +23,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/mit-museum/?partner_id=PLACEHOLDER",
     "product_name": "MIT Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/%28USA-Massachusetts%29_MIT_Museum_Entrance_2024-06-11.jpg/1280px-%28USA-Massachusetts%29_MIT_Museum_Entrance_2024-06-11.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/%28USA-Massachusetts%29_MIT_Museum_Entrance_2024-06-11.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Comically_large_slide_rule%2C_MIT_Museum.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/MIT_Museum_Building_%28MIT_Building_N51%29%2C_275_Massachusetts_Avenue%2C_Cambridge%2C_Massachusetts.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / MIT Museum"
 }

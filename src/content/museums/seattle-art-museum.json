@@ -41,5 +41,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/seattle/seattle-art-museum/?partner_id=PLACEHOLDER",
     "product_name": "Seattle Art Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Seattle_Art_Museum_03.jpg/1280px-Seattle_Art_Museum_03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Art_Museum_03.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Downtown_Seattle%2C_Washington%2C_USGS_National_Map%2C_2025.png?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Olympic_Sculpture_Park.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Seattle Art Museum"
 }

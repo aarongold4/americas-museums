@@ -22,5 +22,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/peabody-museum-of-archaeology-and-ethnology/?partner_id=PLACEHOLDER",
     "product_name": "Peabody Museum of Archaeology and Ethnology entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Peabody_Museum%2C_Harvard_University_-_exterior_2.JPG/1280px-Peabody_Museum%2C_Harvard_University_-_exterior_2.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Paho%2C_Hopi%2C_for_Mamzrauti_dance%2C_collected_before_1892_-_Native_American_collection_-_Peabody_Museum%2C_Harvard_University_-_DSC05530.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Peabody_Museum%2C_Harvard_University_-_exterior_2.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Plaque_depicting_chief_flanked_by_two_warriors%2C_Benin%2C_AD_1550-1650_-_African_collection_-_Peabody_Museum%2C_Harvard_University_-_DSC05790.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Peabody Museum of Archaeology and Ethnology"
 }

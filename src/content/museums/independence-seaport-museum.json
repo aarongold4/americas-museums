@@ -22,5 +22,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/independence-seaport-museum/?partner_id=PLACEHOLDER",
     "product_name": "Independence Seaport Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Seaport_museum_penns_landing.jpg/1280px-Seaport_museum_penns_landing.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Independence_Seaport_Museum_117.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Seaport_museum_penns_landing.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/USS_Olympia_side.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Independence Seaport Museum"
 }

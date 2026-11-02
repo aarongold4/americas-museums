@@ -45,5 +45,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/los-angeles/huntington-library/?partner_id=PLACEHOLDER",
     "product_name": "Huntington Library, Art Museum, and Botanical Gardens entry"
-  }
+  },
+  "hero_image": "https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_18_-_Echinocactus_grusonii.jpg?width=1000",
+  "gallery_images": [
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_12_-_Mammillaria_humboldtii.jpg?width=800",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_19_-_Echinocactus_grusonii.jpg?width=800",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Lightmatter_huntington_library.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Wikimedia Commons"
 }

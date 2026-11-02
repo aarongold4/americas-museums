@@ -41,5 +41,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/new-york/frick-collection/?partner_id=PLACEHOLDER",
     "product_name": "Frick Collection entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Frick_Collection_New_York_cour.jpg/1280px-Frick_Collection_New_York_cour.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Frick_Collection_New_York_cour.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Frick_Collection_New_York_entr%C3%A9e.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Frick_collection.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Frick Collection"
 }

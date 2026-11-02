@@ -4,7 +4,7 @@
   "city": "Chicago",
   "state": "IL",
   "address": "740 E 56th Pl, Chicago, IL 60637",
-  "lat": 41.7910,
+  "lat": 41.791,
   "lng": -87.6076,
   "discipline": "History",
   "founded": 1961,
@@ -20,14 +20,32 @@
   "tagline": "The first independent institution dedicated to African-American history. Founded in 1961 in Margaret Burroughs's living room.",
   "description": "The oldest independent museum of African-American history in the United States, founded by artist Margaret Burroughs in 1961 and now housed in a former Chicago Park District administration building. Permanent exhibits on slavery, the Great Migration, and the civil rights movement; strong rotating program.",
   "badges": [
-    { "label": "Free Sundays (IL)", "tone": "ok" }
+    {
+      "label": "Free Sundays (IL)",
+      "tone": "ok"
+    }
   ],
   "tips": [
-    { "tag": "FREE", "tone": "ok", "text": "Free for Illinois residents on Sundays." }
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free for Illinois residents on Sundays."
+    }
   ],
   "highlights": [
-    { "location": "Permanent",  "item": "Harold Washington Wing — first Black mayor of Chicago" }
+    {
+      "location": "Permanent",
+      "item": "Harold Washington Wing — first Black mayor of Chicago"
+    }
   ],
-  "affiliate": { "network": "none" },
-  "distance_landmark": "Washington Park, just south of the Museum of Science and Industry"
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "Washington Park, just south of the Museum of Science and Industry",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/The_DuSable_Museum.jpg/1280px-The_DuSable_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/20070325_DuSable_Museum_Harold_Washington_Wing.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/The_DuSable_Museum.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / DuSable Black History Museum"
 }

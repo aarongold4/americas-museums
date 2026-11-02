@@ -22,5 +22,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/seattle/national-nordic-museum/?partner_id=PLACEHOLDER",
     "product_name": "National Nordic Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Nordic_Museum_Seattle.jpg/1280px-Nordic_Museum_Seattle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Nordic_Heritage_Museum_Entrance.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Nordic_Museum_Seattle.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Ballard_Nordic_Heritage_Museum_2.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / National Nordic Museum"
 }

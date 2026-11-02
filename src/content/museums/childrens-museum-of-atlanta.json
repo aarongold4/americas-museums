@@ -29,5 +29,11 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/atlanta/childrens-museum-of-atlanta/?partner_id=PLACEHOLDER",
     "product_name": "Children's Museum of Atlanta entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Children%27s_Museum_of_Atlanta%2C_Georgia.jpg/1280px-Children%27s_Museum_of_Atlanta%2C_Georgia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Children%27s_Museum_of_Atlanta%2C_Georgia.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Downtown_Atlanta.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Children's Museum of Atlanta"
 }

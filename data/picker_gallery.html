@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Museum Photo Picker — Americas Museums</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0; padding: 0; background: #f5f5f0; color: #222;
+  }
+  header.page-header {
+    position: sticky; top: 0; z-index: 10;
+    background: #fff; border-bottom: 1px solid #ddd;
+    padding: 16px 24px; display: flex; align-items: center; gap: 24px;
+  }
+  header.page-header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+  header.page-header .count { font-size: 13px; color: #666; }
+  header.page-header button {
+    margin-left: auto; padding: 10px 16px; font-size: 14px;
+    background: #003B95; color: #fff; border: none; border-radius: 4px; cursor: pointer;
+  }
+  main { padding: 24px; max-width: 1400px; margin: 0 auto; }
+  section.museum {
+    background: #fff; border: 1px solid #ddd; border-radius: 6px;
+    padding: 16px 20px; margin-bottom: 20px;
+  }
+  section.museum header { margin-bottom: 12px; }
+  section.museum h2 { margin: 0 0 4px; font-size: 17px; }
+  section.museum .slug { font-size: 12px; color: #666; }
+  section.museum .slug code { background: #eee; padding: 1px 4px; border-radius: 2px; }
+  section.museum .slug a { color: #003B95; margin-left: 8px; }
+  .options {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+  }
+  .option {
+    display: block; cursor: pointer; border: 2px solid transparent; border-radius: 4px;
+    overflow: hidden; background: #fafafa;
+  }
+  .option input { position: absolute; opacity: 0; }
+  .option:has(input:checked) { border-color: #0a7; background: #e6f5ec; }
+  .option--keep:has(input:checked) { border-color: #888; background: #f0f0f0; }
+  .option--none:has(input:checked) { border-color: #c33; background: #fff5f5; }
+  .option-img {
+    aspect-ratio: 4/3; background: #eee; overflow: hidden;
+  }
+  .option-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .no-photo {
+    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+    color: #999; font-size: 12px; font-weight: 500; text-align: center; padding: 8px;
+  }
+  .option-label {
+    padding: 6px 8px; font-size: 11px; color: #666; line-height: 1.3;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  #result-box {
+    position: fixed; bottom: 20px; right: 20px; z-index: 20;
+    background: #fff; border: 2px solid #003B95; border-radius: 6px;
+    padding: 16px; max-width: 500px; width: 90%; font-size: 13px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2); display: none; max-height: 60vh; overflow: auto;
+  }
+  #result-box.active { display: block; }
+  #result-box h3 { margin: 0 0 8px; font-size: 14px; }
+  #result-box textarea {
+    width: 100%; min-height: 200px; font-family: monospace; font-size: 11px;
+    border: 1px solid #ddd; border-radius: 3px; padding: 8px;
+  }
+  #result-box button {
+    margin-top: 8px; margin-right: 6px; padding: 6px 12px; font-size: 12px;
+    background: #003B95; color: #fff; border: none; border-radius: 3px; cursor: pointer;
+  }
+  #result-box .close { background: #888; }
+</style>
+</head>
+<body>
+<header class="page-header">
+  <h1>Pick a hero photo for each museum</h1>
+  <div class="count">15 museums</div>
+  <button onclick="showPicks()">Show my picks →</button>
+</header>
+<main>
+  
+<section class="museum" id="museum-boston-childrens-museum">
+  <header>
+    <h2>Boston Children&#x27;s Museum</h2>
+    <div class="slug">slug: <code>boston-childrens-museum</code> · <a href="https://en.wikipedia.org/wiki/Boston_Children's_Museum" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_boston-childrens-museum" value="__keep__" checked />
+  <div class="option-img"><img src="https://upload.wikimedia.org/wikipedia/en/a/a6/BCM_logo_FINAL_Horiz.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_boston-childrens-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Boston_Children%27s_Museum_%2854960643491%29.jpg?width=1000" data-title="Boston Children&#x27;s Museum (54960643491).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Boston_Children%27s_Museum_%2854960643491%29.jpg?width=400" alt="Boston Children&#x27;s Museum (54960643491).jpg" loading="lazy" /></div>
+  <div class="option-label">Boston Children&#x27;s Museum (54960643491).jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_boston-childrens-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Boston_Childrens_Museum_P1000509.JPG?width=1000" data-title="Boston Childrens Museum P1000509.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Boston_Childrens_Museum_P1000509.JPG?width=400" alt="Boston Childrens Museum P1000509.JPG" loading="lazy" /></div>
+  <div class="option-label">Boston Childrens Museum P1000509.JPG</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_boston-childrens-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Hood_Milk_Bottle_%2854960892944%29.jpg?width=1000" data-title="Hood Milk Bottle (54960892944).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hood_Milk_Bottle_%2854960892944%29.jpg?width=400" alt="Hood Milk Bottle (54960892944).jpg" loading="lazy" /></div>
+  <div class="option-label">Hood Milk Bottle (54960892944).jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_boston-childrens-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/NB_Climb.JPG?width=1000" data-title="NB Climb.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/NB_Climb.JPG?width=400" alt="NB Climb.JPG" loading="lazy" /></div>
+  <div class="option-label">NB Climb.JPG</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_boston-childrens-museum" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-art-institute-of-chicago">
+  <header>
+    <h2>Art Institute of Chicago</h2>
+    <div class="slug">slug: <code>art-institute-of-chicago</code> · <a href="https://en.wikipedia.org/wiki/Art_Institute_of_Chicago" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_art-institute-of-chicago" value="__keep__" checked />
+  <div class="option-img"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Art_Institute_of_Chicago_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_art-institute-of-chicago" value="https://en.wikipedia.org/wiki/Special:FilePath/Alapini_vina_%40_Art_Institute_of_Chicago_-_detail_of_black_schist_of_God_Vishnu_with_His_Consorts_Lakshmi_and_Sarasvati_-_Bangladesh_or_Eastern_India%2C_Pala_period%2C_10th-12th_century.jpg?width=1000" data-title="Alapini vina @ Art Institute of Chicago - detail of black schist of God Vishnu with His Consorts Lakshmi and Sarasvati - Bangladesh or Eastern India, Pala period, 10th-12th century.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Alapini_vina_%40_Art_Institute_of_Chicago_-_detail_of_black_schist_of_God_Vishnu_with_His_Consorts_Lakshmi_and_Sarasvati_-_Bangladesh_or_Eastern_India%2C_Pala_period%2C_10th-12th_century.jpg?width=400" alt="Alapini vina @ Art Institute of Chicago - detail of black schist of God Vishnu with His Consorts Lakshmi and Sarasvati - Bangladesh or Eastern India, Pala period, 10th-12th century.jpg" loading="lazy" /></div>
+  <div class="option-label">Alapini vina @ Art Institute of Chicago - detail of black sc</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_art-institute-of-chicago" value="https://en.wikipedia.org/wiki/Special:FilePath/Amedeo_Modigliani_-_Jacques_and_Berthe_Lipchitz_-_Google_Art_Project.jpg?width=1000" data-title="Amedeo Modigliani - Jacques and Berthe Lipchitz - Google Art Project.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Amedeo_Modigliani_-_Jacques_and_Berthe_Lipchitz_-_Google_Art_Project.jpg?width=400" alt="Amedeo Modigliani - Jacques and Berthe Lipchitz - Google Art Project.jpg" loading="lazy" /></div>
+  <div class="option-label">Amedeo Modigliani - Jacques and Berthe Lipchitz - Google Art</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_art-institute-of-chicago" value="https://en.wikipedia.org/wiki/Special:FilePath/Ancient_Greek_Amphora_of_the_Tarquinia_Painter_Herakles_killing_the_Nemean_Lion.jpg?width=1000" data-title="Ancient Greek Amphora of the Tarquinia Painter Herakles killing the Nemean Lion.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Ancient_Greek_Amphora_of_the_Tarquinia_Painter_Herakles_killing_the_Nemean_Lion.jpg?width=400" alt="Ancient Greek Amphora of the Tarquinia Painter Herakles killing the Nemean Lion.jpg" loading="lazy" /></div>
+  <div class="option-label">Ancient Greek Amphora of the Tarquinia Painter Herakles kill</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_art-institute-of-chicago" value="https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute%2C_Chicago_circa_1907_postcard_%28front%29.tiff?width=1000" data-title="Art Institute, Chicago circa 1907 postcard (front).tiff" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute%2C_Chicago_circa_1907_postcard_%28front%29.tiff?width=400" alt="Art Institute, Chicago circa 1907 postcard (front).tiff" loading="lazy" /></div>
+  <div class="option-label">Art Institute, Chicago circa 1907 postcard (front).tiff</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_art-institute-of-chicago" value="https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute_Modern_Wing_Night.jpg?width=1000" data-title="Art Institute Modern Wing Night.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute_Modern_Wing_Night.jpg?width=400" alt="Art Institute Modern Wing Night.jpg" loading="lazy" /></div>
+  <div class="option-label">Art Institute Modern Wing Night.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_art-institute-of-chicago" value="https://en.wikipedia.org/wiki/Special:FilePath/Bernat_Martorell_-_Saint_George_Killing_the_Dragon_-_Google_Art_Project.jpg?width=1000" data-title="Bernat Martorell - Saint George Killing the Dragon - Google Art Project.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Bernat_Martorell_-_Saint_George_Killing_the_Dragon_-_Google_Art_Project.jpg?width=400" alt="Bernat Martorell - Saint George Killing the Dragon - Google Art Project.jpg" loading="lazy" /></div>
+  <div class="option-label">Bernat Martorell - Saint George Killing the Dragon - Google </div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_art-institute-of-chicago" value="https://en.wikipedia.org/wiki/Special:FilePath/Casket%2C_early_18th_century%2C_attributed_to_Andre-Charles_Boulle%2C_oak_carcass_veneered_with_tortoiseshell%2C_gilt_copper%2C_pewter%2C_ebony_-_Art_Institute_of_Chicago_-_DSC09745.JPG?width=1000" data-title="Casket, early 18th century, attributed to Andre-Charles Boulle, oak carcass veneered with tortoiseshell, gilt copper, pewter, ebony - Art Institute of Chicago - DSC09745.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Casket%2C_early_18th_century%2C_attributed_to_Andre-Charles_Boulle%2C_oak_carcass_veneered_with_tortoiseshell%2C_gilt_copper%2C_pewter%2C_ebony_-_Art_Institute_of_Chicago_-_DSC09745.JPG?width=400" alt="Casket, early 18th century, attributed to Andre-Charles Boulle, oak carcass veneered with tortoiseshell, gilt copper, pewter, ebony - Art Institute of Chicago - DSC09745.JPG" loading="lazy" /></div>
+  <div class="option-label">Casket, early 18th century, attributed to Andre-Charles Boul</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_art-institute-of-chicago" value="https://en.wikipedia.org/wiki/Special:FilePath/Dante_Gabriel_Rossetti_-_Beata_Beatrix_-_1925.722_-_Art_Institute_of_Chicago.jpg?width=1000" data-title="Dante Gabriel Rossetti - Beata Beatrix - 1925.722 - Art Institute of Chicago.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Dante_Gabriel_Rossetti_-_Beata_Beatrix_-_1925.722_-_Art_Institute_of_Chicago.jpg?width=400" alt="Dante Gabriel Rossetti - Beata Beatrix - 1925.722 - Art Institute of Chicago.jpg" loading="lazy" /></div>
+  <div class="option-label">Dante Gabriel Rossetti - Beata Beatrix - 1925.722 - Art Inst</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_art-institute-of-chicago" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-field-museum">
+  <header>
+    <h2>Field Museum</h2>
+    <div class="slug">slug: <code>field-museum</code> · <a href="https://en.wikipedia.org/wiki/Field_Museum_of_Natural_History" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_field-museum" value="__keep__" checked />
+  <div class="option-img"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Field_Museum_of_Natural_History_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_field-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Annual_report_of_the_Director_to_the_Board_of_Trustees_for_the_year_..._%281894%29_%2817811373403%29.jpg?width=1000" data-title="Annual report of the Director to the Board of Trustees for the year ... (1894) (17811373403).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Annual_report_of_the_Director_to_the_Board_of_Trustees_for_the_year_..._%281894%29_%2817811373403%29.jpg?width=400" alt="Annual report of the Director to the Board of Trustees for the year ... (1894) (17811373403).jpg" loading="lazy" /></div>
+  <div class="option-label">Annual report of the Director to the Board of Trustees for t</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_field-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Annual_report_of_the_Director_to_the_Board_of_Trustees_for_the_year_.._%281906%29_%2817809550884%29.jpg?width=1000" data-title="Annual report of the Director to the Board of Trustees for the year .. (1906) (17809550884).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Annual_report_of_the_Director_to_the_Board_of_Trustees_for_the_year_.._%281906%29_%2817809550884%29.jpg?width=400" alt="Annual report of the Director to the Board of Trustees for the year .. (1906) (17809550884).jpg" loading="lazy" /></div>
+  <div class="option-label">Annual report of the Director to the Board of Trustees for t</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_field-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Maori_Meeting_House%2C_Ruatepupuke_II_-_Field_Museum_of_Natural_History_-_by_Joy_of_Museums_-_1.jpg?width=1000" data-title="Maori Meeting House, Ruatepupuke II - Field Museum of Natural History - by Joy of Museums - 1.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Maori_Meeting_House%2C_Ruatepupuke_II_-_Field_Museum_of_Natural_History_-_by_Joy_of_Museums_-_1.jpg?width=400" alt="Maori Meeting House, Ruatepupuke II - Field Museum of Natural History - by Joy of Museums - 1.jpg" loading="lazy" /></div>
+  <div class="option-label">Maori Meeting House, Ruatepupuke II - Field Museum of Natura</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_field-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Museo_Field%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_08.jpg?width=1000" data-title="Museo Field, Chicago, Illinois, Estados Unidos, 2012-10-20, DD 08.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museo_Field%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_08.jpg?width=400" alt="Museo Field, Chicago, Illinois, Estados Unidos, 2012-10-20, DD 08.jpg" loading="lazy" /></div>
+  <div class="option-label">Museo Field, Chicago, Illinois, Estados Unidos, 2012-10-20, </div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_field-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Stanley_Field_Hall_2020.jpg?width=1000" data-title="Stanley Field Hall 2020.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Stanley_Field_Hall_2020.jpg?width=400" alt="Stanley Field Hall 2020.jpg" loading="lazy" /></div>
+  <div class="option-label">Stanley Field Hall 2020.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_field-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Acheloma-Field_Museum.jpg?width=1000" data-title="Acheloma-Field Museum.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Acheloma-Field_Museum.jpg?width=400" alt="Acheloma-Field Museum.jpg" loading="lazy" /></div>
+  <div class="option-label">Acheloma-Field Museum.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_field-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Anchiceratops_Field_Museum.jpg?width=1000" data-title="Anchiceratops Field Museum.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Anchiceratops_Field_Museum.jpg?width=400" alt="Anchiceratops Field Museum.jpg" loading="lazy" /></div>
+  <div class="option-label">Anchiceratops Field Museum.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_field-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Aulacephalodon_FMNH.jpg?width=1000" data-title="Aulacephalodon FMNH.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Aulacephalodon_FMNH.jpg?width=400" alt="Aulacephalodon FMNH.jpg" loading="lazy" /></div>
+  <div class="option-label">Aulacephalodon FMNH.jpg</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_field-museum" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-hammer-museum">
+  <header>
+    <h2>Hammer Museum</h2>
+    <div class="slug">slug: <code>hammer-museum</code> · <a href="https://en.wikipedia.org/wiki/Hammer_Museum" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_hammer-museum" value="__keep__" checked />
+  <div class="option-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Wdmk_HammerBox_Black.jpg/1280px-Wdmk_HammerBox_Black.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_hammer-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Pablo_Picasso%2C_1904%2C_Le_repas_frugal_%28The_Frugal_Repast%29%2C_etching%2C_Hammer_Museum%2C_University_of_California.jpg?width=1000" data-title="Pablo Picasso, 1904, Le repas frugal (The Frugal Repast), etching, Hammer Museum, University of California.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Pablo_Picasso%2C_1904%2C_Le_repas_frugal_%28The_Frugal_Repast%29%2C_etching%2C_Hammer_Museum%2C_University_of_California.jpg?width=400" alt="Pablo Picasso, 1904, Le repas frugal (The Frugal Repast), etching, Hammer Museum, University of California.jpg" loading="lazy" /></div>
+  <div class="option-label">Pablo Picasso, 1904, Le repas frugal (The Frugal Repast), et</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_hammer-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Royce_Hall_post_rain.jpg?width=1000" data-title="Royce Hall post rain.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Royce_Hall_post_rain.jpg?width=400" alt="Royce Hall post rain.jpg" loading="lazy" /></div>
+  <div class="option-label">Royce Hall post rain.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_hammer-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Wild_Belle_%40_Hammer_Museum_07_18_2019_%2848501390132%29.jpg?width=1000" data-title="Wild Belle @ Hammer Museum 07 18 2019 (48501390132).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Wild_Belle_%40_Hammer_Museum_07_18_2019_%2848501390132%29.jpg?width=400" alt="Wild Belle @ Hammer Museum 07 18 2019 (48501390132).jpg" loading="lazy" /></div>
+  <div class="option-label">Wild Belle @ Hammer Museum 07 18 2019 (48501390132).jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_hammer-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Hammer_Museum_Westwood_June_2012.jpg?width=1000" data-title="Hammer Museum Westwood June 2012.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hammer_Museum_Westwood_June_2012.jpg?width=400" alt="Hammer Museum Westwood June 2012.jpg" loading="lazy" /></div>
+  <div class="option-label">Hammer Museum Westwood June 2012.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_hammer-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Hospital_at_Saint_Remy.jpg?width=1000" data-title="Hospital at Saint Remy.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Hospital_at_Saint_Remy.jpg?width=400" alt="Hospital at Saint Remy.jpg" loading="lazy" /></div>
+  <div class="option-label">Hospital at Saint Remy.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_hammer-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Wdmk_HammerBox_Black.jpg?width=1000" data-title="Wdmk HammerBox Black.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Wdmk_HammerBox_Black.jpg?width=400" alt="Wdmk HammerBox Black.jpg" loading="lazy" /></div>
+  <div class="option-label">Wdmk HammerBox Black.jpg</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_hammer-museum" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-natural-history-museum-of-la-county">
+  <header>
+    <h2>Natural History Museum of Los Angeles County</h2>
+    <div class="slug">slug: <code>natural-history-museum-of-la-county</code> · <a href="https://en.wikipedia.org/wiki/Natural_History_Museum_of_Los_Angeles_County" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_natural-history-museum-of-la-county" value="__keep__" checked />
+  <div class="option-img"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Natural_History_Museum_of_Los_Angeles_County_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_natural-history-museum-of-la-county" value="https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Museum_of_Natural_History_-_Hall_of_African_Mammals.JPG?width=1000" data-title="Los Angeles County Museum of Natural History - Hall of African Mammals.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Museum_of_Natural_History_-_Hall_of_African_Mammals.JPG?width=400" alt="Los Angeles County Museum of Natural History - Hall of African Mammals.JPG" loading="lazy" /></div>
+  <div class="option-label">Los Angeles County Museum of Natural History - Hall of Afric</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_natural-history-museum-of-la-county" value="https://en.wikipedia.org/wiki/Special:FilePath/Natural_History_Museum_of_Los_Angeles_Rotunda.JPG?width=1000" data-title="Natural History Museum of Los Angeles Rotunda.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Natural_History_Museum_of_Los_Angeles_Rotunda.JPG?width=400" alt="Natural History Museum of Los Angeles Rotunda.JPG" loading="lazy" /></div>
+  <div class="option-label">Natural History Museum of Los Angeles Rotunda.JPG</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_natural-history-museum-of-la-county" value="https://en.wikipedia.org/wiki/Special:FilePath/Dinosaur_statues_outside_NHMLAC.jpg?width=1000" data-title="Dinosaur statues outside NHMLAC.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Dinosaur_statues_outside_NHMLAC.jpg?width=400" alt="Dinosaur statues outside NHMLAC.jpg" loading="lazy" /></div>
+  <div class="option-label">Dinosaur statues outside NHMLAC.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_natural-history-museum-of-la-county" value="https://en.wikipedia.org/wiki/Special:FilePath/NaturalHistoryMuseumOfLosAngelesCounty.jpg?width=1000" data-title="NaturalHistoryMuseumOfLosAngelesCounty.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/NaturalHistoryMuseumOfLosAngelesCounty.jpg?width=400" alt="NaturalHistoryMuseumOfLosAngelesCounty.jpg" loading="lazy" /></div>
+  <div class="option-label">NaturalHistoryMuseumOfLosAngelesCounty.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_natural-history-museum-of-la-county" value="https://en.wikipedia.org/wiki/Special:FilePath/Triceratops_mount.jpg?width=1000" data-title="Triceratops mount.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Triceratops_mount.jpg?width=400" alt="Triceratops mount.jpg" loading="lazy" /></div>
+  <div class="option-label">Triceratops mount.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_natural-history-museum-of-la-county" value="https://en.wikipedia.org/wiki/Special:FilePath/Antonio_Coronel.png?width=1000" data-title="Antonio Coronel.png" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Antonio_Coronel.png?width=400" alt="Antonio Coronel.png" loading="lazy" /></div>
+  <div class="option-label">Antonio Coronel.png</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_natural-history-museum-of-la-county" value="https://en.wikipedia.org/wiki/Special:FilePath/LACMNH%2C_1956.jpg?width=1000" data-title="LACMNH, 1956.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/LACMNH%2C_1956.jpg?width=400" alt="LACMNH, 1956.jpg" loading="lazy" /></div>
+  <div class="option-label">LACMNH, 1956.jpg</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_natural-history-museum-of-la-county" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-cooper-hewitt-smithsonian-design-museum">
+  <header>
+    <h2>Cooper Hewitt, Smithsonian Design Museum</h2>
+    <div class="slug">slug: <code>cooper-hewitt-smithsonian-design-museum</code> · <a href="https://en.wikipedia.org/wiki/Cooper_Hewitt,_Smithsonian_Design_Museum" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_cooper-hewitt-smithsonian-design-museum" value="__keep__" checked />
+  <div class="option-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cooper_Hewitt%2C_Smithsonian_Design_Museum_logo.svg/1280px-Cooper_Hewitt%2C_Smithsonian_Design_Museum_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_cooper-hewitt-smithsonian-design-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Cooper-Hewitt_Museum_%22Ornament_in_the_20th_Century%22_Exhibition_Poster.jpg?width=1000" data-title="Cooper-Hewitt Museum &quot;Ornament in the 20th Century&quot; Exhibition Poster.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cooper-Hewitt_Museum_%22Ornament_in_the_20th_Century%22_Exhibition_Poster.jpg?width=400" alt="Cooper-Hewitt Museum &quot;Ornament in the 20th Century&quot; Exhibition Poster.jpg" loading="lazy" /></div>
+  <div class="option-label">Cooper-Hewitt Museum &quot;Ornament in the 20th Century&quot</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_cooper-hewitt-smithsonian-design-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/%22Treasures_from_the_Cooper_Union%22_Exhibit.jpg?width=1000" data-title="&quot;Treasures from the Cooper Union&quot; Exhibit.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/%22Treasures_from_the_Cooper_Union%22_Exhibit.jpg?width=400" alt="&quot;Treasures from the Cooper Union&quot; Exhibit.jpg" loading="lazy" /></div>
+  <div class="option-label">&quot;Treasures from the Cooper Union&quot; Exhibit.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_cooper-hewitt-smithsonian-design-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/The_Carnegie_Mansion%2C_New_Home_of_the_Cooper-Hewitt.jpg?width=1000" data-title="The Carnegie Mansion, New Home of the Cooper-Hewitt.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_Carnegie_Mansion%2C_New_Home_of_the_Cooper-Hewitt.jpg?width=400" alt="The Carnegie Mansion, New Home of the Cooper-Hewitt.jpg" loading="lazy" /></div>
+  <div class="option-label">The Carnegie Mansion, New Home of the Cooper-Hewitt.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_cooper-hewitt-smithsonian-design-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Cooper_Hewitt_%2848059131921%29.jpg?width=1000" data-title="Cooper Hewitt (48059131921).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cooper_Hewitt_%2848059131921%29.jpg?width=400" alt="Cooper Hewitt (48059131921).jpg" loading="lazy" /></div>
+  <div class="option-label">Cooper Hewitt (48059131921).jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_cooper-hewitt-smithsonian-design-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Cropped_Museum_of_the_Romanian_Peasant_6.jpg?width=1000" data-title="Cropped Museum of the Romanian Peasant 6.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cropped_Museum_of_the_Romanian_Peasant_6.jpg?width=400" alt="Cropped Museum of the Romanian Peasant 6.jpg" loading="lazy" /></div>
+  <div class="option-label">Cropped Museum of the Romanian Peasant 6.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_cooper-hewitt-smithsonian-design-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_Chair_at_the_Cooper_Union_Museum.jpg?width=1000" data-title="Lincoln Chair at the Cooper Union Museum.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_Chair_at_the_Cooper_Union_Museum.jpg?width=400" alt="Lincoln Chair at the Cooper Union Museum.jpg" loading="lazy" /></div>
+  <div class="option-label">Lincoln Chair at the Cooper Union Museum.jpg</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_cooper-hewitt-smithsonian-design-museum" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-glbt-historical-society-museum">
+  <header>
+    <h2>GLBT Historical Society Museum</h2>
+    <div class="slug">slug: <code>glbt-historical-society-museum</code> · <a href="https://en.wikipedia.org/wiki/GLBT_Historical_Society" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_glbt-historical-society-museum" value="__keep__" checked />
+  <div class="option-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/GLBT_Historical_Society_Logo_2017.svg/1280px-GLBT_Historical_Society_Logo_2017.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_glbt-historical-society-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Visitors_Viewing_a_Photography_Exhibition_at_The_GLBT_History_Museum_%28San_Francisco%29..jpg?width=1000" data-title="Visitors Viewing a Photography Exhibition at The GLBT History Museum (San Francisco)..jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Visitors_Viewing_a_Photography_Exhibition_at_The_GLBT_History_Museum_%28San_Francisco%29..jpg?width=400" alt="Visitors Viewing a Photography Exhibition at The GLBT History Museum (San Francisco)..jpg" loading="lazy" /></div>
+  <div class="option-label">Visitors Viewing a Photography Exhibition at The GLBT Histor</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_glbt-historical-society-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Christopher_Street_Liberation_Day_Gay-In_offset_flyer%2C_1970.jpg?width=1000" data-title="Christopher Street Liberation Day Gay-In offset flyer, 1970.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Christopher_Street_Liberation_Day_Gay-In_offset_flyer%2C_1970.jpg?width=400" alt="Christopher Street Liberation Day Gay-In offset flyer, 1970.jpg" loading="lazy" /></div>
+  <div class="option-label">Christopher Street Liberation Day Gay-In offset flyer, 1970.</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_glbt-historical-society-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.FrontWindows12_10.jpg?width=1000" data-title="GLBTHistoryMuseum.FrontWindows12 10.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.FrontWindows12_10.jpg?width=400" alt="GLBTHistoryMuseum.FrontWindows12 10.jpg" loading="lazy" /></div>
+  <div class="option-label">GLBTHistoryMuseum.FrontWindows12 10.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_glbt-historical-society-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.WeddingPantsuits12_10.jpg?width=1000" data-title="GLBTHistoryMuseum.WeddingPantsuits12 10.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.WeddingPantsuits12_10.jpg?width=400" alt="GLBTHistoryMuseum.WeddingPantsuits12 10.jpg" loading="lazy" /></div>
+  <div class="option-label">GLBTHistoryMuseum.WeddingPantsuits12 10.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_glbt-historical-society-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/MissionSt.jpg?width=1000" data-title="MissionSt.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/MissionSt.jpg?width=400" alt="MissionSt.jpg" loading="lazy" /></div>
+  <div class="option-label">MissionSt.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_glbt-historical-society-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/PassionateA.JPG?width=1000" data-title="PassionateA.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/PassionateA.JPG?width=400" alt="PassionateA.JPG" loading="lazy" /></div>
+  <div class="option-label">PassionateA.JPG</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_glbt-historical-society-museum" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-legion-of-honor">
+  <header>
+    <h2>Legion of Honor</h2>
+    <div class="slug">slug: <code>legion-of-honor</code> · <a href="https://en.wikipedia.org/wiki/Legion_of_Honor_(museum)" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_legion-of-honor" value="__keep__" checked />
+  <div class="option-img"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Famsf-logo-2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_legion-of-honor" value="https://en.wikipedia.org/wiki/Special:FilePath/Alma_de_Bretteville_Spreckels_in_Queen_Marie_of_Roumania%27s_audience_chair_%281924%29_%28cropped%29.jpg?width=1000" data-title="Alma de Bretteville Spreckels in Queen Marie of Roumania&#x27;s audience chair (1924) (cropped).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Alma_de_Bretteville_Spreckels_in_Queen_Marie_of_Roumania%27s_audience_chair_%281924%29_%28cropped%29.jpg?width=400" alt="Alma de Bretteville Spreckels in Queen Marie of Roumania&#x27;s audience chair (1924) (cropped).jpg" loading="lazy" /></div>
+  <div class="option-label">Alma de Bretteville Spreckels in Queen Marie of Roumania&#x2</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_legion-of-honor" value="https://en.wikipedia.org/wiki/Special:FilePath/Anna_Hyatt_Huntington--El_Cid_Campeador--1927--Legion_of_Honor--San_Francisco--photo_by_Steven_Saylor_%28cropped%29.jpg?width=1000" data-title="Anna Hyatt Huntington--El Cid Campeador--1927--Legion of Honor--San Francisco--photo by Steven Saylor (cropped).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Anna_Hyatt_Huntington--El_Cid_Campeador--1927--Legion_of_Honor--San_Francisco--photo_by_Steven_Saylor_%28cropped%29.jpg?width=400" alt="Anna Hyatt Huntington--El Cid Campeador--1927--Legion of Honor--San Francisco--photo by Steven Saylor (cropped).jpg" loading="lazy" /></div>
+  <div class="option-label">Anna Hyatt Huntington--El Cid Campeador--1927--Legion of Hon</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_legion-of-honor" value="https://en.wikipedia.org/wiki/Special:FilePath/Breton_Bathers_by_Paul_Gauguin%2C_zincograph%2C_California_Palace_of_the_Legion_of_Honor.JPG?width=1000" data-title="Breton Bathers by Paul Gauguin, zincograph, California Palace of the Legion of Honor.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Breton_Bathers_by_Paul_Gauguin%2C_zincograph%2C_California_Palace_of_the_Legion_of_Honor.JPG?width=400" alt="Breton Bathers by Paul Gauguin, zincograph, California Palace of the Legion of Honor.JPG" loading="lazy" /></div>
+  <div class="option-label">Breton Bathers by Paul Gauguin, zincograph, California Palac</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_legion-of-honor" value="https://en.wikipedia.org/wiki/Special:FilePath/Cabinet_on_stand_by_Pierre_Gole%2C_Paris%2C_c._1665%2C_ebony%2C_kingwood%2C_etc%2C_tortoiseshell%2C_with_Vases%2C_Arita%2C_Japan%2C_late_1600s%2C_porcelain_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC02734.jpg?width=1000" data-title="Cabinet on stand by Pierre Gole, Paris, c. 1665, ebony, kingwood, etc, tortoiseshell, with Vases, Arita, Japan, late 1600s, porcelain - California Palace of the Legion of Honor - San Francisco, CA - DSC02734.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cabinet_on_stand_by_Pierre_Gole%2C_Paris%2C_c._1665%2C_ebony%2C_kingwood%2C_etc%2C_tortoiseshell%2C_with_Vases%2C_Arita%2C_Japan%2C_late_1600s%2C_porcelain_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC02734.jpg?width=400" alt="Cabinet on stand by Pierre Gole, Paris, c. 1665, ebony, kingwood, etc, tortoiseshell, with Vases, Arita, Japan, late 1600s, porcelain - California Palace of the Legion of Honor - San Francisco, CA - DSC02734.jpg" loading="lazy" /></div>
+  <div class="option-label">Cabinet on stand by Pierre Gole, Paris, c. 1665, ebony, king</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_legion-of-honor" value="https://en.wikipedia.org/wiki/Special:FilePath/Charger_depicting_Psyche%27s_Father_Consulting_the_Oracle%2C_after_Agostino_Veneziano%2C_Italy%2C_Faenze%2C_c._1550-1570%2C_maiolica_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC03027.jpg?width=1000" data-title="Charger depicting Psyche&#x27;s Father Consulting the Oracle, after Agostino Veneziano, Italy, Faenze, c. 1550-1570, maiolica - California Palace of the Legion of Honor - San Francisco, CA - DSC03027.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Charger_depicting_Psyche%27s_Father_Consulting_the_Oracle%2C_after_Agostino_Veneziano%2C_Italy%2C_Faenze%2C_c._1550-1570%2C_maiolica_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC03027.jpg?width=400" alt="Charger depicting Psyche&#x27;s Father Consulting the Oracle, after Agostino Veneziano, Italy, Faenze, c. 1550-1570, maiolica - California Palace of the Legion of Honor - San Francisco, CA - DSC03027.jpg" loading="lazy" /></div>
+  <div class="option-label">Charger depicting Psyche&#x27;s Father Consulting the Oracle</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_legion-of-honor" value="https://en.wikipedia.org/wiki/Special:FilePath/Flask%2C_Eastern_Mediterranean%2C_1st_century_AD%2C_free-blown_glass_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC03064.jpg?width=1000" data-title="Flask, Eastern Mediterranean, 1st century AD, free-blown glass - California Palace of the Legion of Honor - San Francisco, CA - DSC03064.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Flask%2C_Eastern_Mediterranean%2C_1st_century_AD%2C_free-blown_glass_-_California_Palace_of_the_Legion_of_Honor_-_San_Francisco%2C_CA_-_DSC03064.jpg?width=400" alt="Flask, Eastern Mediterranean, 1st century AD, free-blown glass - California Palace of the Legion of Honor - San Francisco, CA - DSC03064.jpg" loading="lazy" /></div>
+  <div class="option-label">Flask, Eastern Mediterranean, 1st century AD, free-blown gla</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_legion-of-honor" value="https://en.wikipedia.org/wiki/Special:FilePath/Grand_Canal%2C_Venice%2C_1908_by_Claude_Monet_-_California_Palace_of_the_Legion_of_Honor.jpg?width=1000" data-title="Grand Canal, Venice, 1908 by Claude Monet - California Palace of the Legion of Honor.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Grand_Canal%2C_Venice%2C_1908_by_Claude_Monet_-_California_Palace_of_the_Legion_of_Honor.jpg?width=400" alt="Grand Canal, Venice, 1908 by Claude Monet - California Palace of the Legion of Honor.jpg" loading="lazy" /></div>
+  <div class="option-label">Grand Canal, Venice, 1908 by Claude Monet - California Palac</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_legion-of-honor" value="https://en.wikipedia.org/wiki/Special:FilePath/The-tribute-money-c_1610-15--peter-paul-rubens--Legion_of_Honor--San_Francisco.jpg?width=1000" data-title="The-tribute-money-c 1610-15--peter-paul-rubens--Legion of Honor--San Francisco.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The-tribute-money-c_1610-15--peter-paul-rubens--Legion_of_Honor--San_Francisco.jpg?width=400" alt="The-tribute-money-c 1610-15--peter-paul-rubens--Legion of Honor--San Francisco.jpg" loading="lazy" /></div>
+  <div class="option-label">The-tribute-money-c 1610-15--peter-paul-rubens--Legion of Ho</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_legion-of-honor" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-de-young-museum">
+  <header>
+    <h2>de Young Museum</h2>
+    <div class="slug">slug: <code>de-young-museum</code> · <a href="https://en.wikipedia.org/wiki/De_Young_Museum" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_de-young-museum" value="__keep__" checked />
+  <div class="option-img"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Famsf-logo-2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_de-young-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Frederic_Edwin_Church_-_Rainy_Season_in_the_Tropics_-_Google_Art_Project.jpg?width=1000" data-title="Frederic Edwin Church - Rainy Season in the Tropics - Google Art Project.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Frederic_Edwin_Church_-_Rainy_Season_in_the_Tropics_-_Google_Art_Project.jpg?width=400" alt="Frederic Edwin Church - Rainy Season in the Tropics - Google Art Project.jpg" loading="lazy" /></div>
+  <div class="option-label">Frederic Edwin Church - Rainy Season in the Tropics - Google</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_de-young-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/President_Laughing_at_Remarks_By_Queen_Elizabeth_Ii_at_a_Dinner_Honoring_Her_at_M.H._De_Young_Memorial_Museum_in_San_Francisco_California_with_George_Shultz_and_Helena_Shultz_-_DPLA_-_e4a38ca93b2212631332c85f5599ac14.jpg?width=1000" data-title="President Laughing at Remarks By Queen Elizabeth Ii at a Dinner Honoring Her at M.H. De Young Memorial Museum in San Francisco California with George Shultz and Helena Shultz - DPLA - e4a38ca93b2212631332c85f5599ac14.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/President_Laughing_at_Remarks_By_Queen_Elizabeth_Ii_at_a_Dinner_Honoring_Her_at_M.H._De_Young_Memorial_Museum_in_San_Francisco_California_with_George_Shultz_and_Helena_Shultz_-_DPLA_-_e4a38ca93b2212631332c85f5599ac14.jpg?width=400" alt="President Laughing at Remarks By Queen Elizabeth Ii at a Dinner Honoring Her at M.H. De Young Memorial Museum in San Francisco California with George Shultz and Helena Shultz - DPLA - e4a38ca93b2212631332c85f5599ac14.jpg" loading="lazy" /></div>
+  <div class="option-label">President Laughing at Remarks By Queen Elizabeth Ii at a Din</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_de-young-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/George_Henry_Durrie_-_Winter_in_the_Country_-_Google_Art_Project.jpg?width=1000" data-title="George Henry Durrie - Winter in the Country - Google Art Project.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/George_Henry_Durrie_-_Winter_in_the_Country_-_Google_Art_Project.jpg?width=400" alt="George Henry Durrie - Winter in the Country - Google Art Project.jpg" loading="lazy" /></div>
+  <div class="option-label">George Henry Durrie - Winter in the Country - Google Art Pro</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_de-young-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Three_Gems%2C_James_Turrell_Skyspace%2C_interior.jpg?width=1000" data-title="Three Gems, James Turrell Skyspace, interior.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Three_Gems%2C_James_Turrell_Skyspace%2C_interior.jpg?width=400" alt="Three Gems, James Turrell Skyspace, interior.jpg" loading="lazy" /></div>
+  <div class="option-label">Three Gems, James Turrell Skyspace, interior.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_de-young-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/William_Hahn_-_Sacramento_Railroad_Station_-_Google_Art_Project.jpg?width=1000" data-title="William Hahn - Sacramento Railroad Station - Google Art Project.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/William_Hahn_-_Sacramento_Railroad_Station_-_Google_Art_Project.jpg?width=400" alt="William Hahn - Sacramento Railroad Station - Google Art Project.jpg" loading="lazy" /></div>
+  <div class="option-label">William Hahn - Sacramento Railroad Station - Google Art Proj</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_de-young-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Cover_Pot_for_the_Teotihuacan_show_2017.jpg?width=1000" data-title="Cover Pot for the Teotihuacan show 2017.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Cover_Pot_for_the_Teotihuacan_show_2017.jpg?width=400" alt="Cover Pot for the Teotihuacan show 2017.jpg" loading="lazy" /></div>
+  <div class="option-label">Cover Pot for the Teotihuacan show 2017.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_de-young-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/De_Young_Museum_pano.jpg?width=1000" data-title="De Young Museum pano.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/De_Young_Museum_pano.jpg?width=400" alt="De Young Museum pano.jpg" loading="lazy" /></div>
+  <div class="option-label">De Young Museum pano.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_de-young-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/M._H._de_Young_Memorial_Museum.jpg?width=1000" data-title="M. H. de Young Memorial Museum.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/M._H._de_Young_Memorial_Museum.jpg?width=400" alt="M. H. de Young Memorial Museum.jpg" loading="lazy" /></div>
+  <div class="option-label">M. H. de Young Memorial Museum.jpg</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_de-young-museum" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-museum-of-flight">
+  <header>
+    <h2>Museum of Flight</h2>
+    <div class="slug">slug: <code>museum-of-flight</code> · <a href="https://en.wikipedia.org/wiki/Museum_of_Flight" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_museum-of-flight" value="__keep__" checked />
+  <div class="option-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Museum_of_Flight_logo.svg/1280px-Museum_of_Flight_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-flight" value="https://en.wikipedia.org/wiki/Special:FilePath/Boeing_Building_No._105.jpg?width=1000" data-title="Boeing Building No. 105.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Boeing_Building_No._105.jpg?width=400" alt="Boeing Building No. 105.jpg" loading="lazy" /></div>
+  <div class="option-label">Boeing Building No. 105.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-flight" value="https://en.wikipedia.org/wiki/Special:FilePath/Concorde_G-BOAG_tail_at_the_Museum_of_Flight%2C_Seattle.jpg?width=1000" data-title="Concorde G-BOAG tail at the Museum of Flight, Seattle.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Concorde_G-BOAG_tail_at_the_Museum_of_Flight%2C_Seattle.jpg?width=400" alt="Concorde G-BOAG tail at the Museum of Flight, Seattle.jpg" loading="lazy" /></div>
+  <div class="option-label">Concorde G-BOAG tail at the Museum of Flight, Seattle.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-flight" value="https://en.wikipedia.org/wiki/Special:FilePath/Gossamer_Albatross_II_at_the_Museum_of_Flight.JPG?width=1000" data-title="Gossamer Albatross II at the Museum of Flight.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Gossamer_Albatross_II_at_the_Museum_of_Flight.JPG?width=400" alt="Gossamer Albatross II at the Museum of Flight.JPG" loading="lazy" /></div>
+  <div class="option-label">Gossamer Albatross II at the Museum of Flight.JPG</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-flight" value="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Flight_Airpark_%26_Aviation_HS-01.jpg?width=1000" data-title="Museum of Flight Airpark &amp; Aviation HS-01.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Flight_Airpark_%26_Aviation_HS-01.jpg?width=400" alt="Museum of Flight Airpark &amp; Aviation HS-01.jpg" loading="lazy" /></div>
+  <div class="option-label">Museum of Flight Airpark &amp; Aviation HS-01.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-flight" value="https://en.wikipedia.org/wiki/Special:FilePath/BoeingModel80A-1.jpg?width=1000" data-title="BoeingModel80A-1.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/BoeingModel80A-1.jpg?width=400" alt="BoeingModel80A-1.jpg" loading="lazy" /></div>
+  <div class="option-label">BoeingModel80A-1.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-flight" value="https://en.wikipedia.org/wiki/Special:FilePath/Boeing_747%2C_Museum_of_Flight.jpg?width=1000" data-title="Boeing 747, Museum of Flight.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Boeing_747%2C_Museum_of_Flight.jpg?width=400" alt="Boeing 747, Museum of Flight.jpg" loading="lazy" /></div>
+  <div class="option-label">Boeing 747, Museum of Flight.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-flight" value="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Flight%2C_Seattle.jpg?width=1000" data-title="Museum of Flight, Seattle.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Flight%2C_Seattle.jpg?width=400" alt="Museum of Flight, Seattle.jpg" loading="lazy" /></div>
+  <div class="option-label">Museum of Flight, Seattle.jpg</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_museum-of-flight" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-museum-of-pop-culture">
+  <header>
+    <h2>Museum of Pop Culture</h2>
+    <div class="slug">slug: <code>museum-of-pop-culture</code> · <a href="https://en.wikipedia.org/wiki/Museum_of_Pop_Culture" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_museum-of-pop-culture" value="__keep__" checked />
+  <div class="option-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Museum_of_Pop_Culture_Logo.png/1280px-Museum_of_Pop_Culture_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-pop-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Night_Exterior_EMP.jpg?width=1000" data-title="Night Exterior EMP.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Night_Exterior_EMP.jpg?width=400" alt="Night Exterior EMP.jpg" loading="lazy" /></div>
+  <div class="option-label">Night Exterior EMP.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-pop-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_EMPSFM.jpg?width=1000" data-title="Aerial view of EMPSFM.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_EMPSFM.jpg?width=400" alt="Aerial view of EMPSFM.jpg" loading="lazy" /></div>
+  <div class="option-label">Aerial view of EMPSFM.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-pop-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/ExperienceMusicProject.jpg?width=1000" data-title="ExperienceMusicProject.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/ExperienceMusicProject.jpg?width=400" alt="ExperienceMusicProject.jpg" loading="lazy" /></div>
+  <div class="option-label">ExperienceMusicProject.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-pop-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Guggenheim_bilbao.JPG?width=1000" data-title="Guggenheim bilbao.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Guggenheim_bilbao.JPG?width=400" alt="Guggenheim bilbao.JPG" loading="lazy" /></div>
+  <div class="option-label">Guggenheim bilbao.JPG</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-pop-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Guitar_Art_at_the_EMP.jpg?width=1000" data-title="Guitar Art at the EMP.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Guitar_Art_at_the_EMP.jpg?width=400" alt="Guitar Art at the EMP.jpg" loading="lazy" /></div>
+  <div class="option-label">Guitar Art at the EMP.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-pop-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/EMPPano11.jpg?width=1000" data-title="EMPPano11.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/EMPPano11.jpg?width=400" alt="EMPPano11.jpg" loading="lazy" /></div>
+  <div class="option-label">EMPPano11.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-pop-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Monorail_in_EMP.jpg?width=1000" data-title="Monorail in EMP.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Monorail_in_EMP.jpg?width=400" alt="Monorail in EMP.jpg" loading="lazy" /></div>
+  <div class="option-label">Monorail in EMP.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_museum-of-pop-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Sf-userbox.png?width=1000" data-title="Sf-userbox.png" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Sf-userbox.png?width=400" alt="Sf-userbox.png" loading="lazy" /></div>
+  <div class="option-label">Sf-userbox.png</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_museum-of-pop-culture" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-international-spy-museum">
+  <header>
+    <h2>International Spy Museum</h2>
+    <div class="slug">slug: <code>international-spy-museum</code> · <a href="https://en.wikipedia.org/wiki/International_Spy_Museum" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_international-spy-museum" value="__keep__" checked />
+  <div class="option-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/International_Spy_Museum_Logo.svg/1280px-International_Spy_Museum_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_international-spy-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Spy_museum_night.jpg?width=1000" data-title="Spy museum night.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Spy_museum_night.jpg?width=400" alt="Spy museum night.jpg" loading="lazy" /></div>
+  <div class="option-label">Spy museum night.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_international-spy-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/2019_International_Spy_Museum_03.jpg?width=1000" data-title="2019 International Spy Museum 03.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/2019_International_Spy_Museum_03.jpg?width=400" alt="2019 International Spy Museum 03.jpg" loading="lazy" /></div>
+  <div class="option-label">2019 International Spy Museum 03.jpg</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_international-spy-museum" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-national-portrait-gallery">
+  <header>
+    <h2>National Portrait Gallery</h2>
+    <div class="slug">slug: <code>national-portrait-gallery</code> · <a href="https://en.wikipedia.org/wiki/National_Portrait_Gallery_(United_States)" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_national-portrait-gallery" value="__keep__" checked />
+  <div class="option-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/National_Portrait_Gallery_%28United_States%29_logo.svg/1280px-National_Portrait_Gallery_%28United_States%29_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-portrait-gallery" value="https://en.wikipedia.org/wiki/Special:FilePath/Gibbs-Coolidge_Collection_-_1817_to_1821_-_by_Gilbert_Stuart_-_National_Gallery_of_Art%2C_Washington_DC.jpg?width=1000" data-title="Gibbs-Coolidge Collection - 1817 to 1821 - by Gilbert Stuart - National Gallery of Art, Washington DC.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Gibbs-Coolidge_Collection_-_1817_to_1821_-_by_Gilbert_Stuart_-_National_Gallery_of_Art%2C_Washington_DC.jpg?width=400" alt="Gibbs-Coolidge Collection - 1817 to 1821 - by Gilbert Stuart - National Gallery of Art, Washington DC.jpg" loading="lazy" /></div>
+  <div class="option-label">Gibbs-Coolidge Collection - 1817 to 1821 - by Gilbert Stuart</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-portrait-gallery" value="https://en.wikipedia.org/wiki/Special:FilePath/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg?width=1000" data-title="Joseph Siffrein Duplessis - Benjamin Franklin - Google Art Project.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg?width=400" alt="Joseph Siffrein Duplessis - Benjamin Franklin - Google Art Project.jpg" loading="lazy" /></div>
+  <div class="option-label">Joseph Siffrein Duplessis - Benjamin Franklin - Google Art P</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-portrait-gallery" value="https://en.wikipedia.org/wiki/Special:FilePath/Frederick_Douglass_ambrotype_%281856%29.jpg?width=1000" data-title="Frederick Douglass ambrotype (1856).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Frederick_Douglass_ambrotype_%281856%29.jpg?width=400" alt="Frederick Douglass ambrotype (1856).jpg" loading="lazy" /></div>
+  <div class="option-label">Frederick Douglass ambrotype (1856).jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-portrait-gallery" value="https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_O-118_by_Garnder%2C_1865.jpg?width=1000" data-title="Lincoln O-118 by Garnder, 1865.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Lincoln_O-118_by_Garnder%2C_1865.jpg?width=400" alt="Lincoln O-118 by Garnder, 1865.jpg" loading="lazy" /></div>
+  <div class="option-label">Lincoln O-118 by Garnder, 1865.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-portrait-gallery" value="https://en.wikipedia.org/wiki/Special:FilePath/Motto_frederick_douglass_2.jpg?width=1000" data-title="Motto frederick douglass 2.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Motto_frederick_douglass_2.jpg?width=400" alt="Motto frederick douglass 2.jpg" loading="lazy" /></div>
+  <div class="option-label">Motto frederick douglass 2.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-portrait-gallery" value="https://en.wikipedia.org/wiki/Special:FilePath/AWMellon.jpg?width=1000" data-title="AWMellon.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/AWMellon.jpg?width=400" alt="AWMellon.jpg" loading="lazy" /></div>
+  <div class="option-label">AWMellon.jpg</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_national-portrait-gallery" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-united-states-holocaust-memorial-museum">
+  <header>
+    <h2>United States Holocaust Memorial Museum</h2>
+    <div class="slug">slug: <code>united-states-holocaust-memorial-museum</code> · <a href="https://en.wikipedia.org/wiki/United_States_Holocaust_Memorial_Museum" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="__keep__" checked />
+  <div class="option-img"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/United_States_Holocaust_Memorial_Museum_logo.svg/1280px-United_States_Holocaust_Memorial_Museum_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Identity_Documents_for_Jewish_Refugees_-_US_Holocaust_Memorial_Museum_-_Washington_-_DC_-_USA_%2840809593073%29.jpg?width=1000" data-title="Identity Documents for Jewish Refugees - US Holocaust Memorial Museum - Washington - DC - USA (40809593073).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Identity_Documents_for_Jewish_Refugees_-_US_Holocaust_Memorial_Museum_-_Washington_-_DC_-_USA_%2840809593073%29.jpg?width=400" alt="Identity Documents for Jewish Refugees - US Holocaust Memorial Museum - Washington - DC - USA (40809593073).jpg" loading="lazy" /></div>
+  <div class="option-label">Identity Documents for Jewish Refugees - US Holocaust Memori</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Arbeit_Macht_Frei_at_Holocaust_Memorial_Museum.jpg?width=1000" data-title="Arbeit Macht Frei at Holocaust Memorial Museum.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Arbeit_Macht_Frei_at_Holocaust_Memorial_Museum.jpg?width=400" alt="Arbeit Macht Frei at Holocaust Memorial Museum.jpg" loading="lazy" /></div>
+  <div class="option-label">Arbeit Macht Frei at Holocaust Memorial Museum.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/HallOfRemembrance.jpg?width=1000" data-title="HallOfRemembrance.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/HallOfRemembrance.jpg?width=400" alt="HallOfRemembrance.jpg" loading="lazy" /></div>
+  <div class="option-label">HallOfRemembrance.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Replica_of_Auschwitz_Entrance.jpg?width=1000" data-title="Replica of Auschwitz Entrance.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Replica_of_Auschwitz_Entrance.jpg?width=400" alt="Replica of Auschwitz Entrance.jpg" loading="lazy" /></div>
+  <div class="option-label">Replica of Auschwitz Entrance.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/Special_exposition%2C_Holocaust_Museum%2C_D.C._IMG_4789.JPG?width=1000" data-title="Special exposition, Holocaust Museum, D.C. IMG 4789.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Special_exposition%2C_Holocaust_Museum%2C_D.C._IMG_4789.JPG?width=400" alt="Special exposition, Holocaust Museum, D.C. IMG 4789.JPG" loading="lazy" /></div>
+  <div class="option-label">Special exposition, Holocaust Museum, D.C. IMG 4789.JPG</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/The_United_States_Holocaust_Memorial_Museum_%28USHMM%29_%2853831937253%29.jpg?width=1000" data-title="The United States Holocaust Memorial Museum (USHMM) (53831937253).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_United_States_Holocaust_Memorial_Museum_%28USHMM%29_%2853831937253%29.jpg?width=400" alt="The United States Holocaust Memorial Museum (USHMM) (53831937253).jpg" loading="lazy" /></div>
+  <div class="option-label">The United States Holocaust Memorial Museum (USHMM) (5383193</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_Bridges.jpg?width=1000" data-title="United States Holocaust Memorial Museum Bridges.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_Bridges.jpg?width=400" alt="United States Holocaust Memorial Museum Bridges.jpg" loading="lazy" /></div>
+  <div class="option-label">United States Holocaust Memorial Museum Bridges.jpg</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_interior.JPG?width=1000" data-title="United States Holocaust Memorial Museum interior.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/United_States_Holocaust_Memorial_Museum_interior.JPG?width=400" alt="United States Holocaust Memorial Museum interior.JPG" loading="lazy" /></div>
+  <div class="option-label">United States Holocaust Memorial Museum interior.JPG</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_united-states-holocaust-memorial-museum" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+<section class="museum" id="museum-national-museum-of-african-american-history-and-culture">
+  <header>
+    <h2>National Museum of African American History and Culture</h2>
+    <div class="slug">slug: <code>national-museum-of-african-american-history-and-culture</code> · <a href="https://en.wikipedia.org/wiki/National_Museum_of_African_American_History_and_Culture" target="_blank">Wikipedia source</a></div>
+  </header>
+  <div class="options">
+    
+<label class="option option--keep">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="__keep__" checked />
+  <div class="option-img"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/National_Museum_of_African_American_History_and_Culture_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="current" /></div>
+  <div class="option-label">Keep current</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Swing_Low_Welded_bronze_National_Museum_of_African_American_History_and_Culture%2C_Smithsonian_Institution%2C_Washington%2C_DC.jpg?width=1000" data-title="Swing Low Welded bronze National Museum of African American History and Culture, Smithsonian Institution, Washington, DC.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Swing_Low_Welded_bronze_National_Museum_of_African_American_History_and_Culture%2C_Smithsonian_Institution%2C_Washington%2C_DC.jpg?width=400" alt="Swing Low Welded bronze National Museum of African American History and Culture, Smithsonian Institution, Washington, DC.jpg" loading="lazy" /></div>
+  <div class="option-label">Swing Low Welded bronze National Museum of African American </div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Benjamin_Banneker_statue_at_the_National_Museum_of_African_American_History_and_Culture.jpg?width=1000" data-title="Benjamin Banneker statue at the National Museum of African American History and Culture.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Benjamin_Banneker_statue_at_the_National_Museum_of_African_American_History_and_Culture.jpg?width=400" alt="Benjamin Banneker statue at the National Museum of African American History and Culture.jpg" loading="lazy" /></div>
+  <div class="option-label">Benjamin Banneker statue at the National Museum of African A</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Construction_-_National_Museum_of_African_American_History_and_Culture_-_Washington_DC.jpg?width=1000" data-title="Construction - National Museum of African American History and Culture - Washington DC.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Construction_-_National_Museum_of_African_American_History_and_Culture_-_Washington_DC.jpg?width=400" alt="Construction - National Museum of African American History and Culture - Washington DC.jpg" loading="lazy" /></div>
+  <div class="option-label">Construction - National Museum of African American History a</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Construction_of_the_National_Museum_of_African_American_History_and_Culture.JPG?width=1000" data-title="Construction of the National Museum of African American History and Culture.JPG" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Construction_of_the_National_Museum_of_African_American_History_and_Culture.JPG?width=400" alt="Construction of the National Museum of African American History and Culture.JPG" loading="lazy" /></div>
+  <div class="option-label">Construction of the National Museum of African American Hist</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Interior_of_the_National_Museum_of_African_American_History_and_Culture_%28NMAAHC%29_looking_south.jpg?width=1000" data-title="Interior of the National Museum of African American History and Culture (NMAAHC) looking south.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Interior_of_the_National_Museum_of_African_American_History_and_Culture_%28NMAAHC%29_looking_south.jpg?width=400" alt="Interior of the National Museum of African American History and Culture (NMAAHC) looking south.jpg" loading="lazy" /></div>
+  <div class="option-label">Interior of the National Museum of African American History </div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/Men%E2%80%99s_restroom_and_smoking_lounge_in_a_Southern_Railway_Company_car_at_the_National_Museum_of_African_American_History_and_Culture.jpg?width=1000" data-title="Men’s restroom and smoking lounge in a Southern Railway Company car at the National Museum of African American History and Culture.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Men%E2%80%99s_restroom_and_smoking_lounge_in_a_Southern_Railway_Company_car_at_the_National_Museum_of_African_American_History_and_Culture.jpg?width=400" alt="Men’s restroom and smoking lounge in a Southern Railway Company car at the National Museum of African American History and Culture.jpg" loading="lazy" /></div>
+  <div class="option-label">Men’s restroom and smoking lounge in a Southern Railway Comp</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_in_February_2020.jpg?width=1000" data-title="National Museum of African American History and Culture in February 2020.jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_in_February_2020.jpg?width=400" alt="National Museum of African American History and Culture in February 2020.jpg" loading="lazy" /></div>
+  <div class="option-label">National Museum of African American History and Culture in F</div>
+</label>
+<label class="option">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_%2897874%29.jpg?width=1000" data-title="National Museum of African American History and Culture (97874).jpg" />
+  <div class="option-img"><img src="https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_%2897874%29.jpg?width=400" alt="National Museum of African American History and Culture (97874).jpg" loading="lazy" /></div>
+  <div class="option-label">National Museum of African American History and Culture (978</div>
+</label>
+<label class="option option--none">
+  <input type="radio" name="pick_national-museum-of-african-american-history-and-culture" value="__none__" />
+  <div class="option-img"><div class="no-photo">None of these work</div></div>
+  <div class="option-label">Flag — I'll find another</div>
+</label>
+  </div>
+</section>
+
+</main>
+
+<div id="result-box">
+  <h3>Your picks</h3>
+  <textarea readonly id="result-text"></textarea>
+  <button onclick="copyPicks()">Copy to clipboard</button>
+  <button class="close" onclick="document.getElementById('result-box').classList.remove('active')">Close</button>
+</div>
+
+<script>
+  function showPicks() {
+    const picks = {};
+    document.querySelectorAll('.museum').forEach(section => {
+      const slug = section.id.replace('museum-', '');
+      const checked = section.querySelector('input[type=radio]:checked');
+      if (checked && checked.value !== '__keep__') {
+        picks[slug] = {
+          url: checked.value,
+          title: checked.dataset.title || checked.value,
+        };
+      }
+    });
+    document.getElementById('result-text').value = JSON.stringify(picks, null, 2);
+    document.getElementById('result-box').classList.add('active');
+  }
+  function copyPicks() {
+    const t = document.getElementById('result-text');
+    t.select();
+    document.execCommand('copy');
+  }
+</script>
+</body>
+</html>

@@ -29,5 +29,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/seattle/seattle-asian-art-museum/?partner_id=PLACEHOLDER",
     "product_name": "Seattle Asian Art Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Seattle_Asian_Art_Museum.jpg/1280px-Seattle_Asian_Art_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Asian_Art_Museum.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Dragones_Seattle_01.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Mahavira_Seattle_01.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Seattle Asian Art Museum"
 }

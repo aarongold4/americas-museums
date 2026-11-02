@@ -22,5 +22,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/john-f-kennedy-presidential-library-and-museum/?partner_id=PLACEHOLDER",
     "product_name": "John F. Kennedy Presidential Library and Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/JFK_library_Stitch_Crop.jpg/1280px-JFK_library_Stitch_Crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/John_F_Kennedy_sailboat_Victura_at_Kennedy_LibraryIMG_20160510_141846009_HDRc.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/President_Kennedy%27s_golf_balls_on_display_at_the_JFK_Museum_in_Boston%2C_MA.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/JFK_Library_Boston_09222016.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / John F. Kennedy Presidential Library and Museum"
 }

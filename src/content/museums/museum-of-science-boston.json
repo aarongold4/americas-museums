@@ -35,5 +35,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/museum-of-science-boston/?partner_id=PLACEHOLDER",
     "product_name": "Museum of Science Boston entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/ISH_WC_Boston4.jpg/1280px-ISH_WC_Boston4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts_Boston%2C_Huntington_Ave_entrance_at_night.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Armenian-Americans-Boston-1908.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Boston%2C_1775bsmall1.png?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Boston"
 }

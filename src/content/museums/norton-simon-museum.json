@@ -41,5 +41,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/los-angeles/norton-simon-museum/?partner_id=PLACEHOLDER",
     "product_name": "Norton Simon Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Norton_Simon_Museum_Pasadena_CA_%2851081778692%29.jpg/1280px-Norton_Simon_Museum_Pasadena_CA_%2851081778692%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/%27Aldrovani_Dog%27_by_Guercino%2C_Norton_Simon_Museum.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/%27Digambara_Yaksha_Sarvahna%27_from_Karnataka%2C_India%2C_c._900%2C_Norton_Simon_Museum.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/%27Digambara_Yakshi_Kushmandini%27_from_Karnataka%2C_India%2C_c._900%2C_Norton_Simon_Museum.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Norton Simon Museum"
 }

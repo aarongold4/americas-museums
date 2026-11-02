@@ -47,5 +47,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/new-york/brooklyn-museum/?partner_id=PLACEHOLDER",
     "product_name": "Brooklyn Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Brooklyn_Museum_-_Entrance_%2852302265063%29.jpg/1280px-Brooklyn_Museum_-_Entrance_%2852302265063%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/A_Morning_Snow-Hudson_River_at_the_Brooklyn_Museum_%2880534%29a.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Brooklyn-Museum_81.168.1_Equestrian-Figure_Gold-Weight_cropped.png?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Brooklyn_Museum_-_A_Ride_for_Liberty_--_The_Fugitive_Slaves_-_Eastman_Johnson_-_overall.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Brooklyn Museum"
 }

@@ -34,5 +34,7 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/washington/phillips-collection/?partner_id=PLACEHOLDER",
     "product_name": "Phillips Collection entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/The_Phillips_Collection.JPG/1280px-The_Phillips_Collection.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "photo_credit": "via Wikimedia Commons / The Phillips Collection"
 }

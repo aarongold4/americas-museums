@@ -22,5 +22,11 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/atlanta/jimmy-carter-presidential-library-and-museum/?partner_id=PLACEHOLDER",
     "product_name": "Jimmy Carter Presidential Library and Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Jimmy_Carter_Presidential_Library_and_Museum.jpg/1280px-Jimmy_Carter_Presidential_Library_and_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Jimmy_Carter_Presidential_Library_and_Museum.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Jimmy_Carter_Library.png?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Jimmy Carter Library and Museum"
 }

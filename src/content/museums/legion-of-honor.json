@@ -36,5 +36,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/san-francisco/legion-of-honor/?partner_id=PLACEHOLDER",
     "product_name": "Legion of Honor entry"
-  }
+  },
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Famsf-logo-2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Anna_Hyatt_Huntington--El_Cid_Campeador--1927--Legion_of_Honor--San_Francisco--photo_by_Steven_Saylor_%28cropped%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Breton_Bathers_by_Paul_Gauguin%2C_zincograph%2C_California_Palace_of_the_Legion_of_Honor.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Bretteville_Spreckels_Gallery%2C_Legion_of_Honor.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Legion of Honor (museum)"
 }

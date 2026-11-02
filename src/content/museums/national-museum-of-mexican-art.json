@@ -19,17 +19,46 @@
   "tagline": "The largest Latino cultural institution in the US, in the heart of Pilsen. Free admission, always.",
   "description": "Largest Latino cultural institution in the United States, with a permanent collection of more than 18,000 works tracing 3,000 years of Mexican, Mexican-American, and Chicano art. Located in the Pilsen neighborhood — the museum is reason enough to visit, and Pilsen itself rewards a longer walk.",
   "badges": [
-    { "label": "Always free", "tone": "ok" },
-    { "label": "Pilsen", "tone": "info" }
+    {
+      "label": "Always free",
+      "tone": "ok"
+    },
+    {
+      "label": "Pilsen",
+      "tone": "info"
+    }
   ],
   "tips": [
-    { "tag": "FREE", "tone": "ok", "text": "Admission has been free since the museum opened in 1987." },
-    { "tag": "TIP",  "tone": "warn", "text": "Stay for lunch in Pilsen — Carnitas Uruapan is two blocks away." }
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Admission has been free since the museum opened in 1987."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Stay for lunch in Pilsen — Carnitas Uruapan is two blocks away."
+    }
   ],
   "highlights": [
-    { "location": "Permanent",   "item": "Day of the Dead exhibit (open Oct–Dec)" },
-    { "location": "Main gallery", "item": "Rotating exhibitions of contemporary Chicano art" }
+    {
+      "location": "Permanent",
+      "item": "Day of the Dead exhibit (open Oct–Dec)"
+    },
+    {
+      "location": "Main gallery",
+      "item": "Rotating exhibitions of contemporary Chicano art"
+    }
   ],
-  "affiliate": { "network": "none" },
-  "distance_landmark": "Pilsen, 2.5 mi southwest of the Loop"
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "Pilsen, 2.5 mi southwest of the Loop",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/National_Museum_of_Mexican_Art_entrance.jpg/1280px-National_Museum_of_Mexican_Art_entrance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Jill_Biden_visit_to_National_Museum_of_Mexican_Art_FBiVYKSX0BAJtIv.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Mexican_Art_entrance.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Mexican_Art_ofrenda.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / National Museum of Mexican Art"
 }

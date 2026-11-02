@@ -29,5 +29,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/atlanta/high-museum-of-art/?partner_id=PLACEHOLDER",
     "product_name": "High Museum of Art entry"
-  }
+  },
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/High_Museum_in_Atlanta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Annie_Leibovitz_High_Museum_of_Art.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Autumn_on_the_Seine%2C_Argenteuil_by_Claude_Monet%2C_High_Museum_of_Art.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/High_Museum_Modern_Art.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / High Museum of Art"
 }

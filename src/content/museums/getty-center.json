@@ -58,5 +58,12 @@
   "distance_landmark": "Brentwood, just off the 405",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Aerial_Getty_Museum.jpg/1280px-Aerial_Getty_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/2003-12-15_Getty_Center_panorama.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Getty_Center.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Getty_Center_Tram_Station_Los_Angeles.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Getty Center"
 }

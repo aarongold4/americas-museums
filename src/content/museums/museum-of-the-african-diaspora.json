@@ -22,5 +22,11 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/san-francisco/museum-of-the-african-diaspora/?partner_id=PLACEHOLDER",
     "product_name": "Museum of the African Diaspora entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/MoAD_Members_Outside.jpg/1280px-MoAD_Members_Outside.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/MoAD_Members_Outside.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/SF_From_Marin_Highlands3.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Museum of the African Diaspora"
 }

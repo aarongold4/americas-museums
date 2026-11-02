@@ -4,7 +4,7 @@
   "state": "IL",
   "address": "333 S Halsted St, Chicago, IL 60661",
   "lat": 41.8772,
-  "lng": -87.6470,
+  "lng": -87.647,
   "discipline": "Specialized",
   "founded": 1983,
   "rating": 8.3,
@@ -19,14 +19,33 @@
   "tagline": "A small museum in Greektown chronicling the Greek-American experience. Worth pairing with dinner nearby.",
   "description": "Located in the heart of Greektown on the West Loop. Permanent exhibits on the immigrant experience, ancient Greek artifacts on rotating loan, and an oral history archive of Greek-American voices. Best paired with dinner at Greek Islands or The Parthenon.",
   "badges": [
-    { "label": "Greektown", "tone": "info" }
+    {
+      "label": "Greektown",
+      "tone": "info"
+    }
   ],
   "tips": [
-    { "tag": "TIP", "tone": "warn", "text": "Combine with dinner — the museum is on the same block as Greektown's best tavernas." }
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Combine with dinner — the museum is on the same block as Greektown's best tavernas."
+    }
   ],
   "highlights": [
-    { "location": "Permanent",  "item": "The Greek Immigrant Experience exhibit" }
+    {
+      "location": "Permanent",
+      "item": "The Greek Immigrant Experience exhibit"
+    }
   ],
-  "affiliate": { "network": "none" },
-  "distance_landmark": "Greektown, West Loop"
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "Greektown, West Loop",
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/The_finished_National_Hellenic_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/The_finished_National_Hellenic_Museum.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/NHMJanuaryConstruction.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/NHM_Antiquities_Group.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / National Hellenic Museum"
 }

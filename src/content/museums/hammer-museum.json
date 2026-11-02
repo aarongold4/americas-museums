@@ -27,5 +27,12 @@
   "distance_landmark": "Westwood, on the UCLA campus edge",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://en.wikipedia.org/wiki/Special:FilePath/Hammer_Museum_Westwood_June_2012.jpg?width=1000",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Hammer_Museum_Westwood_June_2012.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Pablo_Picasso%2C_1904%2C_Le_repas_frugal_%28The_Frugal_Repast%29%2C_etching%2C_Hammer_Museum%2C_University_of_California.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Wild_Belle_%40_Hammer_Museum_07_18_2019_%2848501390132%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Hammer Museum Westwood June 2012.jpg"
 }

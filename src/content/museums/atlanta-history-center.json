@@ -34,5 +34,10 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/atlanta/atlanta-history-center/?partner_id=PLACEHOLDER",
     "product_name": "Atlanta History Center entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Atlanta_History_Center%2C_2026.jpg/1280px-Atlanta_History_Center%2C_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Atlanta_History_Center%2C_2026.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Atlanta History Center"
 }

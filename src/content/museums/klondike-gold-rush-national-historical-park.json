@@ -26,5 +26,12 @@
   "distance_landmark": "Pioneer Square",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_29.jpg/1280px-Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/J%2C_Bernard_Moore_House_1897_Restored_by_the_National_Park_Service_Klondike_Gold_Rush_National_Historical_Park.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Cartel_de_bienvenida_a_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_23.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Klondike Gold Rush National Historical Park"
 }

@@ -41,5 +41,7 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/new-york/tenement-museum/?partner_id=PLACEHOLDER",
     "product_name": "Tenement Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/97_Orchard_Street_Front.jpg/1280px-97_Orchard_Street_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "photo_credit": "via Wikimedia Commons / Lower East Side Tenement Museum"
 }

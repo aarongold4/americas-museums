@@ -23,5 +23,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/san-francisco/walt-disney-family-museum/?partner_id=PLACEHOLDER",
     "product_name": "Walt Disney Family Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Walt_Disney_Family_Museum_by_Joy_of_Museums.jpg/1280px-Walt_Disney_Family_Museum_by_Joy_of_Museums.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Walt_Disney_Family_Museum_by_Joy_of_Museums.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Disney_Display_Case.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/SF_From_Marin_Highlands3.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Walt Disney Family Museum"
 }

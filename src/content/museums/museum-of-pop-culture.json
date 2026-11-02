@@ -34,5 +34,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/seattle/museum-of-pop-culture/?partner_id=PLACEHOLDER",
     "product_name": "Museum of Pop Culture entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Museum_of_Pop_Culture_Logo.png/1280px-Museum_of_Pop_Culture_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_EMPSFM.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/EMPPano11.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/ExperienceMusicProject.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Museum of Pop Culture"
 }

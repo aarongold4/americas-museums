@@ -28,5 +28,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/national-constitution-center/?partner_id=PLACEHOLDER",
     "product_name": "National Constitution Center entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/National_Constitution_Center_-_2_%2853586570586%29.jpg/1280px-National_Constitution_Center_-_2_%2853586570586%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Constitution_Center-exterior.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Constitution_Center_-_2_%2853586570586%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Statues_of_Constitution_signers_at_the_National_Constitution_Center.jpg?width=800"
+  ],
+  "photo_credit": "via Wikimedia Commons / National Constitution Center"
 }

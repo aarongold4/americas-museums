@@ -21,22 +21,52 @@
   "description": "One of the largest encyclopedic art museums in the United States. Holdings include Impressionist masterpieces (Monet, Renoir, Caillebotte), American icons (Hopper's Nighthawks, Wood's American Gothic), and a Modern Wing designed by Renzo Piano.",
   "review_long": "The Art Institute is one of three or four museums in the country you can fairly call encyclopedic. Its painting wing alone houses the largest Impressionist collection outside Paris — Monet's Haystacks, Renoir's Two Sisters, the Caillebottes — and its modern wing, designed by Renzo Piano in 2009, exhibits Hopper, Pollock, O'Keeffe, and Picasso's The Old Guitarist in rooms that are themselves worth the visit.\n\nPlan a full day. The Thorne Miniature Rooms, often overlooked, are on the lower level and worth an hour on their own.",
   "badges": [
-    { "label": "Free Thursdays (IL)", "tone": "ok" },
-    { "label": "Skip-the-line", "tone": "neutral" }
+    {
+      "label": "Free Thursdays (IL)",
+      "tone": "ok"
+    },
+    {
+      "label": "Skip-the-line",
+      "tone": "neutral"
+    }
   ],
   "tips": [
-    { "tag": "FREE", "tone": "ok", "text": "Illinois residents get free admission Thursday evenings 5–8 PM." },
-    { "tag": "TIP",  "tone": "warn", "text": "Skip Saturdays — try Tuesday or Wednesday instead." }
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Illinois residents get free admission Thursday evenings 5–8 PM."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Skip Saturdays — try Tuesday or Wednesday instead."
+    }
   ],
   "highlights": [
-    { "location": "Gallery 262",  "item": "Nighthawks, Edward Hopper, 1942" },
-    { "location": "Gallery 240",  "item": "A Sunday on La Grande Jatte, Georges Seurat" },
-    { "location": "Modern Wing",  "item": "The Old Guitarist, Pablo Picasso" }
+    {
+      "location": "Gallery 262",
+      "item": "Nighthawks, Edward Hopper, 1942"
+    },
+    {
+      "location": "Gallery 240",
+      "item": "A Sunday on La Grande Jatte, Georges Seurat"
+    },
+    {
+      "location": "Modern Wing",
+      "item": "The Old Guitarist, Pablo Picasso"
+    }
   ],
   "affiliate": {
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/chicago-l178/art-institute-of-chicago/?partner_id=PLACEHOLDER",
     "product_name": "Skip-the-line entry"
   },
-  "distance_landmark": "0.2 mi from Millennium Park"
+  "distance_landmark": "0.2 mi from Millennium Park",
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Art_Institute_of_Chicago_Logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Alapini_vina_%40_Art_Institute_of_Chicago_-_detail_of_black_schist_of_God_Vishnu_with_His_Consorts_Lakshmi_and_Sarasvati_-_Bangladesh_or_Eastern_India%2C_Pala_period%2C_10th-12th_century.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute%2C_Chicago_circa_1907_postcard_%28front%29.tiff?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute_of_Chicago_%2851575570710%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Art Institute of Chicago"
 }

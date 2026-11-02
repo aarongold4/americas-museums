@@ -35,5 +35,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/boston-childrens-museum/?partner_id=PLACEHOLDER",
     "product_name": "Boston Children's Museum entry"
-  }
+  },
+  "hero_image": "https://en.wikipedia.org/wiki/Special:FilePath/Boston_Children%27s_Museum_%2854960643491%29.jpg?width=1000",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Boston_Children%27s_Museum_%2854960643491%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Boston_Childrens_Museum_P1000509.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Hood_Milk_Bottle_%2854960892944%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Boston Children's Museum (54960643491).jpg"
 }

@@ -26,5 +26,10 @@
   "distance_landmark": "First Hill",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Frye_Museum_winter.jpg/1280px-Frye_Museum_winter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Frye_Museum_winter.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Frye Art Museum"
 }

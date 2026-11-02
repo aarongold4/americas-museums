@@ -56,5 +56,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/new-york/metropolitan-museum-of-art/?partner_id=PLACEHOLDER",
     "product_name": "Metropolitan Museum of Art entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/1280px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/4_Jean_Le_Noir._Miniature_from_Psalter_of_Bonne_of_Luxemburg_1348-49_Metropolitan_Museum%2C_N-Y.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Amedeo_Modigliani%2C_1919%2C_Jeanne_H%C3%A9buterne%2C_oil_on_canvas%2C_91.4_x_73_cm%2C_Metropolitan_Museum_of_Art.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Arthur_Dove%2C_Cow%2C_1914%2C_pastel_on_canvas%2C_45.1_x_54.6_cm%2C_Metropolitan_Museum_of_Art.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Metropolitan Museum of Art"
 }

@@ -30,5 +30,11 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/washington/international-spy-museum/?partner_id=PLACEHOLDER",
     "product_name": "International Spy Museum entry"
-  }
+  },
+  "hero_image": "https://en.wikipedia.org/wiki/Special:FilePath/2019_International_Spy_Museum_03.jpg?width=1000",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/2019_International_Spy_Museum_03.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Spy_museum_night.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / 2019 International Spy Museum 03.jpg"
 }

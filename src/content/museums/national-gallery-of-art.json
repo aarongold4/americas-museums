@@ -45,5 +45,12 @@
   "distance_landmark": "On the National Mall, between 4th and 7th",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/National_Gallery_of_Art_-_2026_%2855255088792%29.jpg/1280px-National_Gallery_of_Art_-_2026_%2855255088792%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/0_Agrippine_et_Germanicus_-_Washington_National_Gallery_of_Art_Museum_%282%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Albert_Gleizes%2C_1912-13%2C_Les_Joueurs_de_football_%28Football_Players%29%2C_oil_on_canvas%2C_225.4_x_183_cm%2C_National_Gallery_of_Art.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/East_Building_of_the_National_Gallery_of_Art%2C_atrium.jpg?width=800"
+  ],
+  "photo_credit": "via Wikimedia Commons / National Gallery of Art"
 }

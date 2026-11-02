@@ -22,5 +22,10 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/african-american-museum-in-philadelphia/?partner_id=PLACEHOLDER",
     "product_name": "African American Museum in Philadelphia entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/African_American_Museum_in_Philadelphia_%28AAMP%29_%2853572937450%29.jpg/1280px-African_American_Museum_in_Philadelphia_%28AAMP%29_%2853572937450%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "photo_credit": "via Wikipedia / African American Museum in Philadelphia",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/African_American_Museum_in_Philadelphia_%28AAMP%29_%2853572937450%29.jpg?width=800"
+  ]
 }

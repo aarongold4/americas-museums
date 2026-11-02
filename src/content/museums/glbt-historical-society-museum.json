@@ -20,5 +20,12 @@
   "distance_landmark": "The Castro, on 18th Street",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/GLBT_Historical_Society_Logo_2017.svg/1280px-GLBT_Historical_Society_Logo_2017.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Visitors_Viewing_a_Photography_Exhibition_at_The_GLBT_History_Museum_%28San_Francisco%29..jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Christopher_Street_Liberation_Day_Gay-In_offset_flyer%2C_1970.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/GLBTHistoryMuseum.FrontWindows12_10.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / GLBT Historical Society"
 }

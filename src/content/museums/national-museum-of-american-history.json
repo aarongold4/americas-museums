@@ -36,5 +36,12 @@
   "distance_landmark": "On the National Mall",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Aerial_view_of_National_Museum_of_American_History.jpg/1280px-Aerial_view_of_National_Museum_of_American_History.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Aerial_view_of_National_Museum_of_American_History.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_American_History_-_2026_%2855256384290%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Nat._Museum_of_American_History%2C_Washington%2C_D.C._IMG_4758.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / National Museum of American History"
 }

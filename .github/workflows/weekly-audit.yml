@@ -1,0 +1,43 @@
+name: Weekly audit
+
+on:
+  schedule:
+    # Sundays at 08:00 UTC = 3am Eastern (standard) / 4am Eastern (DST)
+    - cron: '0 8 * * 0'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Needed so we can commit changes back
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run audit
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: python3 scripts/weekly_audit.py
+
+      - name: Commit auto-fixes
+        run: |
+          git config user.name "Weekly Audit Bot"
+          git config user.email "actions@github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore(audit): weekly auto-fixes $(date +%Y-%m-%d)
+
+          Auto-applied factual corrections from the weekly audit.
+          See data/audits/latest.json for the full report."
+            git push
+          else
+            echo "No changes to commit."
+          fi

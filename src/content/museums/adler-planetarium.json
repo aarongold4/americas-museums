@@ -19,20 +19,44 @@
   "tagline": "Three theaters under one roof, including an actual astrophysics-grade dome. Skyline view alone is worth it.",
   "description": "America's first planetarium, opened in 1930 on a peninsula extending into Lake Michigan. Three full-dome theaters plus rotating exhibits on cosmology, telescopes, and space exploration. The view back at the skyline is one of the best in the city.",
   "badges": [
-    { "label": "Free for IL residents (select days)", "tone": "ok" }
+    {
+      "label": "Free for IL residents (select days)",
+      "tone": "ok"
+    }
   ],
   "tips": [
-    { "tag": "TIP", "tone": "warn", "text": "The skyline shot from the south terrace is best near sunset." },
-    { "tag": "TIP", "tone": "warn", "text": "Combo tickets with Field Museum or Shedd save ~25%." }
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The skyline shot from the south terrace is best near sunset."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Combo tickets with Field Museum or Shedd save ~25%."
+    }
   ],
   "highlights": [
-    { "location": "Grainger Sky Theater", "item": "20-projector dome — most advanced in the country" },
-    { "location": "Doane Observatory",    "item": "Public telescope nights, weather permitting" }
+    {
+      "location": "Grainger Sky Theater",
+      "item": "20-projector dome — most advanced in the country"
+    },
+    {
+      "location": "Doane Observatory",
+      "item": "Public telescope nights, weather permitting"
+    }
   ],
   "affiliate": {
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/chicago-l178/adler-planetarium/?partner_id=PLACEHOLDER",
     "product_name": "Adler Planetarium entry"
   },
-  "distance_landmark": "Northern tip of Museum Campus"
+  "distance_landmark": "Northern tip of Museum Campus",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Adler_Planetarium_E.jpg/1280px-Adler_Planetarium_E.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Adler_Planetarium_E.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Adler_Planetarium_original_building_meets_new_building_Chicago_2015-105.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Adler_planetarium_landmark_Chicago_2015-104.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Adler Planetarium"
 }

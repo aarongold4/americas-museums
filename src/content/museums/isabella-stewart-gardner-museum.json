@@ -41,5 +41,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/boston/isabella-stewart-gardner-museum/?partner_id=PLACEHOLDER",
     "product_name": "Isabella Stewart Gardner Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/IsabellaStewartGardenerMuseumMainLobby.jpg/1280px-IsabellaStewartGardenerMuseumMainLobby.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Anders_Zorn_-_Isabella_Stewart_Gardner_in_Venice_-_P17e10_-_Isabella_Stewart_Gardner_Museum.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Isabella_Stewart_Gardner_Museum_original_building_%22Fenway_Court%22.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/2012_GardnerMuseum_Boston_USA_1.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Isabella Stewart Gardner Museum"
 }

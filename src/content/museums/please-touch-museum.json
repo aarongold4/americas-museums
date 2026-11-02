@@ -29,5 +29,12 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/philadelphia/please-touch-museum/?partner_id=PLACEHOLDER",
     "product_name": "Please Touch Museum entry"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/MemorialHallPhila03.jpg/1280px-MemorialHallPhila03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Cat_fish_Carousel_Philly.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/MemorialHallPhila03.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Street_map_of_Philadelphia_and_surrounding_area.png?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Please Touch Museum"
 }

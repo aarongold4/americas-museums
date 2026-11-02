@@ -26,5 +26,12 @@
   "distance_landmark": "On the National Mall, south side",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hirshhorn_Museum_DC_2007.jpg/1280px-Hirshhorn_Museum_DC_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Hirshhorn_Museum_Sculpture_Garden_2007.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Hirshhorn_Museum_and_Sculpture_Garden_-_exterior.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/The_Burghers_of_Calais_-_Hirshhorn_Sculpture_Garden.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Hirshhorn Museum and Sculpture Garden"
 }

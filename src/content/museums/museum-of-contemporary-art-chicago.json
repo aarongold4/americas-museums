@@ -20,19 +20,39 @@
   "tagline": "Strong rotating exhibition program; the building itself is a Josef Paul Kleihues block of basalt and aluminum.",
   "description": "One of the largest contemporary art museums in the country, with a rotating program of major exhibitions and a permanent collection focused on post-1945 art. Strong holdings in conceptual art, photography, and Surrealism.",
   "badges": [
-    { "label": "Free for under-19s", "tone": "ok" }
+    {
+      "label": "Free for under-19s",
+      "tone": "ok"
+    }
   ],
   "tips": [
-    { "tag": "TIP", "tone": "warn", "text": "Tuesday is closed — don't rely on it as a rainy-day backup." }
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "Tuesday is closed — don't rely on it as a rainy-day backup."
+    }
   ],
   "highlights": [
-    { "location": "Permanent",     "item": "Marisol's Mi Mama y Yo" },
-    { "location": "Permanent",     "item": "Felix Gonzalez-Torres pieces (often rotating)" }
+    {
+      "location": "Permanent",
+      "item": "Marisol's Mi Mama y Yo"
+    },
+    {
+      "location": "Permanent",
+      "item": "Felix Gonzalez-Torres pieces (often rotating)"
+    }
   ],
   "affiliate": {
     "network": "tiqets",
     "deep_link": "https://www.tiqets.com/en/chicago-attractions-c66421/museum-of-contemporary-art-chicago-p991234/?partner=PLACEHOLDER",
     "product_name": "MCA general entry"
   },
-  "distance_landmark": "Streeterville, 1 block off Michigan Ave"
+  "distance_landmark": "Streeterville, 1 block off Michigan Ave",
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/1/15/MCA_Chicago_060930.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Contemporary_Art%2C_Chicago.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Stairwell_at_The_Museum_of_Contemporary_Art_in_Chicago.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/MCA_Chicago_060930.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Museum of Contemporary Art Chicago"
 }

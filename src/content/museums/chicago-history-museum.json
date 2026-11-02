@@ -3,7 +3,7 @@
   "city": "Chicago",
   "state": "IL",
   "address": "1601 N Clark St, Chicago, IL 60614",
-  "lat": 41.9120,
+  "lat": 41.912,
   "lng": -87.6314,
   "discipline": "History",
   "founded": 1856,
@@ -19,16 +19,41 @@
   "tagline": "Lincoln's deathbed, an L car you can climb into, and the city's only Great Chicago Fire diorama.",
   "description": "Chicago's oldest cultural institution, founded just 19 years after the city itself. Permanent exhibits on the Great Chicago Fire of 1871, the World's Columbian Exposition, and the city's role in American politics. Includes the bed Lincoln died in.",
   "badges": [
-    { "label": "Free Tuesdays (IL)", "tone": "ok" }
+    {
+      "label": "Free Tuesdays (IL)",
+      "tone": "ok"
+    }
   ],
   "tips": [
-    { "tag": "FREE", "tone": "ok", "text": "Free for Illinois residents every Tuesday." }
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free for Illinois residents every Tuesday."
+    }
   ],
   "highlights": [
-    { "location": "Crossroads",     "item": "Bed Lincoln died in (Petersen House)" },
-    { "location": "Lower Level",    "item": "L Car #1, the first elevated train car" },
-    { "location": "Great Hall",     "item": "Great Chicago Fire diorama" }
+    {
+      "location": "Crossroads",
+      "item": "Bed Lincoln died in (Petersen House)"
+    },
+    {
+      "location": "Lower Level",
+      "item": "L Car #1, the first elevated train car"
+    },
+    {
+      "location": "Great Hall",
+      "item": "Great Chicago Fire diorama"
+    }
   ],
-  "affiliate": { "network": "none" },
-  "distance_landmark": "Edge of Lincoln Park, 2 mi north of the Loop"
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "Edge of Lincoln Park, 2 mi north of the Loop",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Chicago_History.JPG/1280px-Chicago_History.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Chicago_History_Museum.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/To_the_Homeless_of_the_Chicago_Fire%2C_Chicago_History_Museum.JPG?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Chicago_History.JPG?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Chicago History Museum"
 }

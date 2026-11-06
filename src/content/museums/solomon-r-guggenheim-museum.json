@@ -45,5 +45,9 @@
     "product_name": "Solomon R. Guggenheim Museum entry"
   },
   "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/S._R._Guggenheim_portrait_by_Pirie_MacDonald.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "photo_credit": "via Wikimedia Commons / Solomon R. Guggenheim"
+  "photo_credit": "via Wikimedia Commons / Solomon R. Guggenheim",
+  "google_place_id": "ChIJmZ5emqJYwokRuDz79o0coAQ",
+  "rating_google": 4.3,
+  "review_count_google": 27026,
+  "business_status": "OPERATIONAL"
 }

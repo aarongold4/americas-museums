@@ -19,10 +19,9 @@
     background: #003B95;
     color: #fff;
   }
-  /* Editorial display headings (city hubs only) */
+  /* Display headings — tight, bold DM Sans */
   .display {
-    @apply font-display tracking-tightish;
-    font-feature-settings: 'liga', 'dlig';
+    @apply font-display font-semibold tracking-tight;
   }
 }
 

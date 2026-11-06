@@ -30,5 +30,9 @@
     "product_name": "Penn Museum entry"
   },
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Penn_Museum_-_UPenn_%2853590175396%29.jpg/1280px-Penn_Museum_-_UPenn_%2853590175396%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "photo_credit": "via Wikimedia Commons / Penn Museum"
+  "photo_credit": "via Wikimedia Commons / Penn Museum",
+  "google_place_id": "ChIJvzKmO1vGxokRJm5brUPctFE",
+  "rating_google": 4.7,
+  "review_count_google": 2994,
+  "business_status": "OPERATIONAL"
 }

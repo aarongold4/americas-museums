@@ -31,5 +31,9 @@
     "product_name": "Institute of Contemporary Art Boston entry"
   },
   "hero_image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Institute_of_Contemporary_Art%2C_Boston.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-  "photo_credit": "via Wikimedia Commons / Institute of Contemporary Art, Boston"
+  "photo_credit": "via Wikimedia Commons / Institute of Contemporary Art, Boston",
+  "google_place_id": "ChIJxTCEOnlw44kROtPtIpMFsXo",
+  "rating_google": 4.4,
+  "review_count_google": 4565,
+  "business_status": "OPERATIONAL"
 }

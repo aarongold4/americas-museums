@@ -75,6 +75,11 @@ const museums = defineCollection({
       })
       .optional(),
     distance_landmark: z.string().optional(), // "0.4 mi from Millennium Park"
+    // Google Places sync
+    google_place_id: z.string().optional(),
+    rating_google: z.number().optional(),
+    review_count_google: z.number().int().optional(),
+    business_status: z.string().optional(), // 'OPERATIONAL', 'CLOSED_TEMPORARILY', 'CLOSED_PERMANENTLY'
   }),
 });
 

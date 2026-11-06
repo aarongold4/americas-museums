@@ -36,5 +36,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Autumn_on_the_Seine%2C_Argenteuil_by_Claude_Monet%2C_High_Museum_of_Art.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/High_Museum_Modern_Art.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / High Museum of Art"
+  "photo_credit": "via Wikipedia / High Museum of Art",
+  "google_place_id": "ChIJf8bUMEUE9YgR8nttKmmxaPc",
+  "rating_google": 4.7,
+  "review_count_google": 6222,
+  "business_status": "OPERATIONAL"
 }

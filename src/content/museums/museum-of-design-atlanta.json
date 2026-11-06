@@ -28,5 +28,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Museum_oF_Design_Atlanta.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Midtown_Atlanta_location_map.JPG?width=800"
   ],
-  "photo_credit": "via Wikipedia / Museum of Design Atlanta"
+  "photo_credit": "via Wikipedia / Museum of Design Atlanta",
+  "google_place_id": "ChIJzal6QUUE9YgRYZqYJzKOXAo",
+  "rating_google": 4.4,
+  "review_count_google": 522,
+  "business_status": "OPERATIONAL"
 }

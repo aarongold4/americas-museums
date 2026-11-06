@@ -41,5 +41,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Fog_Bridge_at_the_Exploratorium.jpeg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Frank_Oppenheimer_with_Exploratorium_Exhibit.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Exploratorium"
+  "photo_credit": "via Wikipedia / Exploratorium",
+  "google_place_id": "ChIJk2vl5NSGhYARwPGvs_ubIws",
+  "rating_google": 4.7,
+  "review_count_google": 8823,
+  "business_status": "OPERATIONAL"
 }

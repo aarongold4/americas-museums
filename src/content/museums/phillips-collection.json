@@ -36,5 +36,9 @@
     "product_name": "Phillips Collection entry"
   },
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/The_Phillips_Collection.JPG/1280px-The_Phillips_Collection.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "photo_credit": "via Wikimedia Commons / The Phillips Collection"
+  "photo_credit": "via Wikimedia Commons / The Phillips Collection",
+  "google_place_id": "ChIJERCNwci3t4kR92ClBSxkv14",
+  "rating_google": 4.7,
+  "review_count_google": 2320,
+  "business_status": "OPERATIONAL"
 }

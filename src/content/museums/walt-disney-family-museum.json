@@ -30,5 +30,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Disney_Display_Case.JPG?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/SF_From_Marin_Highlands3.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Walt Disney Family Museum"
+  "photo_credit": "via Wikipedia / Walt Disney Family Museum",
+  "google_place_id": "ChIJ5f7ZKtiGhYAR9WaYFS6bH1U",
+  "rating_google": 4.6,
+  "review_count_google": 4262,
+  "business_status": "OPERATIONAL"
 }

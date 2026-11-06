@@ -31,6 +31,9 @@ const swatchByDiscipline: Record<string, string> = {
   'General': '#DDDDDD',
 };
 const photoBg = swatchByDiscipline[m.discipline] ?? '#DDDDDD';
+
+const isClosed = m.business_status === 'CLOSED_TEMPORARILY' || m.business_status === 'CLOSED_PERMANENTLY';
+const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently closed' : 'Temporarily closed';
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
@@ -40,6 +43,17 @@ const photoBg = swatchByDiscipline[m.discipline] ?? '#DDDDDD';
     backLabel={`${m.city} museums`}
     backHref={`/best-museums-in-${m.city.toLowerCase()}/`}
   />
+
+  {isClosed && (
+    <div class="bg-red-50 border-b border-red-200 px-5 py-3">
+      <div class="max-w-content mx-auto flex items-center gap-3 text-sm">
+        <span style="background:#991B1B;color:#fff;" class="px-2 py-0.5 rounded font-medium text-2xs tracking-wider2">{closedLabel.toUpperCase()}</span>
+        <span class="text-red-900">
+          Google reports this museum as {closedLabel.toLowerCase()}. Check the museum's official site before visiting.
+        </span>
+      </div>
+    </div>
+  )}
 
   <!-- Photo strip — uses hero + gallery_images if present, else discipline-colored swatches -->
   {m.hero_image ? (

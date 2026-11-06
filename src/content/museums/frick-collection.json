@@ -48,5 +48,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Frick_Collection_New_York_entr%C3%A9e.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Frick_collection.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Frick Collection"
+  "photo_credit": "via Wikipedia / Frick Collection",
+  "google_place_id": "ChIJHRH97uxYwokR6CBeDyn1jtg",
+  "rating_google": 4.6,
+  "review_count_google": 5218,
+  "business_status": "OPERATIONAL"
 }

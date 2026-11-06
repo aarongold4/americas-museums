@@ -68,5 +68,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute%2C_Chicago_circa_1907_postcard_%28front%29.tiff?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Art_Institute_of_Chicago_%2851575570710%29.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Art Institute of Chicago"
+  "photo_credit": "via Wikipedia / Art Institute of Chicago",
+  "google_place_id": "ChIJlUbZ4qMsDogR3tCinMzzKUg",
+  "rating_google": 4.8,
+  "review_count_google": 38835,
+  "business_status": "OPERATIONAL"
 }

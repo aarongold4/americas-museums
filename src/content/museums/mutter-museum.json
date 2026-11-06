@@ -36,5 +36,9 @@
   "gallery_images": [
     "https://en.wikipedia.org/wiki/Special:FilePath/The_Mutter_Museum_%2853586792843%29.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Mütter Museum"
+  "photo_credit": "via Wikipedia / Mütter Museum",
+  "google_place_id": "ChIJKZI5O8MyHogRMAkx1ntablc",
+  "rating_google": 4.6,
+  "review_count_google": 6724,
+  "business_status": "OPERATIONAL"
 }

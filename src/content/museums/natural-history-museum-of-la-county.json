@@ -42,5 +42,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Natural_History_Museum_of_Los_Angeles_Rotunda.JPG?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Antonio_Coronel.png?width=800"
   ],
-  "photo_credit": "via Wikipedia / NaturalHistoryMuseumOfLosAngelesCounty.jpg"
+  "photo_credit": "via Wikipedia / NaturalHistoryMuseumOfLosAngelesCounty.jpg",
+  "google_place_id": "ChIJXzARBf3HwoARJyT7uZSV-G4",
+  "rating_google": 4.8,
+  "review_count_google": 14863,
+  "business_status": "OPERATIONAL"
 }

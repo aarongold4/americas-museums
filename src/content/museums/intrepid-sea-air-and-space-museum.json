@@ -58,5 +58,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Intrepid_Museum_%2849052290092%29.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Intrepid_museum_aerial.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Intrepid Museum"
+  "photo_credit": "via Wikipedia / Intrepid Museum",
+  "google_place_id": "ChIJnxlg1U5YwokR8T90UrZiIwI",
+  "rating_google": 4.7,
+  "review_count_google": 47758,
+  "business_status": "OPERATIONAL"
 }

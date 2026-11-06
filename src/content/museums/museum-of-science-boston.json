@@ -42,5 +42,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Armenian-Americans-Boston-1908.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Boston%2C_1775bsmall1.png?width=800"
   ],
-  "photo_credit": "via Wikipedia / Boston"
+  "photo_credit": "via Wikipedia / Boston",
+  "google_place_id": "ChIJLxyMQZZw44kRxTZwZ5PGulc",
+  "rating_google": 4.7,
+  "review_count_google": 23692,
+  "business_status": "OPERATIONAL"
 }

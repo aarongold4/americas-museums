@@ -22,5 +22,9 @@
     "network": "getyourguide",
     "deep_link": "https://www.getyourguide.com/atlanta/apex-museum/?partner_id=PLACEHOLDER",
     "product_name": "APEX Museum entry"
-  }
+  },
+  "google_place_id": "ChIJp3TRAYkD9YgROwWFdqNufKg",
+  "rating_google": 4.7,
+  "review_count_google": 633,
+  "business_status": "OPERATIONAL"
 }

@@ -31,5 +31,9 @@
   "gallery_images": [
     "https://en.wikipedia.org/wiki/Special:FilePath/Frye_Museum_winter.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Frye Art Museum"
+  "photo_credit": "via Wikipedia / Frye Art Museum",
+  "google_place_id": "ChIJEWIFw7dqkFQRDw3cK6AcdXA",
+  "rating_google": 4.6,
+  "review_count_google": 1869,
+  "business_status": "OPERATIONAL"
 }

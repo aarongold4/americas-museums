@@ -51,5 +51,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Chihuly_Garden_and_Glass_2014_09.JPG?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Swan_of_Glass.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Chihuly Garden and Glass"
+  "photo_credit": "via Wikipedia / Chihuly Garden and Glass",
+  "google_place_id": "ChIJVTtr1kUVkFQRh-YAfijbQXs",
+  "rating_google": 4.7,
+  "review_count_google": 25437,
+  "business_status": "OPERATIONAL"
 }

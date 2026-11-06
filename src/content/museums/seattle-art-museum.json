@@ -48,5 +48,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Downtown_Seattle%2C_Washington%2C_USGS_National_Map%2C_2025.png?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Olympic_Sculpture_Park.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Seattle Art Museum"
+  "photo_credit": "via Wikipedia / Seattle Art Museum",
+  "google_place_id": "ChIJSxh5JbJqkFQRxI1KoO7oZHs",
+  "rating_google": 4.6,
+  "review_count_google": 7513,
+  "business_status": "OPERATIONAL"
 }

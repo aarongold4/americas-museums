@@ -65,5 +65,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Getty_Center.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Getty_Center_Tram_Station_Los_Angeles.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Getty Center"
+  "photo_credit": "via Wikipedia / Getty Center",
+  "google_place_id": "ChIJbzYnQte8woARJaqqFVpKeNo",
+  "rating_google": 4.8,
+  "review_count_google": 37719,
+  "business_status": "OPERATIONAL"
 }

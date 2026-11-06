@@ -42,5 +42,9 @@
     "product_name": "Petersen Automotive Museum entry"
   },
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Petersen_Automotive_Museum.jpg/1280px-Petersen_Automotive_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "photo_credit": "via Wikimedia Commons / Petersen Automotive Museum"
+  "photo_credit": "via Wikimedia Commons / Petersen Automotive Museum",
+  "google_place_id": "ChIJaRbaXjy5woARERNJSyktTog",
+  "rating_google": 4.8,
+  "review_count_google": 14227,
+  "business_status": "OPERATIONAL"
 }

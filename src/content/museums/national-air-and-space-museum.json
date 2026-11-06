@@ -52,5 +52,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/National_Air_and_Space_Museum_%2855256212753%29.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/National_Air_and_Space_Museum_Entrance.JPG?width=800"
   ],
-  "photo_credit": "via Wikipedia / National Air and Space Museum"
+  "photo_credit": "via Wikipedia / National Air and Space Museum",
+  "google_place_id": "ChIJISQme4O3t4kRG-iM3TfJ5_g",
+  "rating_google": 4.6,
+  "review_count_google": 50037,
+  "business_status": "OPERATIONAL"
 }

@@ -29,5 +29,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Nordic_Museum_Seattle.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Seattle_Ballard_Nordic_Heritage_Museum_2.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / National Nordic Museum"
+  "photo_credit": "via Wikipedia / National Nordic Museum",
+  "google_place_id": "ChIJdcDHu9kVkFQRmqfC_OfDtTI",
+  "rating_google": 4.6,
+  "review_count_google": 2431,
+  "business_status": "OPERATIONAL"
 }

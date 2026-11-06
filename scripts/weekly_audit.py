@@ -62,19 +62,24 @@ def http_get_json(url, retries=4):
 
 
 def refresh_google_place(place_id):
-    """Return {rating, user_ratings_total, business_status} or None."""
+    """Places API (New): fetch rating, userRatingCount, businessStatus. Return {} or None."""
     if not GOOGLE_API_KEY or not place_id:
         return None
-    fields = "rating,user_ratings_total,business_status"
-    url = (
-        "https://maps.googleapis.com/maps/api/place/details/json"
-        f"?place_id={place_id}&fields={fields}&key={GOOGLE_API_KEY}"
-    )
+    url = f"https://places.googleapis.com/v1/places/{place_id}"
     try:
-        d = http_get_json(url)
-        if d.get("status") != "OK":
-            return None
-        return d.get("result", {})
+        req = urllib.request.Request(url, headers={
+            "X-Goog-Api-Key": GOOGLE_API_KEY,
+            "X-Goog-FieldMask": "rating,userRatingCount,businessStatus",
+            "User-Agent": "AmericasMuseums-Audit/1.0",
+        })
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            d = json.loads(resp.read().decode("utf-8"))
+        # Normalize to legacy field names used below
+        return {
+            "rating": d.get("rating"),
+            "user_ratings_total": d.get("userRatingCount"),
+            "business_status": d.get("businessStatus"),
+        }
     except Exception:
         return None
 

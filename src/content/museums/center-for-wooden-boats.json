@@ -39,5 +39,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Seattle_-_Center_for_Wooden_Boats_06.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Museum_btn.png?width=800"
   ],
-  "photo_credit": "via Wikipedia / Center for Wooden Boats"
+  "photo_credit": "via Wikipedia / Center for Wooden Boats",
+  "google_place_id": "ChIJWS5bSjoVkFQRdNt1FGbm4Jo",
+  "rating_google": 4.7,
+  "review_count_google": 475,
+  "business_status": "OPERATIONAL"
 }

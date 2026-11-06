@@ -57,5 +57,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Getty_Villa_Inner_Peristyle.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Getty_Villa_SW01.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Getty Villa"
+  "photo_credit": "via Wikipedia / Getty Villa",
+  "google_place_id": "ChIJBw1wGumjwoARsKRsr2WJ-eQ",
+  "rating_google": 4.8,
+  "review_count_google": 12106,
+  "business_status": "OPERATIONAL"
 }

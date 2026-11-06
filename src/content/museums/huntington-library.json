@@ -52,5 +52,9 @@
     "https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_19_-_Echinocactus_grusonii.jpg?width=800",
     "https://commons.wikimedia.org/wiki/Special:FilePath/Lightmatter_huntington_library.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Wikimedia Commons"
+  "photo_credit": "via Wikipedia / Wikimedia Commons",
+  "google_place_id": "ChIJc1xhAk3bwoARBBlfKQzXKLM",
+  "rating_google": 4.8,
+  "review_count_google": 8599,
+  "business_status": "OPERATIONAL"
 }

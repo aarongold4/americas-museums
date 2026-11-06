@@ -56,5 +56,9 @@
     "network": "none"
   },
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg/1280px-Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "photo_credit": "via Wikimedia Commons / The Broad"
+  "photo_credit": "via Wikimedia Commons / The Broad",
+  "google_place_id": "ChIJXaYsEk3GwoARvx7RKBUE8Zg",
+  "rating_google": 4.7,
+  "review_count_google": 18406,
+  "business_status": "OPERATIONAL"
 }

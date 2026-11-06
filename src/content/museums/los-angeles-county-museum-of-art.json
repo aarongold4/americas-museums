@@ -54,5 +54,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Los_Angeles_County_Sheriff%27s_Department_Distinguished_Service_Award.png?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Patch_of_the_Los_Angeles_County_Sheriff%27s_Department.png?width=800"
   ],
-  "photo_credit": "via Wikipedia / Los Angeles County Sheriff's Department"
+  "photo_credit": "via Wikipedia / Los Angeles County Sheriff's Department",
+  "google_place_id": "ChIJsXqcyjy5woARNz6sOh0ZmwA",
+  "rating_google": 4.6,
+  "review_count_google": 21296,
+  "business_status": "OPERATIONAL"
 }

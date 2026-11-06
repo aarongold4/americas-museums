@@ -29,5 +29,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Seaport_museum_penns_landing.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/USS_Olympia_side.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Independence Seaport Museum"
+  "photo_credit": "via Wikipedia / Independence Seaport Museum",
+  "google_place_id": "ChIJHQELFJDIxokRjJJw2yGDAEc",
+  "rating_google": 4.6,
+  "review_count_google": 1869,
+  "business_status": "OPERATIONAL"
 }

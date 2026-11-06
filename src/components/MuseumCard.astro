@@ -26,21 +26,28 @@ const photoBg = swatchByDiscipline[m.discipline] ?? '#DDDDDD';
 
 const hasAffiliate = m.affiliate && m.affiliate.network !== 'none' && m.affiliate.deep_link;
 const priceLabel = m.admission_from === 0 ? 'Free' : `$${m.admission_from}`;
+const isClosed = m.business_status === 'CLOSED_TEMPORARILY' || m.business_status === 'CLOSED_PERMANENTLY';
+const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently closed' : 'Temporarily closed';
 ---
 
-<article class="card overflow-hidden grid grid-cols-[140px_1fr_180px] hover:border-surface-line2 transition-colors">
-  <a href={href} class="block bg-cover bg-center" style={`background-color: ${photoBg};`} aria-label={`View ${m.name}`}>
+<article class={`card overflow-hidden grid grid-cols-[140px_1fr_180px] hover:border-surface-line2 transition-colors ${isClosed ? 'opacity-70' : ''}`}>
+  <a href={href} class="block bg-cover bg-center relative" style={`background-color: ${photoBg};`} aria-label={`View ${m.name}`}>
     {m.hero_image ? (
       <img
         src={m.hero_image}
         alt={m.name}
-        class="h-full w-full object-cover"
+        class={`h-full w-full object-cover ${isClosed ? 'grayscale' : ''}`}
         loading="lazy"
         decoding="async"
       />
     ) : (
       <div class="h-full w-full flex items-center justify-center text-2xs tracking-wider2 text-ink-muted">
         PHOTO
+      </div>
+    )}
+    {isClosed && (
+      <div class="absolute inset-x-0 bottom-0 bg-red-700 text-white text-2xs text-center py-1 font-medium">
+        CLOSED
       </div>
     )}
   </a>
@@ -53,13 +60,14 @@ const priceLabel = m.admission_from === 0 ? 'Free' : `$${m.admission_from}`;
       {m.discipline} · {m.distance_landmark ?? `${m.city}, ${m.state}`}
     </div>
     <p class="text-xs text-ink leading-relaxed mb-2 line-clamp-2">{m.tagline}</p>
-    {m.badges && m.badges.length > 0 && (
-      <div class="flex flex-wrap gap-1.5">
-        {m.badges.map(b => (
-          <span class={`badge badge-${b.tone}`}>{b.label}</span>
-        ))}
-      </div>
-    )}
+    <div class="flex flex-wrap gap-1.5">
+      {isClosed && (
+        <span class="badge" style="background:#FEE2E2;color:#991B1B;">{closedLabel}</span>
+      )}
+      {m.badges && m.badges.map(b => (
+        <span class={`badge badge-${b.tone}`}>{b.label}</span>
+      ))}
+    </div>
   </div>
 
   <div class="p-3.5 border-l border-surface-line2 flex flex-col justify-between text-right">

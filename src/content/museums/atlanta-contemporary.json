@@ -33,5 +33,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Atlanta%2C_Georgia_Skyline.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Atlanta-metroclean.png?width=800"
   ],
-  "photo_credit": "via Wikipedia / Atlanta"
+  "photo_credit": "via Wikipedia / Atlanta",
+  "google_place_id": "ChIJ2U_VtY8E9YgRL7dEyVuNH64",
+  "rating_google": 4.6,
+  "review_count_google": 320,
+  "business_status": "OPERATIONAL"
 }

@@ -45,5 +45,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center_January_2013_001.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / California Science Center"
+  "photo_credit": "via Wikipedia / California Science Center",
+  "google_place_id": "ChIJ21yHTgjIwoARcrUbrsffOB4",
+  "rating_google": 4.7,
+  "review_count_google": 20708,
+  "business_status": "OPERATIONAL"
 }

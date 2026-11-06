@@ -54,5 +54,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Cloisters-724.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Cloisters_Chapel_%283220524245%29.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / The Cloisters"
+  "photo_credit": "via Wikipedia / The Cloisters",
+  "google_place_id": "ChIJK6bycAH0wokRrSnflfrnkZE",
+  "rating_google": 4.8,
+  "review_count_google": 9228,
+  "business_status": "OPERATIONAL"
 }

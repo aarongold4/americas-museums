@@ -43,5 +43,9 @@
     "product_name": "Tenement Museum entry"
   },
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/97_Orchard_Street_Front.jpg/1280px-97_Orchard_Street_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-  "photo_credit": "via Wikimedia Commons / Lower East Side Tenement Museum"
+  "photo_credit": "via Wikimedia Commons / Lower East Side Tenement Museum",
+  "google_place_id": "ChIJ20bVJYdZwokRhI7esP3mYM0",
+  "rating_google": 4.6,
+  "review_count_google": 6079,
+  "business_status": "OPERATIONAL"
 }

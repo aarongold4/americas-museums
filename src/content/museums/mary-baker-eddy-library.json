@@ -34,5 +34,9 @@
   "gallery_images": [
     "https://en.wikipedia.org/wiki/Special:FilePath/Exterior_of_The_Mary_Baker_Eddy_Library.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Mary Baker Eddy Library"
+  "photo_credit": "via Wikipedia / Mary Baker Eddy Library",
+  "google_place_id": "ChIJQwysYRp644kR69CDm19fMGo",
+  "rating_google": 4.5,
+  "review_count_google": 371,
+  "business_status": "OPERATIONAL"
 }

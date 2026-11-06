@@ -48,5 +48,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Barnes_Foundation_%2853574516274%29.jpg?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/Georges_Seurat_-_Models_%28Poseuses%29_-_BF811_-_Barnes_Foundation.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Barnes Foundation"
+  "photo_credit": "via Wikipedia / Barnes Foundation",
+  "google_place_id": "ChIJrcsBU8vHxokR4FXP2BplJks",
+  "rating_google": 4.7,
+  "review_count_google": 4769,
+  "business_status": "OPERATIONAL"
 }

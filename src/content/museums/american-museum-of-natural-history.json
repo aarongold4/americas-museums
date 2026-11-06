@@ -62,5 +62,9 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/American_Museum_of_Natural_History%2C_New_York_City.png?width=800",
     "https://en.wikipedia.org/wiki/Special:FilePath/American_Museum_of_Natural_History_in_Manhattan%2C_New_York_City%2C_United_States_of_America_%289860903214%29.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / American Museum of Natural History"
+  "photo_credit": "via Wikipedia / American Museum of Natural History",
+  "google_place_id": "ChIJCXoPsPRYwokRsV1MYnKBfaI",
+  "rating_google": 4.6,
+  "review_count_google": 27222,
+  "business_status": "OPERATIONAL"
 }

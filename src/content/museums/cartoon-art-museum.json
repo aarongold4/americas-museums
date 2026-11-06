@@ -26,5 +26,9 @@
   "distance_landmark": "Fisherman's Wharf, near Ghirardelli Square",
   "affiliate": {
     "network": "none"
-  }
+  },
+  "google_place_id": "ChIJWwSkVn2AhYARUQfWE_EJ9ZQ",
+  "rating_google": 4.2,
+  "review_count_google": 422,
+  "business_status": "CLOSED_TEMPORARILY"
 }

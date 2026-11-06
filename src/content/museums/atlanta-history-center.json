@@ -39,5 +39,9 @@
   "gallery_images": [
     "https://en.wikipedia.org/wiki/Special:FilePath/Atlanta_History_Center%2C_2026.jpg?width=800"
   ],
-  "photo_credit": "via Wikipedia / Atlanta History Center"
+  "photo_credit": "via Wikipedia / Atlanta History Center",
+  "google_place_id": "ChIJh_xy_YUF9YgRppRCyz5ezrU",
+  "rating_google": 4.7,
+  "review_count_google": 1222,
+  "business_status": "OPERATIONAL"
 }

@@ -37,7 +37,7 @@ export default {
       },
       fontFamily: {
         sans: ['"DM Sans Variable"', 'DM Sans', 'system-ui', 'sans-serif'],
-        display: ['"Instrument Serif"', 'Georgia', 'serif'],
+        display: ['"DM Sans Variable"', 'DM Sans', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         // tightened scale for utility/dense layouts

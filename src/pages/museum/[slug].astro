@@ -55,15 +55,21 @@ const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently cl
     </div>
   )}
 
-  <!-- Hero photo — single wide image, no cropping tricks. Gallery becomes a thumbnail row below the title block. -->
+  <!-- Photo strip: big hero left + 2×2 gallery tiles right. Heights hard-locked via inline CSS. -->
   {m.hero_image ? (
-    <div style="width:100%; background:#f4f4f0; display:flex; align-items:center; justify-content:center; max-height:420px; overflow:hidden;">
-      <img
-        src={m.hero_image}
-        alt={m.name}
-        style="width:100%; max-height:420px; object-fit:cover; object-position:center; display:block;"
-        loading="eager"
-      />
+    <div style="display:grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 190px 190px; gap:4px; padding:4px; background:#fff;">
+      <div style="grid-column:1; grid-row:1 / span 2; overflow:hidden; background:#f4f4f0;">
+        <img src={m.hero_image} alt={m.name} style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;" loading="eager" />
+      </div>
+      {[0, 1, 2, 3].map((i) => (
+        m.gallery_images && m.gallery_images[i] ? (
+          <div style="overflow:hidden; background:#f4f4f0;">
+            <img src={m.gallery_images[i]} alt="" style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;" loading="lazy" />
+          </div>
+        ) : (
+          <div style={`background-color:${photoBg}; opacity:${0.85 - i*0.08};`}></div>
+        )
+      ))}
     </div>
   ) : (
     <div style={`width:100%; height:280px; background-color:${photoBg}; display:flex; align-items:center; justify-content:center; font-size:12px; letter-spacing:0.08em; color:#6B7280; text-transform:uppercase;`}>
@@ -96,21 +102,6 @@ const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently cl
       <TicketBox museum={m} />
     </div>
   </section>
-
-  <!-- Optional gallery thumbnail row — only if we have gallery images -->
-  {m.gallery_images && m.gallery_images.length > 0 && (
-    <section class="bg-white border-b border-surface-line">
-      <div class="max-w-content mx-auto px-5 py-3">
-        <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 6px;">
-          {m.gallery_images.slice(0, 6).map((img) => (
-            <div style="aspect-ratio: 4/3; overflow:hidden; background:#f4f4f0;">
-              <img src={img} alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy" />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
 
   <!-- Quick facts strip -->
   <section class="bg-white border-b border-surface-line">

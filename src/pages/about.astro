@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavBar from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const museums = await getCollection('museums');
+const cities = await getCollection('cities');
+---
+
+<BaseLayout title="About — Americas Museums" description="About Americas Museums — an independent directory of American museums with current hours, admission, reviews, and tickets.">
+  <NavBar slot="header" />
+
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5 py-10">
+      <div class="text-2xs tracking-wider2 text-brand font-medium mb-2">ABOUT</div>
+      <h1 class="display text-4xl text-ink mb-3 leading-tight">A directory of American museums</h1>
+      <p class="text-base text-ink-muted max-w-prose">
+        An independent, no-fluff guide to {museums.length} museums across {cities.length} U.S. cities.
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-content mx-auto px-5 py-10 max-w-prose">
+    <div class="prose-editorial">
+      <h2>What this site is</h2>
+      <p>
+        A neutral travel guide to American museums. Every page shows current hours, admission prices, a review summary pulled from public ratings, and a direct ticket link where one is available. No sponsored rankings, no paid placements in the city lists.
+      </p>
+
+      <h2>How the rankings work</h2>
+      <p>
+        Museums inside each city are ranked by a weighted blend of average visitor rating and total review volume. A small, highly-rated museum doesn't automatically beat a huge, slightly-less-rated one — scale counts too, because it reflects how widely a museum is tested against real visits.
+      </p>
+
+      <h2>Where the data comes from</h2>
+      <p>
+        Opening hours, admission ranges, and visitor ratings are pulled from each museum's official site and Google's public business data. The site re-checks every museum weekly and auto-corrects any numbers that have moved.
+      </p>
+
+      <h2>How tickets work</h2>
+      <p>
+        When a "Get tickets" button appears, it links to a third-party ticket partner (GetYourGuide, Tiqets, etc.). If a museum isn't partnered with one of these, we link to the museum's own ticketing page instead. We may earn a small commission on tickets purchased through partner links, at no extra cost to you. That commission funds the site.
+      </p>
+
+      <h2>Corrections</h2>
+      <p>
+        See something wrong? Email <a href="mailto:aaron.gold4@gmail.com">aaron.gold4@gmail.com</a>. We'll fix it and re-deploy within a day.
+      </p>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

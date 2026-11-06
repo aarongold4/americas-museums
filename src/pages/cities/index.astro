@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NavBar from '../../components/NavBar.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const cities = await getCollection('cities');
+const museums = await getCollection('museums');
+
+// Count museums per city
+const countByCity: Record<string, number> = {};
+for (const m of museums) {
+  countByCity[m.data.city] = (countByCity[m.data.city] ?? 0) + 1;
+}
+
+// Sort cities alphabetically by display name
+const sorted = cities
+  .map((c) => ({
+    slug: c.slug,
+    city: c.data.city,
+    state: c.data.state,
+    count: countByCity[c.data.city] ?? 0,
+    intro: c.data.intro,
+  }))
+  .sort((a, b) => a.city.localeCompare(b.city));
+---
+
+<BaseLayout title="Museums by city — Americas Museums" description="Browse American museums by city. 9 metro areas, 107+ museums with hours, admission, and tickets.">
+  <NavBar slot="header" />
+
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5 py-10">
+      <div class="text-2xs tracking-wider2 text-brand font-medium mb-2">DIRECTORY</div>
+      <h1 class="display text-4xl text-ink mb-3 leading-tight">Browse museums by city</h1>
+      <p class="text-base text-ink-muted max-w-prose">
+        {sorted.length} cities · {museums.length} museums. Pick a city to see every museum with current hours, admission, and tickets.
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-content mx-auto px-5 py-10">
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {sorted.map((c) => (
+        <li class="card p-5 hover:border-surface-line2 transition-colors">
+          <a href={`/best-museums-in-${c.slug}/`} class="block">
+            <div class="text-lg font-medium text-brand mb-1">{c.city}, {c.state}</div>
+            <div class="text-xs text-ink-muted mb-2">{c.count} museums</div>
+            <p class="text-sm text-ink leading-relaxed line-clamp-3">{c.intro}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

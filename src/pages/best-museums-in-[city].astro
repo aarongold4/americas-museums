@@ -63,13 +63,27 @@ const freeCount = validMuseums.filter((m) => m.data.admission_from === 0).length
     </div>
   </section>
 
-  <!-- Filter strip (booking-style) — placeholder, JS comes later -->
+  <!-- Filter strip -->
   <div class="bg-white border-b border-surface-line sticky top-0 z-10">
-    <div class="max-w-content mx-auto px-5 py-2.5 flex items-center gap-1.5 text-xs flex-wrap">
-      <span class="badge badge-warn">{city.data.city} · {validMuseums.length} results</span>
-      <button class="filter-chip">All types ▾</button>
-      <button class="filter-chip">Open today ▾</button>
-      <button class="filter-chip">Sort: top rated ▾</button>
+    <div class="max-w-content mx-auto px-5 py-2.5 flex items-center gap-2 text-sm flex-wrap">
+      <span class="badge badge-warn" id="result-count">{city.data.city} · {validMuseums.length} results</span>
+      <select id="filter-type" class="filter-chip border border-surface-line rounded px-2 py-1 cursor-pointer bg-white">
+        <option value="">All types</option>
+        {[...new Set(validMuseums.map(m => m.data.discipline))].sort().map(d => (
+          <option value={d}>{d}</option>
+        ))}
+      </select>
+      <select id="filter-price" class="filter-chip border border-surface-line rounded px-2 py-1 cursor-pointer bg-white">
+        <option value="">Any admission</option>
+        <option value="free">Free only</option>
+        <option value="under20">Under $20</option>
+      </select>
+      <select id="sort-by" class="filter-chip border border-surface-line rounded px-2 py-1 cursor-pointer bg-white">
+        <option value="rated">Sort: top rated</option>
+        <option value="popular">Sort: most reviewed</option>
+        <option value="price-asc">Sort: price low→high</option>
+        <option value="name">Sort: A→Z</option>
+      </select>
     </div>
   </div>
 
@@ -81,14 +95,72 @@ const freeCount = validMuseums.filter((m) => m.data.admission_from === 0).length
   <!-- Results -->
   <section class="max-w-content mx-auto px-5 pb-12">
     <h2 class="sr-only">The ranking</h2>
-    <ol class="space-y-2.5" role="list">
+    <ol id="museum-list" class="space-y-2.5" role="list">
       {validMuseums.map((m, i) => (
-        <li>
+        <li
+          data-discipline={m.data.discipline}
+          data-admission={m.data.admission_from ?? 0}
+          data-rating={m.data.rating ?? 0}
+          data-reviews={m.data.review_count ?? 0}
+          data-name={m.data.name}
+        >
           <MuseumCard museum={m} rank={i + 1} />
         </li>
       ))}
     </ol>
   </section>
+
+  <script is:inline>
+    (function() {
+      const list = document.getElementById('museum-list');
+      const typeSel = document.getElementById('filter-type');
+      const priceSel = document.getElementById('filter-price');
+      const sortSel = document.getElementById('sort-by');
+      const countEl = document.getElementById('result-count');
+      if (!list) return;
+
+      const items = Array.from(list.children);
+      const originalText = countEl ? countEl.textContent : '';
+      const cityName = originalText.split('·')[0].trim();
+
+      function apply() {
+        const type = typeSel.value;
+        const price = priceSel.value;
+        const sort = sortSel.value;
+
+        // Filter
+        let visible = items.filter(li => {
+          if (type && li.dataset.discipline !== type) return false;
+          const adm = parseFloat(li.dataset.admission);
+          if (price === 'free' && adm !== 0) return false;
+          if (price === 'under20' && adm >= 20) return false;
+          return true;
+        });
+
+        // Sort
+        visible.sort((a, b) => {
+          if (sort === 'rated') return parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating);
+          if (sort === 'popular') return parseInt(b.dataset.reviews) - parseInt(a.dataset.reviews);
+          if (sort === 'price-asc') return parseFloat(a.dataset.admission) - parseFloat(b.dataset.admission);
+          if (sort === 'name') return a.dataset.name.localeCompare(b.dataset.name);
+          return 0;
+        });
+
+        // Hide all, then show visible in order
+        items.forEach(li => li.style.display = 'none');
+        visible.forEach(li => {
+          li.style.display = '';
+          list.appendChild(li);
+        });
+
+        if (countEl) countEl.textContent = `${cityName} · ${visible.length} result${visible.length === 1 ? '' : 's'}`;
+      }
+
+      typeSel.addEventListener('change', apply);
+      priceSel.addEventListener('change', apply);
+      sortSel.addEventListener('change', apply);
+    })();
+  </script>
 
   <Footer slot="footer" />
 </BaseLayout>

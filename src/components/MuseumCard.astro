@@ -70,10 +70,10 @@ const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently cl
     </div>
   </div>
 
-  <div class="p-3.5 border-l border-surface-line2 flex flex-col justify-between text-right">
+  <div class="p-3.5 border-l border-surface-line2 flex flex-col justify-between text-left">
     <div>
       {m.rating && (
-        <div class="flex items-center gap-1.5 justify-end mb-1">
+        <div class="flex items-center gap-1.5 justify-start mb-1">
           <span class="rating-pill">{m.rating.toFixed(1)}</span>
           {m.review_label && <span class="text-xs">{m.review_label}</span>}
         </div>

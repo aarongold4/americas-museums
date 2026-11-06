@@ -57,23 +57,23 @@ const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently cl
 
   <!-- Photo strip — uses hero + gallery_images if present, else discipline-colored swatches -->
   {m.hero_image ? (
-    <div class="grid grid-cols-[2fr_1fr_1fr] gap-1 p-1">
-      <div class="h-[220px] overflow-hidden">
+    <div class="grid grid-cols-[2fr_1fr_1fr] gap-1 p-1 h-[360px]">
+      <div class="h-full overflow-hidden">
         <img src={m.hero_image} alt={m.name} class="h-full w-full object-cover" loading="eager" />
       </div>
-      <div class="grid grid-rows-2 gap-1">
+      <div class="grid grid-rows-2 gap-1 h-full">
         {[0, 1].map((i) => (
           m.gallery_images[i] ? (
-            <img src={m.gallery_images[i]} alt="" class="h-full w-full object-cover" loading="lazy" />
+            <div class="overflow-hidden"><img src={m.gallery_images[i]} alt="" class="h-full w-full object-cover" loading="lazy" /></div>
           ) : (
             <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: ${0.85 - i * 0.15};`}></div>
           )
         ))}
       </div>
-      <div class="grid grid-rows-2 gap-1">
+      <div class="grid grid-rows-2 gap-1 h-full">
         {[2, 3].map((i) => (
           m.gallery_images[i] ? (
-            <img src={m.gallery_images[i]} alt="" class="h-full w-full object-cover" loading="lazy" />
+            <div class="overflow-hidden"><img src={m.gallery_images[i]} alt="" class="h-full w-full object-cover" loading="lazy" /></div>
           ) : (
             <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: ${0.65 - (i-2) * 0.10};`}></div>
           )

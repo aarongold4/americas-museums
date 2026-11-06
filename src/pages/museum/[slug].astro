@@ -55,42 +55,29 @@ const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently cl
     </div>
   )}
 
-  <!-- Photo strip — uses hero + gallery_images if present, else discipline-colored swatches -->
+  <!-- Photo strip — inline styles so grid heights actually take effect -->
   {m.hero_image ? (
-    <div class="grid grid-cols-[2fr_1fr_1fr] gap-1 p-1 h-[360px]">
-      <div class="h-full overflow-hidden">
-        <img src={m.hero_image} alt={m.name} class="h-full w-full object-cover" loading="eager" />
+    <div style="display:grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 180px 180px; gap: 4px; padding: 4px;">
+      <div style="grid-column: 1; grid-row: 1 / 3; overflow: hidden;">
+        <img src={m.hero_image} alt={m.name} style="width:100%; height:100%; object-fit: cover; display:block;" loading="eager" />
       </div>
-      <div class="grid grid-rows-2 gap-1 h-full">
-        {[0, 1].map((i) => (
-          m.gallery_images[i] ? (
-            <div class="overflow-hidden"><img src={m.gallery_images[i]} alt="" class="h-full w-full object-cover" loading="lazy" /></div>
-          ) : (
-            <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: ${0.85 - i * 0.15};`}></div>
-          )
-        ))}
-      </div>
-      <div class="grid grid-rows-2 gap-1 h-full">
-        {[2, 3].map((i) => (
-          m.gallery_images[i] ? (
-            <div class="overflow-hidden"><img src={m.gallery_images[i]} alt="" class="h-full w-full object-cover" loading="lazy" /></div>
-          ) : (
-            <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: ${0.65 - (i-2) * 0.10};`}></div>
-          )
-        ))}
-      </div>
+      {[0, 1, 2, 3].map((i) => (
+        m.gallery_images[i] ? (
+          <div style="overflow: hidden;">
+            <img src={m.gallery_images[i]} alt="" style="width:100%; height:100%; object-fit: cover; display:block;" loading="lazy" />
+          </div>
+        ) : (
+          <div style={`display:flex; align-items:center; justify-content:center; font-size:11px; letter-spacing:0.08em; color:#6B7280; background-color:${photoBg}; opacity:${0.85 - i * 0.1};`}></div>
+        )
+      ))}
     </div>
   ) : (
-    <div class="grid grid-cols-[2fr_1fr_1fr] gap-1 p-1">
-      <div class="h-[220px] flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg};`}>FACADE</div>
-      <div class="grid grid-rows-2 gap-1">
-        <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: 0.85;`}>GALLERY</div>
-        <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: 0.7;`}>INTERIOR</div>
-      </div>
-      <div class="grid grid-rows-2 gap-1">
-        <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: 0.65;`}>EXHIBIT</div>
-        <div class="flex items-center justify-center text-2xs tracking-wider2 text-ink-muted" style={`background-color: ${photoBg}; opacity: 0.55;`}>+ photos</div>
-      </div>
+    <div style="display:grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 180px 180px; gap: 4px; padding: 4px;">
+      <div style={`grid-column: 1; grid-row: 1 / 3; background-color:${photoBg}; display:flex; align-items:center; justify-content:center; font-size:11px; letter-spacing:0.08em; color:#6B7280;`}>FACADE</div>
+      <div style={`background-color:${photoBg}; opacity:0.85; display:flex; align-items:center; justify-content:center; font-size:11px; letter-spacing:0.08em; color:#6B7280;`}>GALLERY</div>
+      <div style={`background-color:${photoBg}; opacity:0.65; display:flex; align-items:center; justify-content:center; font-size:11px; letter-spacing:0.08em; color:#6B7280;`}>EXHIBIT</div>
+      <div style={`background-color:${photoBg}; opacity:0.7; display:flex; align-items:center; justify-content:center; font-size:11px; letter-spacing:0.08em; color:#6B7280;`}>INTERIOR</div>
+      <div style={`background-color:${photoBg}; opacity:0.55; display:flex; align-items:center; justify-content:center; font-size:11px; letter-spacing:0.08em; color:#6B7280;`}>+ photos</div>
     </div>
   )}
 

@@ -7,9 +7,8 @@
   "lng": -71.0466,
   "discipline": "Art",
   "founded": 1936,
-  "rating": 8.5,
-  "review_count": 5400,
-  "review_label": "Excellent",
+  "rating": 4.4,
+  "review_count": 4565,
   "admission_from": 20,
   "admission_text": "general admission",
   "tagline": "Diller Scofidio + Renfro cantilever over Boston Harbor. Strong rotating shows.",
@@ -33,7 +32,5 @@
   "hero_image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Institute_of_Contemporary_Art%2C_Boston.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "photo_credit": "via Wikimedia Commons / Institute of Contemporary Art, Boston",
   "google_place_id": "ChIJxTCEOnlw44kROtPtIpMFsXo",
-  "rating_google": 4.4,
-  "review_count_google": 4565,
   "business_status": "OPERATIONAL"
 }

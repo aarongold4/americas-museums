@@ -7,9 +7,8 @@
   "lng": -73.974,
   "discipline": "History",
   "founded": 1804,
-  "rating": 8.5,
-  "review_count": 6800,
-  "review_label": "Excellent",
+  "rating": 4.5,
+  "review_count": 806,
   "admission_from": 22,
   "admission_text": "general admission",
   "tagline": "The city's oldest museum. Tiffany lamps, Audubon originals, founding-era documents.",
@@ -55,7 +54,5 @@
   ],
   "photo_credit": "via Wikipedia / New York Historical",
   "google_place_id": "ChIJIVEyfY5YwokRXqcWLrl5XVA",
-  "rating_google": 4.5,
-  "review_count_google": 806,
   "business_status": "OPERATIONAL"
 }

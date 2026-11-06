@@ -7,9 +7,8 @@
   "lng": -84.3265,
   "discipline": "Natural History",
   "founded": 1992,
-  "rating": 8.8,
-  "review_count": 5800,
-  "review_label": "Excellent",
+  "rating": 4.5,
+  "review_count": 9101,
   "admission_from": 27,
   "admission_text": "general admission",
   "tagline": "Argentinosaurus and Giganotosaurus mounts in the Atrium. Plus 75 acres of forest.",
@@ -43,7 +42,5 @@
   ],
   "photo_credit": "via Wikipedia / Fernbank Museum of Natural History",
   "google_place_id": "ChIJQTC3DsEG9YgRoHJUUKVsK94",
-  "rating_google": 4.5,
-  "review_count_google": 9101,
   "business_status": "OPERATIONAL"
 }

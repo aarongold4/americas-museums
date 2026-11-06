@@ -7,9 +7,8 @@
   "lng": -71.0879,
   "discipline": "Science",
   "founded": 1971,
-  "rating": 8.7,
-  "review_count": 2300,
-  "review_label": "Excellent",
+  "rating": 4.4,
+  "review_count": 4129,
   "admission_from": 18,
   "admission_text": "general admission",
   "tagline": "MIT's research and engineering museum, reopened 2022 in Kendall Square.",
@@ -32,7 +31,5 @@
   ],
   "photo_credit": "via Wikipedia / MIT Museum",
   "google_place_id": "ChIJ70CL0VR344kRbXPCPEErqMs",
-  "rating_google": 4.4,
-  "review_count_google": 4129,
   "business_status": "OPERATIONAL"
 }

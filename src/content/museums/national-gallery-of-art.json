@@ -7,9 +7,8 @@
   "lng": -77.02,
   "discipline": "Art",
   "founded": 1937,
-  "rating": 9.4,
-  "review_count": 47000,
-  "review_label": "Wonderful",
+  "rating": 4.8,
+  "review_count": 20896,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "The only Leonardo painting in the Americas, a free Calder mobile, a sculpture garden.",
@@ -54,7 +53,5 @@
   ],
   "photo_credit": "via Wikimedia Commons / National Gallery of Art",
   "google_place_id": "ChIJSYxSO5u3t4kRm4eyKw_Y7Kg",
-  "rating_google": 4.8,
-  "review_count_google": 20896,
   "business_status": "OPERATIONAL"
 }

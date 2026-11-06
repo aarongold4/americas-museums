@@ -7,9 +7,8 @@
   "lng": -84.4111,
   "discipline": "Art",
   "founded": 1973,
-  "rating": 8.4,
-  "review_count": 920,
-  "review_label": "Excellent",
+  "rating": 4.6,
+  "review_count": 320,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "Free, non-collecting contemporary art. Strong Atlanta-artist focus.",
@@ -35,7 +34,5 @@
   ],
   "photo_credit": "via Wikipedia / Atlanta",
   "google_place_id": "ChIJ2U_VtY8E9YgRL7dEyVuNH64",
-  "rating_google": 4.6,
-  "review_count_google": 320,
   "business_status": "OPERATIONAL"
 }

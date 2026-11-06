@@ -7,9 +7,8 @@
   "lng": -75.1503,
   "discipline": "History",
   "founded": 1976,
-  "rating": 8.5,
-  "review_count": 1700,
-  "review_label": "Excellent",
+  "rating": 4.3,
+  "review_count": 1520,
   "admission_from": 14,
   "admission_text": "general admission",
   "tagline": "The first major US museum dedicated to African American history. Built for the 1976 Bicentennial.",
@@ -29,7 +28,5 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/African_American_Museum_in_Philadelphia_%28AAMP%29_%2853572937450%29.jpg?width=800"
   ],
   "google_place_id": "ChIJFboBgoHIxokR6ZnVDx3qDYY",
-  "rating_google": 4.3,
-  "review_count_google": 1520,
   "business_status": "OPERATIONAL"
 }

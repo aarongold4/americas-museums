@@ -7,9 +7,8 @@
   "lng": -87.617,
   "discipline": "Natural History",
   "founded": 1893,
-  "rating": 9.0,
-  "review_count": 52107,
-  "review_label": "Wonderful",
+  "rating": 4.7,
+  "review_count": 32327,
   "admission_from": 28,
   "admission_text": "general admission",
   "hours_summary": "Mon–Sun · 9 AM – 5 PM",
@@ -69,7 +68,5 @@
   ],
   "photo_credit": "via Wikipedia / Field Museum of Natural History",
   "google_place_id": "ChIJV0AwM30rDogR2sd-X0cgErU",
-  "rating_google": 4.7,
-  "review_count_google": 32327,
   "business_status": "OPERATIONAL"
 }

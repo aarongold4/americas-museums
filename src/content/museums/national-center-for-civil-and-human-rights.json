@@ -7,9 +7,8 @@
   "lng": -84.3927,
   "discipline": "History",
   "founded": 2014,
-  "rating": 9.2,
-  "review_count": 5400,
-  "review_label": "Wonderful",
+  "rating": 4.8,
+  "review_count": 4044,
   "admission_from": 21,
   "admission_text": "general admission",
   "tagline": "The American civil rights movement and its global descendants. Sit-in simulator.",
@@ -42,7 +41,5 @@
   ],
   "photo_credit": "via Wikipedia / National Center for Civil and Human Rights",
   "google_place_id": "ChIJPRzoQ4AE9YgRqgunUXVptj4",
-  "rating_google": 4.8,
-  "review_count_google": 4044,
   "business_status": "OPERATIONAL"
 }

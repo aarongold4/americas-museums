@@ -7,9 +7,8 @@
   "lng": -75.2063,
   "discipline": "Children",
   "founded": 1976,
-  "rating": 8.7,
-  "review_count": 7100,
-  "review_label": "Excellent",
+  "rating": 4.6,
+  "review_count": 7402,
   "admission_from": 24,
   "admission_text": "general admission",
   "tagline": "Philadelphia's children's museum, in the 1876 Centennial Memorial Hall.",
@@ -38,7 +37,5 @@
   ],
   "photo_credit": "via Wikipedia / Please Touch Museum",
   "google_place_id": "ChIJ0XuDVzTGxokRL_W5oMGr3u8",
-  "rating_google": 4.6,
-  "review_count_google": 7402,
   "business_status": "OPERATIONAL"
 }

@@ -7,9 +7,8 @@
   "lng": -84.326,
   "discipline": "Art",
   "founded": 1876,
-  "rating": 8.7,
-  "review_count": 1100,
-  "review_label": "Excellent",
+  "rating": 4.8,
+  "review_count": 944,
   "admission_from": 8,
   "admission_text": "general admission",
   "tagline": "Emory's antiquities museum. Strong Egyptian, Greek, Roman collections.",
@@ -31,7 +30,5 @@
   ],
   "photo_credit": "via Wikimedia Commons / Michael C. Carlos Museum",
   "google_place_id": "ChIJf8bYMPAG9YgRVIfAhGW8nOE",
-  "rating_google": 4.8,
-  "review_count_google": 944,
   "business_status": "OPERATIONAL"
 }

@@ -7,9 +7,8 @@
   "lng": -122.3252,
   "discipline": "Art",
   "founded": 1952,
-  "rating": 8.5,
-  "review_count": 1300,
-  "review_label": "Excellent",
+  "rating": 4.6,
+  "review_count": 1869,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "Free art museum. Strong 19th-century German painting, contemporary rotations.",
@@ -33,7 +32,5 @@
   ],
   "photo_credit": "via Wikipedia / Frye Art Museum",
   "google_place_id": "ChIJEWIFw7dqkFQRDw3cK6AcdXA",
-  "rating_google": 4.6,
-  "review_count_google": 1869,
   "business_status": "OPERATIONAL"
 }

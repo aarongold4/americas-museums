@@ -7,9 +7,8 @@
   "lng": -77.0259,
   "discipline": "Specialized",
   "founded": 2002,
-  "rating": 8.7,
-  "review_count": 24000,
-  "review_label": "Excellent",
+  "rating": 4.4,
+  "review_count": 18276,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "The largest collection of international espionage artifacts on public display.",
@@ -38,7 +37,5 @@
   ],
   "photo_credit": "via Wikipedia / 2019 International Spy Museum 03.jpg",
   "google_place_id": "ChIJ7Y9_SpC3t4kRNidcpxFnLy0",
-  "rating_google": 4.4,
-  "review_count_google": 18276,
   "business_status": "OPERATIONAL"
 }

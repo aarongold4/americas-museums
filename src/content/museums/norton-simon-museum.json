@@ -7,9 +7,8 @@
   "lng": -118.1605,
   "discipline": "Art",
   "founded": 1969,
-  "rating": 9.1,
-  "review_count": 7800,
-  "review_label": "Wonderful",
+  "rating": 4.8,
+  "review_count": 3533,
   "admission_from": 20,
   "admission_text": "general admission",
   "tagline": "Pasadena's quietly world-class painting collection. Often empty.",
@@ -50,7 +49,5 @@
   ],
   "photo_credit": "via Wikipedia / Norton Simon Museum",
   "google_place_id": "ChIJkZW6A57DwoARxn42TuWiIpI",
-  "rating_google": 4.8,
-  "review_count_google": 3533,
   "business_status": "OPERATIONAL"
 }

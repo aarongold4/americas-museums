@@ -7,9 +7,8 @@
   "lng": -122.404,
   "discipline": "Art",
   "founded": 1984,
-  "rating": 8.4,
-  "review_count": 1900,
-  "review_label": "Excellent",
+  "rating": 4.2,
+  "review_count": 722,
   "admission_from": 16,
   "admission_text": "general admission",
   "tagline": "Daniel Libeskind addition grafted onto a brick power substation.",
@@ -31,7 +30,5 @@
   ],
   "photo_credit": "via Wikipedia / Contemporary Jewish Museum",
   "google_place_id": "ChIJQ4ofxYeAhYARnLQjgdsj76k",
-  "rating_google": 4.2,
-  "review_count_google": 722,
   "business_status": "CLOSED_TEMPORARILY"
 }

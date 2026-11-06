@@ -7,9 +7,8 @@
   "lng": -73.9776,
   "discipline": "Art",
   "founded": 1929,
-  "rating": 9.2,
-  "review_count": 65000,
-  "review_label": "Wonderful",
+  "rating": 4.6,
+  "review_count": 61580,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "Van Gogh's Starry Night, Picasso's Demoiselles, Dalí's Persistence of Memory.",
@@ -56,7 +55,5 @@
   ],
   "photo_credit": "via Wikimedia Commons / Museum of Modern Art",
   "google_place_id": "ChIJKxDbe_lYwokRVf__s8CPn-o",
-  "rating_google": 4.6,
-  "review_count_google": 61580,
   "business_status": "OPERATIONAL"
 }

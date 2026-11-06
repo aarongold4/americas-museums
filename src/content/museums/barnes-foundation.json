@@ -7,9 +7,8 @@
   "lng": -75.1727,
   "discipline": "Art",
   "founded": 1922,
-  "rating": 9.3,
-  "review_count": 12000,
-  "review_label": "Wonderful",
+  "rating": 4.7,
+  "review_count": 4769,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "The largest single Renoir collection in the world. Hung exactly as Albert Barnes arranged it.",
@@ -50,7 +49,5 @@
   ],
   "photo_credit": "via Wikipedia / Barnes Foundation",
   "google_place_id": "ChIJrcsBU8vHxokR4FXP2BplJks",
-  "rating_google": 4.7,
-  "review_count_google": 4769,
   "business_status": "OPERATIONAL"
 }

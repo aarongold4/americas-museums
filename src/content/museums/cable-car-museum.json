@@ -7,9 +7,8 @@
   "lng": -122.4117,
   "discipline": "History",
   "founded": 1974,
-  "rating": 9.0,
-  "review_count": 4000,
-  "review_label": "Wonderful",
+  "rating": 4.7,
+  "review_count": 7237,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "The actual working power station that pulls every cable car in the city.",
@@ -42,7 +41,5 @@
     "https://en.wikipedia.org/wiki/Special:FilePath/Cable_car_21_in_the_carbarn%2C_June_2017.JPG?width=800"
   ],
   "google_place_id": "ChIJX1oMlvKAhYARNZquwetszd8",
-  "rating_google": 4.7,
-  "review_count_google": 7237,
   "business_status": "OPERATIONAL"
 }

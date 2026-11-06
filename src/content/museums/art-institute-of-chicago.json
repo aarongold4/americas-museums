@@ -8,9 +8,8 @@
   "lng": -87.6237,
   "discipline": "Art",
   "founded": 1879,
-  "rating": 9.2,
-  "review_count": 86432,
-  "review_label": "Wonderful",
+  "rating": 4.8,
+  "review_count": 38835,
   "admission_from": 32,
   "admission_text": "general admission",
   "hours_summary": "Mon–Sun · 11 AM – 5 PM (Thu until 8 PM)",
@@ -70,7 +69,5 @@
   ],
   "photo_credit": "via Wikipedia / Art Institute of Chicago",
   "google_place_id": "ChIJlUbZ4qMsDogR3tCinMzzKUg",
-  "rating_google": 4.8,
-  "review_count_google": 38835,
   "business_status": "OPERATIONAL"
 }

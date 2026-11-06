@@ -7,9 +7,8 @@
   "lng": -71.1148,
   "discipline": "Specialized",
   "founded": 1866,
-  "rating": 8.5,
-  "review_count": 1600,
-  "review_label": "Excellent",
+  "rating": 4.6,
+  "review_count": 688,
   "admission_from": 15,
   "admission_text": "general admission",
   "tagline": "Harvard's anthropology museum. Maya, Indigenous American, Pacific collections.",
@@ -31,7 +30,5 @@
   ],
   "photo_credit": "via Wikipedia / Peabody Museum of Archaeology and Ethnology",
   "google_place_id": "ChIJl-Ne0UZ344kReNiRcqmdChI",
-  "rating_google": 4.6,
-  "review_count_google": 688,
   "business_status": "OPERATIONAL"
 }

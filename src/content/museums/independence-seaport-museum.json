@@ -7,9 +7,8 @@
   "lng": -75.141,
   "discipline": "History",
   "founded": 1961,
-  "rating": 8.5,
-  "review_count": 2400,
-  "review_label": "Excellent",
+  "rating": 4.6,
+  "review_count": 1869,
   "admission_from": 20,
   "admission_text": "general admission",
   "tagline": "The cruiser Olympia (1892) and submarine Becuna (WWII), with the Seaport Museum.",
@@ -31,7 +30,5 @@
   ],
   "photo_credit": "via Wikipedia / Independence Seaport Museum",
   "google_place_id": "ChIJHQELFJDIxokRjJJw2yGDAEc",
-  "rating_google": 4.6,
-  "review_count_google": 1869,
   "business_status": "OPERATIONAL"
 }

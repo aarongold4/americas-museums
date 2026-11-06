@@ -7,9 +7,8 @@
   "lng": -122.4316,
   "discipline": "History",
   "founded": 2011,
-  "rating": 8.7,
-  "review_count": 760,
-  "review_label": "Excellent",
+  "rating": 4.6,
+  "review_count": 519,
   "admission_from": 5,
   "admission_text": "general admission",
   "tagline": "The country's first LGBTQ history museum, in the heart of the Castro.",
@@ -29,7 +28,5 @@
   ],
   "photo_credit": "via Wikipedia / GLBT Historical Society",
   "google_place_id": "ChIJiaELzAR-j4ARq0FRvpCYv1Q",
-  "rating_google": 4.6,
-  "review_count_google": 519,
   "business_status": "OPERATIONAL"
 }

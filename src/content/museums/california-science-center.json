@@ -7,9 +7,8 @@
   "lng": -118.2864,
   "discipline": "Science",
   "founded": 1951,
-  "rating": 9.0,
-  "review_count": 22000,
-  "review_label": "Wonderful",
+  "rating": 4.7,
+  "review_count": 20708,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "Permanent home of the Space Shuttle Endeavour. Always free.",
@@ -47,7 +46,5 @@
   ],
   "photo_credit": "via Wikipedia / California Science Center",
   "google_place_id": "ChIJ21yHTgjIwoARcrUbrsffOB4",
-  "rating_google": 4.7,
-  "review_count_google": 20708,
   "business_status": "OPERATIONAL"
 }

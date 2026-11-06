@@ -7,9 +7,8 @@
   "lng": -84.3536,
   "discipline": "History",
   "founded": 1986,
-  "rating": 8.7,
-  "review_count": 3400,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 731,
   "admission_from": 12,
   "admission_text": "general admission",
   "tagline": "The 39th president's archive, on a hilltop east of downtown.",
@@ -30,7 +29,5 @@
   ],
   "photo_credit": "via Wikipedia / Jimmy Carter Library and Museum",
   "google_place_id": "ChIJn0vJlwIE9YgRHxlkBZq4_v8",
-  "rating_google": 4.7,
-  "review_count_google": 731,
   "business_status": "OPERATIONAL"
 }

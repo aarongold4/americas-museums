@@ -7,9 +7,8 @@
   "lng": -118.3614,
   "discipline": "Specialized",
   "founded": 1994,
-  "rating": 8.8,
-  "review_count": 12500,
-  "review_label": "Excellent",
+  "rating": 4.8,
+  "review_count": 14227,
   "admission_from": 21,
   "admission_text": "general admission",
   "tagline": "Four floors of cars, a Hollywood vehicles wing, and a vault tour.",
@@ -44,7 +43,5 @@
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Petersen_Automotive_Museum.jpg/1280px-Petersen_Automotive_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "photo_credit": "via Wikimedia Commons / Petersen Automotive Museum",
   "google_place_id": "ChIJaRbaXjy5woARERNJSyktTog",
-  "rating_google": 4.8,
-  "review_count_google": 14227,
   "business_status": "OPERATIONAL"
 }

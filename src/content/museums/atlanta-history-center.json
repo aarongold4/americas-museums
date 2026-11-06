@@ -7,9 +7,8 @@
   "lng": -84.3879,
   "discipline": "History",
   "founded": 1926,
-  "rating": 9.0,
-  "review_count": 5400,
-  "review_label": "Wonderful",
+  "rating": 4.7,
+  "review_count": 1222,
   "admission_from": 24,
   "admission_text": "general admission",
   "tagline": "The Battle of Atlanta cyclorama (1886), one of only two surviving in the US.",
@@ -41,7 +40,5 @@
   ],
   "photo_credit": "via Wikipedia / Atlanta History Center",
   "google_place_id": "ChIJh_xy_YUF9YgRppRCyz5ezrU",
-  "rating_google": 4.7,
-  "review_count_google": 1222,
   "business_status": "OPERATIONAL"
 }

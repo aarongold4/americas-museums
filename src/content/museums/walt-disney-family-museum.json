@@ -7,9 +7,8 @@
   "lng": -122.4566,
   "discipline": "Specialized",
   "founded": 2009,
-  "rating": 9.1,
-  "review_count": 4500,
-  "review_label": "Wonderful",
+  "rating": 4.6,
+  "review_count": 4262,
   "admission_from": 25,
   "admission_text": "general admission",
   "tagline": "The full personal and professional life of Walt Disney, in the Presidio.",
@@ -32,7 +31,5 @@
   ],
   "photo_credit": "via Wikipedia / Walt Disney Family Museum",
   "google_place_id": "ChIJ5f7ZKtiGhYAR9WaYFS6bH1U",
-  "rating_google": 4.6,
-  "review_count_google": 4262,
   "business_status": "OPERATIONAL"
 }

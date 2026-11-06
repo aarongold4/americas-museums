@@ -7,9 +7,8 @@
   "lng": -77.0327,
   "discipline": "History",
   "founded": 2016,
-  "rating": 9.4,
-  "review_count": 40000,
-  "review_label": "Wonderful",
+  "rating": 4.8,
+  "review_count": 31122,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "The Smithsonian's African American history museum. Plan a full visit.",
@@ -49,7 +48,5 @@
   "hero_image": "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_in_February_2020.jpg?width=1000",
   "photo_credit": "via Wikipedia / National Museum of African American History and Culture in February 2020.jpg",
   "google_place_id": "ChIJF4Mpspi3t4kRBi9jWNebAZg",
-  "rating_google": 4.8,
-  "review_count_google": 31122,
   "business_status": "OPERATIONAL"
 }

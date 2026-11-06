@@ -7,9 +7,8 @@
   "lng": -71.1144,
   "discipline": "Art",
   "founded": 1895,
-  "rating": 8.9,
-  "review_count": 8500,
-  "review_label": "Excellent",
+  "rating": 4.8,
+  "review_count": 3908,
   "admission_from": 20,
   "admission_text": "general admission",
   "tagline": "Three Harvard collections in one Renzo Piano building. Free for everyone since 2022.",
@@ -36,7 +35,5 @@
   ],
   "photo_credit": "via Wikipedia / Harvard Art Museums",
   "google_place_id": "ChIJbaeXiER344kRR_f4e89EQuM",
-  "rating_google": 4.8,
-  "review_count_google": 3908,
   "business_status": "OPERATIONAL"
 }

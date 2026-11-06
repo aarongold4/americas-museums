@@ -7,9 +7,8 @@
   "lng": -75.1494,
   "discipline": "History",
   "founded": 2003,
-  "rating": 9.0,
-  "review_count": 7800,
-  "review_label": "Wonderful",
+  "rating": 4.6,
+  "review_count": 2731,
   "admission_from": 16,
   "admission_text": "general admission",
   "tagline": "The only museum dedicated to the U.S. Constitution.",
@@ -37,7 +36,5 @@
   ],
   "photo_credit": "via Wikimedia Commons / National Constitution Center",
   "google_place_id": "ChIJZ3LgS4HIxokRct8iqCzISOY",
-  "rating_google": 4.6,
-  "review_count_google": 2731,
   "business_status": "OPERATIONAL"
 }

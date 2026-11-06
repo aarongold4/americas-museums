@@ -7,9 +7,8 @@
   "lng": -71.0494,
   "discipline": "Children",
   "founded": 1913,
-  "rating": 8.7,
-  "review_count": 7400,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 6790,
   "admission_from": 22,
   "admission_text": "general admission",
   "tagline": "The country's second-oldest children's museum. Best for under-10s.",
@@ -44,7 +43,5 @@
   ],
   "photo_credit": "via Wikipedia / Boston Children's Museum (54960643491).jpg",
   "google_place_id": "ChIJ3wdaBoBw44kRw03LAexT5_c",
-  "rating_google": 4.7,
-  "review_count_google": 6790,
   "business_status": "OPERATIONAL"
 }

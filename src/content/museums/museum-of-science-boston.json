@@ -7,9 +7,8 @@
   "lng": -71.0708,
   "discipline": "Science",
   "founded": 1830,
-  "rating": 8.8,
-  "review_count": 21000,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 23692,
   "admission_from": 31,
   "admission_text": "general admission",
   "tagline": "One of America's oldest science museums. Lightning shows, IMAX, planetarium.",
@@ -44,7 +43,5 @@
   ],
   "photo_credit": "via Wikipedia / Boston",
   "google_place_id": "ChIJLxyMQZZw44kRxTZwZ5PGulc",
-  "rating_google": 4.7,
-  "review_count_google": 23692,
   "business_status": "OPERATIONAL"
 }

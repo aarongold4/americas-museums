@@ -7,9 +7,8 @@
   "lng": -84.3801,
   "discipline": "History",
   "founded": 1978,
-  "rating": 8.5,
-  "review_count": 850,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 633,
   "admission_from": 8,
   "admission_text": "general admission",
   "tagline": "African American Panoramic Experience. On Auburn Avenue, the historic Sweet Auburn district.",
@@ -24,7 +23,5 @@
     "product_name": "APEX Museum entry"
   },
   "google_place_id": "ChIJp3TRAYkD9YgROwWFdqNufKg",
-  "rating_google": 4.7,
-  "review_count_google": 633,
   "business_status": "OPERATIONAL"
 }

@@ -7,9 +7,8 @@
   "lng": -73.9636,
   "discipline": "Art",
   "founded": 1895,
-  "rating": 8.7,
-  "review_count": 16000,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 10501,
   "admission_from": 20,
   "admission_text": "general admission",
   "tagline": "Strong Egyptian, feminist, and American collections in a McKim Mead & White building.",
@@ -56,7 +55,5 @@
   ],
   "photo_credit": "via Wikipedia / Brooklyn Museum",
   "google_place_id": "ChIJyTmcRApbwokR-oXJRqpVI8Y",
-  "rating_google": 4.7,
-  "review_count_google": 10501,
   "business_status": "OPERATIONAL"
 }

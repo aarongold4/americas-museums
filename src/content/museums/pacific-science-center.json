@@ -7,9 +7,8 @@
   "lng": -122.3514,
   "discipline": "Science",
   "founded": 1962,
-  "rating": 8.5,
-  "review_count": 11000,
-  "review_label": "Excellent",
+  "rating": 4.5,
+  "review_count": 7713,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "A 1962 World's Fair leftover. Tropical butterfly house, planetarium, IMAX.",
@@ -38,7 +37,5 @@
   ],
   "photo_credit": "via Wikipedia / Pacific Science Center",
   "google_place_id": "ChIJAxZWvUwVkFQRPuvwC7JTqZk",
-  "rating_google": 4.5,
-  "review_count_google": 7713,
   "business_status": "OPERATIONAL"
 }

@@ -7,9 +7,8 @@
   "lng": -84.3858,
   "discipline": "Art",
   "founded": 1905,
-  "rating": 8.8,
-  "review_count": 8400,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 6222,
   "admission_from": 19,
   "admission_text": "general admission",
   "tagline": "Richard Meier's white modernist building. Strong American and African collections.",
@@ -38,7 +37,5 @@
   ],
   "photo_credit": "via Wikipedia / High Museum of Art",
   "google_place_id": "ChIJf8bUMEUE9YgR8nttKmmxaPc",
-  "rating_google": 4.7,
-  "review_count_google": 6222,
   "business_status": "OPERATIONAL"
 }

@@ -8,9 +8,8 @@
   "lng": -87.6217,
   "discipline": "Art",
   "founded": 1967,
-  "rating": 8.5,
-  "review_count": 14820,
-  "review_label": "Excellent",
+  "rating": 4.4,
+  "review_count": 6745,
   "admission_from": 22,
   "admission_text": "general admission",
   "hours_summary": "Wed–Sun · 10 AM – 5 PM (closed Mon–Tue)",
@@ -56,7 +55,5 @@
   ],
   "photo_credit": "via Wikipedia / Museum of Contemporary Art Chicago",
   "google_place_id": "ChIJKXA7AlXTD4gRsvBFJ8wG9x4",
-  "rating_google": 4.4,
-  "review_count_google": 6745,
   "business_status": "OPERATIONAL"
 }

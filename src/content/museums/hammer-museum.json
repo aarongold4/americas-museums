@@ -7,9 +7,8 @@
   "lng": -118.4438,
   "discipline": "Art",
   "founded": 1990,
-  "rating": 8.6,
-  "review_count": 4900,
-  "review_label": "Excellent",
+  "rating": 4.5,
+  "review_count": 2185,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "UCLA's contemporary art museum. Always free, low crowds.",
@@ -36,7 +35,5 @@
   ],
   "photo_credit": "via Wikipedia / Hammer Museum Westwood June 2012.jpg",
   "google_place_id": "ChIJ9SNj34G8woARHOdEq52UX6k",
-  "rating_google": 4.5,
-  "review_count_google": 2185,
   "business_status": "OPERATIONAL"
 }

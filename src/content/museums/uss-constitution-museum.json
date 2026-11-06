@@ -7,9 +7,8 @@
   "lng": -71.0556,
   "discipline": "Military",
   "founded": 1972,
-  "rating": 8.8,
-  "review_count": 4900,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 8581,
   "admission_from": 0,
   "admission_text": "suggested donation",
   "tagline": "The world's oldest commissioned warship still afloat. Free, with the ship next door.",
@@ -34,7 +33,5 @@
   ],
   "photo_credit": "via Wikipedia / USS Constitution Museum",
   "google_place_id": "ChIJOU-Kd_Rw44kRpQxHRXAFwqU",
-  "rating_google": 4.7,
-  "review_count_google": 8581,
   "business_status": "OPERATIONAL"
 }

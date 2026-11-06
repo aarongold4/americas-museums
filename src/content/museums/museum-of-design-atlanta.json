@@ -7,9 +7,8 @@
   "lng": -84.3857,
   "discipline": "Specialized",
   "founded": 1989,
-  "rating": 8.4,
-  "review_count": 720,
-  "review_label": "Excellent",
+  "rating": 4.4,
+  "review_count": 522,
   "admission_from": 13,
   "admission_text": "general admission",
   "tagline": "The only US museum dedicated entirely to design. Across the street from the High.",
@@ -30,7 +29,5 @@
   ],
   "photo_credit": "via Wikipedia / Museum of Design Atlanta",
   "google_place_id": "ChIJzal6QUUE9YgRYZqYJzKOXAo",
-  "rating_google": 4.4,
-  "review_count_google": 522,
   "business_status": "OPERATIONAL"
 }

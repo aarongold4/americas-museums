@@ -8,9 +8,8 @@
   "lng": -87.6076,
   "discipline": "History",
   "founded": 1961,
-  "rating": 8.7,
-  "review_count": 2840,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 2211,
   "admission_from": 15,
   "admission_text": "general admission",
   "hours_summary": "Tue–Sat · 10 AM – 5 PM, Sun 12–5 PM",
@@ -49,7 +48,5 @@
   ],
   "photo_credit": "via Wikipedia / DuSable Black History Museum",
   "google_place_id": "ChIJc2KLljkpDogRda8AsGdVjcA",
-  "rating_google": 4.7,
-  "review_count_google": 2211,
   "business_status": "OPERATIONAL"
 }

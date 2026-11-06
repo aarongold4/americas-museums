@@ -7,9 +7,8 @@
   "lng": -87.6068,
   "discipline": "Science",
   "founded": 1930,
-  "rating": 8.7,
-  "review_count": 21430,
-  "review_label": "Excellent",
+  "rating": 4.2,
+  "review_count": 3292,
   "admission_from": 19,
   "admission_text": "general admission",
   "hours_summary": "Wed–Mon · 9 AM – 4 PM (closed Tue)",
@@ -60,7 +59,5 @@
   ],
   "photo_credit": "via Wikipedia / Adler Planetarium",
   "google_place_id": "ChIJtRSxt28rDogRpo4hEqqjIGk",
-  "rating_google": 4.2,
-  "review_count_google": 3292,
   "business_status": "OPERATIONAL"
 }

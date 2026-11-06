@@ -7,9 +7,8 @@
   "lng": -77.0327,
   "discipline": "History",
   "founded": 1993,
-  "rating": 9.5,
-  "review_count": 32000,
-  "review_label": "Wonderful",
+  "rating": 4.8,
+  "review_count": 17527,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "Permanent exhibition tells the history of the Holocaust over three floors.",
@@ -43,7 +42,5 @@
   ],
   "photo_credit": "via Wikipedia / United States Holocaust Memorial Museum",
   "google_place_id": "ChIJZaAQK6C3t4kRsx10rk51z3M",
-  "rating_google": 4.8,
-  "review_count_google": 17527,
   "business_status": "OPERATIONAL"
 }

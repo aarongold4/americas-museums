@@ -7,9 +7,8 @@
   "lng": -122.4226,
   "discipline": "Specialized",
   "founded": 1987,
-  "rating": 8.6,
-  "review_count": 1200,
-  "review_label": "Excellent",
+  "rating": 4.2,
+  "review_count": 422,
   "admission_from": 0,
   "admission_text": "suggested $5",
   "tagline": "A small, suggested-donation museum focused on comics and animation.",
@@ -28,7 +27,5 @@
     "network": "none"
   },
   "google_place_id": "ChIJWwSkVn2AhYARUQfWE_EJ9ZQ",
-  "rating_google": 4.2,
-  "review_count_google": 422,
   "business_status": "CLOSED_TEMPORARILY"
 }

@@ -7,9 +7,8 @@
   "lng": -77.0226,
   "discipline": "Art",
   "founded": 1974,
-  "rating": 8.6,
-  "review_count": 7200,
-  "review_label": "Excellent",
+  "rating": 4.5,
+  "review_count": 6331,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "Round modernist drum on the Mall. Contemporary art and a sunken sculpture garden.",
@@ -35,7 +34,5 @@
   ],
   "photo_credit": "via Wikipedia / Hirshhorn Museum and Sculpture Garden",
   "google_place_id": "ChIJhx1puJy3t4kRmXVaeMNjBDU",
-  "rating_google": 4.5,
-  "review_count_google": 6331,
   "business_status": "OPERATIONAL"
 }

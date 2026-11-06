@@ -7,9 +7,8 @@
   "lng": -84.3927,
   "discipline": "Specialized",
   "founded": 1990,
-  "rating": 8.8,
-  "review_count": 30000,
-  "review_label": "Excellent",
+  "rating": 4.4,
+  "review_count": 37118,
   "admission_from": 19,
   "admission_text": "general admission",
   "tagline": "The Coca-Cola Company's official brand museum. Tasting room with 100+ flavors.",
@@ -55,7 +54,5 @@
   ],
   "photo_credit": "via Wikipedia / World of Coca-Cola",
   "google_place_id": "ChIJ8yjI7H4E9YgRyacfAZqyAUQ",
-  "rating_google": 4.4,
-  "review_count_google": 37118,
   "business_status": "OPERATIONAL"
 }

@@ -7,9 +7,8 @@
   "lng": -73.9576,
   "discipline": "Specialized",
   "founded": 1897,
-  "rating": 8.6,
-  "review_count": 5400,
-  "review_label": "Excellent",
+  "rating": 4.4,
+  "review_count": 3178,
   "admission_from": 22,
   "admission_text": "general admission",
   "tagline": "The Smithsonian's design museum, in Andrew Carnegie's Fifth Avenue mansion.",
@@ -45,7 +44,5 @@
   ],
   "photo_credit": "via Wikipedia / Cooper Hewitt (48059131921).jpg",
   "google_place_id": "ChIJsT8qSaJYwokR-m20OGJUKCA",
-  "rating_google": 4.4,
-  "review_count_google": 3178,
   "business_status": "OPERATIONAL"
 }

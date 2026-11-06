@@ -30,9 +30,8 @@ const museums = defineCollection({
     hero_image: z.string().url().optional(),
     gallery_images: z.array(z.string().url()).default([]),
     photo_credit: z.string().optional(),
-    rating: z.number().min(0).max(10).optional(),
+    rating: z.number().min(0).max(5).optional(),
     review_count: z.number().int().optional(),
-    review_label: z.string().optional(),     // "Wonderful", "Excellent", etc.
     admission_from: z.number().optional(),    // USD
     admission_text: z.string().optional(),    // "general admission"
     hours_summary: z.string().optional(),     // human-readable string
@@ -77,8 +76,6 @@ const museums = defineCollection({
     distance_landmark: z.string().optional(), // "0.4 mi from Millennium Park"
     // Google Places sync
     google_place_id: z.string().optional(),
-    rating_google: z.number().optional(),
-    review_count_google: z.number().int().optional(),
     business_status: z.string().optional(), // 'OPERATIONAL', 'CLOSED_TEMPORARILY', 'CLOSED_PERMANENTLY'
   }),
 });

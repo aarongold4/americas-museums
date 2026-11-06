@@ -7,9 +7,8 @@
   "lng": -74.0007,
   "discipline": "Military",
   "founded": 1982,
-  "rating": 8.7,
-  "review_count": 28000,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 47758,
   "admission_from": 36,
   "admission_text": "general admission",
   "tagline": "Aircraft carrier, Concorde, space shuttle, submarine — all docked in Manhattan.",
@@ -60,7 +59,5 @@
   ],
   "photo_credit": "via Wikipedia / Intrepid Museum",
   "google_place_id": "ChIJnxlg1U5YwokR8T90UrZiIwI",
-  "rating_google": 4.7,
-  "review_count_google": 47758,
   "business_status": "OPERATIONAL"
 }

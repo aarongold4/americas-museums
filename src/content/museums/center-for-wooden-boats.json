@@ -7,9 +7,8 @@
   "lng": -122.337,
   "discipline": "Specialized",
   "founded": 1976,
-  "rating": 9.0,
-  "review_count": 1100,
-  "review_label": "Wonderful",
+  "rating": 4.7,
+  "review_count": 475,
   "admission_from": 0,
   "admission_text": "free; rentals priced",
   "tagline": "A working museum on Lake Union. Free admission, sailboats and rowboats for rent.",
@@ -41,7 +40,5 @@
   ],
   "photo_credit": "via Wikipedia / Center for Wooden Boats",
   "google_place_id": "ChIJWS5bSjoVkFQRdNt1FGbm4Jo",
-  "rating_google": 4.7,
-  "review_count_google": 475,
   "business_status": "OPERATIONAL"
 }

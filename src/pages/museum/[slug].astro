@@ -82,9 +82,9 @@ const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently cl
         {m.rating && (
           <div class="flex items-center gap-2 mb-1.5 flex-wrap">
             <span class="rating-pill">{m.rating.toFixed(1)}</span>
-            {m.review_label && <span class="text-sm">{m.review_label}</span>}
+            <span class="text-sm text-ink-muted">/ 5</span>
             {m.review_count && (
-              <span class="text-xs text-ink-muted">· {m.review_count.toLocaleString()} reviews</span>
+              <span class="text-xs text-ink-muted">· {m.review_count.toLocaleString()} Google reviews</span>
             )}
           </div>
         )}

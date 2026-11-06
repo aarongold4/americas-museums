@@ -7,9 +7,8 @@
   "lng": -77.0199,
   "discipline": "Science",
   "founded": 1976,
-  "rating": 9.0,
-  "review_count": 80000,
-  "review_label": "Wonderful",
+  "rating": 4.6,
+  "review_count": 50037,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "The Wright Flyer, Spirit of St. Louis, Apollo 11 capsule. Always free.",
@@ -54,7 +53,5 @@
   ],
   "photo_credit": "via Wikipedia / National Air and Space Museum",
   "google_place_id": "ChIJISQme4O3t4kRG-iM3TfJ5_g",
-  "rating_google": 4.6,
-  "review_count_google": 50037,
   "business_status": "OPERATIONAL"
 }

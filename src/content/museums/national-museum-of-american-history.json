@@ -7,9 +7,8 @@
   "lng": -77.03,
   "discipline": "History",
   "founded": 1964,
-  "rating": 8.7,
-  "review_count": 38000,
-  "review_label": "Excellent",
+  "rating": 4.7,
+  "review_count": 28223,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "The Star-Spangled Banner, the Greensboro lunch counter, Dorothy's ruby slippers.",
@@ -45,7 +44,5 @@
   ],
   "photo_credit": "via Wikipedia / National Museum of American History",
   "google_place_id": "ChIJx7K17Ji3t4kR6h3neQYXsjI",
-  "rating_google": 4.7,
-  "review_count_google": 28223,
   "business_status": "OPERATIONAL"
 }

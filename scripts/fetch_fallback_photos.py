@@ -23,7 +23,7 @@ REPORT_PATH = ROOT / "data" / "wikipedia_photo_report.json"
 
 WIKI_API = "https://en.wikipedia.org/w/api.php"
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
-HEADERS = {"User-Agent": "AmericasMuseums/1.0 (aaron.gold4@gmail.com)"}
+HEADERS = {"User-Agent": "AmericasMuseums/1.0"}
 
 REJECT_RE = re.compile(
     r"(logo|coat_of_arms|seal|icon|map_of|locator|plan_of|floor_plan|blueprint|"

@@ -29,7 +29,7 @@ MUSEUMS_DIR = ROOT / "src" / "content" / "museums"
 REPORT_PATH = ROOT / "data" / "wikipedia_photo_report.json"
 
 WIKI_API = "https://en.wikipedia.org/w/api.php"
-HEADERS = {"User-Agent": "AmericasMuseums/1.0 (aaron.gold4@gmail.com)"}
+HEADERS = {"User-Agent": "AmericasMuseums/1.0"}
 
 # Filename patterns to reject
 REJECT_PATTERNS = [

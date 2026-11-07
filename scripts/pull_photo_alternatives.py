@@ -21,7 +21,7 @@ OUT_PATH = ROOT / "data" / "photo_alternatives.json"
 
 WIKI_API = "https://en.wikipedia.org/w/api.php"
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
-HEADERS = {"User-Agent": "AmericasMuseums/1.0 (aaron.gold4@gmail.com)"}
+HEADERS = {"User-Agent": "AmericasMuseums/1.0"}
 
 # The 15 slugs Aaron flagged
 TARGETS = [

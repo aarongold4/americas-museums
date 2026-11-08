@@ -8,7 +8,7 @@
   "discipline": "Specialized",
   "founded": 2008,
   "rating": 4.7,
-  "review_count": 1331,
+  "review_count": 1332,
   "admission_from": 25,
   "admission_text": "general admission",
   "hours_summary": "Wed–Sun · 10 AM – 5 PM",
@@ -49,5 +49,6 @@
   ],
   "photo_credit": "via Wikipedia / Driehaus Museum",
   "google_place_id": "ChIJNRryJK0sDogRERw0bs9dRdI",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 9
 }

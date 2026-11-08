@@ -8,7 +8,7 @@
   "discipline": "Specialized",
   "founded": 1978,
   "rating": 4.8,
-  "review_count": 3179,
+  "review_count": 3180,
   "admission_from": 12,
   "admission_text": "general admission",
   "tagline": "Jim Henson's archive — Kermit, Big Bird, the Yip Yips. Also a working theater.",
@@ -40,5 +40,6 @@
   ],
   "photo_credit": "via Wikipedia / Center for Puppetry Arts",
   "google_place_id": "ChIJ4fRXllAE9YgR6nR6SZWzinI",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 5
 }

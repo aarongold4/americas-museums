@@ -27,5 +27,6 @@
     "network": "none"
   },
   "google_place_id": "ChIJWwSkVn2AhYARUQfWE_EJ9ZQ",
-  "business_status": "CLOSED_TEMPORARILY"
+  "business_status": "CLOSED_TEMPORARILY",
+  "city_rank": 12
 }

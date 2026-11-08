@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1935,
   "rating": 4.6,
-  "review_count": 5218,
+  "review_count": 5225,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "Vermeer, Rembrandt, Bellini in Henry Clay Frick's Gilded Age mansion.",
@@ -49,5 +49,6 @@
   ],
   "photo_credit": "via Wikipedia / Frick Collection",
   "google_place_id": "ChIJHRH97uxYwokR6CBeDyn1jtg",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 10
 }

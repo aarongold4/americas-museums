@@ -1,0 +1,699 @@
+{
+  "run_at": "2026-11-08",
+  "auto_fixed": [
+    {
+      "slug": "adler-planetarium",
+      "name": "Adler Planetarium",
+      "changes": [
+        "reviews 3,292 -> 3,298"
+      ]
+    },
+    {
+      "slug": "american-museum-of-natural-history",
+      "name": "American Museum of Natural History",
+      "changes": [
+        "reviews 27,222 -> 27,220"
+      ]
+    },
+    {
+      "slug": "art-institute-of-chicago",
+      "name": "Art Institute of Chicago",
+      "changes": [
+        "reviews 38,835 -> 38,834"
+      ]
+    },
+    {
+      "slug": "asian-art-museum-of-san-francisco",
+      "name": "Asian Art Museum of San Francisco",
+      "changes": [
+        "reviews 4,398 -> 4,399"
+      ]
+    },
+    {
+      "slug": "atlanta-history-center",
+      "name": "Atlanta History Center",
+      "changes": [
+        "reviews 1,222 -> 1,223"
+      ]
+    },
+    {
+      "slug": "barnes-foundation",
+      "name": "Barnes Foundation",
+      "changes": [
+        "reviews 4,769 -> 4,771"
+      ]
+    },
+    {
+      "slug": "boston-childrens-museum",
+      "name": "Boston Children's Museum",
+      "changes": [
+        "reviews 6,790 -> 6,791"
+      ]
+    },
+    {
+      "slug": "brooklyn-museum",
+      "name": "Brooklyn Museum",
+      "changes": [
+        "reviews 10,501 -> 10,500"
+      ]
+    },
+    {
+      "slug": "burke-museum-of-natural-history-and-culture",
+      "name": "Burke Museum of Natural History and Culture",
+      "changes": [
+        "reviews 1,202 -> 1,204"
+      ]
+    },
+    {
+      "slug": "cable-car-museum",
+      "name": "Cable Car Museum",
+      "changes": [
+        "reviews 7,237 -> 7,243"
+      ]
+    },
+    {
+      "slug": "california-academy-of-sciences",
+      "name": "California Academy of Sciences",
+      "changes": [
+        "reviews 6,551 -> 6,552"
+      ]
+    },
+    {
+      "slug": "center-for-puppetry-arts",
+      "name": "Center for Puppetry Arts",
+      "changes": [
+        "reviews 3,179 -> 3,180"
+      ]
+    },
+    {
+      "slug": "chihuly-garden-and-glass",
+      "name": "Chihuly Garden and Glass",
+      "changes": [
+        "reviews 25,437 -> 25,439"
+      ]
+    },
+    {
+      "slug": "childrens-museum-of-atlanta",
+      "name": "Children's Museum of Atlanta",
+      "changes": [
+        "reviews 3,297 -> 3,298"
+      ]
+    },
+    {
+      "slug": "cooper-hewitt-smithsonian-design-museum",
+      "name": "Cooper Hewitt, Smithsonian Design Museum",
+      "changes": [
+        "reviews 3,178 -> 3,180"
+      ]
+    },
+    {
+      "slug": "de-young-museum",
+      "name": "de Young Museum",
+      "changes": [
+        "reviews 9,959 -> 9,963"
+      ]
+    },
+    {
+      "slug": "driehaus-museum",
+      "name": "Driehaus Museum",
+      "changes": [
+        "reviews 1,331 -> 1,332"
+      ]
+    },
+    {
+      "slug": "dusable-black-history-museum",
+      "name": "DuSable Black History Museum",
+      "changes": [
+        "reviews 2,211 -> 2,212"
+      ]
+    },
+    {
+      "slug": "exploratorium",
+      "name": "Exploratorium",
+      "changes": [
+        "reviews 8,823 -> 8,829"
+      ]
+    },
+    {
+      "slug": "fernbank-museum",
+      "name": "Fernbank Museum",
+      "changes": [
+        "reviews 9,101 -> 9,059"
+      ]
+    },
+    {
+      "slug": "field-museum",
+      "name": "Field Museum",
+      "changes": [
+        "reviews 32,327 -> 32,349"
+      ]
+    },
+    {
+      "slug": "franklin-institute",
+      "name": "Franklin Institute",
+      "changes": [
+        "reviews 14,081 -> 14,084"
+      ]
+    },
+    {
+      "slug": "frick-collection",
+      "name": "Frick Collection",
+      "changes": [
+        "reviews 5,218 -> 5,225"
+      ]
+    },
+    {
+      "slug": "frye-art-museum",
+      "name": "Frye Art Museum",
+      "changes": [
+        "reviews 1,869 -> 1,870"
+      ]
+    },
+    {
+      "slug": "getty-center",
+      "name": "Getty Center",
+      "changes": [
+        "reviews 37,719 -> 37,742"
+      ]
+    },
+    {
+      "slug": "getty-villa",
+      "name": "Getty Villa",
+      "changes": [
+        "reviews 12,106 -> 12,107"
+      ]
+    },
+    {
+      "slug": "harvard-art-museums",
+      "name": "Harvard Art Museums",
+      "changes": [
+        "reviews 3,908 -> 3,916"
+      ]
+    },
+    {
+      "slug": "hirshhorn-museum-and-sculpture-garden",
+      "name": "Hirshhorn Museum and Sculpture Garden",
+      "changes": [
+        "reviews 6,331 -> 6,335"
+      ]
+    },
+    {
+      "slug": "huntington-library",
+      "name": "Huntington Library, Art Museum, and Botanical Gardens",
+      "changes": [
+        "reviews 8,599 -> 8,605"
+      ]
+    },
+    {
+      "slug": "independence-seaport-museum",
+      "name": "Independence Seaport Museum",
+      "changes": [
+        "reviews 1,869 -> 1,870"
+      ]
+    },
+    {
+      "slug": "institute-of-contemporary-art-boston",
+      "name": "Institute of Contemporary Art Boston",
+      "changes": [
+        "reviews 4,565 -> 4,566"
+      ]
+    },
+    {
+      "slug": "international-spy-museum",
+      "name": "International Spy Museum",
+      "changes": [
+        "reviews 18,276 -> 18,274"
+      ]
+    },
+    {
+      "slug": "intrepid-sea-air-and-space-museum",
+      "name": "Intrepid Sea, Air & Space Museum",
+      "changes": [
+        "reviews 47,758 -> 47,769"
+      ]
+    },
+    {
+      "slug": "isabella-stewart-gardner-museum",
+      "name": "Isabella Stewart Gardner Museum",
+      "changes": [
+        "reviews 11,474 -> 11,486"
+      ]
+    },
+    {
+      "slug": "john-f-kennedy-presidential-library-and-museum",
+      "name": "John F. Kennedy Presidential Library and Museum",
+      "changes": [
+        "reviews 1,330 -> 1,333"
+      ]
+    },
+    {
+      "slug": "los-angeles-county-museum-of-art",
+      "name": "Los Angeles County Museum of Art",
+      "changes": [
+        "reviews 21,296 -> 21,302"
+      ]
+    },
+    {
+      "slug": "mary-baker-eddy-library",
+      "name": "Mary Baker Eddy Library",
+      "changes": [
+        "reviews 371 -> 375"
+      ]
+    },
+    {
+      "slug": "met-cloisters",
+      "name": "The Met Cloisters",
+      "changes": [
+        "reviews 9,228 -> 9,235"
+      ]
+    },
+    {
+      "slug": "metropolitan-museum-of-art",
+      "name": "Metropolitan Museum of Art",
+      "changes": [
+        "reviews 95,483 -> 95,480"
+      ]
+    },
+    {
+      "slug": "mit-museum",
+      "name": "MIT Museum",
+      "changes": [
+        "reviews 4,129 -> 4,133"
+      ]
+    },
+    {
+      "slug": "museum-of-contemporary-art-chicago",
+      "name": "Museum of Contemporary Art Chicago",
+      "changes": [
+        "reviews 6,745 -> 6,748"
+      ]
+    },
+    {
+      "slug": "museum-of-contemporary-art-los-angeles",
+      "name": "Museum of Contemporary Art Los Angeles",
+      "changes": [
+        "reviews 2,592 -> 2,595"
+      ]
+    },
+    {
+      "slug": "museum-of-fine-arts-boston",
+      "name": "Museum of Fine Arts, Boston",
+      "changes": [
+        "reviews 20,252 -> 20,264"
+      ]
+    },
+    {
+      "slug": "museum-of-flight",
+      "name": "Museum of Flight",
+      "changes": [
+        "reviews 18,803 -> 18,812"
+      ]
+    },
+    {
+      "slug": "museum-of-modern-art",
+      "name": "Museum of Modern Art",
+      "changes": [
+        "reviews 61,580 -> 61,606"
+      ]
+    },
+    {
+      "slug": "museum-of-pop-culture",
+      "name": "Museum of Pop Culture",
+      "changes": [
+        "reviews 19,488 -> 19,493"
+      ]
+    },
+    {
+      "slug": "museum-of-science-and-industry",
+      "name": "Museum of Science and Industry",
+      "changes": [
+        "reviews 36,287 -> 36,292"
+      ]
+    },
+    {
+      "slug": "museum-of-science-boston",
+      "name": "Museum of Science Boston",
+      "changes": [
+        "reviews 23,692 -> 23,698"
+      ]
+    },
+    {
+      "slug": "mutter-museum",
+      "name": "Mütter Museum",
+      "changes": [
+        "reviews 6,724 -> 6,723"
+      ]
+    },
+    {
+      "slug": "national-gallery-of-art",
+      "name": "National Gallery of Art",
+      "changes": [
+        "reviews 20,896 -> 20,910"
+      ]
+    },
+    {
+      "slug": "national-museum-of-african-american-history-and-culture",
+      "name": "National Museum of African American History and Culture",
+      "changes": [
+        "reviews 31,122 -> 31,132"
+      ]
+    },
+    {
+      "slug": "national-museum-of-american-history",
+      "name": "National Museum of American History",
+      "changes": [
+        "reviews 28,223 -> 28,232"
+      ]
+    },
+    {
+      "slug": "national-museum-of-mexican-art",
+      "name": "National Museum of Mexican Art",
+      "changes": [
+        "reviews 3,884 -> 3,889"
+      ]
+    },
+    {
+      "slug": "national-museum-of-natural-history",
+      "name": "National Museum of Natural History",
+      "changes": [
+        "reviews 59,188 -> 59,186"
+      ]
+    },
+    {
+      "slug": "national-museum-of-the-american-indian",
+      "name": "National Museum of the American Indian",
+      "changes": [
+        "reviews 11,371 -> 11,373"
+      ]
+    },
+    {
+      "slug": "national-nordic-museum",
+      "name": "National Nordic Museum",
+      "changes": [
+        "reviews 2,431 -> 2,434"
+      ]
+    },
+    {
+      "slug": "national-portrait-gallery",
+      "name": "National Portrait Gallery",
+      "changes": [
+        "reviews 13,740 -> 13,747"
+      ]
+    },
+    {
+      "slug": "natural-history-museum-of-la-county",
+      "name": "Natural History Museum of Los Angeles County",
+      "changes": [
+        "reviews 14,863 -> 14,870"
+      ]
+    },
+    {
+      "slug": "new-england-aquarium",
+      "name": "New England Aquarium",
+      "changes": [
+        "reviews 29,165 -> 29,171"
+      ]
+    },
+    {
+      "slug": "new-york-historical-society",
+      "name": "New-York Historical Society",
+      "changes": [
+        "reviews 806 -> 810"
+      ]
+    },
+    {
+      "slug": "norton-simon-museum",
+      "name": "Norton Simon Museum",
+      "changes": [
+        "reviews 3,533 -> 3,536"
+      ]
+    },
+    {
+      "slug": "pacific-science-center",
+      "name": "Pacific Science Center",
+      "changes": [
+        "reviews 7,713 -> 7,715"
+      ]
+    },
+    {
+      "slug": "peabody-museum-of-archaeology-and-ethnology",
+      "name": "Peabody Museum of Archaeology and Ethnology",
+      "changes": [
+        "reviews 688 -> 689"
+      ]
+    },
+    {
+      "slug": "penn-museum",
+      "name": "Penn Museum",
+      "changes": [
+        "reviews 2,994 -> 2,996"
+      ]
+    },
+    {
+      "slug": "petersen-automotive-museum",
+      "name": "Petersen Automotive Museum",
+      "changes": [
+        "reviews 14,227 -> 14,234"
+      ]
+    },
+    {
+      "slug": "philadelphia-museum-of-art",
+      "name": "Philadelphia Museum of Art",
+      "changes": [
+        "reviews 23,727 -> 23,743"
+      ]
+    },
+    {
+      "slug": "phillips-collection",
+      "name": "Phillips Collection",
+      "changes": [
+        "reviews 2,320 -> 2,323"
+      ]
+    },
+    {
+      "slug": "please-touch-museum",
+      "name": "Please Touch Museum",
+      "changes": [
+        "reviews 7,402 -> 7,404"
+      ]
+    },
+    {
+      "slug": "rodin-museum",
+      "name": "Rodin Museum",
+      "changes": [
+        "reviews 1,992 -> 1,994"
+      ]
+    },
+    {
+      "slug": "san-francisco-museum-of-modern-art",
+      "name": "San Francisco Museum of Modern Art",
+      "changes": [
+        "reviews 16,731 -> 16,729"
+      ]
+    },
+    {
+      "slug": "seattle-art-museum",
+      "name": "Seattle Art Museum",
+      "changes": [
+        "reviews 7,513 -> 7,519"
+      ]
+    },
+    {
+      "slug": "seattle-asian-art-museum",
+      "name": "Seattle Asian Art Museum",
+      "changes": [
+        "reviews 1,152 -> 1,154"
+      ]
+    },
+    {
+      "slug": "smart-museum-of-art",
+      "name": "Smart Museum of Art",
+      "changes": [
+        "reviews 464 -> 465"
+      ]
+    },
+    {
+      "slug": "smithsonian-american-art-museum",
+      "name": "Smithsonian American Art Museum",
+      "changes": [
+        "reviews 3,859 -> 3,860"
+      ]
+    },
+    {
+      "slug": "solomon-r-guggenheim-museum",
+      "name": "Solomon R. Guggenheim Museum",
+      "changes": [
+        "reviews 27,026 -> 27,035"
+      ]
+    },
+    {
+      "slug": "tenement-museum",
+      "name": "Tenement Museum",
+      "changes": [
+        "reviews 6,079 -> 6,085"
+      ]
+    },
+    {
+      "slug": "the-broad",
+      "name": "The Broad",
+      "changes": [
+        "reviews 18,406 -> 18,417"
+      ]
+    },
+    {
+      "slug": "walt-disney-family-museum",
+      "name": "Walt Disney Family Museum",
+      "changes": [
+        "reviews 4,262 -> 4,265"
+      ]
+    },
+    {
+      "slug": "whitney-museum-of-american-art",
+      "name": "Whitney Museum of American Art",
+      "changes": [
+        "reviews 15,311 -> 15,321"
+      ]
+    },
+    {
+      "slug": "wing-luke-museum",
+      "name": "Wing Luke Museum",
+      "changes": [
+        "reviews 802 -> 804"
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "slug": "cartoon-art-museum",
+      "name": "Cartoon Art Museum",
+      "kind": "closure",
+      "detail": "Google reports business_status=CLOSED_TEMPORARILY"
+    },
+    {
+      "slug": "contemporary-jewish-museum",
+      "name": "Contemporary Jewish Museum",
+      "kind": "closure",
+      "detail": "Google reports business_status=CLOSED_TEMPORARILY"
+    },
+    {
+      "slug": "la-brea-tar-pits-and-museum",
+      "name": "La Brea Tar Pits and Museum",
+      "kind": "closure",
+      "detail": "Google reports business_status=CLOSED_TEMPORARILY"
+    }
+  ],
+  "unreachable": [
+    "weitzman-national-museum-of-american-jewish-history",
+    "world-of-coca-cola"
+  ],
+  "missing_place_id": [],
+  "rerank_changes": [
+    "World of Coca-Cola (Atlanta): rank -> 1",
+    "High Museum of Art (Atlanta): rank -> 2",
+    "Fernbank Museum (Atlanta): rank -> 3",
+    "National Center for Civil and Human Rights (Atlanta): rank -> 4",
+    "Center for Puppetry Arts (Atlanta): rank -> 5",
+    "Children's Museum of Atlanta (Atlanta): rank -> 6",
+    "Atlanta History Center (Atlanta): rank -> 7",
+    "Michael C. Carlos Museum (Atlanta): rank -> 8",
+    "Jimmy Carter Presidential Library and Museum (Atlanta): rank -> 9",
+    "APEX Museum (Atlanta): rank -> 10",
+    "Museum of Design Atlanta (Atlanta): rank -> 11",
+    "Atlanta Contemporary (Atlanta): rank -> 12",
+    "Chihuly Garden and Glass (Seattle): rank -> 1",
+    "Museum of Flight (Seattle): rank -> 2",
+    "Museum of Pop Culture (Seattle): rank -> 3",
+    "Seattle Art Museum (Seattle): rank -> 4",
+    "Pacific Science Center (Seattle): rank -> 5",
+    "National Nordic Museum (Seattle): rank -> 6",
+    "Klondike Gold Rush National Historical Park (Seattle): rank -> 7",
+    "Frye Art Museum (Seattle): rank -> 8",
+    "Seattle Asian Art Museum (Seattle): rank -> 9",
+    "Burke Museum of Natural History and Culture (Seattle): rank -> 10",
+    "Wing Luke Museum (Seattle): rank -> 11",
+    "Center for Wooden Boats (Seattle): rank -> 12",
+    "Getty Center (Los Angeles): rank -> 1",
+    "California Science Center (Los Angeles): rank -> 2",
+    "The Broad (Los Angeles): rank -> 3",
+    "Natural History Museum of Los Angeles County (Los Angeles): rank -> 4",
+    "Petersen Automotive Museum (Los Angeles): rank -> 5",
+    "Los Angeles County Museum of Art (Los Angeles): rank -> 6",
+    "Getty Villa (Los Angeles): rank -> 7",
+    "La Brea Tar Pits and Museum (Los Angeles): rank -> 8",
+    "Huntington Library, Art Museum, and Botanical Gardens (Los Angeles): rank -> 9",
+    "Norton Simon Museum (Los Angeles): rank -> 10",
+    "Hammer Museum (Los Angeles): rank -> 11",
+    "Museum of Contemporary Art Los Angeles (Los Angeles): rank -> 12",
+    "National Museum of Natural History (Washington): rank -> 1",
+    "National Air and Space Museum (Washington): rank -> 2",
+    "National Museum of African American History and Culture (Washington): rank -> 3",
+    "National Museum of American History (Washington): rank -> 4",
+    "National Gallery of Art (Washington): rank -> 5",
+    "United States Holocaust Memorial Museum (Washington): rank -> 6",
+    "National Portrait Gallery (Washington): rank -> 7",
+    "International Spy Museum (Washington): rank -> 8",
+    "National Museum of the American Indian (Washington): rank -> 9",
+    "Smithsonian American Art Museum (Washington): rank -> 10",
+    "Hirshhorn Museum and Sculpture Garden (Washington): rank -> 11",
+    "Phillips Collection (Washington): rank -> 12",
+    "Art Institute of Chicago (Chicago): rank -> 1",
+    "Museum of Science and Industry (Chicago): rank -> 2",
+    "Field Museum (Chicago): rank -> 3",
+    "National Museum of Mexican Art (Chicago): rank -> 4",
+    "Museum of Contemporary Art Chicago (Chicago): rank -> 5",
+    "Chicago History Museum (Chicago): rank -> 6",
+    "DuSable Black History Museum (Chicago): rank -> 7",
+    "Adler Planetarium (Chicago): rank -> 8",
+    "Driehaus Museum (Chicago): rank -> 9",
+    "Smart Museum of Art (Chicago): rank -> 10",
+    "National Hellenic Museum (Chicago): rank -> 11",
+    "Museum of Fine Arts, Boston (Boston): rank -> 1",
+    "Museum of Science Boston (Boston): rank -> 2",
+    "New England Aquarium (Boston): rank -> 3",
+    "Isabella Stewart Gardner Museum (Boston): rank -> 4",
+    "USS Constitution Museum (Boston): rank -> 5",
+    "Boston Children's Museum (Boston): rank -> 6",
+    "Harvard Art Museums (Boston): rank -> 7",
+    "Institute of Contemporary Art Boston (Boston): rank -> 8",
+    "MIT Museum (Boston): rank -> 9",
+    "John F. Kennedy Presidential Library and Museum (Boston): rank -> 10",
+    "Peabody Museum of Archaeology and Ethnology (Boston): rank -> 11",
+    "Mary Baker Eddy Library (Boston): rank -> 12",
+    "Metropolitan Museum of Art (New York): rank -> 1",
+    "Museum of Modern Art (New York): rank -> 2",
+    "Intrepid Sea, Air & Space Museum (New York): rank -> 3",
+    "American Museum of Natural History (New York): rank -> 4",
+    "Solomon R. Guggenheim Museum (New York): rank -> 5",
+    "The Met Cloisters (New York): rank -> 6",
+    "Brooklyn Museum (New York): rank -> 7",
+    "Whitney Museum of American Art (New York): rank -> 8",
+    "Tenement Museum (New York): rank -> 9",
+    "Frick Collection (New York): rank -> 10",
+    "Cooper Hewitt, Smithsonian Design Museum (New York): rank -> 11",
+    "New-York Historical Society (New York): rank -> 12",
+    "Philadelphia Museum of Art (Philadelphia): rank -> 1",
+    "Franklin Institute (Philadelphia): rank -> 2",
+    "Please Touch Museum (Philadelphia): rank -> 3",
+    "Mütter Museum (Philadelphia): rank -> 4",
+    "Barnes Foundation (Philadelphia): rank -> 5",
+    "Penn Museum (Philadelphia): rank -> 6",
+    "Eastern State Penitentiary (Philadelphia): rank -> 7",
+    "National Constitution Center (Philadelphia): rank -> 8",
+    "Rodin Museum (Philadelphia): rank -> 9",
+    "Independence Seaport Museum (Philadelphia): rank -> 10",
+    "Weitzman National Museum of American Jewish History (Philadelphia): rank -> 11",
+    "African American Museum in Philadelphia (Philadelphia): rank -> 12",
+    "San Francisco Museum of Modern Art (San Francisco): rank -> 1",
+    "Exploratorium (San Francisco): rank -> 2",
+    "de Young Museum (San Francisco): rank -> 3",
+    "Cable Car Museum (San Francisco): rank -> 4",
+    "Legion of Honor (San Francisco): rank -> 5",
+    "California Academy of Sciences (San Francisco): rank -> 6",
+    "Asian Art Museum of San Francisco (San Francisco): rank -> 7",
+    "Walt Disney Family Museum (San Francisco): rank -> 8",
+    "GLBT Historical Society Museum (San Francisco): rank -> 9",
+    "Museum of the African Diaspora (San Francisco): rank -> 10",
+    "Contemporary Jewish Museum (San Francisco): rank -> 11",
+    "Cartoon Art Museum (San Francisco): rank -> 12"
+  ]
+}

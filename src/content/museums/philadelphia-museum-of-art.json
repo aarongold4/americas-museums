@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1876,
   "rating": 4.8,
-  "review_count": 23727,
+  "review_count": 23743,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "The Rocky steps. Also one of the great American art museums.",
@@ -53,5 +53,6 @@
   ],
   "photo_credit": "via Wikipedia / Philadelphia Museum of Art",
   "google_place_id": "ChIJ_5CoRebFxokR08ApAyF2KIs",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 1
 }

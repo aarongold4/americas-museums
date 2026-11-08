@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1933,
   "rating": 4.7,
-  "review_count": 1152,
+  "review_count": 1154,
   "admission_from": 18,
   "admission_text": "general admission",
   "tagline": "The Seattle Art Museum's Asian collection, in a 1933 Art Deco building in Volunteer Park.",
@@ -37,5 +37,6 @@
   ],
   "photo_credit": "via Wikipedia / Seattle Asian Art Museum",
   "google_place_id": "ChIJl4rpASgVkFQRoh-ouNE8ZSo",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 9
 }

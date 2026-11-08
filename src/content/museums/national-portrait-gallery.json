@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1968,
   "rating": 4.8,
-  "review_count": 13740,
+  "review_count": 13747,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "The Obama portraits, the presidential portrait series, the Hall of Presidents.",
@@ -44,5 +44,6 @@
   ],
   "photo_credit": "via Wikipedia / National Portrait Gallery (United States)",
   "google_place_id": "ChIJldJnhJG3t4kRnJ3McC1qVyo",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 7
 }

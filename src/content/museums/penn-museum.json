@@ -8,7 +8,7 @@
   "discipline": "Specialized",
   "founded": 1887,
   "rating": 4.7,
-  "review_count": 2994,
+  "review_count": 2996,
   "admission_from": 18,
   "admission_text": "general admission",
   "tagline": "The University of Pennsylvania's archaeology and anthropology museum.",
@@ -31,5 +31,6 @@
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Penn_Museum_-_UPenn_%2853590175396%29.jpg/1280px-Penn_Museum_-_UPenn_%2853590175396%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "photo_credit": "via Wikimedia Commons / Penn Museum",
   "google_place_id": "ChIJvzKmO1vGxokRJm5brUPctFE",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 6
 }

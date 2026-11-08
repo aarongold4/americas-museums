@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1939,
   "rating": 4.3,
-  "review_count": 27026,
+  "review_count": 27035,
   "admission_from": 25,
   "admission_text": "general admission",
   "tagline": "Frank Lloyd Wright's spiral. Walk to the top, descend through the galleries.",
@@ -46,5 +46,6 @@
   "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/S._R._Guggenheim_portrait_by_Pirie_MacDonald.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "photo_credit": "via Wikimedia Commons / Solomon R. Guggenheim",
   "google_place_id": "ChIJmZ5emqJYwokRuDz79o0coAQ",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 5
 }

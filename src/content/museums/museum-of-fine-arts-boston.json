@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1870,
   "rating": 4.8,
-  "review_count": 20252,
+  "review_count": 20264,
   "admission_from": 27,
   "admission_text": "general admission",
   "tagline": "One of the country's great encyclopedic museums. Strong American and Asian wings.",
@@ -48,5 +48,6 @@
   ],
   "photo_credit": "via Wikipedia / Museum of Fine Arts, Boston",
   "google_place_id": "ChIJS3rn5w1644kRZNWVxNY_Ay8",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 1
 }

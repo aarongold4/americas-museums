@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1974,
   "rating": 4.8,
-  "review_count": 12106,
+  "review_count": 12107,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "Roman villa replica on the Pacific Coast. Antiquities only.",
@@ -58,5 +58,6 @@
   ],
   "photo_credit": "via Wikipedia / Getty Villa",
   "google_place_id": "ChIJBw1wGumjwoARsKRsr2WJ-eQ",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 7
 }

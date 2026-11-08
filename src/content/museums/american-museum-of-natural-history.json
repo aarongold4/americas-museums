@@ -8,7 +8,7 @@
   "discipline": "Natural History",
   "founded": 1869,
   "rating": 4.6,
-  "review_count": 27222,
+  "review_count": 27220,
   "admission_from": 28,
   "admission_text": "general admission",
   "tagline": "The dinosaur halls, the blue whale, the Hayden Planetarium — all under one roof.",
@@ -63,5 +63,6 @@
   ],
   "photo_credit": "via Wikipedia / American Museum of Natural History",
   "google_place_id": "ChIJCXoPsPRYwokRsV1MYnKBfaI",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 4
 }

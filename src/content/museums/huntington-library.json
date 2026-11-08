@@ -8,7 +8,7 @@
   "discipline": "Specialized",
   "founded": 1919,
   "rating": 4.8,
-  "review_count": 8599,
+  "review_count": 8605,
   "admission_from": 29,
   "admission_text": "general admission",
   "tagline": "120 acres of gardens, a Gainsborough collection, and a Gutenberg Bible.",
@@ -53,5 +53,6 @@
   ],
   "photo_credit": "via Wikipedia / Wikimedia Commons",
   "google_place_id": "ChIJc1xhAk3bwoARBBlfKQzXKLM",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 9
 }

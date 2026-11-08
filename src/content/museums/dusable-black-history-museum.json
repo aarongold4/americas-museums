@@ -9,7 +9,7 @@
   "discipline": "History",
   "founded": 1961,
   "rating": 4.7,
-  "review_count": 2211,
+  "review_count": 2212,
   "admission_from": 15,
   "admission_text": "general admission",
   "hours_summary": "Tue–Sat · 10 AM – 5 PM, Sun 12–5 PM",
@@ -48,5 +48,6 @@
   ],
   "photo_credit": "via Wikipedia / DuSable Black History Museum",
   "google_place_id": "ChIJc2KLljkpDogRda8AsGdVjcA",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 7
 }

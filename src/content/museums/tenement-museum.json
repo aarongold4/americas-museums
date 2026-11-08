@@ -8,7 +8,7 @@
   "discipline": "History",
   "founded": 1988,
   "rating": 4.6,
-  "review_count": 6079,
+  "review_count": 6085,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "A Lower East Side tenement preserved as a time capsule. Tour-only entry.",
@@ -44,5 +44,6 @@
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/97_Orchard_Street_Front.jpg/1280px-97_Orchard_Street_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "photo_credit": "via Wikimedia Commons / Lower East Side Tenement Museum",
   "google_place_id": "ChIJ20bVJYdZwokRhI7esP3mYM0",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 9
 }

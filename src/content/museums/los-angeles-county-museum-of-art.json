@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1965,
   "rating": 4.6,
-  "review_count": 21296,
+  "review_count": 21302,
   "admission_from": 25,
   "admission_text": "general admission",
   "tagline": "The largest art museum in the western US. Currently mid-rebuild.",
@@ -55,5 +55,6 @@
   ],
   "photo_credit": "via Wikipedia / Los Angeles County Sheriff's Department",
   "google_place_id": "ChIJsXqcyjy5woARNz6sOh0ZmwA",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 6
 }

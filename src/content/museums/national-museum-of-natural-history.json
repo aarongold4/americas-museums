@@ -8,7 +8,7 @@
   "discipline": "Natural History",
   "founded": 1910,
   "rating": 4.8,
-  "review_count": 59188,
+  "review_count": 59186,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "The Hope Diamond, a T. rex eating a Triceratops, the dome rotunda elephant.",
@@ -49,5 +49,6 @@
   ],
   "photo_credit": "via Wikipedia / National Museum of Natural History",
   "google_place_id": "ChIJx7K17Ji3t4kRr3VvqMTw7cc",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 1
 }

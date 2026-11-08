@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1929,
   "rating": 4.6,
-  "review_count": 1992,
+  "review_count": 1994,
   "admission_from": 12,
   "admission_text": "general admission",
   "tagline": "The largest collection of Auguste Rodin sculpture outside Paris.",
@@ -40,5 +40,6 @@
   ],
   "photo_credit": "via Wikipedia / Rodin Museum",
   "google_place_id": "ChIJ_5CoRebFxokRelxOueM6ctQ",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 9
 }

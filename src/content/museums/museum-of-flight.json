@@ -8,7 +8,7 @@
   "discipline": "Science",
   "founded": 1965,
   "rating": 4.8,
-  "review_count": 18803,
+  "review_count": 18812,
   "admission_from": 28,
   "admission_text": "general admission",
   "tagline": "The largest private air-and-space museum in the world. Concorde and Air Force One.",
@@ -48,5 +48,6 @@
   ],
   "photo_credit": "via Wikimedia Commons / Museum of Flight",
   "google_place_id": "ChIJRxVwIjlCkFQRqroZdomSpAE",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 2
 }

@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1921,
   "rating": 4.7,
-  "review_count": 2320,
+  "review_count": 2323,
   "admission_from": 16,
   "admission_text": "general admission",
   "tagline": "America's first museum of modern art. Renoir's Luncheon of the Boating Party.",
@@ -37,5 +37,6 @@
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/The_Phillips_Collection.JPG/1280px-The_Phillips_Collection.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "photo_credit": "via Wikimedia Commons / The Phillips Collection",
   "google_place_id": "ChIJERCNwci3t4kR92ClBSxkv14",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 12
 }

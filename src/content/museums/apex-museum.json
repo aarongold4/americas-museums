@@ -23,5 +23,6 @@
     "product_name": "APEX Museum entry"
   },
   "google_place_id": "ChIJp3TRAYkD9YgROwWFdqNufKg",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 10
 }

@@ -8,7 +8,7 @@
   "discipline": "History",
   "founded": 1967,
   "rating": 4.7,
-  "review_count": 802,
+  "review_count": 804,
   "admission_from": 19,
   "admission_text": "general admission",
   "tagline": "Asian Pacific American experience. Smithsonian Affiliate, in the Chinatown-International District.",
@@ -36,5 +36,6 @@
   ],
   "photo_credit": "via Wikipedia / Wing Luke Museum",
   "google_place_id": "ChIJbbmTNrxqkFQRhfvVBhOtPSg",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 11
 }

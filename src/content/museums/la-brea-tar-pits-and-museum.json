@@ -43,5 +43,6 @@
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/La_Brea_Tar_Pits_logo.svg/1280px-La_Brea_Tar_Pits_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "photo_credit": "via Wikimedia Commons / La Brea Tar Pits",
   "google_place_id": "ChIJ_yD1_SK5woARmWLyCit3znQ",
-  "business_status": "CLOSED_TEMPORARILY"
+  "business_status": "CLOSED_TEMPORARILY",
+  "city_rank": 8
 }

@@ -9,7 +9,7 @@
   "discipline": "Science",
   "founded": 1933,
   "rating": 4.7,
-  "review_count": 36287,
+  "review_count": 36292,
   "admission_from": 25.95,
   "admission_text": "general admission",
   "hours_summary": "Mon–Sun · 9:30 AM – 4 PM",
@@ -69,5 +69,6 @@
   ],
   "photo_credit": "via Wikipedia / Museum of Science and Industry (Chicago)",
   "google_place_id": "ChIJHd8BYAopDogRBuMXc6oszA8",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 2
 }

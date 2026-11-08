@@ -8,7 +8,7 @@
   "discipline": "Specialized",
   "founded": 2002,
   "rating": 4.5,
-  "review_count": 371,
+  "review_count": 375,
   "admission_from": 6,
   "admission_text": "general admission",
   "tagline": "The Mapparium — a stained-glass globe you walk inside.",
@@ -35,5 +35,6 @@
   ],
   "photo_credit": "via Wikipedia / Mary Baker Eddy Library",
   "google_place_id": "ChIJQwysYRp644kR69CDm19fMGo",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 12
 }

@@ -8,7 +8,7 @@
   "discipline": "Natural History",
   "founded": 1853,
   "rating": 4.6,
-  "review_count": 6551,
+  "review_count": 6552,
   "admission_from": 45,
   "admission_text": "general admission",
   "tagline": "Aquarium, planetarium, natural history museum, and rainforest under one living roof.",
@@ -52,5 +52,6 @@
   ],
   "photo_credit": "via Wikipedia / California Academy of Sciences",
   "google_place_id": "ChIJIUT7rEOHhYARucp3wM-HhBs",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 6
 }

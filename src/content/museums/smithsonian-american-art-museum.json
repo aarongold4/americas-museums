@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1829,
   "rating": 4.8,
-  "review_count": 3859,
+  "review_count": 3860,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "American art from colonial to contemporary, in the Old Patent Office.",
@@ -40,5 +40,6 @@
   ],
   "photo_credit": "via Wikipedia / Smithsonian American Art Museum",
   "google_place_id": "ChIJldJnhJG3t4kRHEGl8KSqTcY",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 10
 }

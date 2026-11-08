@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 2012,
   "rating": 4.7,
-  "review_count": 25437,
+  "review_count": 25439,
   "admission_from": 39,
   "admission_text": "general admission",
   "tagline": "Dale Chihuly's glass at the foot of the Space Needle. Stunning at sunset.",
@@ -52,5 +52,6 @@
   ],
   "photo_credit": "via Wikipedia / Chihuly Garden and Glass",
   "google_place_id": "ChIJVTtr1kUVkFQRh-YAfijbQXs",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 1
 }

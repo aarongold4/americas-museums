@@ -8,7 +8,7 @@
   "discipline": "Specialized",
   "founded": 1858,
   "rating": 4.6,
-  "review_count": 6724,
+  "review_count": 6723,
   "admission_from": 20,
   "admission_text": "general admission",
   "tagline": "Anatomical specimens and medical history. Not for everyone.",
@@ -37,5 +37,6 @@
   ],
   "photo_credit": "via Wikipedia / Mütter Museum",
   "google_place_id": "ChIJKZI5O8MyHogRMAkx1ntablc",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 4
 }

@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1895,
   "rating": 4.6,
-  "review_count": 9959,
+  "review_count": 9963,
   "admission_from": 20,
   "admission_text": "general admission",
   "tagline": "Herzog & de Meuron building in Golden Gate Park. American and Oceanic art.",
@@ -49,5 +49,6 @@
   ],
   "photo_credit": "via Wikipedia / De Young Museum",
   "google_place_id": "ChIJI7NivpmAhYARSuRPlbbn_2w",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 3
 }

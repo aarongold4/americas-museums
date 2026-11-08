@@ -8,7 +8,7 @@
   "discipline": "Specialized",
   "founded": 2000,
   "rating": 4.5,
-  "review_count": 19488,
+  "review_count": 19493,
   "admission_from": 35,
   "admission_text": "general admission",
   "tagline": "MoPOP. Frank Gehry's crumpled blob at Seattle Center, with Hendrix and Nirvana inside.",
@@ -42,5 +42,6 @@
   ],
   "photo_credit": "via Wikipedia / Museum of Pop Culture",
   "google_place_id": "ChIJY8p6-EYVkFQREthJEc0p6dE",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 3
 }

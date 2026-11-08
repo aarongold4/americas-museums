@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1979,
   "rating": 4.4,
-  "review_count": 2592,
+  "review_count": 2595,
   "admission_from": 18,
   "admission_text": "general admission",
   "tagline": "Downtown LA's contemporary art museum. Free since 2023.",
@@ -35,5 +35,6 @@
   ],
   "photo_credit": "via Wikipedia / Skid Row, Los Angeles",
   "google_place_id": "ChIJc9UqAiXHwoARRktIsv23_aI",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 12
 }

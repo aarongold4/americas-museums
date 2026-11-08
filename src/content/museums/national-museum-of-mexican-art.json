@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1982,
   "rating": 4.8,
-  "review_count": 3884,
+  "review_count": 3889,
   "admission_from": 0,
   "admission_text": "always free",
   "hours_summary": "Tue–Sun · 10 AM – 5 PM (closed Mon)",
@@ -61,5 +61,6 @@
   ],
   "photo_credit": "via Wikipedia / National Museum of Mexican Art",
   "google_place_id": "ChIJsTi-rKAtDogRx9MnUyQcC7Q",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 4
 }

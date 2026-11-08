@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1870,
   "rating": 4.8,
-  "review_count": 95483,
+  "review_count": 95480,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "The largest art museum in the Western Hemisphere. Plan a full day.",
@@ -64,5 +64,6 @@
   ],
   "photo_credit": "via Wikipedia / Metropolitan Museum of Art",
   "google_place_id": "ChIJb8Jg9pZYwokR-qHGtvSkLzs",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 1
 }

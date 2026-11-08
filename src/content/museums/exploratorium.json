@@ -8,7 +8,7 @@
   "discipline": "Science",
   "founded": 1969,
   "rating": 4.7,
-  "review_count": 8823,
+  "review_count": 8829,
   "admission_from": 35,
   "admission_text": "general admission",
   "tagline": "The original hands-on science museum. Frank Oppenheimer's 1969 founding template.",
@@ -42,5 +42,6 @@
   ],
   "photo_credit": "via Wikipedia / Exploratorium",
   "google_place_id": "ChIJk2vl5NSGhYARwPGvs_ubIws",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 2
 }

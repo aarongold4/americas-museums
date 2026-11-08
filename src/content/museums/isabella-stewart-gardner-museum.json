@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1903,
   "rating": 4.7,
-  "review_count": 11474,
+  "review_count": 11486,
   "admission_from": 22,
   "admission_text": "general admission",
   "tagline": "A Venetian palazzo built in Boston. Empty frames where the Vermeer once hung.",
@@ -49,5 +49,6 @@
   ],
   "photo_credit": "via Wikipedia / Isabella Stewart Gardner Museum",
   "google_place_id": "ChIJSYXWkop544kRvTojD82gxdo",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 4
 }

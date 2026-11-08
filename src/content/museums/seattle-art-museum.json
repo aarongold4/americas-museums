@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1933,
   "rating": 4.6,
-  "review_count": 7513,
+  "review_count": 7519,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "Strong African and Pacific Northwest collections. Hammering Man at the entrance.",
@@ -49,5 +49,6 @@
   ],
   "photo_credit": "via Wikipedia / Seattle Art Museum",
   "google_place_id": "ChIJSxh5JbJqkFQRxI1KoO7oZHs",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 4
 }

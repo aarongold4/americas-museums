@@ -8,7 +8,7 @@
   "discipline": "Children",
   "founded": 2003,
   "rating": 4.4,
-  "review_count": 3297,
+  "review_count": 3298,
   "admission_from": 17,
   "admission_text": "general admission",
   "tagline": "Hands-on exhibits for children under 8, on Centennial Olympic Park.",
@@ -36,5 +36,6 @@
   ],
   "photo_credit": "via Wikipedia / Children's Museum of Atlanta",
   "google_place_id": "ChIJ38j8xX4E9YgRqM2Zg4zInn4",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 6
 }

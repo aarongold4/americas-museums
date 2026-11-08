@@ -8,7 +8,7 @@
   "discipline": "History",
   "founded": 1979,
   "rating": 4.7,
-  "review_count": 1330,
+  "review_count": 1333,
   "admission_from": 18,
   "admission_text": "general admission",
   "tagline": "JFK's archive in an I. M. Pei building on Columbia Point.",
@@ -30,5 +30,6 @@
   ],
   "photo_credit": "via Wikipedia / John F. Kennedy Presidential Library and Museum",
   "google_place_id": "ChIJSQcpaOR644kRJF6XrwoOG5E",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 10
 }

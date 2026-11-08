@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1974,
   "rating": 4.5,
-  "review_count": 464,
+  "review_count": 465,
   "admission_from": 0,
   "admission_text": "always free",
   "hours_summary": "Tue–Sun · 10 AM – 5 PM (closed Mon)",
@@ -52,5 +52,6 @@
   ],
   "photo_credit": "via Wikipedia / Smart Museum of Art",
   "google_place_id": "ChIJD-HYxj8pDogRkTSO4p_4YBw",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 10
 }

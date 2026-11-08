@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1997,
   "rating": 4.8,
-  "review_count": 37719,
+  "review_count": 37742,
   "admission_from": 0,
   "admission_text": "always free",
   "tagline": "Richard Meier's hilltop campus. European paintings, plus the views.",
@@ -66,5 +66,6 @@
   ],
   "photo_credit": "via Wikipedia / Getty Center",
   "google_place_id": "ChIJbzYnQte8woARJaqqFVpKeNo",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 1
 }

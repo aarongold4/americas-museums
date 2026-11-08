@@ -8,7 +8,7 @@
   "discipline": "Art",
   "founded": 1938,
   "rating": 4.8,
-  "review_count": 9228,
+  "review_count": 9235,
   "admission_from": 30,
   "admission_text": "general admission",
   "tagline": "Medieval Europe at the northern tip of Manhattan. Same ticket as the Met.",
@@ -55,5 +55,6 @@
   ],
   "photo_credit": "via Wikipedia / The Cloisters",
   "google_place_id": "ChIJK6bycAH0wokRrSnflfrnkZE",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 6
 }

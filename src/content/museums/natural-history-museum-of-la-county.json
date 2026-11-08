@@ -8,7 +8,7 @@
   "discipline": "Natural History",
   "founded": 1913,
   "rating": 4.8,
-  "review_count": 14863,
+  "review_count": 14870,
   "admission_from": 18,
   "admission_text": "general admission",
   "tagline": "Three T. rex skeletons in a row, a Hall of Gems, a butterfly pavilion seasonally.",
@@ -43,5 +43,6 @@
   ],
   "photo_credit": "via Wikipedia / NaturalHistoryMuseumOfLosAngelesCounty.jpg",
   "google_place_id": "ChIJXzARBf3HwoARJyT7uZSV-G4",
-  "business_status": "OPERATIONAL"
+  "business_status": "OPERATIONAL",
+  "city_rank": 4
 }

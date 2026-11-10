@@ -1,0 +1,12 @@
+# Apache config for Hostinger shared hosting.
+# This file is copied verbatim from public/ into dist/ by Astro's build.
+
+# -- Sitemap --------------------------------------------------------------
+# Astro's @astrojs/sitemap integration writes /sitemap-index.xml (which
+# points to /sitemap-0.xml). Some crawlers and Search Console validators
+# request the historical /sitemap.xml by convention; redirect them to the
+# real index so they still see the full sitemap tree.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^sitemap\.xml$ /sitemap-index.xml [R=301,L]
+</IfModule>

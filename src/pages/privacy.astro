@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavBar from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+
+const lastUpdated = '2026-11-15';
+---
+
+<BaseLayout
+  title="Privacy policy — Americas Museums"
+  description="How americasmuseums.com uses cookies, analytics, and third-party advertising; and how you can opt out of personalized ads."
+>
+  <NavBar slot="header" />
+
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5 py-10">
+      <div class="text-2xs tracking-wider2 text-brand font-medium mb-2">LEGAL</div>
+      <h1 class="display text-4xl text-ink mb-3 leading-tight">Privacy policy</h1>
+      <p class="text-sm text-ink-muted">Last updated: {lastUpdated}</p>
+    </div>
+  </section>
+
+  <section class="max-w-content mx-auto px-5 py-10 max-w-prose">
+    <div class="prose-editorial">
+      <h2>What this page covers</h2>
+      <p>
+        americasmuseums.com is an independent directory of American museums.
+        We don't ask for accounts, don't collect personal information directly,
+        and don't sell any data. This page explains the third-party services
+        that run on the site and how you can opt out of personalized ads.
+      </p>
+
+      <h2>Google Analytics</h2>
+      <p>
+        We use Google Analytics 4 to understand how visitors use the site
+        (which pages are popular, how people get here, roughly where in the
+        world traffic comes from). Google Analytics sets cookies and may
+        collect your IP address, device type, and browsing behavior on this
+        site. We configure Google Analytics with IP anonymization enabled.
+      </p>
+      <p>
+        You can opt out of Google Analytics across all sites by installing
+        the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">Google Analytics opt-out browser add-on</a>.
+      </p>
+
+      <h2>Advertising</h2>
+      <p>
+        We use Google AdSense to display ads. <strong>Google, as a third-party
+        vendor, uses cookies to serve ads on this site. Google's use of
+        advertising cookies enables it and its partners to serve ads to our
+        users based on their visit to this site and/or other sites on the
+        Internet.</strong> Other third-party vendors or ad networks may also
+        use cookies to serve ads on this site.
+      </p>
+      <p>
+        You can opt out of personalized advertising by visiting Google's
+        Ads Settings at
+        <a href="https://adssettings.google.com" rel="noopener" target="_blank">https://adssettings.google.com</a>.
+        You can also opt out of a third-party vendor's use of cookies for
+        personalized advertising by visiting
+        <a href="https://www.aboutads.info" rel="noopener" target="_blank">www.aboutads.info</a>.
+      </p>
+
+      <h2>Affiliate links</h2>
+      <p>
+        Some ticket links on museum pages are affiliate links — if you buy
+        a ticket after clicking one, we may earn a small commission at no
+        extra cost to you. Affiliate links are labeled near the button and
+        use the <code>rel="sponsored nofollow"</code> attribute. These
+        commissions help keep the site free.
+      </p>
+
+      <h2>Cookies at a glance</h2>
+      <ul>
+        <li><strong>Google Analytics:</strong> <code>_ga</code>, <code>_ga_*</code> — measure site usage</li>
+        <li><strong>Google AdSense:</strong> ad personalization and frequency capping cookies</li>
+        <li><strong>Affiliate networks</strong> (GetYourGuide, Tiqets, etc.): may set cookies after you click a ticket link, to attribute a purchase back to this site</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>
+        The site is a general-audience travel directory. We don't knowingly
+        collect personal information from children under 13.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy can be sent through the
+        <a href="/contact/">contact page</a>.
+      </p>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

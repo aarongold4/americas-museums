@@ -1,13 +1,28 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import ticketLinks from '../data/ticket_links.json';
 
 interface Props {
   museum: CollectionEntry<'museums'>['data'];
+  slug: string;
 }
 
-const { museum: m } = Astro.props;
-const hasAffiliate = m.affiliate && m.affiliate.network !== 'none' && m.affiliate.deep_link;
-const priceLabel = m.admission_from === 0 ? 'Free' : `$${m.admission_from}`;
+const { museum: m, slug } = Astro.props;
+
+// Resolution order:
+//   1. src/data/ticket_links.json — the single file Aaron swaps affiliate links in
+//   2. per-museum affiliate.deep_link in the museum JSON (legacy / overrides)
+//   3. generic GetYourGuide search for the museum name+city
+const linkEntry = (ticketLinks as Record<string, { url: string; network: string; product_name?: string }>)[slug];
+const perMuseumAff = m.affiliate && m.affiliate.network !== 'none' && m.affiliate.deep_link
+  ? { url: m.affiliate.deep_link, network: m.affiliate.network }
+  : null;
+const fallbackSearch = `https://www.getyourguide.com/s/?q=${encodeURIComponent(`${m.name} ${m.city}`)}`;
+
+const ticket = linkEntry ?? perMuseumAff ?? { url: fallbackSearch, network: 'getyourguide-search' };
+const isAffiliate = ticket.network !== 'official' && ticket.network !== 'none';
+
+const priceLabel = m.admission_from === 0 ? 'Free' : (m.admission_from ? `$${m.admission_from}` : 'Varies');
 ---
 
 <aside
@@ -18,30 +33,21 @@ const priceLabel = m.admission_from === 0 ? 'Free' : `$${m.admission_from}`;
   <div class="text-2xl font-medium text-ink mb-0.5 leading-none">{priceLabel}</div>
   <div class="text-2xs text-ink-muted mb-3">
     {m.admission_text}
-    {hasAffiliate && ' · skip the line'}
+    {isAffiliate && ' · skip the line'}
   </div>
 
-  {hasAffiliate ? (
-    <>
-      <a
-        href={m.affiliate!.deep_link}
-        rel="sponsored noopener"
-        target="_blank"
-        class="btn-action w-full block text-center"
-      >
-        Get tickets
-      </a>
-      <div class="text-center text-2xs text-ink-muted mt-1.5">
-        Free cancellation · instant confirmation
-      </div>
-    </>
-  ) : (
-    <a
-      href={`https://www.google.com/search?q=${encodeURIComponent(m.name + ' tickets')}`}
-      class="btn-action w-full block text-center"
-      style="background: #003B95"
-    >
-      Visit official site
-    </a>
+  <a
+    href={ticket.url}
+    rel={isAffiliate ? 'sponsored nofollow noopener' : 'noopener'}
+    target="_blank"
+    class="btn-action w-full block text-center"
+  >
+    {isAffiliate ? 'Get tickets' : 'Visit official site'}
+  </a>
+
+  {isAffiliate && (
+    <div class="text-center text-2xs text-ink-muted mt-1.5 leading-snug">
+      Affiliate link — we may earn a small commission at no extra cost to you.
+    </div>
   )}
 </aside>

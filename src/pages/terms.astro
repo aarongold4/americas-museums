@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavBar from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+
+const lastUpdated = '2026-11-15';
+---
+
+<BaseLayout
+  title="Terms of use — Americas Museums"
+  description="Terms of use for americasmuseums.com."
+>
+  <NavBar slot="header" />
+
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5 py-10">
+      <div class="text-2xs tracking-wider2 text-brand font-medium mb-2">LEGAL</div>
+      <h1 class="display text-4xl text-ink mb-3 leading-tight">Terms of use</h1>
+      <p class="text-sm text-ink-muted">Last updated: {lastUpdated}</p>
+    </div>
+  </section>
+
+  <section class="max-w-content mx-auto px-5 py-10 max-w-prose">
+    <div class="prose-editorial">
+      <h2>Informational site</h2>
+      <p>
+        americasmuseums.com is an independent directory. We aggregate publicly
+        available information about museums — hours, admission, descriptions,
+        ratings from Google Maps — and link out to each museum's official site
+        or ticketing partner.
+      </p>
+
+      <h2>No warranty</h2>
+      <p>
+        Hours, prices, and exhibit information change. We update the directory
+        weekly from public sources, but the site is provided on an "as is"
+        basis. Always confirm details on the museum's official page before
+        your visit.
+      </p>
+
+      <h2>Affiliate disclosure</h2>
+      <p>
+        Some ticket links are affiliate links; we may earn a small commission
+        at no extra cost to you. See the <a href="/privacy/">privacy policy</a>.
+      </p>
+
+      <h2>Third-party links</h2>
+      <p>
+        Links to museum websites, booking partners, and other third-party
+        sites are provided for your convenience. We don't control those sites
+        and aren't responsible for their content or practices.
+      </p>
+
+      <h2>Trademarks</h2>
+      <p>
+        Museum names, logos, and other marks mentioned on this site are the
+        property of their respective owners and are used for identification
+        only.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Corrections and takedown requests can be sent through the
+        <a href="/contact/">contact page</a>.
+      </p>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

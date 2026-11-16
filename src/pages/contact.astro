@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavBar from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Contact — Americas Museums"
+  description="Corrections, takedown requests, and partnerships for americasmuseums.com."
+>
+  <NavBar slot="header" />
+
+  <section class="bg-white border-b border-surface-line">
+    <div class="max-w-content mx-auto px-5 py-10">
+      <div class="text-2xs tracking-wider2 text-brand font-medium mb-2">CONTACT</div>
+      <h1 class="display text-4xl text-ink mb-3 leading-tight">Get in touch</h1>
+      <p class="text-base text-ink-muted max-w-prose">
+        For corrections to a museum's hours, admission, or review summary;
+        takedown requests; affiliate partnerships; or anything else about the
+        site.
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-content mx-auto px-5 py-10 max-w-prose">
+    <div class="prose-editorial">
+      <h2>How to reach us</h2>
+      <p>
+        A contact method for this site is being set up. In the meantime,
+        corrections to a museum's hours, admission, or review summary can
+        wait until that's live — the directory also updates automatically
+        every week from public sources.
+      </p>
+
+      <h2>Takedown and attribution</h2>
+      <p>
+        Every photo on the site is credited beneath it, with a link to its
+        Wikipedia or Wikimedia Commons source. If you believe a photo is used
+        in error, send us the museum and the photo source and we'll remove it.
+      </p>
+
+      <h2>Affiliate partnerships</h2>
+      <p>
+        We work with GetYourGuide and Tiqets. Other ticketing partners can
+        reach out with the same email address.
+      </p>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

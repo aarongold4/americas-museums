@@ -1,0 +1,430 @@
+{
+  "adler-planetarium": {
+    "url": "https://www.getyourguide.com/s/?q=Adler+Planetarium+Chicago",
+    "network": "getyourguide-search"
+  },
+  "african-american-museum-in-philadelphia": {
+    "url": "https://www.getyourguide.com/s/?q=African+American+Museum+in+Philadelphia+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "american-museum-of-natural-history": {
+    "url": "https://www.getyourguide.com/s/?q=American+Museum+of+Natural+History+New+York",
+    "network": "getyourguide-search"
+  },
+  "apex-museum": {
+    "url": "https://www.getyourguide.com/s/?q=APEX+Museum+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "art-institute-of-chicago": {
+    "url": "https://www.getyourguide.com/s/?q=Art+Institute+of+Chicago+Chicago",
+    "network": "getyourguide-search"
+  },
+  "asian-art-museum-of-san-francisco": {
+    "url": "https://www.getyourguide.com/s/?q=Asian+Art+Museum+of+San+Francisco+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "atlanta-contemporary": {
+    "url": "https://www.getyourguide.com/s/?q=Atlanta+Contemporary+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "atlanta-history-center": {
+    "url": "https://www.getyourguide.com/s/?q=Atlanta+History+Center+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "barnes-foundation": {
+    "url": "https://www.getyourguide.com/s/?q=Barnes+Foundation+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "boston-childrens-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Boston+Children%27s+Museum+Boston",
+    "network": "getyourguide-search"
+  },
+  "brooklyn-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Brooklyn+Museum+New+York",
+    "network": "getyourguide-search"
+  },
+  "burke-museum-of-natural-history-and-culture": {
+    "url": "https://www.getyourguide.com/s/?q=Burke+Museum+of+Natural+History+and+Culture+Seattle",
+    "network": "getyourguide-search"
+  },
+  "cable-car-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Cable+Car+Museum+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "california-academy-of-sciences": {
+    "url": "https://www.getyourguide.com/s/?q=California+Academy+of+Sciences+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "california-science-center": {
+    "url": "https://www.getyourguide.com/s/?q=California+Science+Center+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "cartoon-art-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Cartoon+Art+Museum+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "center-for-puppetry-arts": {
+    "url": "https://www.getyourguide.com/s/?q=Center+for+Puppetry+Arts+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "center-for-wooden-boats": {
+    "url": "https://www.getyourguide.com/s/?q=Center+for+Wooden+Boats+Seattle",
+    "network": "getyourguide-search"
+  },
+  "chicago-history-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Chicago+History+Museum+Chicago",
+    "network": "getyourguide-search"
+  },
+  "chihuly-garden-and-glass": {
+    "url": "https://www.getyourguide.com/s/?q=Chihuly+Garden+and+Glass+Seattle",
+    "network": "getyourguide-search"
+  },
+  "childrens-museum-of-atlanta": {
+    "url": "https://www.getyourguide.com/s/?q=Children%27s+Museum+of+Atlanta+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "contemporary-jewish-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Contemporary+Jewish+Museum+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "cooper-hewitt-smithsonian-design-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Cooper+Hewitt%2C+Smithsonian+Design+Museum+New+York",
+    "network": "getyourguide-search"
+  },
+  "de-young-museum": {
+    "url": "https://www.getyourguide.com/s/?q=de+Young+Museum+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "driehaus-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Driehaus+Museum+Chicago",
+    "network": "getyourguide-search"
+  },
+  "dusable-black-history-museum": {
+    "url": "https://www.getyourguide.com/s/?q=DuSable+Black+History+Museum+Chicago",
+    "network": "getyourguide-search"
+  },
+  "eastern-state-penitentiary": {
+    "url": "https://www.getyourguide.com/s/?q=Eastern+State+Penitentiary+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "exploratorium": {
+    "url": "https://www.getyourguide.com/s/?q=Exploratorium+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "fernbank-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Fernbank+Museum+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "field-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Field+Museum+Chicago",
+    "network": "getyourguide-search"
+  },
+  "franklin-institute": {
+    "url": "https://www.getyourguide.com/s/?q=Franklin+Institute+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "frick-collection": {
+    "url": "https://www.getyourguide.com/s/?q=Frick+Collection+New+York",
+    "network": "getyourguide-search"
+  },
+  "frye-art-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Frye+Art+Museum+Seattle",
+    "network": "getyourguide-search"
+  },
+  "getty-center": {
+    "url": "https://www.getyourguide.com/s/?q=Getty+Center+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "getty-villa": {
+    "url": "https://www.getyourguide.com/s/?q=Getty+Villa+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "glbt-historical-society-museum": {
+    "url": "https://www.getyourguide.com/s/?q=GLBT+Historical+Society+Museum+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "hammer-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Hammer+Museum+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "harvard-art-museums": {
+    "url": "https://www.getyourguide.com/s/?q=Harvard+Art+Museums+Boston",
+    "network": "getyourguide-search"
+  },
+  "high-museum-of-art": {
+    "url": "https://www.getyourguide.com/s/?q=High+Museum+of+Art+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "hirshhorn-museum-and-sculpture-garden": {
+    "url": "https://www.getyourguide.com/s/?q=Hirshhorn+Museum+and+Sculpture+Garden+Washington",
+    "network": "getyourguide-search"
+  },
+  "huntington-library": {
+    "url": "https://www.getyourguide.com/s/?q=Huntington+Library%2C+Art+Museum%2C+and+Botanical+Gardens+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "independence-seaport-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Independence+Seaport+Museum+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "institute-of-contemporary-art-boston": {
+    "url": "https://www.getyourguide.com/s/?q=Institute+of+Contemporary+Art+Boston+Boston",
+    "network": "getyourguide-search"
+  },
+  "international-spy-museum": {
+    "url": "https://www.getyourguide.com/s/?q=International+Spy+Museum+Washington",
+    "network": "getyourguide-search"
+  },
+  "intrepid-sea-air-and-space-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Intrepid+Sea%2C+Air+%26+Space+Museum+New+York",
+    "network": "getyourguide-search"
+  },
+  "isabella-stewart-gardner-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Isabella+Stewart+Gardner+Museum+Boston",
+    "network": "getyourguide-search"
+  },
+  "jimmy-carter-presidential-library-and-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Jimmy+Carter+Presidential+Library+and+Museum+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "john-f-kennedy-presidential-library-and-museum": {
+    "url": "https://www.getyourguide.com/s/?q=John+F.+Kennedy+Presidential+Library+and+Museum+Boston",
+    "network": "getyourguide-search"
+  },
+  "klondike-gold-rush-national-historical-park": {
+    "url": "https://www.getyourguide.com/s/?q=Klondike+Gold+Rush+National+Historical+Park+Seattle",
+    "network": "getyourguide-search"
+  },
+  "la-brea-tar-pits-and-museum": {
+    "url": "https://www.getyourguide.com/s/?q=La+Brea+Tar+Pits+and+Museum+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "legion-of-honor": {
+    "url": "https://www.getyourguide.com/s/?q=Legion+of+Honor+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "los-angeles-county-museum-of-art": {
+    "url": "https://www.getyourguide.com/s/?q=Los+Angeles+County+Museum+of+Art+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "mary-baker-eddy-library": {
+    "url": "https://www.getyourguide.com/s/?q=Mary+Baker+Eddy+Library+Boston",
+    "network": "getyourguide-search"
+  },
+  "met-cloisters": {
+    "url": "https://www.getyourguide.com/s/?q=The+Met+Cloisters+New+York",
+    "network": "getyourguide-search"
+  },
+  "metropolitan-museum-of-art": {
+    "url": "https://www.getyourguide.com/s/?q=Metropolitan+Museum+of+Art+New+York",
+    "network": "getyourguide-search"
+  },
+  "michael-c-carlos-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Michael+C.+Carlos+Museum+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "mit-museum": {
+    "url": "https://www.getyourguide.com/s/?q=MIT+Museum+Boston",
+    "network": "getyourguide-search"
+  },
+  "museum-of-contemporary-art-chicago": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+Contemporary+Art+Chicago+Chicago",
+    "network": "getyourguide-search"
+  },
+  "museum-of-contemporary-art-los-angeles": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+Contemporary+Art+Los+Angeles+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "museum-of-design-atlanta": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+Design+Atlanta+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "museum-of-fine-arts-boston": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+Fine+Arts%2C+Boston+Boston",
+    "network": "getyourguide-search"
+  },
+  "museum-of-flight": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+Flight+Seattle",
+    "network": "getyourguide-search"
+  },
+  "museum-of-modern-art": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+Modern+Art+New+York",
+    "network": "getyourguide-search"
+  },
+  "museum-of-pop-culture": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+Pop+Culture+Seattle",
+    "network": "getyourguide-search"
+  },
+  "museum-of-science-and-industry": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+Science+and+Industry+Chicago",
+    "network": "getyourguide-search"
+  },
+  "museum-of-science-boston": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+Science+Boston+Boston",
+    "network": "getyourguide-search"
+  },
+  "museum-of-the-african-diaspora": {
+    "url": "https://www.getyourguide.com/s/?q=Museum+of+the+African+Diaspora+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "mutter-museum": {
+    "url": "https://www.getyourguide.com/s/?q=M%C3%BCtter+Museum+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "national-air-and-space-museum": {
+    "url": "https://www.getyourguide.com/s/?q=National+Air+and+Space+Museum+Washington",
+    "network": "getyourguide-search"
+  },
+  "national-center-for-civil-and-human-rights": {
+    "url": "https://www.getyourguide.com/s/?q=National+Center+for+Civil+and+Human+Rights+Atlanta",
+    "network": "getyourguide-search"
+  },
+  "national-constitution-center": {
+    "url": "https://www.getyourguide.com/s/?q=National+Constitution+Center+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "national-gallery-of-art": {
+    "url": "https://www.getyourguide.com/s/?q=National+Gallery+of+Art+Washington",
+    "network": "getyourguide-search"
+  },
+  "national-hellenic-museum": {
+    "url": "https://www.getyourguide.com/s/?q=National+Hellenic+Museum+Chicago",
+    "network": "getyourguide-search"
+  },
+  "national-museum-of-african-american-history-and-culture": {
+    "url": "https://www.getyourguide.com/s/?q=National+Museum+of+African+American+History+and+Culture+Washington",
+    "network": "getyourguide-search"
+  },
+  "national-museum-of-american-history": {
+    "url": "https://www.getyourguide.com/s/?q=National+Museum+of+American+History+Washington",
+    "network": "getyourguide-search"
+  },
+  "national-museum-of-mexican-art": {
+    "url": "https://www.getyourguide.com/s/?q=National+Museum+of+Mexican+Art+Chicago",
+    "network": "getyourguide-search"
+  },
+  "national-museum-of-natural-history": {
+    "url": "https://www.getyourguide.com/s/?q=National+Museum+of+Natural+History+Washington",
+    "network": "getyourguide-search"
+  },
+  "national-museum-of-the-american-indian": {
+    "url": "https://www.getyourguide.com/s/?q=National+Museum+of+the+American+Indian+Washington",
+    "network": "getyourguide-search"
+  },
+  "national-nordic-museum": {
+    "url": "https://www.getyourguide.com/s/?q=National+Nordic+Museum+Seattle",
+    "network": "getyourguide-search"
+  },
+  "national-portrait-gallery": {
+    "url": "https://www.getyourguide.com/s/?q=National+Portrait+Gallery+Washington",
+    "network": "getyourguide-search"
+  },
+  "natural-history-museum-of-la-county": {
+    "url": "https://www.getyourguide.com/s/?q=Natural+History+Museum+of+Los+Angeles+County+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "new-england-aquarium": {
+    "url": "https://www.getyourguide.com/s/?q=New+England+Aquarium+Boston",
+    "network": "getyourguide-search"
+  },
+  "new-york-historical-society": {
+    "url": "https://www.getyourguide.com/s/?q=New-York+Historical+Society+New+York",
+    "network": "getyourguide-search"
+  },
+  "norton-simon-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Norton+Simon+Museum+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "pacific-science-center": {
+    "url": "https://www.getyourguide.com/s/?q=Pacific+Science+Center+Seattle",
+    "network": "getyourguide-search"
+  },
+  "peabody-museum-of-archaeology-and-ethnology": {
+    "url": "https://www.getyourguide.com/s/?q=Peabody+Museum+of+Archaeology+and+Ethnology+Boston",
+    "network": "getyourguide-search"
+  },
+  "penn-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Penn+Museum+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "petersen-automotive-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Petersen+Automotive+Museum+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "philadelphia-museum-of-art": {
+    "url": "https://www.getyourguide.com/s/?q=Philadelphia+Museum+of+Art+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "phillips-collection": {
+    "url": "https://www.getyourguide.com/s/?q=Phillips+Collection+Washington",
+    "network": "getyourguide-search"
+  },
+  "please-touch-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Please+Touch+Museum+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "rodin-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Rodin+Museum+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "san-francisco-museum-of-modern-art": {
+    "url": "https://www.getyourguide.com/s/?q=San+Francisco+Museum+of+Modern+Art+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "seattle-art-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Seattle+Art+Museum+Seattle",
+    "network": "getyourguide-search"
+  },
+  "seattle-asian-art-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Seattle+Asian+Art+Museum+Seattle",
+    "network": "getyourguide-search"
+  },
+  "smart-museum-of-art": {
+    "url": "https://www.getyourguide.com/s/?q=Smart+Museum+of+Art+Chicago",
+    "network": "getyourguide-search"
+  },
+  "smithsonian-american-art-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Smithsonian+American+Art+Museum+Washington",
+    "network": "getyourguide-search"
+  },
+  "solomon-r-guggenheim-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Solomon+R.+Guggenheim+Museum+New+York",
+    "network": "getyourguide-search"
+  },
+  "tenement-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Tenement+Museum+New+York",
+    "network": "getyourguide-search"
+  },
+  "the-broad": {
+    "url": "https://www.getyourguide.com/s/?q=The+Broad+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "united-states-holocaust-memorial-museum": {
+    "url": "https://www.getyourguide.com/s/?q=United+States+Holocaust+Memorial+Museum+Washington",
+    "network": "getyourguide-search"
+  },
+  "uss-constitution-museum": {
+    "url": "https://www.getyourguide.com/s/?q=USS+Constitution+Museum+Boston",
+    "network": "getyourguide-search"
+  },
+  "walt-disney-family-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Walt+Disney+Family+Museum+San+Francisco",
+    "network": "getyourguide-search"
+  },
+  "weitzman-national-museum-of-american-jewish-history": {
+    "url": "https://www.getyourguide.com/s/?q=Weitzman+National+Museum+of+American+Jewish+History+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "whitney-museum-of-american-art": {
+    "url": "https://www.getyourguide.com/s/?q=Whitney+Museum+of+American+Art+New+York",
+    "network": "getyourguide-search"
+  },
+  "wing-luke-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Wing+Luke+Museum+Seattle",
+    "network": "getyourguide-search"
+  },
+  "world-of-coca-cola": {
+    "url": "https://www.getyourguide.com/s/?q=World+of+Coca-Cola+Atlanta",
+    "network": "getyourguide-search"
+  }
+}

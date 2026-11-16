@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import TicketBox from '../../components/TicketBox.astro';
 import Schema from '../../components/Schema.astro';
 import { getCollection } from 'astro:content';
+import ticketLinks from '../../data/ticket_links.json';
 
 export async function getStaticPaths() {
   const museums = await getCollection('museums');
@@ -16,6 +17,17 @@ export async function getStaticPaths() {
 
 const { museum } = Astro.props;
 const m = museum.data;
+const slug = museum.id.replace(/\.json$/, '');
+
+// Resolve the ticket URL the same way TicketBox does, so the mobile
+// sticky CTA and the desktop sidebar stay in sync.
+const ticketEntry = (ticketLinks as Record<string, { url: string; network: string }>)[slug];
+const perMuseumAff = m.affiliate && m.affiliate.network !== 'none' && m.affiliate.deep_link
+  ? { url: m.affiliate.deep_link, network: m.affiliate.network }
+  : null;
+const fallbackSearch = `https://www.getyourguide.com/s/?q=${encodeURIComponent(`${m.name} ${m.city}`)}`;
+const ticket = ticketEntry ?? perMuseumAff ?? { url: fallbackSearch, network: 'getyourguide-search' };
+const ticketIsAffiliate = ticket.network !== 'official' && ticket.network !== 'none';
 
 const pageTitle = `${m.name} — tickets, hours & visitor guide`;
 const pageDescription = m.tagline;
@@ -99,7 +111,7 @@ const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently cl
           {m.distance_landmark && <> · {m.distance_landmark}</>}
         </div>
       </div>
-      <TicketBox museum={m} />
+      <TicketBox museum={m} slug={slug} />
     </div>
   </section>
 
@@ -192,11 +204,14 @@ const closedLabel = m.business_status === 'CLOSED_PERMANENTLY' ? 'Permanently cl
       <div class="text-2xs text-ink-muted">From</div>
       <div class="text-base font-medium">{m.admission_from === 0 ? 'Free' : `$${m.admission_from}`}</div>
     </div>
-    {m.affiliate && m.affiliate.network !== 'none' && m.affiliate.deep_link ? (
-      <a href={m.affiliate.deep_link} rel="sponsored noopener" target="_blank" class="btn-action">Get tickets</a>
-    ) : (
-      <a href={`https://www.google.com/search?q=${encodeURIComponent(m.name + ' tickets')}`} class="btn-action" style="background:#003B95">Visit site</a>
-    )}
+    <a
+      href={ticket.url}
+      rel={ticketIsAffiliate ? 'sponsored nofollow noopener' : 'noopener'}
+      target="_blank"
+      class="btn-action"
+    >
+      {ticketIsAffiliate ? 'Get tickets' : 'Visit site'}
+    </a>
   </div>
 
   <Footer slot="footer" />

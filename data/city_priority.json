@@ -1,0 +1,22 @@
+[
+  { "slug": "austin", "city": "Austin", "state": "TX", "notes": "Blanton, Harry Ransom Center, Bullock Texas State History, Thinkery, Contemporary Austin, LBJ Presidential Library" },
+  { "slug": "portland", "city": "Portland", "state": "OR", "notes": "Portland Art Museum, OMSI, Oregon Historical Society, Lan Su Chinese Garden, Japanese Garden, Pittock Mansion" },
+  { "slug": "nashville", "city": "Nashville", "state": "TN", "notes": "Frist Art Museum, Country Music Hall of Fame, Johnny Cash Museum, Parthenon, Tennessee State Museum, National Museum of African American Music" },
+  { "slug": "st-louis", "city": "St. Louis", "state": "MO", "notes": "Saint Louis Art Museum (free), Missouri History Museum, Science Center, City Museum, Contemporary Art Museum, Pulitzer Arts Foundation" },
+  { "slug": "pittsburgh", "city": "Pittsburgh", "state": "PA", "notes": "Carnegie Museums (Art + Natural History), Andy Warhol Museum, Mattress Factory, Heinz History Center, Phipps Conservatory" },
+  { "slug": "phoenix", "city": "Phoenix", "state": "AZ", "notes": "Phoenix Art Museum, Heard Museum, Musical Instrument Museum, Desert Botanical Garden, Scottsdale Museum of Contemporary Art, Pueblo Grande" },
+  { "slug": "baltimore", "city": "Baltimore", "state": "MD", "notes": "Walters Art Museum, Baltimore Museum of Art (free), American Visionary Art Museum, Reginald F. Lewis Museum, National Aquarium, B&O Railroad" },
+  { "slug": "cleveland", "city": "Cleveland", "state": "OH", "notes": "Cleveland Museum of Art (free), Rock and Roll Hall of Fame, Natural History Museum, Museum of Contemporary Art, Great Lakes Science Center" },
+  { "slug": "detroit", "city": "Detroit", "state": "MI", "notes": "Detroit Institute of Arts, Henry Ford Museum, Motown Museum, Charles H. Wright Museum, Michigan Science Center, Arab American National Museum" },
+  { "slug": "indianapolis", "city": "Indianapolis", "state": "IN", "notes": "Newfields (IMA), Children's Museum (largest in US), Eiteljorg Museum, Indiana State Museum, NCAA Hall of Champions" },
+  { "slug": "kansas-city", "city": "Kansas City", "state": "MO", "notes": "Nelson-Atkins, Kemper Museum, National WWI Museum, Negro Leagues Baseball Museum, American Jazz Museum, Arabia Steamboat Museum" },
+  { "slug": "charlotte", "city": "Charlotte", "state": "NC", "notes": "Mint Museum, Bechtler Museum of Modern Art, Harvey B. Gantt Center, Discovery Place Science, Levine Museum of the New South, NASCAR Hall of Fame" },
+  { "slug": "milwaukee", "city": "Milwaukee", "state": "WI", "notes": "Milwaukee Art Museum, Harley-Davidson Museum, Pabst Mansion, Public Museum, Discovery World, Grohmann Museum" },
+  { "slug": "sacramento", "city": "Sacramento", "state": "CA", "notes": "Crocker Art Museum, California State Railroad Museum, California Museum, Sacramento History Museum, Powerhouse Science Center" },
+  { "slug": "cincinnati", "city": "Cincinnati", "state": "OH", "notes": "Cincinnati Art Museum (free), Taft Museum, National Underground Railroad Freedom Center, Museum Center at Union Terminal, Contemporary Arts Center" },
+  { "slug": "salt-lake-city", "city": "Salt Lake City", "state": "UT", "notes": "Utah Museum of Fine Arts, Natural History Museum of Utah, Clark Planetarium, Leonardo, Church History Museum, Pioneer Memorial" },
+  { "slug": "las-vegas", "city": "Las Vegas", "state": "NV", "notes": "Neon Museum, Mob Museum, Atomic Museum, Discovery Children's Museum, Shelby American, Las Vegas Natural History" },
+  { "slug": "santa-fe", "city": "Santa Fe", "state": "NM", "notes": "Georgia O'Keeffe Museum, New Mexico Museum of Art, Palace of the Governors, Wheelwright Museum, Museum of International Folk Art, SITE Santa Fe" },
+  { "slug": "richmond", "city": "Richmond", "state": "VA", "notes": "Virginia Museum of Fine Arts (free), Virginia Historical Society, American Civil War Museum, Science Museum of Virginia, Edgar Allan Poe Museum" },
+  { "slug": "providence", "city": "Providence", "state": "RI", "notes": "RISD Museum, Culinary Arts Museum, Providence Children's, Rhode Island State House, John Brown House, Museum of Natural History" }
+]

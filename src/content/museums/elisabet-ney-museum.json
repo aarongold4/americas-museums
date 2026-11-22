@@ -1,0 +1,51 @@
+{
+  "name": "Elisabet Ney Museum",
+  "city": "Austin",
+  "state": "TX",
+  "address": "304 E 44th St, Austin, TX 78751",
+  "lat": 30.3045,
+  "lng": -97.7262,
+  "discipline": "Art",
+  "founded": 1911,
+  "admission_from": 0,
+  "admission_text": "free admission",
+  "hours_summary": "Wed–Sun · noon – 5 PM · closed Mon–Tue",
+  "hours_today": "closed Mondays",
+  "visit_time": "45 min–1 hour",
+  "best_for": "Sculpture and quirky-house-museum fans",
+  "tagline": "The German-born sculptor's limestone studio in Hyde Park, kept as she left it in 1907.",
+  "description": "The limestone studio-home of 19th-century sculptor Elisabet Ney, who moved from Germany to Texas and sculpted the state's founding politicians. The building, Formosa, still holds her plaster models of Stephen F. Austin and Sam Houston (the marbles are at the US Capitol and the Texas Capitol) and her tools, in a quiet Hyde Park neighborhood.",
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Always free — another City of Austin museum."
+    },
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "Walk the grounds — the oak-shaded studio garden is part of the experience."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Main Studio",
+      "item": "Plaster models of Stephen F. Austin and Sam Houston"
+    },
+    {
+      "location": "Tower",
+      "item": "Ney's sleeping loft, up a narrow spiral stair"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "In Hyde Park, 3 mi north of downtown",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Elisabet_Ney_Museum_Front.jpg/1280px-Elisabet_Ney_Museum_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Elisabet_Ney_Museum_Front.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Elisabet_Ney_Museum_Inside.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Historic_Marker%2C_Elisabet_Ney_Studio_Built_1892.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Elisabet Ney Museum"
+}

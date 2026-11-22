@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Austin — Photo Review</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         margin: 0; padding: 0; background: #f5f5f0; color: #222; }
+  header { position: sticky; top: 0; z-index: 10; background: #fff;
+           border-bottom: 1px solid #ddd; padding: 16px 24px;
+           display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+  header .stats { font-size: 13px; color: #666; }
+  header .ok { color: #0a7; font-weight: 600; }
+  header .missing { color: #c33; font-weight: 600; }
+  header button { padding: 8px 14px; font-size: 14px;
+    background: #003B95; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+  .flagged-box { flex: 1 1 100%; display: flex; gap: 8px; align-items: center; }
+  .flagged-box textarea { flex: 1; min-height: 36px; padding: 8px; font-family: ui-monospace, monospace; font-size: 12px; }
+  main { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 16px; padding: 24px; }
+  .card { background: #fff; border: 1px solid #ddd; border-radius: 6px;
+    overflow: hidden; display: flex; flex-direction: column; }
+  .card--missing { border-color: #c33; background: #fff5f5; }
+  .hero { aspect-ratio: 16/10; background: #eee; overflow: hidden; }
+  .hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .no-photo { width: 100%; height: 100%; display: flex; align-items: center;
+    justify-content: center; color: #c33; font-size: 14px; font-weight: 600; background: #fff5f5; }
+  .meta { padding: 12px 14px; }
+  .meta h2 { margin: 0 0 4px; font-size: 15px; font-weight: 600; }
+  .loc { font-size: 12px; color: #666; margin-bottom: 4px; }
+  .tag { font-size: 12px; color: #444; margin-bottom: 6px; font-style: italic; }
+  .src { font-size: 12px; margin-bottom: 4px; }
+  .src a { color: #003B95; }
+  .slug { font-size: 11px; color: #888; margin-bottom: 8px; }
+  .slug code { background: #eee; padding: 1px 4px; border-radius: 2px; }
+  .warn { color: #c33; font-size: 12px; margin-bottom: 8px; }
+  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin-bottom: 8px; }
+  .gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+  .flag { font-size: 13px; color: #c33; }
+  .flag input { margin-right: 4px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Austin — review 12 pending museums</h1>
+  <div class="stats"><span class="ok">11</span> with photo · <span class="missing">1</span> missing</div>
+  <div class="flagged-box">
+    <textarea id="flagged" placeholder="flagged slugs will appear here"></textarea>
+    <button id="copyBtn">copy flagged</button>
+  </div>
+</header>
+<main>
+
+<div class="card " id="blanton-museum-of-art">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg/1280px-Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Blanton Museum of Art" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Blanton Museum of Art</h2>
+    <div class="loc">Austin, TX · Art · $15 general admission</div>
+    <div class="tag">UT's university art museum. Ellsworth Kelly's Austin is the pilgrimage piece.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Blanton_Museum_of_Art" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>blanton-museum-of-art</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Blanton_Museum_grounds_2025.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Blanton_Museum_grounds_2025.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Exterior_grounds_and_plaza_designed_by_Sn%C3%B8hetta--Blanton_Museum_of_Art--Austin.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Exterior_grounds_and_plaza_designed_by_Sn%C3%B8hetta--Blanton_Museum_of_Art--Austin.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="blanton-museum-of-art" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="harry-ransom-center">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Harry_ransom_center_2012.jpg/1280px-Harry_ransom_center_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Harry Ransom Center" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Harry Ransom Center</h2>
+    <div class="loc">Austin, TX · Specialized · free</div>
+    <div class="tag">UT's humanities archive. The Gutenberg Bible and the first photograph are on permanent display.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Harry_Ransom_Center" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>harry-ransom-center</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Harry_ransom_center_2012.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Harry_ransom_center_2012.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/First_photo.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/First_photo.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/George_Aiken%27s_original_manuscript_for_his_stage_adaptation_of_Uncle_Tom%27s_Cabin.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/George_Aiken%27s_original_manuscript_for_his_stage_adaptation_of_Uncle_Tom%27s_Cabin.png?width=800" alt="alt 3" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="harry-ransom-center" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="bullock-texas-state-history-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg/1280px-The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Bullock Texas State History Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Bullock Texas State History Museum</h2>
+    <div class="loc">Austin, TX · History · $15 general admission</div>
+    <div class="tag">Three floors telling the Texas story, plus the recovered La Belle shipwreck.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Bullock_Texas_State_History_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>bullock-texas-state-history-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Relief_map_of_Texas.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Relief_map_of_Texas.png?width=800" alt="alt 2" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="bullock-texas-state-history-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="lbj-presidential-library">
+  <div class="hero"><img src="https://en.wikipedia.org/wiki/Special:FilePath/LBJ_Presidential_LIbrary_-_UT_Austin_%2854984753236%29.jpg?width=1280" alt="LBJ Presidential Library" loading="lazy" /></div>
+  <div class="meta">
+    <h2>LBJ Presidential Library</h2>
+    <div class="loc">Austin, TX · History · $13 general admission</div>
+    <div class="tag">Johnson's presidential library on UT campus — Civil Rights Act drafts, animatronic LBJ, the 1968 limo.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Lyndon_Baines_Johnson_Library_and_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>lbj-presidential-library</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/LBJ_Presidential_LIbrary_-_UT_Austin_%2854984753236%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/LBJ_Presidential_LIbrary_-_UT_Austin_%2854984753236%29.jpg?width=800" alt="alt 1" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="lbj-presidential-library" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="the-contemporary-austin-jones-center">
+  <div class="hero"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_Jones_Center_%2854987519235%29.jpg?width=1280" alt="The Contemporary Austin — Jones Center" loading="lazy" /></div>
+  <div class="meta">
+    <h2>The Contemporary Austin — Jones Center</h2>
+    <div class="loc">Austin, TX · Art · $10 general admission</div>
+    <div class="tag">Austin's contemporary art museum — downtown gallery, plus a lakeside sculpture park at Laguna Gloria.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/The_Contemporary_Austin" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>the-contemporary-austin-jones-center</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_Jones_Center_%2854987519235%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_Jones_Center_%2854987519235%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_LagunaGloria.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_LagunaGloria.jpg?width=800" alt="alt 2" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="the-contemporary-austin-jones-center" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="thinkery">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/The_thinkery_austin_2014.jpg/1280px-The_thinkery_austin_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Thinkery" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Thinkery</h2>
+    <div class="loc">Austin, TX · Children · $14 general admission</div>
+    <div class="tag">Austin's children's museum — hands-on labs for kids 0–10, with a big outdoor water area.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Thinkery" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>thinkery</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/The_thinkery_austin_2014.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/The_thinkery_austin_2014.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Flag_of_the_United_States_%2823px%29.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Flag_of_the_United_States_%2823px%29.png?width=800" alt="alt 2" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="thinkery" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="umlauf-sculpture-garden">
+  <div class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Umlauf_garden1_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled" alt="UMLAUF Sculpture Garden & Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>UMLAUF Sculpture Garden & Museum</h2>
+    <div class="loc">Austin, TX · Art · $9 general admission</div>
+    <div class="tag">The sculptor Charles Umlauf's wooded hillside studio, turned into a garden of 60+ bronzes.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Umlauf_Sculpture_Garden_and_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>umlauf-sculpture-garden</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Umlauf_garden1_2006.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Umlauf_garden1_2006.jpg?width=800" alt="alt 1" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="umlauf-sculpture-garden" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="mexic-arte-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Mexic-Arte_Museum_%2854986346552%29.jpg/1280px-Mexic-Arte_Museum_%2854986346552%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Mexic-Arte Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Mexic-Arte Museum</h2>
+    <div class="loc">Austin, TX · Art · $7 general admission</div>
+    <div class="tag">Austin's Mexican and Latino art museum, right on Congress Avenue.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Mexic-Arte_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>mexic-arte-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Mexic-Arte_Museum_%2854986346552%29.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Mexic-Arte_Museum_%2854986346552%29.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Museum_btn.png?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Museum_btn.png?width=800" alt="alt 2" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="mexic-arte-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="elisabet-ney-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Elisabet_Ney_Museum_Front.jpg/1280px-Elisabet_Ney_Museum_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Elisabet Ney Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Elisabet Ney Museum</h2>
+    <div class="loc">Austin, TX · Art · free</div>
+    <div class="tag">The German-born sculptor's limestone studio in Hyde Park, kept as she left it in 1907.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Elisabet_Ney_Museum" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>elisabet-ney-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Elisabet_Ney_Museum_Front.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Elisabet_Ney_Museum_Front.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Elisabet_Ney_Museum_Inside.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Elisabet_Ney_Museum_Inside.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Historic_Marker%2C_Elisabet_Ney_Studio_Built_1892.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Historic_Marker%2C_Elisabet_Ney_Studio_Built_1892.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="elisabet-ney-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="george-washington-carver-museum-austin">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/George_Washington_Carver_Museum_Austin_TX.jpg/1280px-George_Washington_Carver_Museum_Austin_TX.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="George Washington Carver Museum, Cultural and Genealogy Center" loading="lazy" /></div>
+  <div class="meta">
+    <h2>George Washington Carver Museum, Cultural and Genealogy Center</h2>
+    <div class="loc">Austin, TX · History · free</div>
+    <div class="tag">Austin's African American history museum, in a Juneteenth-era East Austin neighborhood.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/George_Washington_Carver_Museum_and_Cultural_Center" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>george-washington-carver-museum-austin</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/George_Washington_Carver_Museum_Austin_TX.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/George_Washington_Carver_Museum_Austin_TX.jpg?width=800" alt="alt 1" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="george-washington-carver-museum-austin" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card " id="neill-cochran-house-museum">
+  <div class="hero"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Neill_cochran_house_2007.jpg/1280px-Neill_cochran_house_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail" alt="Neill-Cochran House Museum" loading="lazy" /></div>
+  <div class="meta">
+    <h2>Neill-Cochran House Museum</h2>
+    <div class="loc">Austin, TX · History · $10 general admission</div>
+    <div class="tag">An 1855 Greek Revival mansion near UT — and Austin's only surviving slave quarters on-site.</div>
+    <div class="src"><a href="https://en.wikipedia.org/wiki/Neill–Cochran_House" target="_blank">Wikipedia source</a></div>
+    <div class="slug">slug: <code>neill-cochran-house-museum</code></div>
+    <div class="gallery"><a href="https://en.wikipedia.org/wiki/Special:FilePath/Neill-Cochran_House_12.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Neill-Cochran_House_12.jpg?width=800" alt="alt 1" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Neill-Cochran_House_16.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Neill-Cochran_House_16.jpg?width=800" alt="alt 2" loading="lazy" /></a><a href="https://en.wikipedia.org/wiki/Special:FilePath/Neill_cochran_house_2007.jpg?width=800" target="_blank"><img src="https://en.wikipedia.org/wiki/Special:FilePath/Neill_cochran_house_2007.jpg?width=800" alt="alt 3" loading="lazy" /></a></div>
+    
+    <div class="flag">
+      <label><input type="checkbox" data-slug="neill-cochran-house-museum" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+<div class="card card--missing" id="austin-nature-and-science-center">
+  <div class="hero"><div class="no-photo">no photo &mdash; needs manual swap</div></div>
+  <div class="meta">
+    <h2>Austin Nature & Science Center</h2>
+    <div class="loc">Austin, TX · Science · free</div>
+    <div class="tag">A free, hands-on nature museum in Zilker Park with live wildlife and a dinosaur dig.</div>
+    
+    <div class="slug">slug: <code>austin-nature-and-science-center</code></div>
+    
+    <div class="warn">photo fetchers kept mismatching to Austin, Minnesota or UT's Texas Science museum — leave photo blank and let the discipline swatch render</div>
+    <div class="flag">
+      <label><input type="checkbox" data-slug="austin-nature-and-science-center" /> Flag this photo as wrong</label>
+    </div>
+  </div>
+</div>
+
+</main>
+<script>
+  const checkboxes = document.querySelectorAll('input[type=checkbox][data-slug]');
+  const box = document.getElementById('flagged');
+  const copyBtn = document.getElementById('copyBtn');
+  function refresh() {
+    const flagged = [...checkboxes].filter(c => c.checked).map(c => c.dataset.slug);
+    box.value = flagged.join(', ');
+  }
+  checkboxes.forEach(c => c.addEventListener('change', refresh));
+  copyBtn.addEventListener('click', async () => {
+    await navigator.clipboard.writeText(box.value);
+    copyBtn.textContent = 'copied!';
+    setTimeout(() => copyBtn.textContent = 'copy flagged', 1200);
+  });
+</script>
+</body>
+</html>

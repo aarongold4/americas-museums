@@ -1,0 +1,50 @@
+{
+  "name": "UMLAUF Sculpture Garden & Museum",
+  "short_name": "UMLAUF",
+  "city": "Austin",
+  "state": "TX",
+  "address": "605 Azie Morton Rd, Austin, TX 78704",
+  "lat": 30.2608,
+  "lng": -97.7686,
+  "discipline": "Art",
+  "founded": 1991,
+  "admission_from": 9,
+  "admission_text": "general admission",
+  "hours_summary": "Wed–Sun · 10 AM – 4 PM · closed Mon–Tue",
+  "hours_today": "closed Mondays",
+  "visit_time": "1–1.5 hours",
+  "best_for": "Sculpture gardens and outdoor-museum fans",
+  "tagline": "The sculptor Charles Umlauf's wooded hillside studio, turned into a garden of 60+ bronzes.",
+  "description": "A hillside sculpture garden below Zilker Park, built from the studio and lifetime output of Charles Umlauf, a UT professor who taught Farrah Fawcett among others. More than 60 of his bronzes and stone pieces are set along shaded paths in a restored oak-juniper woodland, with an indoor gallery for rotating shows.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "Pair with Zilker Park and Barton Springs — the garden is a 5-minute walk from the pool entrance."
+    },
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free admission the first Sunday afternoon of the month."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Oak Grove",
+      "item": "Charles Umlauf's The Family, in bronze"
+    },
+    {
+      "location": "Hilltop",
+      "item": "Icarus, in limestone"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "At Zilker Park, 2 mi south of downtown",
+  "hero_image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Umlauf_garden1_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Umlauf_garden1_2006.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Umlauf Sculpture Garden and Museum"
+}

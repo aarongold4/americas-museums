@@ -1,0 +1,51 @@
+{
+  "name": "Neill-Cochran House Museum",
+  "city": "Austin",
+  "state": "TX",
+  "address": "2310 San Gabriel St, Austin, TX 78705",
+  "lat": 30.2871,
+  "lng": -97.7471,
+  "discipline": "History",
+  "founded": 1958,
+  "admission_from": 10,
+  "admission_text": "general admission",
+  "hours_summary": "Wed–Sat · 11 AM – 4 PM · Sun 1 PM – 5 PM · closed Mon–Tue",
+  "hours_today": "closed Mondays",
+  "visit_time": "1 hour",
+  "best_for": "Architecture and 19th-century social-history readers",
+  "tagline": "An 1855 Greek Revival mansion near UT — and Austin's only surviving slave quarters on-site.",
+  "description": "An 1855 Greek Revival mansion near the UT campus, operated by the National Society of the Colonial Dames. Alongside the main house, a restored outbuilding is the only surviving slave quarters in Austin still standing where it was built, with a permanent exhibition on the lives of the people enslaved there.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "The slave quarters exhibition is small but the point of a modern visit — don't skip the outbuilding."
+    },
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "Docent-led tours leave on the hour — arrive a few minutes early."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Outbuilding",
+      "item": "Austin's only in-place antebellum slave quarters, with a permanent exhibition"
+    },
+    {
+      "location": "Main House",
+      "item": "1850s period rooms and original limestone construction"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "Just west of UT campus, 1.2 mi from the Capitol",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Neill_cochran_house_2007.jpg/1280px-Neill_cochran_house_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Neill-Cochran_House_12.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Neill-Cochran_House_16.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Neill_cochran_house_2007.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Neill–Cochran House"
+}

@@ -30,6 +30,11 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/American_Museum_of_Natural_History_in_Manhattan%2C_New_York_City%2C_United_States_of_America_%289860903214%29.jpg?width=800"
     ]
   },
+  "apex-museum": {
+    "status": "needs_manual",
+    "name": "APEX Museum",
+    "note": "No usable Wikipedia photo found; will use swatch placeholder — needs manual upload"
+  },
   "art-institute-of-chicago": {
     "status": "ok",
     "name": "Art Institute of Chicago",
@@ -72,6 +77,11 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Atlanta_History_Center%2C_2026.jpg?width=800"
     ]
   },
+  "austin-nature-and-science-center": {
+    "status": "needs_manual",
+    "name": "Austin Nature & Science Center",
+    "note": "photo fetchers kept mismatching to Austin, Minnesota or UT's Texas Science museum — leave photo blank and let the discipline swatch render"
+  },
   "barnes-foundation": {
     "status": "ok",
     "name": "Barnes Foundation",
@@ -81,6 +91,17 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Barnes-foundation.png?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/Barnes_Foundation_%2853574516274%29.jpg?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/Georges_Seurat_-_Models_%28Poseuses%29_-_BF811_-_Barnes_Foundation.jpg?width=800"
+    ]
+  },
+  "blanton-museum-of-art": {
+    "status": "ok",
+    "name": "Blanton Museum of Art",
+    "article": "Blanton Museum of Art",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg/1280px-Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/Blanton_Museum_grounds_2025.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Exterior_grounds_and_plaza_designed_by_Sn%C3%B8hetta--Blanton_Museum_of_Art--Austin.jpg?width=800"
     ]
   },
   "boston-childrens-museum": {
@@ -98,6 +119,16 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/A_Morning_Snow-Hudson_River_at_the_Brooklyn_Museum_%2880534%29a.jpg?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/Brooklyn-Museum_81.168.1_Equestrian-Figure_Gold-Weight_cropped.png?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/Brooklyn_Museum_-_A_Ride_for_Liberty_--_The_Fugitive_Slaves_-_Eastman_Johnson_-_overall.jpg?width=800"
+    ]
+  },
+  "bullock-texas-state-history-museum": {
+    "status": "ok",
+    "name": "Bullock Texas State History Museum",
+    "article": "Bullock Texas State History Museum",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg/1280px-The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Relief_map_of_Texas.png?width=800"
     ]
   },
   "burke-museum-of-natural-history-and-culture": {
@@ -143,6 +174,11 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center.jpg?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/California_Science_Center_January_2013_001.jpg?width=800"
     ]
+  },
+  "cartoon-art-museum": {
+    "status": "needs_manual",
+    "name": "Cartoon Art Museum",
+    "note": "No usable Wikipedia photo found; will use swatch placeholder — needs manual upload"
   },
   "center-for-puppetry-arts": {
     "status": "ok",
@@ -255,6 +291,17 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Eastern_State_Penitentiary%2C_Two_Story_Hall.jpg?width=800"
     ]
   },
+  "elisabet-ney-museum": {
+    "status": "ok",
+    "name": "Elisabet Ney Museum",
+    "article": "Elisabet Ney Museum",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Elisabet_Ney_Museum_Front.jpg/1280px-Elisabet_Ney_Museum_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/Elisabet_Ney_Museum_Front.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Elisabet_Ney_Museum_Inside.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Historic_Marker%2C_Elisabet_Ney_Studio_Built_1892.jpg?width=800"
+    ]
+  },
   "exploratorium": {
     "status": "ok",
     "name": "Exploratorium",
@@ -318,6 +365,15 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Frye_Museum_winter.jpg?width=800"
     ]
   },
+  "george-washington-carver-museum-austin": {
+    "status": "ok",
+    "name": "George Washington Carver Museum, Cultural and Genealogy Center",
+    "article": "George Washington Carver Museum and Cultural Center",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/George_Washington_Carver_Museum_Austin_TX.jpg/1280px-George_Washington_Carver_Museum_Austin_TX.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/George_Washington_Carver_Museum_Austin_TX.jpg?width=800"
+    ]
+  },
   "getty-center": {
     "status": "ok",
     "name": "Getty Center",
@@ -357,6 +413,17 @@
     "hero": "https://en.wikipedia.org/wiki/Special:FilePath/Hammer_Museum_Westwood_June_2012.jpg?width=1000",
     "article": "Hammer Museum Westwood June 2012.jpg"
   },
+  "harry-ransom-center": {
+    "status": "ok",
+    "name": "Harry Ransom Center",
+    "article": "Harry Ransom Center",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Harry_ransom_center_2012.jpg/1280px-Harry_ransom_center_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/Harry_ransom_center_2012.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/First_photo.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/George_Aiken%27s_original_manuscript_for_his_stage_adaptation_of_Uncle_Tom%27s_Cabin.png?width=800"
+    ]
+  },
   "harvard-art-museums": {
     "status": "ok",
     "name": "Harvard Art Museums",
@@ -390,6 +457,12 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/The_Burghers_of_Calais_-_Hirshhorn_Sculpture_Garden.JPG?width=800"
     ]
   },
+  "huntington-library": {
+    "status": "ok_manual",
+    "name": "Huntington Library, Art Museum, and Botanical Gardens",
+    "hero": "https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_18_-_Echinocactus_grusonii.jpg?width=1000",
+    "article": "via Wikipedia / Wikimedia Commons"
+  },
   "independence-seaport-museum": {
     "status": "ok",
     "name": "Independence Seaport Museum",
@@ -400,6 +473,13 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Seaport_museum_penns_landing.jpg?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/USS_Olympia_side.jpg?width=800"
     ]
+  },
+  "institute-of-contemporary-art-boston": {
+    "status": "ok_fallback",
+    "name": "Institute of Contemporary Art Boston",
+    "article": "Institute of Contemporary Art, Boston",
+    "hero": "https://upload.wikimedia.org/wikipedia/commons/1/16/Institute_of_Contemporary_Art%2C_Boston.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "gallery": []
   },
   "international-spy-museum": {
     "status": "ok_user_picked",
@@ -461,6 +541,24 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_29.jpg?width=800"
     ]
   },
+  "la-brea-tar-pits-and-museum": {
+    "status": "ok_fallback",
+    "name": "La Brea Tar Pits and Museum",
+    "article": "La Brea Tar Pits",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/La_Brea_Tar_Pits_logo.svg/1280px-La_Brea_Tar_Pits_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
+  },
+  "lbj-presidential-library": {
+    "status": "ok",
+    "name": "LBJ Presidential Library",
+    "article": "Lyndon Baines Johnson Library and Museum",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Official_logo_of_the_LBJ_Presidential_Library.svg/1280px-Official_logo_of_the_LBJ_Presidential_Library.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/LBJ_Presidential_LIbrary_-_UT_Austin_%2854984753236%29.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/37_Lyndon_Johnson_3x4_%28cropped%29.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/University_of_Texas_Main_Building_Tower_3.jpg?width=800"
+    ]
+  },
   "legion-of-honor": {
     "status": "ok",
     "name": "Legion of Honor",
@@ -512,6 +610,27 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/4_Jean_Le_Noir._Miniature_from_Psalter_of_Bonne_of_Luxemburg_1348-49_Metropolitan_Museum%2C_N-Y.jpg?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/Amedeo_Modigliani%2C_1919%2C_Jeanne_H%C3%A9buterne%2C_oil_on_canvas%2C_91.4_x_73_cm%2C_Metropolitan_Museum_of_Art.jpg?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/Arthur_Dove%2C_Cow%2C_1914%2C_pastel_on_canvas%2C_45.1_x_54.6_cm%2C_Metropolitan_Museum_of_Art.jpg?width=800"
+    ]
+  },
+  "mexic-arte-museum": {
+    "status": "ok",
+    "name": "Mexic-Arte Museum",
+    "article": "Mexic-Arte Museum",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Mexic-Arte_Museum_%2854986346552%29.jpg/1280px-Mexic-Arte_Museum_%2854986346552%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/Mexic-Arte_Museum_%2854986346552%29.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Museum_btn.png?width=800"
+    ]
+  },
+  "michael-c-carlos-museum": {
+    "status": "ok_fallback",
+    "name": "Michael C. Carlos Museum",
+    "article": "Michael C. Carlos Museum",
+    "hero": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_C._Carlos_Museum%2C_Atlanta_%2810453374255%29.jpg?width=1000",
+    "gallery": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hanif_Kureishi.jpg?width=1000",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_C._Carlos_Museum.JPG?width=1000",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on_Benouville_-_Two_Men_Ascending_a_Stair_-_WGA01888.jpg?width=1000"
     ]
   },
   "mit-museum": {
@@ -567,6 +686,20 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts%2C_Boston%2C_Mass_%28NYPL_b12647398-74302%29.tiff?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/Museum_of_Fine_Arts%2C_Boston_%2854954248311%29.jpg?width=800"
     ]
+  },
+  "museum-of-flight": {
+    "status": "ok_fallback",
+    "name": "Museum of Flight",
+    "article": "Museum of Flight",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Museum_of_Flight_logo.svg/1280px-Museum_of_Flight_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
+  },
+  "museum-of-modern-art": {
+    "status": "ok_fallback",
+    "name": "Museum of Modern Art",
+    "article": "Museum of Modern Art",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/MoMa_NY_USA_1.jpg/1280px-MoMa_NY_USA_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
   },
   "museum-of-pop-culture": {
     "status": "ok",
@@ -642,6 +775,20 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Exhibit_at_Center_for_Civil_and_Human_Rights_-_Atlanta_-_Georgia_-_USA_-_01_%2834268877316%29.jpg?width=800"
     ]
   },
+  "national-constitution-center": {
+    "status": "ok_fallback",
+    "name": "National Constitution Center",
+    "article": "National Constitution Center",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/National_Constitution_Center_-_2_%2853586570586%29.jpg/1280px-National_Constitution_Center_-_2_%2853586570586%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
+  },
+  "national-gallery-of-art": {
+    "status": "ok_fallback",
+    "name": "National Gallery of Art",
+    "article": "National Gallery of Art",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/National_Gallery_of_Art_-_2026_%2855255088792%29.jpg/1280px-National_Gallery_of_Art_-_2026_%2855255088792%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
+  },
   "national-hellenic-museum": {
     "status": "ok",
     "name": "National Hellenic Museum",
@@ -652,6 +799,12 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/NHMJanuaryConstruction.jpg?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/NHM_Antiquities_Group.jpg?width=800"
     ]
+  },
+  "national-museum-of-african-american-history-and-culture": {
+    "status": "ok_user_picked",
+    "name": "National Museum of African American History and Culture",
+    "hero": "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_in_February_2020.jpg?width=1000",
+    "article": "National Museum of African American History and Culture in February 2020.jpg"
   },
   "national-museum-of-american-history": {
     "status": "ok",
@@ -686,6 +839,13 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_Natural_History%2C_Washington.jpg?width=800"
     ]
   },
+  "national-museum-of-the-american-indian": {
+    "status": "ok_fallback",
+    "name": "National Museum of the American Indian",
+    "article": "National Museum of the American Indian",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/National_Museum_of_the_American_Indian%2C_Washington%2C_D.C_LCCN2011630892.jpg/1280px-National_Museum_of_the_American_Indian%2C_Washington%2C_D.C_LCCN2011630892.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
+  },
   "national-nordic-museum": {
     "status": "ok",
     "name": "National Nordic Museum",
@@ -713,6 +873,17 @@
     "name": "Natural History Museum of Los Angeles County",
     "hero": "https://en.wikipedia.org/wiki/Special:FilePath/NaturalHistoryMuseumOfLosAngelesCounty.jpg?width=1000",
     "article": "NaturalHistoryMuseumOfLosAngelesCounty.jpg"
+  },
+  "neill-cochran-house-museum": {
+    "status": "ok",
+    "name": "Neill-Cochran House Museum",
+    "article": "Neill–Cochran House",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Neill_cochran_house_2007.jpg/1280px-Neill_cochran_house_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/Neill-Cochran_House_12.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Neill-Cochran_House_16.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Neill_cochran_house_2007.jpg?width=800"
+    ]
   },
   "new-england-aquarium": {
     "status": "ok",
@@ -769,6 +940,20 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Plaque_depicting_chief_flanked_by_two_warriors%2C_Benin%2C_AD_1550-1650_-_African_collection_-_Peabody_Museum%2C_Harvard_University_-_DSC05790.JPG?width=800"
     ]
   },
+  "penn-museum": {
+    "status": "ok_fallback",
+    "name": "Penn Museum",
+    "article": "Penn Museum",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Penn_Museum_-_UPenn_%2853590175396%29.jpg/1280px-Penn_Museum_-_UPenn_%2853590175396%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
+  },
+  "petersen-automotive-museum": {
+    "status": "ok_fallback",
+    "name": "Petersen Automotive Museum",
+    "article": "Petersen Automotive Museum",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Petersen_Automotive_Museum.jpg/1280px-Petersen_Automotive_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
+  },
   "philadelphia-museum-of-art": {
     "status": "ok",
     "name": "Philadelphia Museum of Art",
@@ -779,6 +964,13 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/A594%2C_Philadelphia%2C_Pennsylvania%2C_United_States%2C_Museum_of_Art%2C_Western_Civilization_pediment_at_night%2C_2017.jpg?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/Albert_Gleizes%2C_l%27Homme_au_Balcon%2C_1912%2C_oil_on_canvas%2C_195.6_x_114.9_cm%2C_Philadelphia_Museum_of_Art.jpg?width=800"
     ]
+  },
+  "phillips-collection": {
+    "status": "ok_fallback",
+    "name": "Phillips Collection",
+    "article": "The Phillips Collection",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/The_Phillips_Collection.JPG/1280px-The_Phillips_Collection.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
   },
   "please-touch-museum": {
     "status": "ok",
@@ -857,6 +1049,57 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/Old_Patent_Office%2C_Washington%2C_D.C._2011.jpg?width=800"
     ]
   },
+  "solomon-r-guggenheim-museum": {
+    "status": "ok_fallback",
+    "name": "Solomon R. Guggenheim Museum",
+    "article": "Solomon R. Guggenheim",
+    "hero": "https://upload.wikimedia.org/wikipedia/commons/e/ef/S._R._Guggenheim_portrait_by_Pirie_MacDonald.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "gallery": []
+  },
+  "tenement-museum": {
+    "status": "ok_fallback",
+    "name": "Tenement Museum",
+    "article": "Lower East Side Tenement Museum",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/97_Orchard_Street_Front.jpg/1280px-97_Orchard_Street_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
+  },
+  "the-broad": {
+    "status": "ok_fallback",
+    "name": "The Broad",
+    "article": "The Broad",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg/1280px-Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": []
+  },
+  "the-contemporary-austin-jones-center": {
+    "status": "ok",
+    "name": "The Contemporary Austin — Jones Center",
+    "article": "The Contemporary Austin",
+    "hero": "https://upload.wikimedia.org/wikipedia/commons/4/40/Formal_OnTrans.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_Jones_Center_%2854987519235%29.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_LagunaGloria.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Formal_OnTrans.jpg?width=800"
+    ]
+  },
+  "thinkery": {
+    "status": "ok",
+    "name": "Thinkery",
+    "article": "Thinkery",
+    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/The_thinkery_austin_2014.jpg/1280px-The_thinkery_austin_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/The_thinkery_austin_2014.jpg?width=800",
+      "https://en.wikipedia.org/wiki/Special:FilePath/Flag_of_the_United_States_%2823px%29.png?width=800"
+    ]
+  },
+  "umlauf-sculpture-garden": {
+    "status": "ok",
+    "name": "UMLAUF Sculpture Garden & Museum",
+    "article": "Umlauf Sculpture Garden and Museum",
+    "hero": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Umlauf_garden1_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "gallery": [
+      "https://en.wikipedia.org/wiki/Special:FilePath/Umlauf_garden1_2006.jpg?width=800"
+    ]
+  },
   "united-states-holocaust-memorial-museum": {
     "status": "ok",
     "name": "United States Holocaust Memorial Museum",
@@ -931,129 +1174,5 @@
       "https://en.wikipedia.org/wiki/Special:FilePath/World-of-Coca-Cola-Atlanta.jpg?width=800",
       "https://en.wikipedia.org/wiki/Special:FilePath/World_of_Coca-Cola_06.JPG?width=800"
     ]
-  },
-  "apex-museum": {
-    "status": "needs_manual",
-    "name": "APEX Museum",
-    "note": "No usable Wikipedia photo found; will use swatch placeholder — needs manual upload"
-  },
-  "cartoon-art-museum": {
-    "status": "needs_manual",
-    "name": "Cartoon Art Museum",
-    "note": "No usable Wikipedia photo found; will use swatch placeholder — needs manual upload"
-  },
-  "huntington-library": {
-    "status": "ok_manual",
-    "name": "Huntington Library, Art Museum, and Botanical Gardens",
-    "hero": "https://commons.wikimedia.org/wiki/Special:FilePath/Huntington_Gardens_18_-_Echinocactus_grusonii.jpg?width=1000",
-    "article": "via Wikipedia / Wikimedia Commons"
-  },
-  "institute-of-contemporary-art-boston": {
-    "status": "ok_fallback",
-    "name": "Institute of Contemporary Art Boston",
-    "article": "Institute of Contemporary Art, Boston",
-    "hero": "https://upload.wikimedia.org/wikipedia/commons/1/16/Institute_of_Contemporary_Art%2C_Boston.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "gallery": []
-  },
-  "la-brea-tar-pits-and-museum": {
-    "status": "ok_fallback",
-    "name": "La Brea Tar Pits and Museum",
-    "article": "La Brea Tar Pits",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/La_Brea_Tar_Pits_logo.svg/1280px-La_Brea_Tar_Pits_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "michael-c-carlos-museum": {
-    "status": "ok_fallback",
-    "name": "Michael C. Carlos Museum",
-    "article": "Michael C. Carlos Museum",
-    "hero": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_C._Carlos_Museum%2C_Atlanta_%2810453374255%29.jpg?width=1000",
-    "gallery": [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Hanif_Kureishi.jpg?width=1000",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_C._Carlos_Museum.JPG?width=1000",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A9on_Benouville_-_Two_Men_Ascending_a_Stair_-_WGA01888.jpg?width=1000"
-    ]
-  },
-  "museum-of-flight": {
-    "status": "ok_fallback",
-    "name": "Museum of Flight",
-    "article": "Museum of Flight",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Museum_of_Flight_logo.svg/1280px-Museum_of_Flight_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "museum-of-modern-art": {
-    "status": "ok_fallback",
-    "name": "Museum of Modern Art",
-    "article": "Museum of Modern Art",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/MoMa_NY_USA_1.jpg/1280px-MoMa_NY_USA_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "national-constitution-center": {
-    "status": "ok_fallback",
-    "name": "National Constitution Center",
-    "article": "National Constitution Center",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/National_Constitution_Center_-_2_%2853586570586%29.jpg/1280px-National_Constitution_Center_-_2_%2853586570586%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "national-gallery-of-art": {
-    "status": "ok_fallback",
-    "name": "National Gallery of Art",
-    "article": "National Gallery of Art",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/National_Gallery_of_Art_-_2026_%2855255088792%29.jpg/1280px-National_Gallery_of_Art_-_2026_%2855255088792%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "national-museum-of-african-american-history-and-culture": {
-    "status": "ok_user_picked",
-    "name": "National Museum of African American History and Culture",
-    "hero": "https://en.wikipedia.org/wiki/Special:FilePath/National_Museum_of_African_American_History_and_Culture_in_February_2020.jpg?width=1000",
-    "article": "National Museum of African American History and Culture in February 2020.jpg"
-  },
-  "national-museum-of-the-american-indian": {
-    "status": "ok_fallback",
-    "name": "National Museum of the American Indian",
-    "article": "National Museum of the American Indian",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/National_Museum_of_the_American_Indian%2C_Washington%2C_D.C_LCCN2011630892.jpg/1280px-National_Museum_of_the_American_Indian%2C_Washington%2C_D.C_LCCN2011630892.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "penn-museum": {
-    "status": "ok_fallback",
-    "name": "Penn Museum",
-    "article": "Penn Museum",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Penn_Museum_-_UPenn_%2853590175396%29.jpg/1280px-Penn_Museum_-_UPenn_%2853590175396%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "petersen-automotive-museum": {
-    "status": "ok_fallback",
-    "name": "Petersen Automotive Museum",
-    "article": "Petersen Automotive Museum",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Petersen_Automotive_Museum.jpg/1280px-Petersen_Automotive_Museum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "phillips-collection": {
-    "status": "ok_fallback",
-    "name": "Phillips Collection",
-    "article": "The Phillips Collection",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/The_Phillips_Collection.JPG/1280px-The_Phillips_Collection.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "solomon-r-guggenheim-museum": {
-    "status": "ok_fallback",
-    "name": "Solomon R. Guggenheim Museum",
-    "article": "Solomon R. Guggenheim",
-    "hero": "https://upload.wikimedia.org/wikipedia/commons/e/ef/S._R._Guggenheim_portrait_by_Pirie_MacDonald.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "gallery": []
-  },
-  "tenement-museum": {
-    "status": "ok_fallback",
-    "name": "Tenement Museum",
-    "article": "Lower East Side Tenement Museum",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/97_Orchard_Street_Front.jpg/1280px-97_Orchard_Street_Front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
-  },
-  "the-broad": {
-    "status": "ok_fallback",
-    "name": "The Broad",
-    "article": "The Broad",
-    "hero": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg/1280px-Nighttime_view_of_the_Broad_in_LA%2C_corner_dllu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "gallery": []
   }
 }

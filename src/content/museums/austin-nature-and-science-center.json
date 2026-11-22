@@ -1,0 +1,46 @@
+{
+  "name": "Austin Nature & Science Center",
+  "short_name": "ANSC",
+  "city": "Austin",
+  "state": "TX",
+  "address": "2389 Stratford Dr, Austin, TX 78746",
+  "lat": 30.2715,
+  "lng": -97.7731,
+  "discipline": "Science",
+  "founded": 1960,
+  "admission_from": 0,
+  "admission_text": "free admission",
+  "hours_summary": "Mon–Sat · 9 AM – 5 PM · Sun noon – 5 PM",
+  "hours_today": "9 AM – 5 PM",
+  "visit_time": "1–2 hours",
+  "best_for": "Families, hikers, and amateur naturalists",
+  "tagline": "A free, hands-on nature museum in Zilker Park with live wildlife and a dinosaur dig.",
+  "description": "A City of Austin nature center at the west edge of Zilker Park. Live non-releasable Texas wildlife (owls, hawks, bobcats, snakes) share the site with a kids' dinosaur-fossil dig pit and a trail system that connects to Barton Creek — all free.",
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Always free — a suggested donation is appreciated."
+    },
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "Combine with the UMLAUF and Zilker Botanical Garden — all three are within a 10-minute walk."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Wildlife Exhibit",
+      "item": "Non-releasable Central Texas raptors and mammals"
+    },
+    {
+      "location": "Dino Pit",
+      "item": "Reconstructed fossil dig site for kids"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "In Zilker Park, 2.5 mi west of downtown",
+  "gallery_images": []
+}

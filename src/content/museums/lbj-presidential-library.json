@@ -1,0 +1,54 @@
+{
+  "name": "LBJ Presidential Library",
+  "short_name": "LBJ Library",
+  "city": "Austin",
+  "state": "TX",
+  "address": "2313 Red River St, Austin, TX 78705",
+  "lat": 30.286,
+  "lng": -97.7294,
+  "discipline": "History",
+  "founded": 1971,
+  "admission_from": 13,
+  "admission_text": "general admission",
+  "hours_summary": "Mon–Sun · 9 AM – 5 PM",
+  "hours_today": "9 AM – 5 PM",
+  "visit_time": "2–3 hours",
+  "best_for": "20th-century US history readers",
+  "tagline": "Johnson's presidential library on UT campus — Civil Rights Act drafts, animatronic LBJ, the 1968 limo.",
+  "description": "The presidential library of Lyndon B. Johnson, operated by the National Archives on the UT Austin campus. Ten floors cover the Great Society, the Civil Rights and Voting Rights acts, Vietnam, and the 1960s cultural moment, with Johnson's actual presidential limousine and a seven-eighths-scale replica of the Oval Office at the top.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "The animatronic LBJ telling jokes in the final gallery is unexpectedly good — don't skip it."
+    },
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Active military and under-13 are free; UT students free with ID."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Floor 10",
+      "item": "Seven-eighths-scale replica of the Oval Office"
+    },
+    {
+      "location": "Floor 4",
+      "item": "Johnson's 1968 presidential limousine"
+    },
+    {
+      "location": "Civil Rights Gallery",
+      "item": "Signed Civil Rights Act of 1964 and the pens used"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "On UT campus, 1.5 mi north of the Capitol",
+  "hero_image": "https://en.wikipedia.org/wiki/Special:FilePath/LBJ_Presidential_LIbrary_-_UT_Austin_%2854984753236%29.jpg?width=1280",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/LBJ_Presidential_LIbrary_-_UT_Austin_%2854984753236%29.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Lyndon Baines Johnson Library and Museum"
+}

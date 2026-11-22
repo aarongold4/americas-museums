@@ -31,8 +31,16 @@
     "url": "https://www.getyourguide.com/s/?q=Atlanta+History+Center+Atlanta",
     "network": "getyourguide-search"
   },
+  "austin-nature-and-science-center": {
+    "url": "https://www.getyourguide.com/s/?q=Austin+Nature+and+Science+Center+Austin",
+    "network": "getyourguide-search"
+  },
   "barnes-foundation": {
     "url": "https://www.getyourguide.com/s/?q=Barnes+Foundation+Philadelphia",
+    "network": "getyourguide-search"
+  },
+  "blanton-museum-of-art": {
+    "url": "https://www.getyourguide.com/s/?q=Blanton+Museum+of+Art+Austin",
     "network": "getyourguide-search"
   },
   "boston-childrens-museum": {
@@ -41,6 +49,10 @@
   },
   "brooklyn-museum": {
     "url": "https://www.getyourguide.com/s/?q=Brooklyn+Museum+New+York",
+    "network": "getyourguide-search"
+  },
+  "bullock-texas-state-history-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Bullock+Texas+State+History+Museum+Austin",
     "network": "getyourguide-search"
   },
   "burke-museum-of-natural-history-and-culture": {
@@ -107,6 +119,10 @@
     "url": "https://www.getyourguide.com/s/?q=Eastern+State+Penitentiary+Philadelphia",
     "network": "getyourguide-search"
   },
+  "elisabet-ney-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Elisabet+Ney+Museum+Austin",
+    "network": "getyourguide-search"
+  },
   "exploratorium": {
     "url": "https://www.getyourguide.com/s/?q=Exploratorium+San+Francisco",
     "network": "getyourguide-search"
@@ -131,6 +147,10 @@
     "url": "https://www.getyourguide.com/s/?q=Frye+Art+Museum+Seattle",
     "network": "getyourguide-search"
   },
+  "george-washington-carver-museum-austin": {
+    "url": "https://www.getyourguide.com/s/?q=George+Washington+Carver+Museum+Austin",
+    "network": "getyourguide-search"
+  },
   "getty-center": {
     "url": "https://www.getyourguide.com/s/?q=Getty+Center+Los+Angeles",
     "network": "getyourguide-search"
@@ -145,6 +165,10 @@
   },
   "hammer-museum": {
     "url": "https://www.getyourguide.com/s/?q=Hammer+Museum+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "harry-ransom-center": {
+    "url": "https://www.getyourguide.com/s/?q=Harry+Ransom+Center+Austin",
     "network": "getyourguide-search"
   },
   "harvard-art-museums": {
@@ -199,6 +223,10 @@
     "url": "https://www.getyourguide.com/s/?q=La+Brea+Tar+Pits+and+Museum+Los+Angeles",
     "network": "getyourguide-search"
   },
+  "lbj-presidential-library": {
+    "url": "https://www.getyourguide.com/s/?q=LBJ+Presidential+Library+Austin",
+    "network": "getyourguide-search"
+  },
   "legion-of-honor": {
     "url": "https://www.getyourguide.com/s/?q=Legion+of+Honor+San+Francisco",
     "network": "getyourguide-search"
@@ -217,6 +245,10 @@
   },
   "metropolitan-museum-of-art": {
     "url": "https://www.getyourguide.com/s/?q=Metropolitan+Museum+of+Art+New+York",
+    "network": "getyourguide-search"
+  },
+  "mexic-arte-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Mexic-Arte+Museum+Austin",
     "network": "getyourguide-search"
   },
   "michael-c-carlos-museum": {
@@ -323,6 +355,10 @@
     "url": "https://www.getyourguide.com/s/?q=Natural+History+Museum+of+Los+Angeles+County+Los+Angeles",
     "network": "getyourguide-search"
   },
+  "neill-cochran-house-museum": {
+    "url": "https://www.getyourguide.com/s/?q=Neill-Cochran+House+Museum+Austin",
+    "network": "getyourguide-search"
+  },
   "new-england-aquarium": {
     "url": "https://www.getyourguide.com/s/?q=New+England+Aquarium+Boston",
     "network": "getyourguide-search"
@@ -397,6 +433,18 @@
   },
   "the-broad": {
     "url": "https://www.getyourguide.com/s/?q=The+Broad+Los+Angeles",
+    "network": "getyourguide-search"
+  },
+  "the-contemporary-austin-jones-center": {
+    "url": "https://www.getyourguide.com/s/?q=The+Contemporary+Austin+Austin",
+    "network": "getyourguide-search"
+  },
+  "thinkery": {
+    "url": "https://www.getyourguide.com/s/?q=Thinkery+Austin",
+    "network": "getyourguide-search"
+  },
+  "umlauf-sculpture-garden": {
+    "url": "https://www.getyourguide.com/s/?q=UMLAUF+Sculpture+Garden+Austin",
     "network": "getyourguide-search"
   },
   "united-states-holocaust-memorial-museum": {

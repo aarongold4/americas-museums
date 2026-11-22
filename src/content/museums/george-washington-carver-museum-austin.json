@@ -1,0 +1,50 @@
+{
+  "name": "George Washington Carver Museum, Cultural and Genealogy Center",
+  "short_name": "Carver Museum",
+  "city": "Austin",
+  "state": "TX",
+  "address": "1165 Angelina St, Austin, TX 78702",
+  "lat": 30.2735,
+  "lng": -97.729,
+  "discipline": "History",
+  "founded": 1980,
+  "admission_from": 0,
+  "admission_text": "free admission",
+  "hours_summary": "Tue–Thu · 10 AM – 9 PM · Fri 10 AM – 5:30 PM · Sat 10 AM – 4 PM · closed Sun–Mon",
+  "hours_today": "closed Mondays",
+  "visit_time": "1–2 hours",
+  "best_for": "Visitors wanting East Austin's Black history",
+  "tagline": "Austin's African American history museum, in a Juneteenth-era East Austin neighborhood.",
+  "description": "A City of Austin museum documenting African American history, art, and culture in Austin and Texas. Permanent galleries cover the Juneteenth story, Black Austin from Reconstruction forward, and a genealogy center for family-history research, with rotating contemporary art shows in the Artist Workspace.",
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Always free — run by the City of Austin."
+    },
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "Weekday evenings until 9 PM are unusual for a museum — the quietest time to visit."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Juneteenth Gallery",
+      "item": "Primary documents from Austin's Juneteenth celebrations"
+    },
+    {
+      "location": "Genealogy Center",
+      "item": "African American family-history research collection"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "In East Austin, 1 mi east of downtown",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/George_Washington_Carver_Museum_Austin_TX.jpg/1280px-George_Washington_Carver_Museum_Austin_TX.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/George_Washington_Carver_Museum_Austin_TX.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / George Washington Carver Museum and Cultural Center"
+}

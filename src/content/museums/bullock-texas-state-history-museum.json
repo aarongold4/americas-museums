@@ -1,0 +1,55 @@
+{
+  "name": "Bullock Texas State History Museum",
+  "short_name": "Bullock Museum",
+  "city": "Austin",
+  "state": "TX",
+  "address": "1800 Congress Ave, Austin, TX 78701",
+  "lat": 30.2802,
+  "lng": -97.7384,
+  "discipline": "History",
+  "founded": 2001,
+  "admission_from": 15,
+  "admission_text": "general admission",
+  "hours_summary": "Mon–Sat · 10 AM – 5 PM · Sun noon – 5 PM",
+  "hours_today": "10 AM – 5 PM",
+  "visit_time": "2–3 hours",
+  "best_for": "History readers and families",
+  "tagline": "Three floors telling the Texas story, plus the recovered La Belle shipwreck.",
+  "description": "The state history museum two blocks north of the Capitol, with three permanent floors stepping through Native Texas, Spanish colonial rule, independence, oil, and the modern state. The ground floor holds the hull of La Belle — La Salle's 1686 French expedition ship, raised from Matagorda Bay and reassembled here.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "La Belle is the signature piece — budget a half hour at the ship alone."
+    },
+    {
+      "tag": "TIP",
+      "tone": "warn",
+      "text": "The IMAX and Texas Spirit Theater add on — the combo ticket is better value if you plan to see a film."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Floor 1",
+      "item": "La Belle, La Salle's 1686 ship, raised from Matagorda Bay"
+    },
+    {
+      "location": "Floor 2",
+      "item": "Original Goddess of Liberty from the Texas Capitol dome"
+    },
+    {
+      "location": "Floor 3",
+      "item": "Lonesome Dove screenplay and props"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "0.2 mi north of Texas Capitol",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg/1280px-The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/The_Bullock_Texas_State_History_Museum_%2854985038510%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Relief_map_of_Texas.png?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Bullock Texas State History Museum"
+}

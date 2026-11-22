@@ -1,0 +1,56 @@
+{
+  "name": "Blanton Museum of Art",
+  "short_name": "Blanton",
+  "city": "Austin",
+  "state": "TX",
+  "address": "200 E Martin Luther King Jr Blvd, Austin, TX 78712",
+  "lat": 30.2808,
+  "lng": -97.7378,
+  "discipline": "Art",
+  "founded": 1963,
+  "admission_from": 15,
+  "admission_text": "general admission",
+  "hours_summary": "Tue–Sun · 10 AM – 5 PM (Sun from 1 PM) · closed Mon",
+  "hours_today": "closed Mondays",
+  "visit_time": "2–3 hours",
+  "best_for": "Art lovers",
+  "tagline": "UT's university art museum. Ellsworth Kelly's Austin is the pilgrimage piece.",
+  "description": "The University of Texas at Austin's art museum, with one of the largest university collections in the country — Renaissance and Baroque European painting, modern American art, and the strongest Latin American collection in the United States. The grounds include Ellsworth Kelly's Austin, a standalone stone building he designed in the last years of his life.",
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free every Thursday, courtesy of the museum's membership program."
+    },
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "Ellsworth Kelly's Austin is a separate building on the grounds — check the ticket covers both."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "West Grounds",
+      "item": "Austin, Ellsworth Kelly, 2018"
+    },
+    {
+      "location": "Latin American Galleries",
+      "item": "Works by Tarsila do Amaral, Diego Rivera, João Câmara"
+    },
+    {
+      "location": "European Galleries",
+      "item": "Luca Giordano, Nicolas Poussin, Peter Paul Rubens"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "0.3 mi from Texas Capitol",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg/1280px-Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Blanton_Museum_grounds_2025.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Blanton_Museum_of_Art_-_UT_Austin_%2854984937578%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Exterior_grounds_and_plaza_designed_by_Sn%C3%B8hetta--Blanton_Museum_of_Art--Austin.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Blanton Museum of Art"
+}

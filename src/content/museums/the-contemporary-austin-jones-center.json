@@ -1,0 +1,51 @@
+{
+  "name": "The Contemporary Austin — Jones Center",
+  "short_name": "The Contemporary",
+  "city": "Austin",
+  "state": "TX",
+  "address": "700 Congress Ave, Austin, TX 78701",
+  "lat": 30.2683,
+  "lng": -97.743,
+  "discipline": "Art",
+  "founded": 1911,
+  "admission_from": 10,
+  "admission_text": "general admission",
+  "hours_summary": "Wed–Sun · 11 AM – 6 PM (Thu until 8 PM) · closed Mon–Tue",
+  "hours_today": "closed Mondays",
+  "visit_time": "1–2 hours",
+  "best_for": "Contemporary art fans",
+  "tagline": "Austin's contemporary art museum — downtown gallery, plus a lakeside sculpture park at Laguna Gloria.",
+  "description": "Austin's contemporary art museum, with two sites: the Jones Center on Congress Avenue (changing exhibitions in a downtown gallery with a Jim Hodges roofline piece visible from the street) and Laguna Gloria — a lakefront sculpture park at an Italianate villa, 15 minutes west by car.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "Jones Center admission includes Laguna Gloria's grounds on the same day — worth both if the weather is good."
+    },
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free admission every Tuesday (when open) and Thursday evenings."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Jones Center roofline",
+      "item": "With Liberty and Justice for All… For All, Jim Hodges, 2014"
+    },
+    {
+      "location": "Laguna Gloria grounds",
+      "item": "Charles Umlauf and Teresita Fernández sculptures along the lake"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "Downtown, 3 blocks south of Texas Capitol",
+  "hero_image": "https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_Jones_Center_%2854987519235%29.jpg?width=1280",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_Jones_Center_%2854987519235%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/The_Contemporary_Austin_-_LagunaGloria.jpg?width=800"
+  ],
+  "photo_credit": "via Wikipedia / The Contemporary Austin"
+}

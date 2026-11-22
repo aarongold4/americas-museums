@@ -1,0 +1,56 @@
+{
+  "name": "Harry Ransom Center",
+  "short_name": "Ransom Center",
+  "city": "Austin",
+  "state": "TX",
+  "address": "300 W 21st St, Austin, TX 78712",
+  "lat": 30.2843,
+  "lng": -97.7414,
+  "discipline": "Specialized",
+  "founded": 1957,
+  "admission_from": 0,
+  "admission_text": "free admission",
+  "hours_summary": "Tue–Fri · 10 AM – 5 PM · Sat–Sun noon – 5 PM · closed Mon",
+  "hours_today": "closed Mondays",
+  "visit_time": "1–2 hours",
+  "best_for": "Book, photo, and literary history fans",
+  "tagline": "UT's humanities archive. The Gutenberg Bible and the first photograph are on permanent display.",
+  "description": "A humanities research center at the University of Texas at Austin whose public galleries hold one of only 21 complete Gutenberg Bibles in existence and Nicéphore Niépce's View from the Window at Le Gras — the first surviving photograph. Rotating exhibitions draw from the archives of Gabriel García Márquez, David Foster Wallace, and the Watergate papers.",
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Always free — no ticket needed to walk into the public galleries."
+    },
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "The first photograph is dim on purpose — let your eyes adjust for a minute at the case."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "First Floor Gallery",
+      "item": "The Gutenberg Bible, c. 1455"
+    },
+    {
+      "location": "First Floor Gallery",
+      "item": "View from the Window at Le Gras, Nicéphore Niépce, 1826–27"
+    },
+    {
+      "location": "Rotating Galleries",
+      "item": "Manuscripts from the García Márquez archive"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "On UT campus, 0.5 mi north of Texas Capitol",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Harry_ransom_center_2012.jpg/1280px-Harry_ransom_center_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Harry_ransom_center_2012.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/First_photo.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/George_Aiken%27s_original_manuscript_for_his_stage_adaptation_of_Uncle_Tom%27s_Cabin.png?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Harry Ransom Center"
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Thinkery",
+  "city": "Austin",
+  "state": "TX",
+  "address": "1830 Simond Ave, Austin, TX 78723",
+  "lat": 30.2937,
+  "lng": -97.7046,
+  "discipline": "Children",
+  "founded": 1983,
+  "admission_from": 14,
+  "admission_text": "general admission",
+  "hours_summary": "Wed–Sun · 10 AM – 5 PM · closed Mon–Tue",
+  "hours_today": "closed Mondays",
+  "visit_time": "2–3 hours",
+  "best_for": "Families with kids 0–10",
+  "tagline": "Austin's children's museum — hands-on labs for kids 0–10, with a big outdoor water area.",
+  "description": "Austin's children's museum, in the Mueller development east of UT. Twelve exhibit galleries cover light, water, kitchen science, and a toddler-only area, and the outdoor Backyard adds a water play structure that is the point of visiting in summer.",
+  "tips": [
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "Bring a swimsuit and towel for the Backyard — kids get soaked at the water station."
+    },
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Community Nights the first Wednesday of the month are free admission after 4 PM."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Backyard",
+      "item": "Outdoor water play and dig pit"
+    },
+    {
+      "location": "Innovators' Workshop",
+      "item": "Maker space with tools for older kids"
+    },
+    {
+      "location": "Baby Bloomers",
+      "item": "Enclosed toddler area for crawlers and walkers"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "In Mueller, 4 mi northeast of downtown",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/The_thinkery_austin_2014.jpg/1280px-The_thinkery_austin_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/The_thinkery_austin_2014.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Flag_of_the_United_States_%2823px%29.png?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Thinkery"
+}

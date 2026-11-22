@@ -1,0 +1,50 @@
+{
+  "name": "Mexic-Arte Museum",
+  "city": "Austin",
+  "state": "TX",
+  "address": "419 Congress Ave, Austin, TX 78701",
+  "lat": 30.2674,
+  "lng": -97.743,
+  "discipline": "Art",
+  "founded": 1984,
+  "admission_from": 7,
+  "admission_text": "general admission",
+  "hours_summary": "Mon–Thu · 10 AM – 6 PM · Fri–Sat 10 AM – 5 PM · Sun noon – 5 PM",
+  "hours_today": "10 AM – 6 PM",
+  "visit_time": "45 min–1 hour",
+  "best_for": "Fans of Mexican and Latino contemporary art",
+  "tagline": "Austin's Mexican and Latino art museum, right on Congress Avenue.",
+  "description": "A small but serious museum of Mexican, Latino, and Latin American contemporary art on Congress Avenue. Three gallery spaces rotate exhibitions by Mexican and Latinx artists; the annual Viva la Vida Festival and Parade around Día de los Muertos is the signature event.",
+  "tips": [
+    {
+      "tag": "FREE",
+      "tone": "ok",
+      "text": "Free admission every Sunday."
+    },
+    {
+      "tag": "TIP",
+      "tone": "info",
+      "text": "Visit around late October for the Viva la Vida parade and ofrendas on Congress Avenue."
+    }
+  ],
+  "highlights": [
+    {
+      "location": "Main Gallery",
+      "item": "Rotating contemporary Mexican and Latinx exhibitions"
+    },
+    {
+      "location": "Changarrito Gallery",
+      "item": "Front-window cart platform for emerging Latinx artists"
+    }
+  ],
+  "affiliate": {
+    "network": "none"
+  },
+  "distance_landmark": "Downtown, 5 blocks south of Texas Capitol",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Mexic-Arte_Museum_%2854986346552%29.jpg/1280px-Mexic-Arte_Museum_%2854986346552%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "gallery_images": [
+    "https://en.wikipedia.org/wiki/Special:FilePath/Mexic-Arte_Museum_%2854986346552%29.jpg?width=800",
+    "https://en.wikipedia.org/wiki/Special:FilePath/Museum_btn.png?width=800"
+  ],
+  "photo_credit": "via Wikipedia / Mexic-Arte Museum"
+}
